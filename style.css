@@ -1,0 +1,91 @@
+body {
+  background: url('bg-main-image.png') no-repeat #110617;
+  background-position-y: 120px;
+  background-size: contain;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 26px;
+  text-align: left;
+}
+
+h3 {
+  color: #fff;
+  font-size: 30px;
+}
+
+h4 {
+  color: #fff;
+  font-size: 30px;
+}
+
+h5 {
+  color: #fff;
+  font-size: 24px;
+}
+
+h6 {
+  color: #fff;
+  font-size: 26px;
+  text-align: left;
+}
+
+h7 {
+  color: #fff;
+  font-size: 28px;
+}
+
+p {
+  color: #fff;
+  font-size: 20px;
+}
+
+ul {
+  margin-left: 0;
+}
+
+li {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  list-style-image: url('icon-tick.svg');
+  list-style-position: inside;
+  margin-left: 0;
+  text-align: left;
+}
+
+a {
+  color: #fff;
+  font-size: 20px;
+}
+
+hr {
+  background: url('line.svg') no-repeat;
+  border: 0;
+  height: 22px;
+}
+
+.mail {
+  background: url('icon-email.svg') no-repeat center left;
+  background-size: 24px 28px;
+  padding-left: 40px;
+}
+
+.phone {
+  background: url('icon-phone.svg') no-repeat center left;
+  background-size: 24px 28px;
+  margin-left: 40px;
+  padding-left: 40px;
+}
+
+::placeholder {
+  color: #201f1f;
+}
