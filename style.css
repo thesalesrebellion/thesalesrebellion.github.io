@@ -56,7 +56,7 @@ h7 {
 
 p {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -139,6 +139,50 @@ hr {
   width: 100%;
 }
 
+.logo-bottom {
+  width: 40%;
+}
+
 ::placeholder {
   color: #201f1f;
+}
+
+@media screen and (max-width: 39.9375em) {
+  body {
+    background-position-x: center;
+    background-size: 800px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p, ul, h1, h2, h3, h4, h5, h6, h7 {
+    padding: 0 15px;
+  }
+
+  .logo-head {
+    margin-bottom: 50px;
+    width: 40%;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .mail, .phone {
+    background-position: center center;
+    display: block;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .logo-bottom {
+    padding-bottom: 20px;
+    width: 60%;
+  }
 }
