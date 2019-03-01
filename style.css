@@ -1,5 +1,5 @@
 body {
-  background: url('bg-main-image.png') no-repeat #110617;
+  background: url('bg-main-image.png') no-repeat #050327;
   background-position-y: 120px;
   background-size: contain;
   margin: 0;
@@ -9,17 +9,22 @@ body {
 h1 {
   color: #fff;
   font-size: 30px;
+  margin: 0 auto 40px;
+  max-width: 700px;
 }
 
 h2 {
   color: #fff;
   font-size: 26px;
+  font-weight: bold;
   text-align: left;
 }
 
 h3 {
   color: #fff;
   font-size: 30px;
+  margin: 0 auto 20px;
+  max-width: 500px;
 }
 
 h4 {
@@ -40,15 +45,19 @@ h6 {
 
 h7 {
   color: #fff;
+  display: block;
   font-size: 28px;
+  margin-bottom: 35px;
 }
 
 p {
   color: #fff;
   font-size: 20px;
+  text-align: justify;
 }
 
 ul {
+  margin-bottom: 0;
   margin-left: 0;
 }
 
@@ -56,10 +65,12 @@ li {
   color: #fff;
   font-size: 18px;
   line-height: 26px;
-  list-style-image: url('icon-tick.svg');
-  list-style-position: inside;
+  list-style: none;
+  background: url('icon-tick.svg') no-repeat;
   margin-left: 0;
   text-align: left;
+  padding-left: 40px;
+  line-height: 40px;
 }
 
 a {
@@ -90,6 +101,11 @@ hr {
   width: 100%;
 }
 
+.button:focus, .button:hover {
+  background-color: #fff;
+  color: #201f1f;
+}
+
 .mail {
   background: url('icon-email.svg') no-repeat center left;
   background-size: 24px 28px;
@@ -99,12 +115,12 @@ hr {
 .phone {
   background: url('icon-phone.svg') no-repeat center left;
   background-size: 24px 28px;
-  margin-left: 40px;
   padding-left: 40px;
 }
 
 .vimeo {
   height: 0;
+  margin-bottom: 50px;
   max-width: 100%;
   overflow: hidden;
   padding-bottom: 56.25%;
