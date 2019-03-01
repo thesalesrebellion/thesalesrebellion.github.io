@@ -1,3 +1,7 @@
+* {
+  font-family: 'azo-sans-web' !important;
+}
+
 body {
   background: url('bg-main-image.png') no-repeat #050327;
   background-position-y: 120px;
