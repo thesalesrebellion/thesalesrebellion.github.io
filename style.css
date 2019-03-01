@@ -73,6 +73,23 @@ hr {
   height: 22px;
 }
 
+
+[type=email], [type=text] {
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.button {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px #ff1744;
+  color: #201f1f;
+  font-weight: bold;
+  width: 100%;
+}
+
 .mail {
   background: url('icon-email.svg') no-repeat center left;
   background-size: 24px 28px;
