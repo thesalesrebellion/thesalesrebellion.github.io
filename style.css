@@ -103,6 +103,22 @@ hr {
   padding-left: 40px;
 }
 
+.vimeo {
+  height: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.vimeo iframe, .vimeo object, .vimeo embed {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 ::placeholder {
   color: #201f1f;
 }
