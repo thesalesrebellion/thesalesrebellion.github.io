@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url('bg-main-image.png') no-repeat #050327;
+  background: url('../img/bg-main-image.png') no-repeat #050327;
   background-position-y: 120px;
   background-size: contain;
   margin: 0;
@@ -70,7 +70,7 @@ li {
   font-size: 18px;
   line-height: 26px;
   list-style: none;
-  background: url('icon-tick.svg') no-repeat;
+  background: url('../img/icon-tick.svg') no-repeat;
   margin-left: 0;
   text-align: left;
   padding-left: 40px;
@@ -83,7 +83,7 @@ a {
 }
 
 hr {
-  background: url('line.svg') no-repeat;
+  background: url('../img/line.svg') no-repeat;
   border: 0;
   height: 22px;
 }
@@ -111,13 +111,13 @@ hr {
 }
 
 .mail {
-  background: url('icon-email.svg') no-repeat center left;
+  background: url('../img/icon-email.svg') no-repeat center left;
   background-size: 24px 28px;
   padding-left: 40px;
 }
 
 .phone {
-  background: url('icon-phone.svg') no-repeat center left;
+  background: url('../img/icon-phone.svg') no-repeat center left;
   background-size: 24px 28px;
   padding-left: 40px;
 }
