@@ -1,0 +1,4 @@
+---
+title: Train
+permalink: /train/
+---
