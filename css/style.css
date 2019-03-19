@@ -284,6 +284,15 @@ hr {
   border: none;
 }
 
+.tabs-content h3 {
+  display: inline-block;
+}
+
+.tabs-content ul {
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
 .tabs-title > a,
 .accordion-title {
   border: 0;
