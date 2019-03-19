@@ -1,0 +1,465 @@
+*, h1, h2 {
+  font-family: 'azo-sans-web';
+}
+
+.inverse *, .inverse h1, .inverse h2, .inverse p, .inverse a {
+  color: #fff;
+}
+
+body {
+  background-color: #050327;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+}
+
+body.home {
+  background-image: url('../img/bg-homepage.png');
+  background-position-y: 120px;
+}
+
+body.learn {
+  background-image: url('../img/bg-learn.png');
+}
+
+body.train {
+  background-image: url('../img/bg-train.png');
+}
+
+body.podcast {
+  background-image: url('../img/bg-podcast.png');
+}
+
+body.merch {
+  background-image: url('../img/bg-merch.png');
+}
+
+body.join {
+  background-image: url('../img/bg-join.png');
+}
+
+p {
+  font-size: 18px;
+}
+
+p.donut:before {
+  background-image: url('/img/donut.png');
+  background-size: 80px 80px;
+  content: "";
+  display: inline-block;
+  height: 80px;
+  margin-right: 10px;
+  vertical-align: -120%;
+  width: 80px;
+}
+
+a.button {
+  background: #fff;
+  border: 1px solid #201f1f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0px #ff1744;
+  color: #201f1f;
+  display: block;
+  font-size: 15px;
+  margin: 0 auto;
+  max-width: 365px;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #2570f1;
+}
+
+.button.secondary {
+  background: #fff;
+  border: 1px solid #2570f1;
+  box-shadow: none;
+  color: #201f1f;
+}
+
+.button.red {
+  border: 1px solid #ff1744;
+}
+.button.ghost {
+  background: none;
+  color: #fff;
+}
+
+.button.secondary:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 0px #2570f1;
+  color: #050327;
+}
+
+.button.red:hover {
+  background: none;
+  box-shadow: 5px 5px 0px #ff1744;
+  color: #fff;
+}
+
+a.special {
+  background: url(/img/chevron.svg) no-repeat right center;
+  display: inline-block;
+  padding-bottom: 3px;
+  padding-right: 20px;
+}
+
+a.special:hover {
+  color: #fff;
+  padding-right: 30px;
+}
+
+a.special:after {
+  border-bottom: 1px solid #ff1744;
+  content: "";
+  display: block;
+  padding-top: 3px;
+}
+
+ul {
+  list-style-position: inside;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+li.check {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  list-style: none;
+  background: url('../img/icon-tick.svg') no-repeat;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 40px;
+  line-height: 40px;
+}
+
+hr {
+  background: url('../img/line.svg') no-repeat;
+  border: 0;
+  height: 22px;
+}
+
+
+[type=email], [type=text] {
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+#rebellion-menu .menu {
+  margin-top: 30px;
+}
+
+#rebellion-menu a.active:after {
+  border-bottom: 1px solid #ff1744;
+  content: "";
+  display: block;
+  padding-top: 15px;
+}
+
+#rebellion-menu a.button:after {
+  display: none;
+}
+
+#rebellion-menu a:not(.button) {
+  color: #fff;
+  font-size: 20px;
+}
+
+.text-xlarge {
+  font-size: 26px;
+}
+
+.fab {
+  color: #fff;
+  height: 25px;
+  width: 25px;
+}
+
+.container {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  position: relative;
+}
+
+.container img {
+  border-radius: 3px 3px 0 0;
+}
+
+.price {
+  background-color: #fff;
+  box-shadow: -5px -5px 0px #2570F1;
+  color: #2570f1;
+  margin-top: -41px;
+  padding: 8px;
+  position: absolute;
+  right: 0px;
+}
+
+.mail {
+  background: url('../img/icon-email.svg') no-repeat center left;
+  background-size: 24px 28px;
+  padding-left: 40px;
+}
+
+.phone {
+  background: url('../img/icon-phone.svg') no-repeat center left;
+  background-size: 24px 28px;
+  padding-left: 40px;
+}
+
+.vimeo {
+  height: 0;
+  margin-bottom: 50px;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.vimeo iframe, .vimeo object, .vimeo embed {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.logo-head {
+  margin-top: 20px;
+}
+
+.logo-bottom {
+  width: 40%;
+}
+
+.top-bar, .top-bar ul {
+  background: none;
+}
+
+::placeholder {
+  color: #201f1f;
+}
+
+.background-text {
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 22px;
+}
+
+.lesson, .time {
+  color: #727272;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.lesson:before {
+  color: #2570f1;
+  content: "\f5fd";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 5px;
+}
+
+.time:before {
+  color: #2570f1;
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 5px;
+}
+
+.tabs {
+  border: none;
+  display: table;
+  margin: 0 auto;
+}
+
+.tabs-content,
+.accordion-content {
+  border: none;
+}
+
+.tabs-title > a,
+.accordion-title {
+  border: 0;
+  border-bottom: 2px solid #dedede;
+  color: #727272;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tabs-title > a:focus,
+.tabs-title > a[aria-selected=true],
+.accordion-title:focus,
+.accordion-title:hover,
+.accordion-title[aria-selected=true] {
+  background: #fff;
+  border-bottom: 2px solid #ff1744;
+  color: #201f1f;
+}
+
+.tabs-title li {
+  display: table-cell;
+}
+
+.check li {
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  list-style: none;
+  background: url('../img/icon-tick.svg') no-repeat;
+  margin-left: 0;
+  text-align: left;
+  padding-left: 40px;
+  line-height: 40px;
+}
+
+.cta-container {
+  border: 2px solid #2570F1;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.player h3 {
+  color: #cacaca;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.player img {
+  margin-bottom: 20px;
+}
+
+.podcast-play {
+  float: left;
+  margin-right: 20px;
+}
+
+.podcast-play {
+  width: 38px;
+}
+
+.podcast-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.podcast-description {
+  clear: left;
+}
+
+@media screen and (max-width: 39.9375em) {
+  body {
+    background-position-x: center;
+    background-position-y: 40px;
+    background-size: 800px;
+  }
+
+  body.learn {
+    background-position-y: 85px;
+  }
+
+  body.merch {
+    background-image: none;
+  }
+
+  body.join {
+    background-position-y: -55px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  p, ul, h1, h2 {
+    padding: 0 15px;
+  }
+
+  #rebellion-menu .menu {
+    margin-top: 80px;
+  }
+
+  #rebellion-menu .menu li {
+    display: block;
+  }
+
+  #rebellion-menu .menu a {
+    font-size: 16px;
+  }
+
+  .top-bar {
+    background-color: #050327;
+    min-height: 100vh;
+    opacity: 0.95;
+    padding: 0 20px 20px;
+    position: absolute;
+    right: 0;
+  }
+
+  .top-bar .button {
+    margin-top: 20px;
+  }
+
+  .title-bar-right {
+    margin-right: 10px;
+    margin-top: 38px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+  }
+
+  .logo-head {
+    width: 50%;
+  }
+
+  .services {
+    display: none;
+  }
+
+  .mail, .phone {
+    background-position: center center;
+    display: block;
+    padding-left: 0;
+    padding-top: 50px;
+  }
+
+  .logo-bottom {
+    padding-bottom: 20px;
+    width: 60%;
+  }
+
+  p.donut {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  .background-text {
+    background-size: contain;
+    padding-top: 14px;
+  }
+}
+
+.no-js .top-bar {
+  display: none;
+}
+
+@media screen and (min-width: 40em) {
+  .no-js .top-bar {
+    display: block;
+  }
+
+  .no-js .title-bar {
+    display: none;
+  }
+}

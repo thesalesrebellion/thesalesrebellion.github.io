@@ -1,0 +1,16 @@
+---
+header:
+  - url: /learn/
+    title: Learn
+  - url: /train/
+    title: Train
+  - url: /podcast/
+    title: Podcast
+  - url: /merch/
+    title: Merch
+  - url: https://my.salesrebellion.com
+    title: Login
+  - url: /join/
+    title: Join the Rebellion
+    class: button
+---
