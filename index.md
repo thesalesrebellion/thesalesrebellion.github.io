@@ -23,12 +23,12 @@ section: home inverse
 <div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% - 650px) top">
   <div class="row text-center" style="padding-bottom:80px">
     <div class="column medium-4 medium-offset-2">
-      <img alt="Phone" src="/img/phone.png" />
+      <img alt="Monthly Challenges" src="/img/icon-challenges.png" />
       <h2 style="font-size:20px"><strong>Monthly Challenges</strong></h2>
       <p style="font-size:16px">Elevate your sales existence with a call to action every month that will help push you to the limits of your success. Time to change your game!</p>
     </div>
     <div class="column medium-4 end">
-      <img alt="Donut" src="/img/donut.png" />
+      <img alt="Marketing" src="/img/icon-marketing.png" />
       <h2 style="font-size:20px"><strong>Access to Marketing</strong></h2>
       <p style="font-size:16px">You have heard of The Copier Warrior’s ToolBox. Now gain access to interrupt marketing pieces like The Crumpled Letter and The (Insert product you sell) Survival Kit.</p>
     </div>
@@ -72,24 +72,24 @@ section: home inverse
   </div>
 </div>
 <div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% + 550px) bottom">
-  <div class="row small-up-1 medium-up-3 medium-8 medium-offset-2" style="margin-bottom:100px">
+  <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2 bg-icons" style="margin-bottom:100px">
     <div class="column column-block">
-      <p class="donut">Serve <strong>Others</strong></p>
+      <p class="serve">Serve <strong>Others</strong></p>
     </div>
     <div class="column column-block">
-      <p class="donut">Cause <strong>Impact</strong></p>
+      <p class="impact">Cause <strong>Impact</strong></p>
     </div>
     <div class="column column-block">
-      <p class="donut">No <strong>Robots</strong></p>
+      <p class="no-robots">No <strong>Robots</strong></p>
     </div>
     <div class="column column-block">
-      <p class="donut">Tell <strong>Stories</strong></p>
+      <p class="stories">Tell <strong>Stories</strong></p>
     </div>
     <div class="column column-block">
-      <p class="donut">Create <strong>Wonder</strong></p>
+      <p class="create-wonder">Create <strong>Wonder</strong></p>
     </div>
     <div class="column column-block">
-      <p class="donut">Be <strong>Vulnerable</strong></p>
+      <p class="be-vulnerable">Be <strong>Vulnerable</strong></p>
     </div>
   </div>
 </div>

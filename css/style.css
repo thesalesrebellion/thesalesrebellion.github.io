@@ -42,8 +42,7 @@ p {
   font-size: 18px;
 }
 
-p.donut:before {
-  background-image: url('/img/donut.png');
+.bg-icons p:before {
   background-size: 80px 80px;
   content: "";
   display: inline-block;
@@ -51,6 +50,34 @@ p.donut:before {
   margin-right: 10px;
   vertical-align: -120%;
   width: 80px;
+}
+
+.bg-icons p {
+  white-space: nowrap;
+}
+
+.serve:before {
+  background-image: url('/img/icon-serve.png');
+}
+
+.impact:before {
+  background-image: url('/img/icon-impact.png');
+}
+
+.no-robots:before {
+  background-image: url('/img/icon-robot.png');
+}
+
+.stories:before {
+  background-image: url('/img/icon-stories.png');
+}
+
+.create-wonder:before {
+  background-image: url('/img/icon-wonder.png');
+}
+
+.be-vulnerable:before {
+  background-image: url('/img/icon-vulnerable.png');
 }
 
 a.button {
