@@ -79,7 +79,7 @@ section: train
             </li>
             <li>
               <h3>LinkedIn</h3>
-              <p>There’s a lot of noise about how to use linkedin for sales, but we have an approach that is sure to build your linkedin into an asset that most salespeople are not leveraging. This is not just about prospecting on linkedin, it’s about incorporating the platform into the many tools (including other social sites) you already use to make you real and humanize the sales process. It is about content, visability, and building your personal brand. It is time for you to rise, oh might sales warrior!</p>
+              <p>There’s a lot of noise about how to use LinkedIn for sales, but we have an approach that is sure to build your LinkedIn into an asset that most salespeople are not leveraging. This is not just about prospecting on LinkedIn, it’s about incorporating the platform into the many tools (including other social sites) you already use to make you real and humanize the sales process. It is about content, visibility, and building your personal brand. It is time for you to rise, oh might sales warrior!</p>
             </li>
           </ul>
           <div class="cta-container text-center" style="margin-top:50px">
