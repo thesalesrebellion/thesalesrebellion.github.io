@@ -16,7 +16,7 @@ section: join inverse
   </div>
 </div>
 <div style="background:url(/img/bg-triangle.png) no-repeat;background-position:calc(50% + 650px)">
-  <div class="row" style="margin-bottom:100px">
+  <div class="row" style="padding-bottom:150px">
     <div class="column medium-8 medium-offset-2">
       <h2 class="text-xlarge">We are more than just sales training, <strong>we are a movement.</strong></h2>
       <p>As a member of The Sales Rebellion, you will have access to group mastermind sessions, exclusive broadcasts directly from The Copier Warrior, video lessons on sales topics, and access to our community page where you can share ideas with our members and connect with other Rebel Leaders across the globe.</p>
@@ -54,7 +54,7 @@ section: join inverse
     <h2 class="text-xlarge">What's Included?</h2>
   </div>
 </div>
-<div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% + 650px) bottom">
+<div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% + 650px) bottom;padding-bottom:1px">
   <div class="row" style="margin-bottom:50px">
     <div class="column medium-4 medium-offset-2">
       <ul class="check">
@@ -76,7 +76,7 @@ section: join inverse
     </div>
   </div>
 </div>
-<div style="background:url(/img/bg-circle-yellow.png) no-repeat;background-position:calc(50% - 550px) top">
+<div style="background:url(/img/bg-circle-yellow.png) no-repeat;background-position:calc(50% - 550px) top;padding-bottom:30px">
   <div class="row text-center">
     <div class="column medium-8 medium-offset-2">
       <h2 class="text-xlarge" style="margin-bottom:40px">All this for <strong>$39 a month.</strong></h2>

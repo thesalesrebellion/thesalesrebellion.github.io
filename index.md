@@ -71,7 +71,7 @@ section: home inverse
     <h2 class="text-center background-text" style="background-image:url('/img/rebel-warrior.svg');display:block;font-size:28px;margin-bottom:35px">Principles of a Rebel Warrior</h2>
   </div>
 </div>
-<div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% + 550px) bottom">
+<div style="background:url(/img/bg-bolt.png) no-repeat;background-position:calc(50% + 650px) bottom;padding-bottom:1px">
   <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2 bg-icons" style="margin-bottom:100px">
     <div class="column column-block">
       <p class="serve">Serve <strong>Others</strong></p>
