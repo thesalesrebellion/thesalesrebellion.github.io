@@ -79,7 +79,7 @@ section: join inverse
 <div style="background:url(/img/bg-circle-yellow.png) no-repeat;background-position:calc(50% - 550px) top">
   <div class="row text-center">
     <div class="column medium-8 medium-offset-2">
-      <h2 class="text-xlarge" style="margin-bottom:40px">All this for <strong>$29 a month.</strong></h2>
+      <h2 class="text-xlarge" style="margin-bottom:40px">All this for <strong>$39 a month.</strong></h2>
       <a class="button" style="margin-bottom:100px" href="/join/">Join the Rebellion</a>
     </div>
   </div>
