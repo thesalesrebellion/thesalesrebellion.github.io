@@ -248,12 +248,24 @@ hr {
   position: relative;
 }
 
-.vimeo iframe, .vimeo object, .vimeo embed {
+.vimeo iframe,
+.vimeo object,
+.vimeo embed {
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.vimeo a {
+  display: block;
+  margin: 15% auto 0;
+  width: 134px;
+}
+
+.vimeo img {
+  width: 134px;
 }
 
 .logo-head {
@@ -362,6 +374,10 @@ hr {
   padding: 20px;
 }
 
+.cta-container strong {
+  display: block;
+}
+
 .player h3 {
   color: #cacaca;
   font-size: 12px;
@@ -390,6 +406,39 @@ hr {
 
 .podcast-description {
   clear: left;
+}
+
+.join-cta h2 {
+  background-image: url('/img/sales-legend.svg');
+  font-size: 28px;
+  margin: 0 auto 30px;
+  max-width:600px;
+}
+
+.join-cta {
+  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #000 51%, #000 100%) #000;
+}
+
+.join-cta h2 {
+  color: #fff;
+}
+
+.join-cta .column {
+  background: #050327;
+  padding: 50px 0;
+}
+
+.inverse .join-cta {
+  background: linear-gradient(to bottom, #050327 0%, #050327 50%, #000 51%, #000 100%) #000;
+}
+
+.inverse .join-cta h2,
+.inverse .join-cta strong {
+  color: #201f1f;
+}
+
+.inverse .join-cta .column {
+  background: #fff;
 }
 
 @media screen and (max-width: 39.9375em) {

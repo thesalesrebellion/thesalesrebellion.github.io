@@ -2,6 +2,11 @@
 title: Learn
 permalink: /learn/
 section: learn
+heading: "**Revolutionize your Sales Outlook.**"
+subheading: |-
+  The Copier Warrior’s sales curriculum has been locked away from the world, until now. We have gathered this knowledge and created valuable learning lessons just for you.
+
+  Ancient scrolls contain wisdom for the few and digital transmissions relay vital encrypted information. But these courses have been deciphered so you can change the game. They carry immense value for all who are willing to light their torch and join the Rebellion.
 courses:
   - title: Roots
     price: $329
@@ -55,12 +60,12 @@ courses:
 
 <div class="row" style="margin-bottom:80px">
   <div class="column medium-8 medium-offset-2 inverse text-center">
-    <h1 class="text-xlarge">Curriculum that will <strong>Revolutionize your Sales Outlook.</strong></h1>
-    <p>The Copier Warrior’s sales processes have been locked away from the world, until now. The Sales Rebellion has gathered this knowledge and created valuable learning lessons just for you. As ancient scrolls contain wisdom for the few, and digital transmissions relay vital encrypted information, these courses have been made public for you. They carry immense value for all who are willing to light their torch and join The Rebellion.</p>
+    <h1 class="text-xlarge">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+    {{ page.subheading | markdownify }}
   </div>
 </div>
 <div style="background-color:#fff;padding-top:40px">
-  <div class="row small-up-1 medium-up-2 medium-up-3 medium-8 medium-offset-2">
+  <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2">
     {% for course in page.courses %}
     <div class="column column-block">
       <div class="container">

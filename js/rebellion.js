@@ -21,13 +21,19 @@ $('.podcast').ready(function() {
   $('.podcast-play').on('click', function() {
     var podcast = document.getElementById('podcast');
     if (podcast.paused) {
-      $('#podcast-state').removeClass('fa-play');
-      $('#podcast-state').addClass('fa-pause');
+      $('#podcast-state').attr('src', '/img/icon-red-pause.png');
       podcast.play();
     } else {
-      $('#podcast-state').removeClass('fa-pause');
-      $('#podcast-state').addClass('fa-play');
+      $('#podcast-state').attr('src', '/img/icon-red-play.png');
       podcast.pause();
    }
   });
 });
+
+$('.vimeo a').on('click', function() {
+  $(this).hide();
+  $iframe = $('.vimeo iframe');
+  var player = new Vimeo.Player('video');
+  player.play();
+  $iframe.show();
+})
