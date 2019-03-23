@@ -93,7 +93,8 @@ a.button {
   max-width: 365px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: #fff;
   color: #2570f1;
 }
@@ -113,13 +114,15 @@ a.button {
   color: #fff;
 }
 
-.button.secondary:hover {
+.button.secondary:hover,
+.button.secondary:focus {
   background-color: #fff;
   box-shadow: 5px 5px 0px #2570f1;
   color: #050327;
 }
 
-.button.red:hover {
+.button.red:hover,
+.button.red:focus {
   background: none;
   box-shadow: 5px 5px 0px #ff1744;
   color: #fff;
