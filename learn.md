@@ -69,7 +69,7 @@ courses:
   <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2" data-equalizer>
     {% for course in page.courses %}
     <div class="column column-block">
-      <div class="container">
+      <div class="container" data-equalizer-watch>
         <img alt="" src="{{ course.image }}" />
         {% if course.price %}<div class="price">{{ course.price }}</div>{% endif %}
         <div style="padding:30px">
