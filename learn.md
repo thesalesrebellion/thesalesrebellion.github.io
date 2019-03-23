@@ -73,18 +73,9 @@ courses:
         <img alt="" src="{{ course.image }}" />
         {% if course.price %}<div class="price">{{ course.price }}</div>{% endif %}
         <div style="padding:30px">
-          <p style="color:#201f1f;font-size:12px;text-transform:uppercase">{{ course.type }}</p>
           <h2 style="font-size:18px;font-weight:500">{{ course.title }}</h2>
           <p style="font-size:16px;margin-bottom:20px">{{ course.description }}</p>
           <a href="{{ course.link }}" class="button" style="margin-bottom:30px">Purchase Course</a>
-          <div class="row">
-            <div class="column medium-6">
-              <p class="lesson">{{ course.lesson_count | pluralize: 'Lesson' }}</p>
-            </div>
-            <div class="column medium-6">
-              <p class="time text-right">{{ course.length }}</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
