@@ -118,7 +118,7 @@ programs:
           {% endif %}
           <div class="cta-container text-center" style="margin-top:50px">
             <h2 style="font-size:22px;margin:0 auto 30px;max-width:300px">{{ program.cta-text | markdownify | remove: '<p>' | remove: '</p>' }}</h2>
-            <a class="button secondary" href="/join/">Find out more</a>
+            <a class="button secondary" href="mailto:dale@thesalesrebellion.com?subject={{ program.title | url_escape }}!" target="_blank">Find out more</a>
           </div>
         </div>
         {% endfor %}
