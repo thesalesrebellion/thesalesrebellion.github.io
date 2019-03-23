@@ -35,19 +35,11 @@ items:
     <h1 class="text-xlarge">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
   </div>
 </div>
-<div style="background-color:#fff;padding-top:40px">
-  <div class="row small-up-1 medium-up-2 medium-up-3 medium-8 medium-offset-2" style="padding-bottom:100px">
-    {% for item in page.items %}
-    <div class="column column-block">
-      <div class="container">
-        <img src="{{ item.image }}" />
-        <div class="price">{{ item.price }}</div>
-        <div style="padding:30px">
-          <h2 style="font-size:18px;font-weight:500"><a href="{{ item.link }}">{{ item.title }}</a></h2>
-        </div>
-      </div>
+<div style="background-color:#fff;padding-bottom:200px;padding-top:40px">
+  <div class="row">
+    <div class="column small-12 text-center">
+      <h1><strong>Coming Soon!</strong></h1>
     </div>
-    {% endfor %}
   </div>
 </div>
 {% include join-block.html %}

@@ -1,7 +1,7 @@
 ---
 title: Learn
 permalink: /learn/
-section: learn
+section: learn overlay
 heading: "**Revolutionize your Sales Outlook.**"
 subheading: |-
   The Copier Warrior’s sales curriculum has been locked away from the world, until now. We have gathered this knowledge and created valuable learning lessons just for you.
@@ -64,8 +64,9 @@ courses:
     {{ page.subheading | markdownify }}
   </div>
 </div>
-<div style="background-color:#fff;padding-top:40px">
-  <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2">
+<div style="background-color:#fff;padding-top:40px;position:relative">
+  <div class="content text-center"><h2>Coming Soon!</h2></div>
+  <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2" data-equalizer>
     {% for course in page.courses %}
     <div class="column column-block">
       <div class="container">
