@@ -24,7 +24,7 @@ included:
     <div class="column medium-8 medium-offset-2 text-center">
       <h1 class="text-xlarge" style="margin-bottom:30px">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
       <p>{{ page.subheading }}</p>
-      <a target="_blank" class="button secondary red ghost" style="margin-bottom:50px" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Be a Rebel</a>
+      <a class="button secondary red ghost" style="margin-bottom:50px" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Be a Rebel</a>
       <div class="vimeo">
         <a><img src="/img/icon-red-play.png" /></a>
         <iframe id="video" style="display:none" title="Welcome to The Sales Rebellion Video" src='https://player.vimeo.com/video/320590883?byline=false&title=false&portrait=false&api=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -37,7 +37,7 @@ included:
     <div class="column medium-8 medium-offset-2">
       <h2 class="text-xlarge">We are more than sales training. <strong>We are a movement.</strong></h2>
       <p>As a member of The Sales Rebellion, you will have access to group mastermind sessions, exclusive broadcasts directly from The Copier Warrior, video lessons on sales topics, and access to our community page where you can share ideas with our members and connect with other Rebel Leaders across the globe.</p>
-      <p><a target="_blank" class="special" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Join the Rebellion!</a></p>
+      <p><a class="special" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Join the Rebellion!</a></p>
     </div>
   </div>
 </div>
@@ -61,7 +61,7 @@ included:
     <div class="column medium-8 medium-offset-2">
       <h2 class="text-xlarge"><strong>Earn your way to the top</strong></h2>
       <p style="margin-bottom:50px">Get ready to make sales an adventure with a unique gamification approach brought to you by The Sales Rebellion! Level up by completing challenges, receive unique badges, and earn your way to the top where you will receive a unique gift from The Copier Warrior!</p>
-      <a class="button" target="_blank" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Be a Rebel</a>
+      <a class="button" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Be a Rebel</a>
     </div>
   </div>
 </div>
@@ -93,7 +93,7 @@ included:
   <div class="row text-center">
     <div class="column medium-8 medium-offset-2">
       <h2 class="text-xlarge" style="margin-bottom:40px">All this for <strong>$39 a month.</strong></h2>
-      <a target="_blank" class="button" style="margin-bottom:100px" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Join the Rebellion</a>
+      <a class="button" style="margin-bottom:100px" href="mailto:dale@thesalesrebellion.com?subject=I%27m%20Ready%20To%20Join%20The%20Rebellion!">Join the Rebellion</a>
     </div>
   </div>
 </div>
