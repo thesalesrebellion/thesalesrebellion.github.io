@@ -64,11 +64,14 @@ principles:
       <p>Join Dale Dupree and Jeffery Villegas as they discuss ideas, tell sales stories, and share their vision for The Sales Rebellion with you!</p>
     </div>
   </div>
-  <div class="row text-center" style="margin-bottom:100px">
-    <div class="column medium-4 medium-offset-2">
-      <a aria-label="Selling Local Podcast on iTunes" href="https://itunes.apple.com/us/podcast/selling-local-stories-tips-service/id1360290531?mt=2" target="_blank"><img alt="iTunes Podcast" style="margin-bottom:20px;width:200px" src="/img/podcast-apple.svg" /></a>
+  <div class="row small-up-1 large-up-3 text-center" style="margin-bottom:50px;margin-top:50px">
+    <div class="column column-block">
+      <a aria-label="Selling Local Podcast on iTunes" href="https://itunes.apple.com/us/podcast/selling-local-stories-tips-service/id1360290531?mt=2" target="_blank"><img alt="iTunes Podcast" style="width:200px" src="/img/podcast-apple.svg" /></a>
     </div>
-    <div class="column medium-4 end">
+    <div class="column column-block">
+      <a aria-label="Selling Local Podcast on Spotify" href="https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E" target="_blank"><img alt="Spotify Podcast" style="width:200px" src="/img/podcast-spotify.png" /></a>
+    </div>
+    <div class="column column-block">
       <a aria-label="Selling Local Podcast on Google Play" href="https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service" target="_blank"><img alt="Google Play Podcast" style="width:200px" src="/img/podcast-google.svg" /></a>
     </div>
   </div>
