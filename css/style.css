@@ -336,6 +336,12 @@ hr {
   padding-left: 20px;
 }
 
+.tabs-content h2,
+.tabs-content li p,
+.tabs-content li strong {
+  font-family: CinnabarBrush;
+}
+
 .tabs-title > a,
 .accordion-title {
   border: 0;
