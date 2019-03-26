@@ -23,7 +23,7 @@ programs:
       - Personal Brand Development
       - First touch marketing campaigns and workflow
       - Inside Jokes that you can keep from your boss
-    cta-text: "Find out more about our  **Rebel Leader Program!**"
+    cta-text: "Find out more about **Rebel Leader Program!**"
   - tab: Group Coaching
     title: Group Coaching
     hash: group-coaching
@@ -73,7 +73,7 @@ programs:
         **LinkedIn**
 
         There’s a lot of noise about how to use LinkedIn for sales, but we have an approach that is sure to build your LinkedIn into an asset that most salespeople are not leveraging. This is not just about prospecting on LinkedIn, it’s about incorporating the platform into the many tools you already use. This bootcamp is about making you a real person and humanizing the sales process. It is about content, visibility, and building your personal brand. It is time for you to rise might sales warrior!
-    cta-text: "Find out more about our  **On-Site Bootcamps!**"
+    cta-text: "Find out more about **On-Site Bootcamps!**"
   - tab: Public Speaking
     title: Public Speaking
     hash: speaking
@@ -87,7 +87,7 @@ programs:
       - Seminars/Conferences
       - Global or domestic events
       - In your basement, party of 1 + your mom makes lunch for our crew
-    cta-text: "Find out more about our  **Public Speaking options!**"
+    cta-text: "Find out more about **Public Speaking options!**"
 ---
 
 <div class="row" style="margin-bottom:80px">
