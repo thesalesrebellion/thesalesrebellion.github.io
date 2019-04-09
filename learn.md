@@ -56,6 +56,14 @@ courses:
     image: "/img/logo-small.jpg"
     description: This section is all about utilizing social media. We discuss the various platforms and how to create a strategic approach to building business via social media. We cover various demographics of each platform, as well as providing an understanding of the separate metrics and how to judge ROI in a digital space.
     disabled: true
+  - title: To Be Continued...
+    link: "#"
+    lesson_count: 7
+    length: 3hr 40min
+    type: Interrupt Marketing
+    image: "/img/logo-small.jpg"
+    description: More courses to up your sales game coming soon.
+    disabled: true
 ---
 
 <div class="row" style="margin-bottom:80px">
