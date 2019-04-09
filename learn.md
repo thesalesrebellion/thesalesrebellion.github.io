@@ -73,7 +73,6 @@ courses:
   </div>
 </div>
 <div style="background-color:#fff;padding-top:40px;position:relative">
-  <div class="content text-center"><h2>Coming Soon!</h2></div>
   <div class="row small-up-1 medium-up-2 large-up-3 medium-8 medium-offset-2" data-equalizer>
     {% for course in page.courses %}
     <div class="column column-block">
