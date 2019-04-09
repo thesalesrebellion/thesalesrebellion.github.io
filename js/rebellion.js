@@ -1,5 +1,5 @@
 $('.podcast').ready(function() {
-  var feed = 'http://copierwarrior.libsyn.com/rss';
+  var feed = 'https://copierwarrior.libsyn.com/rss';
 
   $.ajax(feed, {
     success:function(data) {
