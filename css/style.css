@@ -93,6 +93,18 @@ a.button {
   max-width: 365px;
 }
 
+.container a.button {
+  bottom: 0;
+  margin: 30px 0;
+  position: absolute;
+  width: 82%;
+}
+
+.spacer {
+  display: block;
+  height: 50px;
+}
+
 .button:hover,
 .button:focus {
   background-color: #fff;

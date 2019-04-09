@@ -75,10 +75,11 @@ courses:
         <div style="padding:30px">
           <h2 style="font-size:18px;font-weight:500">{{ course.title }}</h2>
           <p style="font-size:16px;margin-bottom:20px">{{ course.description }}</p>
+          <div class="spacer"></div>
           {% if course.disabled %}
-          <a class="button" style="margin-bottom:30px">Coming Soon</a>
+          <a class="button">Coming Soon</a>
           {% else %}
-          <a href="{{ course.link }}" class="button" style="margin-bottom:30px">Purchase Course</a>
+          <a href="{{ course.link }}" class="button">Purchase Course</a>
           {% endif %}
         </div>
       </div>
