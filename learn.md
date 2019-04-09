@@ -77,7 +77,7 @@ courses:
           <p style="font-size:16px;margin-bottom:20px">{{ course.description }}</p>
           <div class="spacer"></div>
           {% if course.disabled %}
-          <a class="button">Coming Soon</a>
+          <a class="button disabled">Coming Soon</a>
           {% else %}
           <a href="{{ course.link }}" class="button">Purchase Course</a>
           {% endif %}

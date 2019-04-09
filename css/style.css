@@ -93,6 +93,14 @@ a.button {
   max-width: 365px;
 }
 
+a.button.disabled,
+a.button.disabled:hover {
+  background: #fff;
+  box-shadow: 5px 5px 0px #cacaca;
+  color: #727272;
+  opacity: 0.75;
+}
+
 .container a.button {
   bottom: 0;
   margin: 30px 0;
