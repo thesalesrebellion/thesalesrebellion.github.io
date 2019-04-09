@@ -19,7 +19,7 @@ courses:
     disabled: true
   - title: R.E.A.S.O.N.
     price: $349
-    link: "#"
+    link: "https://thesalesrebellion.teachable.com/p/reason"
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
