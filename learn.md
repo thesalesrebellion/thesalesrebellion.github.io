@@ -14,7 +14,7 @@ courses:
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
-    image: "/img/logo-small.jpg"
+    image: "/img/learn-reason.jpg"
     description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
   - title: Roots
     link: "#"
