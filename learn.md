@@ -9,7 +9,7 @@ subheading: |-
   Ancient scrolls contain wisdom for the few and digital transmissions relay vital encrypted information. But these courses have been deciphered so you can change the game. They carry immense value for all who are willing to light their torch and join the Rebellion.
 courses:
   - title: R.E.A.S.O.N.
-    price: $349
+    price: $350
     link: "https://thesalesrebellion.teachable.com/p/reason"
     lesson_count: 7
     length: 3hr 40min
@@ -17,7 +17,6 @@ courses:
     image: "/img/logo-small.jpg"
     description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
   - title: Roots
-    price: $349
     link: "#"
     lesson_count: 7
     length: 3hr 40min
@@ -26,7 +25,6 @@ courses:
     description: Roots are the “why” of our sales journey. This is the most important part of any salesperson's career. This section dives into what makes people go to work. This section seeks to cultivate a strong understanding of how little things have big impacts on our outcomes.
     disabled: true
   - title: Living Pipeline
-    price: $349
     link: "#"
     lesson_count: 7
     length: 3hr 40min
@@ -35,7 +33,6 @@ courses:
     description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
     disabled: true
   - title: K.N.O.W.
-    price: $349
     link: "#"
     lesson_count: 7
     length: 3hr 40min
@@ -44,7 +41,6 @@ courses:
     description: This section is about going deeper than the surface level operations of a salesperson’s territory. We address the common approaches to building credibility and teach you to become a Sales Wanderer.
     disabled: true
   - title: Chest O' Wonders
-    price: $349
     link: "#"
     lesson_count: 7
     length: 3hr 40min
@@ -53,7 +49,6 @@ courses:
     description: This is where the rubber meets the road. Here, the synthesis of sales and marketing is created and the line between the two is destroyed. There is no room for a lag between the marketing department and the sales division.
     disabled: true
   - title: The Social Game
-    price: $349
     link: "#"
     lesson_count: 7
     length: 3hr 40min
