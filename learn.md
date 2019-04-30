@@ -8,14 +8,6 @@ subheading: |-
 
   Ancient scrolls contain wisdom for the few and digital transmissions relay vital encrypted information. But these courses have been deciphered so you can change the game. They carry immense value for all who are willing to light their torch and join the Rebellion.
 courses:
-  - title: R.E.A.S.O.N.
-    price: $350
-    link: "https://thesalesrebellion.teachable.com/p/reason"
-    lesson_count: 7
-    length: 3hr 40min
-    type: Interrupt Marketing
-    image: "/img/learn-reason.jpg"
-    description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
   - title: Roots
     price: $350
     link: "#"
@@ -25,6 +17,14 @@ courses:
     image: "/img/learn-roots.jpg"
     description: Roots are the “why” of our sales journey. This is the most important part of any salesperson's career. This section dives into what makes people go to work. This section seeks to cultivate a strong understanding of how little things have big impacts on our outcomes.
     disabled: true
+  - title: R.E.A.S.O.N.
+    price: $350
+    link: "https://thesalesrebellion.teachable.com/p/reason"
+    lesson_count: 7
+    length: 3hr 40min
+    type: Interrupt Marketing
+    image: "/img/learn-reason.jpg"
+    description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
   - title: Living Pipeline
     link: "#"
     lesson_count: 7
