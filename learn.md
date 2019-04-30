@@ -21,7 +21,7 @@ courses:
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
-    image: "/img/logo-small.jpg"
+    image: "/img/learn-roots.jpg"
     description: Roots are the “why” of our sales journey. This is the most important part of any salesperson's career. This section dives into what makes people go to work. This section seeks to cultivate a strong understanding of how little things have big impacts on our outcomes.
     disabled: true
   - title: Living Pipeline
