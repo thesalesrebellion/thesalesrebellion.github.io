@@ -10,13 +10,12 @@ subheading: |-
 courses:
   - title: Roots
     price: $350
-    link: "#"
+    link: "https://thesalesrebellion.teachable.com/p/roots"
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
     image: "/img/learn-roots.jpg"
     description: Roots are the “why” of our sales journey. This is the most important part of any salesperson's career. This section dives into what makes people go to work. This section seeks to cultivate a strong understanding of how little things have big impacts on our outcomes.
-    disabled: true
   - title: R.E.A.S.O.N.
     price: $350
     link: "https://thesalesrebellion.teachable.com/p/reason"
