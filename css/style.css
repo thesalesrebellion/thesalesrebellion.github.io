@@ -13,7 +13,8 @@ body {
   margin: 0;
 }
 
-body.home {
+body.home,
+body.about {
   background-image: url('../img/bg-homepage.png');
   background-position-y: 120px;
 }
@@ -334,6 +335,41 @@ hr {
   content: "\f017";
   font-family: "Font Awesome 5 Free";
   margin-right: 5px;
+}
+
+div.about {
+  background: rgba(0, 0, 0, 0.3);
+  border: 3px solid #050327;
+  padding: 20px 0;
+  text-align: center;
+}
+
+div.about img {
+  border-radius: 50%;
+  margin: 20px 0 20px;
+}
+
+div.about .name {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+div.about .title {
+  font-family: CinnabarBrush;
+  font-size: 20px;
+  padding: 0 32px 40px;
+  text-transform: uppercase;
+}
+
+div.about .phone,
+div.about .email {
+  background: none;
+  font-weight: bold;
+  padding: 0;
+}
+
+div.about .social {
+  margin-top: 40px;
 }
 
 .tabs {
