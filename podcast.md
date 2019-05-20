@@ -1,7 +1,7 @@
 ---
 title: Podcast
 permalink: /podcast/
-section: podcast
+section: podcast inverse
 heading: "**The Sales Rebellion Podcast.**"
 subheading: "Join Dale Dupree and Jeffery Villegas as they discuss ideas, tell sales stories, and share their vision for The Sales Rebellion with you!"
 podcast-services:
@@ -14,10 +14,14 @@ podcast-services:
   - title: Selling Local Podcast on Google Play
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
+guest-posts:
+  - title: How to Sell More with Dale Dupree
+    podcast: FAE 005
+    link: "https://freelancersandentrepreneurs.com/episode5/"
 ---
 
 <div class="row">
-  <div class="column medium-8 medium-offset-2 inverse text-center">
+  <div class="column medium-8 medium-offset-2 text-center">
     <h1 class="text-xlarge">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
     <p>{{ page.subheading }}</p>
   </div>
@@ -29,8 +33,8 @@ podcast-services:
   </div>
   {% endfor %}
 </div>
-<div class="row">
-  <div class="player column medium-8 medium-offset-2 inverse">
+<div class="row" style="margin-bottom:100px">
+  <div class="player column medium-8 medium-offset-2">
     <hr />
     <div class="column medium-4">
       <img class="podcast-image" src="" />
@@ -42,5 +46,16 @@ podcast-services:
       <div class="podcast-title"></div>
       <p class="podcast-description"></p>
     </div>
+  </div>
+</div>
+<div class="row" style="margin-bottom:100px">
+  <div class="column medium-8 medium-offset-2">
+    <h2 style="font-size:24px;font-weight:bold">Dale's Guest Appearances.</h2>
+    {% for post in page.guest-posts %}
+    <div>
+      <div style="font-size:18px;margin-bottom:10px"><strong>{{ post.podcast }}:</strong> {{ post.title }}</div>
+      <a class="special" target="_blank" href="{{ post.link }}">Listen Here!</a>
+    </div>
+    {% endfor %}
   </div>
 </div>
