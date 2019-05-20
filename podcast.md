@@ -18,6 +18,60 @@ guest-posts:
   - title: How to Sell More with Dale Dupree
     podcast: FAE 005
     link: "https://freelancersandentrepreneurs.com/episode5/"
+  - title: "068 – Give to Get: Breaking Down Real Human Emotion | Dale Dupree"
+    podcast: Sales Tuners
+    link: "https://www.salestuners.com/dale-dupree/"
+  - title: "Sales Tip 61: Radically Educate – Dale Dupree"
+    podcast: Daily Sales Tips
+    link: "https://top1.fm/DailySalesTips/sales-tip-61-radically-educate-dale-dupree/"
+  - title: "Sales Tip 68: Attention"
+    podcast: Daily Sales Tips
+    link: "https://top1.fm/DailySalesTips/sales-tip-68-attention-dale-dupree/"
+  - title: "Sales Tip 75: Story"
+    podcast: Daily Sales Tips
+    link: "https://top1.fm/DailySalesTips/sales-tip-75-story-dale-dupree-3-of-5/"
+  - title: "Sales Tip 82: Outline"
+    podcast: Daily Sales Tips
+    link: "https://top1.fm/DailySalesTips/sales-tip-82-outline-dale-dupree-part-4-of-5/"
+  - title: "Sales Tip 89: Nuance"
+    podcast: Daily Sales Tips
+    link: "https://top1.fm/DailySalesTips/sales-tip-89-nuance-dale-dupree-5-of-5/"
+  - title: First Impressions With Dale Dupree
+    podcast: SalesDNA
+    link: "https://salesdna.co/first-impression-with-dale-dupree/"
+  - title: "211: Turn Your Pitch Into Your REASON w/ Dale Dupree"
+    podcast: The FlipMyFunnel Podcast
+    link: http://flipmyfunnel.libsyn.com/211-turn-your-pitch-into-your-reason-w-dale-dupree
+  - title: E118 – How to Stop Getting the Cold Shoulder When Cold Calling w/ Dale Dupree
+    podcast: Dennis Brown
+    link: https://www.askdennisbrown.com/podcast/e118-dale-dupree/
+  - title: The Copier Warrior w/Dale Dupree | Episode 025
+    podcast: The Cannoli Coach
+    link: "https://www.spreaker.com/user/10822032/episode-025"
+  - title: The Dreaded Phone
+    podcast: ValueSelling Associates
+    link: "https://www.valueselling.com/podcast/dreaded-phone"
+  - title: Drive Sales by Investing in Your Personal Brand
+    podcast: OPERATIX
+    link: "http://www.operatix.net/drive-sales-with-your-personal-brand/"
+  - title: Creating a Great Customer Experience Around a Hated Office Machine
+    podcast: Creative Side Marketing
+    link: "http://www.creativesidemarketing.com/blog/creating-great-customer-experience-around-hated-office-machine"
+  - title: "TSE 836: Make Social Selling A Part of Your Day to Day Life"
+    podcast: The Sales Evangelist
+    link: "https://thesalesevangelist.com/episode836/"
+  - title: Dale Dupree How to create UNDENIABLE CURIOSITY
+    podcast: Sell Anywhere
+    link: "http://sellanywhere.libsyn.com/dale-dupree-how-to-create-undeniable-curiosity"
+  - title: "“How to Win The Prospecting Game” with Dale Dupree"
+    podcast: Spotio
+    link: "https://spotio.com/blog/how-to-win-the-prospecting-game/"
+  - title: Ep. 51 Sales Lesson because everyone is in Sales with Dale Dupree
+    podcast: Mastering College to Career
+    link: "https://anchor.fm/masteringcollegetocareer/episodes/Ep--51-Sales-Lesson-because-everyone-is-in-Sales-with-Dale-Dupree-e37041"
+  - title: Longing to Learn and Aching To Serve with Special Guest, Dale Dupree
+    podcast: Selling from the Heart
+    link: "https://www.sellingfromtheheart.net/podcast/longing-to-learn-and-aching-to-serve-with-special-guest-dale-dupree/"
 ---
 
 <div class="row">
@@ -52,7 +106,7 @@ guest-posts:
   <div class="column medium-8 medium-offset-2">
     <h2 style="font-size:24px;font-weight:bold">Dale's Guest Appearances.</h2>
     {% for post in page.guest-posts %}
-    <div>
+    <div style="margin-bottom:30px">
       <div style="font-size:18px;margin-bottom:10px"><strong>{{ post.podcast }}:</strong> {{ post.title }}</div>
       <a class="special" target="_blank" href="{{ post.link }}">Listen Here!</a>
     </div>
