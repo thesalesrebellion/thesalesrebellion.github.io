@@ -18,8 +18,8 @@ guest-posts:
   - title: "713: Join The Sales Rebellion, With Dale Dupree"
     podcast: Andy Paul
     link: "https://www.andypaul.com/713-join-the-sales-rebellion-with-dale-dupree/"
-  - title: How to Sell More with Dale Dupree
-    podcast: FAE 005
+  - title: "FAE 005: How to Sell More with Dale Dupree"
+    podcast: F&E
     link: "https://freelancersandentrepreneurs.com/episode5/"
   - title: "068 – Give to Get: Breaking Down Real Human Emotion | Dale Dupree"
     podcast: Sales Tuners
