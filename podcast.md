@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "713: Join The Sales Rebellion, With Dale Dupree"
+    podcast: Andy Paul
+    link: "https://www.andypaul.com/713-join-the-sales-rebellion-with-dale-dupree/"
   - title: How to Sell More with Dale Dupree
     podcast: FAE 005
     link: "https://freelancersandentrepreneurs.com/episode5/"
