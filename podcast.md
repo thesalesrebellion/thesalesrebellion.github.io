@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode 71: Dale Dupree – From Top Selling “Copier Warrior” to Leader of the Sales Rebellion (Part 1)"
+    podcast: "Sales Success Stories Podcast"
+    link: "https://top1.fm/episode-71-the-copier-warrior-with-dale-dupree-part-1/"
   - title: "713: Join The Sales Rebellion, With Dale Dupree"
     podcast: Andy Paul
     link: "https://www.andypaul.com/713-join-the-sales-rebellion-with-dale-dupree/"
