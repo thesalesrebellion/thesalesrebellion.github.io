@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: How to get better at cold calling
+    podcast: "Freshworks: Uncomplicate"
+    link: "https://www.freshworks.com/saas/uncomplicate-how-to-get-better-at-cold-calling-blog/"
   - title: "Episode 71: Dale Dupree – From Top Selling “Copier Warrior” to Leader of the Sales Rebellion (Part 1)"
     podcast: "Sales Success Stories Podcast"
     link: "https://top1.fm/episode-71-the-copier-warrior-with-dale-dupree-part-1/"
