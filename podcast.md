@@ -15,6 +15,12 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "The winning attitude of a sales warrior w/Dale Dupree"
+    podcast: "SALES Network1"
+    link: "https://www.salesnetwork1.com/podcast/episode/376b0726/8-the-winning-attitude-of-a-sales-warrior-withdale-dupree"
+  - title: "Episode 09 - Who Taught You HOW To Love?"
+    podcast: "The Pursuit of Love"
+    link: "https://www.steveclaydon.com/podcast/episode/37a28e83/episode-09-who-taught-you-how-to-love"
   - title: How to get better at cold calling
     podcast: "Freshworks: Uncomplicate"
     link: "https://www.freshworks.com/saas/uncomplicate-how-to-get-better-at-cold-calling-blog/"
