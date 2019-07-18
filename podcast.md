@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Flipping the \"P\" in Sales w/Dale Dupree"
+    podcast: "Unleash Possible"
+    link: "http://marketingadvisorynetwork.com/resources/unleash-possible-podcast/"
   - title: "The winning attitude of a sales warrior w/Dale Dupree"
     podcast: "SALES Network1"
     link: "https://www.salesnetwork1.com/podcast/episode/376b0726/8-the-winning-attitude-of-a-sales-warrior-withdale-dupree"
