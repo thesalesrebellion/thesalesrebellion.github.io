@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "How to converse with a Sales Guru and not talk about sales...with Dale Dupree"
+    podcast: "The #AskJoel Show with Joel Wolh"
+    link: "https://anchor.fm/joel355/episodes/How-to-converse-with-a-Sales-Guru-and-not-talk-about-sales-----with-Dale-Dupree-e4kobu"
   - title: "Flipping the \"P\" in Sales w/Dale Dupree"
     podcast: "Unleash Possible"
     link: "http://marketingadvisorynetwork.com/resources/unleash-possible-podcast/"
