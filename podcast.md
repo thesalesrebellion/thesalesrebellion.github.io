@@ -15,6 +15,12 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode 73: Dale Dupree – From Top Selling “Copier Warrior” to Leader of the Sales Rebellion (Part 2)"
+    podcast: "Sales Success Stories Podcast"
+    link: "https://top1.fm/episode-73-dale-dupree-from-top-selling-copier-warrior-to-leader-of-the-sales-rebellion-part-2/"
+  - title: "Sales Tip 186: Basic Human Interaction – Dale Dupree"
+    podcast: "Daily Sales Tips"
+    link: "https://top1.fm/DailySalesTips/sales-tip-186-basic-human-interaction-dale-dupree/"
   - title: "How to converse with a Sales Guru and not talk about sales...with Dale Dupree"
     podcast: "The #AskJoel Show with Joel Wolh"
     link: "https://anchor.fm/joel355/episodes/How-to-converse-with-a-Sales-Guru-and-not-talk-about-sales-----with-Dale-Dupree-e4kobu"
