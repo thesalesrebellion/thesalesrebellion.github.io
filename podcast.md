@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "HC036 - The Sales Rebellion - with Dale Dupree"
+    podcast: "The Human Conversation Podcast"
+    link: "https://podcasts.apple.com/us/podcast/hc036-the-sales-rebellion-with-dale-dupree/id1390248559?i=1000447116723"
   - title: "Episode 73: Dale Dupree – From Top Selling “Copier Warrior” to Leader of the Sales Rebellion (Part 2)"
     podcast: "Sales Success Stories Podcast"
     link: "https://top1.fm/episode-73-dale-dupree-from-top-selling-copier-warrior-to-leader-of-the-sales-rebellion-part-2/"
