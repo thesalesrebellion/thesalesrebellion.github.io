@@ -15,6 +15,18 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Humanise your pipeline, & get better sales with Dale Dupree"
+    podcast: "Dream Again Marketing"
+    link: "https://www.youtube.com/watch?v=XU-bGbC_cpI"
+  - title: "Dale Dupree (Ep.60) - Founder, The Sales Rebellion"
+    podcast: "Just Get Started"
+    link: "https://shows.pippa.io/justgetstarted/episodes/daledupree"
+  - title: "22: Life-Size Cutout w/ Dale Dupree"
+    podcast: "How to Get a Meeting With Anyone"
+    link: "https://podcasts.apple.com/us/podcast/22-life-size-cutout-w-dale-dupree/id1355846130?i=1000412120795"
+  - title: "197: Don’t Be the Weird Uncle - Dale Dupree"
+    podcast: "Daily Sales Tips"
+    link: "https://podcasts.apple.com/us/podcast/daily-sales-tips/id1448104149?i=1000446087238"
   - title: "HC036 - The Sales Rebellion - with Dale Dupree"
     podcast: "The Human Conversation Podcast"
     link: "https://podcasts.apple.com/us/podcast/hc036-the-sales-rebellion-with-dale-dupree/id1390248559?i=1000447116723"
@@ -51,6 +63,9 @@ guest-posts:
   - title: "068 – Give to Get: Breaking Down Real Human Emotion | Dale Dupree"
     podcast: Sales Tuners
     link: "https://www.salestuners.com/dale-dupree/"
+  - title: "Seamless.AI"
+    podcast: "Dale Dupree: Rockstar Turns Copier Sales Warrior"
+    link: "https://www.youtube.com/watch?v=JJKeoHAwItc"
   - title: "Sales Tip 61: Radically Educate – Dale Dupree"
     podcast: Daily Sales Tips
     link: "https://top1.fm/DailySalesTips/sales-tip-61-radically-educate-dale-dupree/"
