@@ -15,7 +15,7 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
-  - title: "Episode #21 - Want To Know How To Stand Out As The "Go To" Sales Person?"
+  - title: 'Episode #21 - Want To Know How To Stand Out As The "Go To" Sales Person?'
     podcast: "The Personal Branding Coach"
     link: "https://anchor.fm/mary-henderson/episodes/Episode-21---Want-To-Know-How-To-Stand-Out-As-The-Go-To-Sales-Person-e56cb0"
   - title: "Humanise your pipeline, & get better sales with Dale Dupree"
