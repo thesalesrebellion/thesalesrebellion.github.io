@@ -1,5 +1,7 @@
 ---
 header:
+  - url: /about/
+    title: About
   - url: /learn/
     title: Learn
   - url: /train/
