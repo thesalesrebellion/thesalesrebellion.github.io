@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Ep 030 – Dale Dupree, more commonly known as The Copier Warrior and is the appointed Leader and Founder of The Sales Rebellion"
+    podcast: "Go Big or Go Broke"
+    link: "https://cathykarabetsos.com/uncategorized/dale-dupree-more-commonly-known-as-the-copier-warrior-and-is-the-appointed-leader-and-founder-of-the-sales-rebellion/"
   - title: 'Episode #21 - Want To Know How To Stand Out As The "Go To" Sales Person?'
     podcast: "The Personal Branding Coach"
     link: "https://anchor.fm/mary-henderson/episodes/Episode-21---Want-To-Know-How-To-Stand-Out-As-The-Go-To-Sales-Person-e56cb0"
