@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Sales Tip 275: How to Truly Reach Your True Potential – Dale Dupree"
+    podcast: "Daily Sales Tips"
+    link: "https://top1.fm/DailySalesTips/sales-tip-275-how-to-truly-reach-your-true-potential-dale-dupree/"
   - title: "Ep 030 – Dale Dupree, more commonly known as The Copier Warrior and is the appointed Leader and Founder of The Sales Rebellion"
     podcast: "Go Big or Go Broke"
     link: "https://cathykarabetsos.com/uncategorized/dale-dupree-more-commonly-known-as-the-copier-warrior-and-is-the-appointed-leader-and-founder-of-the-sales-rebellion/"
