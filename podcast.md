@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Leading a Sales Rebellion with Dale Dupree"
+    podcast: "TAG! Sales & Marketing Podcast"
+    link: "https://tagteamup.com/49-2/"
   - title: "Sales Tip 275: How to Truly Reach Your True Potential – Dale Dupree"
     podcast: "Daily Sales Tips"
     link: "https://top1.fm/DailySalesTips/sales-tip-275-how-to-truly-reach-your-true-potential-dale-dupree/"
