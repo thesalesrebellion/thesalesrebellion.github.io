@@ -136,9 +136,11 @@ a.button.disabled:hover {
   color: #201f1f;
 }
 
-.button.red {
+.button.red,
+.red .button {
   border: 1px solid #ff1744;
 }
+
 .button.ghost {
   background: none;
   color: #fff;
@@ -152,9 +154,53 @@ a.button.disabled:hover {
 }
 
 .button.red:hover,
-.button.red:focus {
+.button.red:focus,
+.red .button:hover,
+.red .button:focus {
   background: none;
   box-shadow: 5px 5px 0px #ff1744;
+  color: #fff;
+}
+
+.button.green,
+.green .button {
+  border: 1px solid #00f7b2;
+}
+
+.button.green:hover,
+.button.green:focus,
+.green .button:hover,
+.green .button:focus {
+  background: none;
+  box-shadow: 5px 5px 0px #00f7b2;
+  color: #fff;
+}
+
+.button.yellow,
+.yellow .button {
+  border: 1px solid #ffeb00;
+}
+
+.button.yellow:hover,
+.button.yellow:focus,
+.yellow .button:hover,
+.yellow .button:focus {
+  background: none;
+  box-shadow: 5px 5px 0px #ffeb00;
+  color: #fff;
+}
+
+.button.purple,
+.purple .button {
+  border: 1px solid #a501ff;
+}
+
+.button.purple:hover,
+.button.purple:focus,
+.purple .button:hover,
+.purple .button:focus {
+  background: none;
+  box-shadow: 5px 5px 0px #a501ff;
   color: #fff;
 }
 
@@ -382,18 +428,25 @@ div.about .social {
 }
 
 .tabs {
+  background-color: transparent;
   border: none;
-  display: table;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.tabs li {
+  width: 25%;
 }
 
 .tabs-content,
 .accordion-content {
+  background-color: transparent;
   border: none;
+  color: #fff;
 }
 
 .tabs-content h3 {
   display: inline-block;
+  margin-top: 50px;
 }
 
 .tabs-content ul {
@@ -404,30 +457,92 @@ div.about .social {
 .tabs-content h2,
 .tabs-content li p,
 .tabs-content li strong {
-  font-family: CinnabarBrush;
 }
 
 .tabs-title > a,
 .accordion-title {
   border: 0;
   border-bottom: 2px solid #dedede;
-  color: #727272;
+  color: #fff;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .tabs-title > a:focus,
+.tabs-title > a:hover,
 .tabs-title > a[aria-selected=true],
 .accordion-title:focus,
 .accordion-title:hover,
 .accordion-title[aria-selected=true] {
-  background: #fff;
-  border-bottom: 2px solid #ff1744;
-  color: #201f1f;
+  background: transparent;
+  color: #fff;
 }
 
-.tabs-title li {
-  display: table-cell;
+a#rebel-leader-label:hover,
+a#rebel-leader-label:focus,
+a#rebel-leader-label[aria-selected=true] {
+  border-bottom: 2px solid #ff003b;
+}
+
+a#group-coaching-label:hover,
+a#group-coaching-label:focus,
+a#group-coaching-label[aria-selected=true] {
+  border-bottom: 2px solid #00f7b2;
+}
+
+a#bootcamps-label:hover,
+a#bootcamps-label:focus,
+a#bootcamps-label[aria-selected=true] {
+  border-bottom: 2px solid #ffeb00;
+}
+
+a#speaking-label:hover,
+a#speaking-label:focus,
+a#speaking-label[aria-selected=true] {
+  border-bottom: 2px solid #a501ff;
+}
+
+.tabs-content .tabs-panel {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.tabs-content .button {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.accordion {
+  background-color: transparent;
+}
+
+.red .details {
+  color: #ff003b;
+}
+
+.green .details {
+  color: #00f7b2;
+}
+
+.yellow .details {
+  color: #ffeb00;
+}
+
+.yellow .details fieldset {
+  border: 1px solid;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.yellow .details p {
+  color: #fff;
+}
+
+.purple .details {
+  color: #a501ff;
 }
 
 .check li {
@@ -482,15 +597,19 @@ div.about .social {
   clear: left;
 }
 
+.join-cta {
+  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #000 51%, #000 100%) #000;
+}
+
+body.train .join-cta {
+  background: linear-gradient(to bottom, #050327 0%, #050327 50%, #000 51%, #000 100%) #000;
+}
+
 .join-cta h2 {
   background-image: url('/img/sales-legend.svg');
   font-size: 28px;
   margin: 0 auto 30px;
   max-width:600px;
-}
-
-.join-cta {
-  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #000 51%, #000 100%) #000;
 }
 
 .join-cta h2 {
