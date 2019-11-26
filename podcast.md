@@ -15,6 +15,12 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "David Brier and Dale Dupree"
+    podcast: "SALES and BRANDING Unleashed"
+    link: "https://www.youtube.com/watch?v=L7RRo4ijrOo"
+  - title: "37: Don’t Pitch, Tell a Story w/ Dale Dupree"
+    podcast: "The B2B Sales Show"
+    link: "http://b2bsales.libsyn.com/37-dont-pitch-tell-a-story-w-dale-dupree"
   - title: "PC. VS. Mac Death Match & Meet Dale Dupree : Founder Of The Sales Rebellion"
     podcast: "The T2 Tech Talk Podcast"
     link: "https://soundcloud.com/t2techtalkpodcast/meet-dale-dupree"
