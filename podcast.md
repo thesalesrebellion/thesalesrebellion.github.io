@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Dale Dupree, Leader and CEO of the Sales Rebellion"
+    podcast: "Tom Roten Morning Show"
+    link: "https://www.iheart.com/podcast/512-tom-roten-morning-show-28270078/episode/dale-dupree-leader-and-ceo-of-53770410/"
   - title: "50: How to Reach 30,000 Views on Your LinkedIn Post w/ Dale Dupree"
     podcast: "The B2B Sales Show"
     link: "http://b2bsales.libsyn.com/50-how-to-reach-30000-views-on-your-linkedin-post-w-dale-dupree"
