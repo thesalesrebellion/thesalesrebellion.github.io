@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Uncommon Sales Success with Dale Dupree"
+    podcast: "Span the Chasm"
+    link: "https://spanthechasm.com/podcast/uncommon-sales-success-with-dale-dupree/"
   - title: "Dale Dupree, Leader and CEO of the Sales Rebellion"
     podcast: "Tom Roten Morning Show"
     link: "https://www.iheart.com/podcast/512-tom-roten-morning-show-28270078/episode/dale-dupree-leader-and-ceo-of-53770410/"
