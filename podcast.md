@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Dale Dupree – How This Dad Is Leading The Sales Rebellion"
+    podcast: "Dad the Best I Can Show"
+    link: "https://dadthebestican.com/dale-dupree/"
   - title: "60: 4-Part Creative Process for Salespeople w/ Dale Dupree"
     podcast: "The B2B Sales Show"
     link: "http://b2bsales.libsyn.com/60-4-part-creative-process-for-salespeople-w-dale-dupree"
