@@ -25,7 +25,7 @@ principles:
       <a class="button" style="margin-bottom: 60px" href="/join/">Join the Rebellion</a>
       <div class="vimeo">
         <a><img src="/img/icon-red-play.png" /></a>
-        <iframe id="video" style="display:none" title="Welcome to The Sales Rebellion Video" src='https://player.vimeo.com/video/320590883?byline=false&title=false&portrait=false&controls=0' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <div id="video" style="display:none"></div>
       </div>
     </div>
   </div>

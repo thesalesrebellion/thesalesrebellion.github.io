@@ -30,10 +30,23 @@ $('.podcast').ready(function() {
   });
 });
 
-$('.vimeo a').on('click', function() {
-  $(this).hide();
-  $iframe = $('.vimeo iframe');
-  var player = new Vimeo.Player('video');
-  player.play();
-  $iframe.show();
-})
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('video', {
+    videoId: 'hH0SwbOPbR4',
+    width: '100%',
+    height: '100%',
+    playerVars: {
+      end: 0, autoplay: 0, loop: 0, controls: 0, showinfo: 0, modestbranding: 1, fs: 0, cc_load_policty: 0, iv_load_policy: 3, autohide: 0
+    }, events: {
+      'onReady': onPlayerReady
+    }
+  });
+
+  function onPlayerReady(event) {
+    $('.vimeo a').on('click', function() {
+      $(this).hide();
+      $('#video').show();
+      player.playVideo();
+    });
+  }
+}
