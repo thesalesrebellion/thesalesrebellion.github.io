@@ -53,6 +53,18 @@ p {
   font-size: 18px;
 }
 
+.watchme {
+  background: url(../img/arrow.png) 349px -64px no-repeat;
+  font-family: CFGlitchCity;
+  margin: 0 auto;
+  max-width: 600px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 190px;
+  text-align: right;
+  padding-top: 50px;
+}
+
 .bg-icons p:before {
   background-size: 80px 80px;
   content: "";
