@@ -6,7 +6,6 @@
   font-family: 'CFGlitchCity';
   src: url('../font/CFGlitchCity-Regular.eot');
   src: url('../font/CFGlitchCity-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../font/CFGlitchCity-Regular.woff2') format('woff2'),
        url('../font/CFGlitchCity-Regular.woff') format('woff'),
        url('../font/CFGlitchCity-Regular.ttf') format('truetype');
 }
