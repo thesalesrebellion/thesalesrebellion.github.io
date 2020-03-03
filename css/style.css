@@ -335,7 +335,8 @@ hr {
   padding-left: 40px;
 }
 
-.vimeo {
+.vimeo,
+.youtube {
   height: 0;
   margin-bottom: 50px;
   max-width: 100%;
@@ -344,6 +345,9 @@ hr {
   position: relative;
 }
 
+.youtube iframe,
+.youtube object,
+.youtube embed,
 .vimeo iframe,
 .vimeo object,
 .vimeo embed {
@@ -354,12 +358,14 @@ hr {
   width: 100%;
 }
 
+.youtube a,
 .vimeo a {
   display: block;
   margin: 15% auto 0;
   width: 134px;
 }
 
+.vimeo img,
 .vimeo img {
   width: 134px;
 }

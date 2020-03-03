@@ -24,7 +24,7 @@ principles:
       <h1 class="text-xlarge text-center" style="margin-bottom:40px">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
       <a class="button" style="margin-bottom: 60px" href="/join/">Join the Rebellion</a>
       <p class="watchme">watch me to start your own Rebellion</p>
-      <div class="vimeo">
+      <div class="youtube">
         <a><img src="/img/icon-red-play.png" /></a>
         <div id="video" style="display:none"></div>
       </div>

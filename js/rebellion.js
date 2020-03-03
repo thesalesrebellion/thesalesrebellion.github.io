@@ -30,6 +30,14 @@ $('.podcast').ready(function() {
   });
 });
 
+$('.vimeo a').on('click', function() {
+  $(this).hide();
+  $iframe = $('.vimeo iframe');
+  var player = new Vimeo.Player('video');
+  player.play();
+  $iframe.show();
+})
+
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('video', {
     videoId: 'hH0SwbOPbR4',
@@ -43,7 +51,7 @@ function onYouTubeIframeAPIReady() {
   });
 
   function onPlayerReady(event) {
-    $('.vimeo a').on('click', function() {
+    $('.youtube a').on('click', function() {
       $(this).hide();
       $('#video').show();
       player.playVideo();
