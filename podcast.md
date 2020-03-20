@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode 3: How has tech impacted Sales?"
+    podcast: "Tech & Flow Podcast"
+    link: "https://open.spotify.com/episode/0ptIzsJFJ2lwjsyUiBSYeg?si=pVxTZ_teSNihSga_xhHqSA"
   - title: "HC036 - The Sales Rebellion - with Dale Dupree"
     podcast: "The Human Conversation - with Jules White"
     link: "https://soundcloud.com/liveitloveitsellit/hc036-the-sales-rebellion-with-dale-dupree"
