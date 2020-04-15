@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "It’s About Relationship & Trust, Not About A Number"
+    podcast: "B2B Growth"
+    link: "https://sweetfishmedia.com/show/b2b-growth/relationship-trust-dale-dupree/"
   - title: "#014: Why Sales Reps NEED To Be Marketing - Dale Dupree"
     podcast: "Sam's Business Growth Show"
     link: "https://anchor.fm/sams-business-growth-show/episodes/014-Why-Sales-Reps-NEED-To-Be-Marketing---Dale-Dupree-ecjcgu"
