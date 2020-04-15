@@ -16,7 +16,7 @@ section: home
     </div>
   </div>
   <div class="column large-6 inverse">
-    <p style="font-size: 36px; max-width: 440px; margin: 50px auto">Hey friend,<br />thanks for scanning the QR code - watch this video!</p>
+    <p style="font-size: 36px; max-width: 440px; margin: 10px auto">Hey friend,<br />thanks for scanning the QR code - watch this video!</p>
     <a href="http://calendly.com/rebelleader" style="background-color: #0bf2b6; padding: 10px 50px; border-radius: 10px; color: #040425; box-shadow: 0 0 40px 0 #0bf2b6; margin: 0 auto; display: block; max-width: 400px; text-align: center; font-size: 20px">Schedule a Meeting with The Copier Warrior</a>
   </div>
 </div>
