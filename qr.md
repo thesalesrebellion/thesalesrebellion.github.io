@@ -11,7 +11,7 @@ section: home
 </div>
 <div class="row" style="margin-bottom:50px">
   <div class="column large-6">
-    <div class="responsive-embed" style="border:5px solid #0bf2b6;box-shadow: 0 0 40px 0 #0bf2b6">
+    <div class="responsive-embed widescreen" style="border:5px solid #0bf2b6;box-shadow: 0 0 40px 0 #0bf2b6">
       <iframe src="https://www.youtube.com/embed/8iDG3139duk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding:10px"></iframe>
     </div>
   </div>
