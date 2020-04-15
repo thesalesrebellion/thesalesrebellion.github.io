@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Rebelling Against Sales is All That's Left with Dale Dupree"
+    podcast: "Humans of LinkedIn"
+    link: "https://skymousestudios.com/humans-of-linkedin/rebelling-against-sales-is-all-that-is-left-with-dale-dupree/"
   - title: "It’s About Relationship & Trust, Not About A Number"
     podcast: "B2B Growth"
     link: "https://sweetfishmedia.com/show/b2b-growth/relationship-trust-dale-dupree/"
