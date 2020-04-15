@@ -46,6 +46,7 @@ section: home
   </div>
   <div class="column medium-8 inverse">
     <h2 style="color:#eb2570">SUCCESS STORY #225</h2>
-    <p style="font-weight:bold">&ldquo;I've been working with Dale, and his company for several years.  The training they provided was imperative in helping the rebellion on many occasions. Dale surpassed all previous training I was familiar with by offering new and more unique tactics than those I’d learned when training on Dagobah. I never thought I’d find a trainer more tactful than Yoda until I met Dale. The force is strong with this one.&rdquo; - Lurk SkyWalkers</p>
+    <p style="font-weight:bold;margin-bottom:50px">&ldquo;I've been working with Dale, and his company for several years.  The training they provided was imperative in helping the rebellion on many occasions. Dale surpassed all previous training I was familiar with by offering new and more unique tactics than those I’d learned when training on Dagobah. I never thought I’d find a trainer more tactful than Yoda until I met Dale. The force is strong with this one.&rdquo; - Lurk SkyWalkers</p>
+    <a href="http://calendly.com/rebelleader" style="background-color: #0bf2b6; padding: 10px 50px; border-radius: 10px; color: #040425; box-shadow: 0 0 40px 0 #0bf2b6; margin: 0 auto; display: block; max-width: 700px; text-align: center; font-size: 20px">Don't wait, book now and secure your place within the Rebellion</a>
   </div>
 </div>
