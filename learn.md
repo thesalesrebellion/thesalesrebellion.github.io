@@ -40,7 +40,7 @@ courses:
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
-    image: "/img/logo-small.jpg"
+    image: "/img/living-pipeline.jpg"
     description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
     disabled: true
   - title: K.N.O.W.
