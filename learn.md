@@ -24,6 +24,14 @@ courses:
     type: Interrupt Marketing
     image: "/img/learn-reason.jpg"
     description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
+  - title: Living Pipeline
+    link: "#"
+    lesson_count: 7
+    length: 3hr 40min
+    type: Interrupt Marketing
+    image: "/img/living-pipeline.jpg"
+    description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
+    disabled: true
   - title: Xochil Presence
     price: $350
     link: "https://thesalesrebellion.teachable.com/p/xochil-presence"
@@ -35,14 +43,6 @@ courses:
       The age of digital transformation is upon us. Knowledge abounds, access is plentiful, and we launch thoughts into cyberspace at hyper speed. For worse or for better social media has transformed the way we communicate and how we are connected. That’s why harnessing its potential can be a game-changer for any sales professional.
 
       This is your atlas for the digital landscape that must be conquered. Various know-how for traversing this binary terrain and conveying your epic personal brand await you.
-  - title: Living Pipeline
-    link: "#"
-    lesson_count: 7
-    length: 3hr 40min
-    type: Interrupt Marketing
-    image: "/img/living-pipeline.jpg"
-    description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
-    disabled: true
   - title: K.N.O.W.
     link: "#"
     lesson_count: 7
