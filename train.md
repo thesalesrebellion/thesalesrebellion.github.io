@@ -15,7 +15,7 @@ programs:
 
       Our coaching is designed to cause you to look at sales through the eyes of our Rebellion. This causes you to drive more activity, build more relationships, increase the quality of interactions with your prospects.  We help you build the skills needed to take your career to the top of every mountain you want to climb.
     details: |-
-      ### This program includes the following:
+      ### This program includes the following: {#rebel-leader-details}
 
       One-hour 1x1 Coaching Calls
 
@@ -40,7 +40,7 @@ programs:
 
       One of the greatest values of our Rebel Coalition coaching sessions is that you will hear from, and engage with, others around the sales world who are rebelling against the status quo.
     details: |-
-      ### This program includes the following:
+      ### This program includes the following: {#group-coaching-details}
 
       Submit questions directly for discussion
 
@@ -97,7 +97,7 @@ programs:
 
       Whether you have a 15 minute slot, or you need someone to pull out a filibuster, The Sales Rebellion is here to serve. Let the Copier Warrior himself set your organization on fire with any one of his impactful, sales-driven keynote speeches.
     details: |-
-      ### Here are just a few of the events that stand to benefit from our sales rhetoric:
+      ### Here are just a few of the events that stand to benefit from our sales rhetoric: {#public-speaking-details}
 
       Sales Kick-offs
 
@@ -114,7 +114,7 @@ programs:
 <div class="row" style="margin-bottom:80px">
   <div class="column medium-8 medium-offset-2 inverse text-center">
     <h1 class="text-xlarge">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
-    <p>{{ page.subheading | markdownify }}</p>
+    {{ page.subheading | markdownify }}
   </div>
 </div>
 <div style="padding-top:40px">
@@ -143,7 +143,7 @@ programs:
             {% endif %}
           </div>
           {% endif %}
-          <a class="button secondary ghost" href="mailto:dale@thesalesrebellion.com?subject={{ program.title | url_escape }}!" style="max-width:none">{{ program.cta-text }}</a>
+          <a class="button secondary ghost" href="mailto:dale@thesalesrebellion.com?subject={{ program.title | url_encode }}!" style="max-width:none">{{ program.cta-text }}</a>
         </div>
         {% endfor %}
       </div>
