@@ -127,7 +127,7 @@ programs:
       </ul>
       <div class="tabs-content" data-tabs-content="rebellion-tabs">
         {% for program in page.programs %}
-        <div class="columns large-8 large-offset-2 end tabs-panel {{ program.color }}{% if forloop.first %} is-active{% endif %}" id="{{ program.hash }}">
+        <div class="large-8 large-offset-2 end tabs-panel {{ program.color }}{% if forloop.first %} is-active{% endif %}" id="{{ program.hash }}">
           <h2>{{ program.title }}</h2>
           {{ program.body | markdownify }}
           {% if program.details %}
