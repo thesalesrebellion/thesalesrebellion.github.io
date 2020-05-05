@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "#97: Dale Dupree of The Sales Rebellion — Choose To Be Legendary"
+    podcast: "Sales Leadership Podcast"
+    link: "https://www.xvoyant.com/resources/97-dale-dupree-of-the-sales-rebellion-choose-to-be-legendary/"
   - title: "Rebelling Against Sales is All That's Left with Dale Dupree"
     podcast: "Humans of LinkedIn"
     link: "https://skymousestudios.com/humans-of-linkedin/rebelling-against-sales-is-all-that-is-left-with-dale-dupree/"
