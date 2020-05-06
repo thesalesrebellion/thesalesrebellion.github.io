@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode 7 -- The Sales Rebellion"
+    podcast: "Bucket List Living with Brad Norwood"
+    link: "https://www.youtube.com/watch?v=kYRJzCteXww"
   - title: "#97: Dale Dupree of The Sales Rebellion — Choose To Be Legendary"
     podcast: "Sales Leadership Podcast"
     link: "https://www.xvoyant.com/resources/97-dale-dupree-of-the-sales-rebellion-choose-to-be-legendary/"
