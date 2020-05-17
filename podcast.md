@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode #20 – Educating your prospects with Dale Dupree"
+    podcast: "Monster Chats"
+    link: "https://monstervoip.com/episode-20-educating-your-prospects-with-dale-dupree/"
   - title: "Learn to Sell Like a Rebel with Dale Dupree"
     podcast: "Lead Sell Grow - The Human Experience"
     link: "https://lead-sell-grow-the-human-experience.simplecast.com/episodes/how-to-get-their-attention-be-different-and-close-more-sales-with-dale-dupree-otpYLa42"
