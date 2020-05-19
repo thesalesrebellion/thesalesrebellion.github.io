@@ -8,8 +8,6 @@ header:
     title: Train
   - url: /podcast/
     title: Podcast
-  - url: /merch/
-    title: Merch
   - url: /join/
     title: Join the Rebellion
     class: button
