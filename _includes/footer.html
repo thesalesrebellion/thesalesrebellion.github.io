@@ -14,11 +14,13 @@
     <div class="column medium-6"></div>
     <div class="column medium-3">
       <ul class="menu align-right vertical">
-        <li><a href="/learn/">Learn</a></li>
-        <li><a href="/train/">Train</a></li>
-        <li><a href="/podcast/">Podcast</a></li>
-        <li><a href="/merch/">Merch</a></li>
-        <li><a href="/join/">Join the Rebellion</a></li>
+        {% for item in site.data.menus.header %}
+        {% if item.class == null %}
+        <li>
+          <a class="{{ item.class }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </div>
