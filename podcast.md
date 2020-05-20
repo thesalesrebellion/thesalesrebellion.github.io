@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Creative Sales Strategies with Dale Dupree"
+    podcast: "Future Proof Selling Podcast"
+    link: "https://growthacumen.com.au/dale-dupree-creative-sales-strategies-podcast/"
   - title: "Episode #20 – Educating your prospects with Dale Dupree"
     podcast: "Monster Chats"
     link: "https://monstervoip.com/episode-20-educating-your-prospects-with-dale-dupree/"
