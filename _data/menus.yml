@@ -1,11 +1,11 @@
 ---
 header:
   - url: /about/
-    title: About
+    title: Squad
   - url: /learn/
-    title: Learn
+    title: Base Camp
   - url: /train/
-    title: Train
+    title: Coaching
   - url: /podcast/
     title: Podcast
   - url: /join/

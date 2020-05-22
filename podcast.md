@@ -1,5 +1,5 @@
 ---
-title: Podcast
+title: Selling Local, Powered by The Sales Rebellion
 permalink: /podcast/
 section: podcast inverse
 heading: "**The Sales Rebellion Podcast.**"

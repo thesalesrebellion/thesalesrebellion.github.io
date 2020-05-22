@@ -1,5 +1,5 @@
 ---
-title: About
+title: Rebel Squadron
 permalink: /about/
 section: about inverse
 members:

@@ -1,5 +1,5 @@
 ---
-title: Train
+title: Rebel Training Programs
 permalink: /train/
 section: train
 heading: "**Become a Rebel Leader.**"

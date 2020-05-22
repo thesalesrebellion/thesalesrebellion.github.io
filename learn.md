@@ -1,5 +1,5 @@
 ---
-title: Learn
+title: Rebel Base Camp
 permalink: /learn/
 section: learn overlay
 heading: "**Revolutionize your Sales Outlook.**"
