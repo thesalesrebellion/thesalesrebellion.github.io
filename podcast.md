@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Episode 80 - SEASON 3 FINALE - Dale Dupree, Leader of The Sales Rebellion"
+    podcast: "The Lunch Break Podcast"
+    link: "https://anchor.fm/thelunchbreakpodcast/episodes/Episode-80---SEASON-3-FINALE---Dale-Dupree--Leader-of-The-Sales-Rebellion-eepndf"
   - title: "Creative Sales Strategies with Dale Dupree"
     podcast: "Future Proof Selling Podcast"
     link: "https://growthacumen.com.au/dale-dupree-creative-sales-strategies-podcast/"
