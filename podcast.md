@@ -116,7 +116,7 @@ guest-posts:
     link: "https://podcasts.apple.com/us/podcast/22-life-size-cutout-w-dale-dupree/id1355846130?i=1000412120795"
   - title: "197: Don’t Be the Weird Uncle - Dale Dupree"
     podcast: "Daily Sales Tips"
-    link: "https://podcasts.apple.com/us/podcast/daily-sales-tips/id1448104149?i=1000446087238"
+    link: "https://open.spotify.com/episode/1xBD9kBK7TJVTmmbWuXRrw"
   - title: "HC036 - The Sales Rebellion - with Dale Dupree"
     podcast: "The Human Conversation Podcast"
     link: "https://podcasts.apple.com/us/podcast/hc036-the-sales-rebellion-with-dale-dupree/id1390248559?i=1000447116723"
