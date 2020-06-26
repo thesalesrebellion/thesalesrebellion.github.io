@@ -1,0 +1,27 @@
+name: HTMLProofer
+on:
+  push:
+    branches: develop
+  pull_request:
+    branches: develop
+jobs:
+  checklinks:
+    name: HTMLProofer
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache gems
+        id: bundler-cache
+        uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+      - uses:  lemonarc/jekyll-action@1.0.0
+      - name: HTMLProofer
+        uses: chabad360/htmlproofer@v1.1
+        with:
+          directory: "./_site"
