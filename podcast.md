@@ -6,7 +6,7 @@ heading: "**The Sales Rebellion Podcast.**"
 subheading: "Join Dale Dupree and Jeffery Villegas as they discuss ideas, tell sales stories, and share their vision for The Sales Rebellion with you!"
 podcast-services:
   - title: Selling Local Podcast on iTunes
-    link: "https://itunes.apple.com/us/podcast/selling-local-stories-tips-service/id1360290531?mt=2"
+    link: "https://podcasts.apple.com/us/podcast/selling-local-stories-tips-service/id1360290531?mt=2"
     image: "/img/podcast-apple.svg"
   - title: Selling Local Podcast on Spotify
     link: "https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E"
