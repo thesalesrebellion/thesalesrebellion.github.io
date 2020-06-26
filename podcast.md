@@ -226,11 +226,11 @@ guest-posts:
   <div class="player column medium-8 medium-offset-2">
     <hr />
     <div class="column medium-4">
-      <img class="podcast-image" src="" />
+      <img class="podcast-image" src="/img/podcast-loading.png" alt="Podcast image" />
     </div>
     <div class="column medium-8">
       <h3>Latest Episode</h3>
-      <a class="podcast-play"><img id="podcast-state" src="/img/icon-red-play.png" /></a>
+      <a class="podcast-play"><img id="podcast-state" src="/img/icon-red-play.png" alt="Play button" /></a>
       <audio id="podcast">Your browser does not support the audio element.</audio>
       <div class="podcast-title"></div>
       <p class="podcast-description"></p>

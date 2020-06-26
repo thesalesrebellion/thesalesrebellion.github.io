@@ -88,7 +88,7 @@ courses:
     {% for course in page.courses %}
     <div class="column column-block">
       <div class="container" data-equalizer-watch>
-        <img alt="" src="{{ course.image }}" />
+        <img alt="" src="{{ course.image }}" alt="{{ course.title }}" />
         {% if course.price %}<div class="price">{{ course.price }}</div>{% endif %}
         <div style="padding:30px">
           <h2 style="font-size:18px;font-weight:500">{{ course.title }}</h2>

@@ -25,7 +25,7 @@ principles:
       <a class="button" style="margin-bottom: 60px" href="/join/">Join the Rebellion</a>
       <p class="watchme">watch me to start your own Rebellion</p>
       <div class="youtube">
-        <a><img src="/img/icon-red-play.png" /></a>
+        <a><img src="/img/icon-red-play.png" alt="Play button" /></a>
         <div id="video" style="display:none"></div>
       </div>
     </div>

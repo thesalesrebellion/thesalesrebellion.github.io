@@ -26,7 +26,7 @@ included:
       <p>{{ page.subheading }}</p>
       <a class="button secondary red ghost" style="margin-bottom:50px" target="_blank" href="http://eepurl.com/gi6eo9">Be a Rebel</a>
       <div class="vimeo">
-        <a><img src="/img/icon-red-play.png" /></a>
+        <a><img src="/img/icon-red-play.png" alt="Play button" /></a>
         <iframe id="video" style="display:none" title="Welcome to The Sales Rebellion Video" src='https://player.vimeo.com/video/320590883?byline=false&title=false&portrait=false&api=1' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       </div>
     </div>

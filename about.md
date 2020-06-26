@@ -37,7 +37,7 @@ members:
       {% for member in page.members %}
       <div class="column column-block">
         <div class="about">
-          <img src="{{ member.image }}" />
+          <img src="{{ member.image }}" alt="{{ member.name }}" />
           <div class="name">{{ member.name }}</div>
           <div class="title">{{ member.title }}</div>
           <div class="phone">{{ member.phone}}</div>

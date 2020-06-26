@@ -23,26 +23,26 @@ section: home
 <hr style="background:none;border:3px solid #0bf2b6;box-shadow: 0 0 40px 2px #0bf2b6;height:auto;margin-top:100px" />
 <div class="row text-center" style="margin-bottom:50px;color:#0bf2b6;">
   <div class="column medium-3">
-    <img src="/img/brick.png" />
+    <img src="/img/brick.png" alt="Brick" />
     <p>99% of my clients received interrupt marketing from me before we met.</p>
   </div>
   <div class="column medium-3">
-    <img src="/img/phone-fire.png" />
+    <img src="/img/phone-fire.png" alt="Phone on fire" />
     <p>91% of my clients were stressing about their existing sales training programs.</p>
   </div>
   <div class="column medium-3">
-    <img src="/img/neon-dale.png" />
+    <img src="/img/neon-dale.png" alt="Dale" />
     <p>0.004% of my clients decide they don't like my beard and chose another provider.</p>
   </div>
   <div class="column medium-3">
-    <img src="/img/polyhedral-die.png" />
+    <img src="/img/polyhedral-die.png" alt="Polyhedral Die" />
     <p>87% of my students want to #ChangeTheGame.</p>
   </div>
 </div>
 <hr style="background:none;border:3px solid #0bf2b6;box-shadow: 0 0 40px 2px #0bf2b6;height:auto;margin-bottom:150px" />
 <div class="row" style="margin-bottom:50px">
   <div class="column medium-4">
-    <img src="/img/lurk-skywalkers.jpg" style="border:5px solid #eb2570;box-shadow: 0 0 40px 0 #eb2570;padding:10px" />
+    <img src="/img/lurk-skywalkers.jpg" alt="Lurk Skywalkers" style="border:5px solid #eb2570;box-shadow: 0 0 40px 0 #eb2570;padding:10px" />
   </div>
   <div class="column medium-8 inverse">
     <h2 style="color:#eb2570">SUCCESS STORY #225</h2>
