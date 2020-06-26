@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Dale Dupree - Founder of Sales Rebellion (Training & Coaching)"
+    podcast: "The NoDegree Podcast"
+    link: "https://www.nodegree.fm/episodes/dale-dupree-founder-of-sales-rebellion-training-coaching-hZsYO8xs"
   - title: "Episode 80 - SEASON 3 FINALE - Dale Dupree, Leader of The Sales Rebellion"
     podcast: "The Lunch Break Podcast"
     link: "https://anchor.fm/thelunchbreakpodcast/episodes/Episode-80---SEASON-3-FINALE---Dale-Dupree--Leader-of-The-Sales-Rebellion-eepndf"
