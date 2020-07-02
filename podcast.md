@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "007: The Sales Rebellion - Dale Dupree"
+    podcast: "The Sales Vitamin Podcast"
+    link: "https://podcasts.apple.com/us/podcast/007-the-sales-rebellion-dale-dupree/id1516565954?i=1000480926443"
   - title: "Dale Dupree - Founder of Sales Rebellion (Training & Coaching)"
     podcast: "The NoDegree Podcast"
     link: "https://www.nodegree.fm/episodes/dale-dupree-founder-of-sales-rebellion-training-coaching-hZsYO8xs"
