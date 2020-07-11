@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "A Boostrapped Sales Rebellion | Dale Dupree | Leader of The Sales Rebellion"
+    podcast: "Bootstrapped Growth"
+    link: "https://anchor.fm/bootstrappedgrowth/episodes/A-Boostrapped-Sales-Rebellion--Dale-Dupree--Leader-of-The-Sales-Rebellion-egg20j"
   - title: "Empowerful Leader Episode 115 - A Conversation with Dale Dupree"
     podcast: "Empowerful Leader Podcast"
     link: "https://podcasts.apple.com/us/podcast/empowerful-leader-episode-115-conversation-dale-dupree/id1505433863?i=1000483221807"
