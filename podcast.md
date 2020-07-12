@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Are You Courageous Enough To Join The Sales Rebellion?"
+    podcast: "TheInquisitor Podcast with Marcus Cauchi"
+    link: "https://marcuscauchi.podbean.com/e/are-you-courageous-enough-to-join-the-sales-rebellion/"
   - title: "A Boostrapped Sales Rebellion | Dale Dupree | Leader of The Sales Rebellion"
     podcast: "Bootstrapped Growth"
     link: "https://anchor.fm/bootstrappedgrowth/episodes/A-Boostrapped-Sales-Rebellion--Dale-Dupree--Leader-of-The-Sales-Rebellion-egg20j"
