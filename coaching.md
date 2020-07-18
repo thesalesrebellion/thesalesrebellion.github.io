@@ -1,6 +1,6 @@
 ---
 title: Rebel Training Programs
-permalink: /train/
+permalink: /coaching/
 section: train
 heading: "**Become a Rebel Leader.**"
 subheading: "Train directly with The Copier Warrior (leader of The Sales Rebellion) or one of his appointed Rebel Leaders that have been recruited from the highest ranks across the sales landscape. **We have many forms of coaching, training, and development programs to suit any need you or your company may have.**"
@@ -109,6 +109,8 @@ programs:
 
       In your basement, party of 1 + your mom makes lunch for our crew
     cta-text: "Find out more about Public Speaking options!"
+redirect_from:
+  - /train/
 ---
 
 <div class="row" style="margin-bottom:80px">

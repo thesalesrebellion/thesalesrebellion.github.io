@@ -12,3 +12,4 @@ defaults:
 
 plugins:
   - jekyll-menus
+  - jekyll-redirect-from

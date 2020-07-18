@@ -1,6 +1,6 @@
 ---
 title: Rebel Squadron
-permalink: /about/
+permalink: /squad/
 section: about inverse
 members:
   - name: Dale Dupree
@@ -29,6 +29,8 @@ members:
         image: "fab fa-linkedin"
       - link: https://www.instagram.com/_iamdad_/
         image: "fab fa-instagram"
+redirect_from:
+  - /about/
 ---
 
 <div class="row" style="padding:80px 0">

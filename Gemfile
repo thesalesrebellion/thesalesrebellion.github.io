@@ -18,6 +18,7 @@ gem "jekyll", "~> 4.0"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-menus"
+  gem "jekyll-redirect-from", "~> 0.15.0"
   gem "liquid_pluralize"
 end
 

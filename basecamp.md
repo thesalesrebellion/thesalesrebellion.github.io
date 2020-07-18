@@ -1,6 +1,6 @@
 ---
 title: Rebel Base Camp
-permalink: /learn/
+permalink: /basecamp/
 section: learn overlay
 heading: "**Revolutionize your Sales Outlook.**"
 subheading: |-
@@ -83,6 +83,8 @@ courses:
     image: "/img/logo-small.jpg"
     description: More courses to up your sales game coming soon.
     disabled: true
+redirect_from:
+  - /learn/
 ---
 
 <div class="row" style="margin-bottom:80px">
