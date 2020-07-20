@@ -24,22 +24,22 @@ courses:
     type: Interrupt Marketing
     image: "/img/learn-reason.jpg"
     description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
-  - title: Living Pipeline
-    link: "$350"
-    lesson_count: 7
-    length: 3hr 40min
-    type: Interrupt Marketing
-    image: "/img/living-pipeline.jpg"
-    description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
-    disabled: true
   - title: Rebel I.N.V.A.S.I.O.N.
-    link: "$350"
+    price: "$350"
     lesson_count: 7
     length: 3hr 40min
     type: Interrupt Marketing
     image: "/img/rebel-invasion.jpg"
     description: This is the survival guide for every sales cycle you ever enter. It's a checklist for you to be sure that you have covered all of your bases and that you see the deal clearly. A system that guides success. An INVASION breaks any deal into the fundamental elements that creates it and allows you to judge whether you have done your due diligence in guiding your prospect into becoming a client.
     disabled: true
+  - title: Living Pipeline
+    price: "$350"
+    link: "https://thesalesrebellion.teachable.com/p/living-pipeline"
+    lesson_count: 7
+    length: 3hr 40min
+    type: Interrupt Marketing
+    image: "/img/living-pipeline.jpg"
+    description: The Living Pipeline is a new way to organize your prospect list. This section develops a strategic approach to how a salesperson communicates with prospects that are not in the 30-day funnel. No matter what your sales cycle length, this approach is sure to be a relationship development tool that you don't want to miss.
   - title: Xochil Presence
     price: $350
     link: "https://thesalesrebellion.teachable.com/p/xochil-presence"
@@ -66,14 +66,6 @@ courses:
     type: Interrupt Marketing
     image: "/img/logo-small.jpg"
     description: This is where the rubber meets the road. Here, the synthesis of sales and marketing is created and the line between the two is destroyed. There is no room for a lag between the marketing department and the sales division.
-    disabled: true
-  - title: The Social Game
-    link: "#"
-    lesson_count: 7
-    length: 3hr 40min
-    type: Interrupt Marketing
-    image: "/img/logo-small.jpg"
-    description: This section is all about utilizing social media. We discuss the various platforms and how to create a strategic approach to building business via social media. We cover various demographics of each platform, as well as providing an understanding of the separate metrics and how to judge ROI in a digital space.
     disabled: true
   - title: To Be Continued...
     link: "#"
