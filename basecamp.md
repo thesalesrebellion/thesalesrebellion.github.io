@@ -24,14 +24,6 @@ courses:
     type: Interrupt Marketing
     image: "/img/learn-reason.jpg"
     description: REASON is a new outlook on life. This approach is an in-depth look at cold calling in the 21st century. We breakdown the social interaction of a first touch while developing a keen understanding of the assumptions and communication patterns that accompany sales experiences.
-  - title: Rebel I.N.V.A.S.I.O.N.
-    price: "$350"
-    lesson_count: 7
-    length: 3hr 40min
-    type: Interrupt Marketing
-    image: "/img/rebel-invasion.jpg"
-    description: This is the survival guide for every sales cycle you ever enter. It's a checklist for you to be sure that you have covered all of your bases and that you see the deal clearly. A system that guides success. An INVASION breaks any deal into the fundamental elements that creates it and allows you to judge whether you have done your due diligence in guiding your prospect into becoming a client.
-    disabled: true
   - title: Living Pipeline
     price: "$350"
     link: "https://thesalesrebellion.teachable.com/p/living-pipeline"
@@ -51,6 +43,14 @@ courses:
       The age of digital transformation is upon us. Knowledge abounds, access is plentiful, and we launch thoughts into cyberspace at hyper speed. For worse or for better social media has transformed the way we communicate and how we are connected. That’s why harnessing its potential can be a game-changer for any sales professional.
 
       This is your atlas for the digital landscape that must be conquered. Various know-how for traversing this binary terrain and conveying your epic personal brand await you.
+  - title: Rebel I.N.V.A.S.I.O.N.
+    price: "$350"
+    lesson_count: 7
+    length: 3hr 40min
+    type: Interrupt Marketing
+    image: "/img/rebel-invasion.jpg"
+    description: This is the survival guide for every sales cycle you ever enter. It's a checklist for you to be sure that you have covered all of your bases and that you see the deal clearly. A system that guides success. An INVASION breaks any deal into the fundamental elements that creates it and allows you to judge whether you have done your due diligence in guiding your prospect into becoming a client.
+    disabled: true
   - title: K.N.O.W.
     link: "#"
     lesson_count: 7
