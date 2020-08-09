@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Dale Dupree - Starting the Sales Rebellion"
+    podcast: "The Hot Mic @ Arch DevOps"
+    link: "https://www.listennotes.com/podcasts/the-hot-mic-arch/dale-dupree-starting-the-uqUCy-6K0xF/"
   - title: "Ep. 124: Dale Dupree"
     podcast: "Bridge the Gap Podcast"
     link: "https://btgvoice.com/ep-124-dale-dupree/"
