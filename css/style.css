@@ -10,6 +10,14 @@
        url('../font/CFGlitchCity-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Rebel';
+  src: url('../font/390BF8_0_0.eot');
+  src: url('../font/390BF8_0_0.eot?#iefix') format('embedded-opentype'),
+       url('../font/390BF8_0_0.woff') format('woff'),
+       url('../font/390BF8_0_0.ttf') format('truetype');
+}
+
 .inverse *, .inverse h1, .inverse h2, .inverse p, .inverse a {
   color: #fff;
 }
@@ -21,8 +29,7 @@ body {
   margin: 0;
 }
 
-body.home,
-body.about {
+body.home {
   background-image: url('../img/bg-homepage.png');
   background-position-y: 120px;
 }
@@ -338,7 +345,6 @@ hr {
 .vimeo,
 .youtube {
   height: 0;
-  margin-bottom: 50px;
   max-width: 100%;
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -422,6 +428,36 @@ div.about {
   text-align: center;
 }
 
+.about h1 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about h2 {
+  font-family: Rebel;
+  font-size: 34px;
+  font-style: italic;
+  text-shadow: 0 0 5px #FE1643, 0 0 25px #FE1643;
+}
+
+.about h3 {
+  font-family: Rebel;
+  font-size: 90px;
+  font-style: italic;
+  text-transform: uppercase
+}
+
+.about .social {
+  text-align: center;
+}
+
+.about .social a {
+  font-size: 30px;
+  margin: 10px;
+}
+
 div.about img {
   border-radius: 50%;
   margin: 20px 0 20px;
@@ -448,6 +484,93 @@ div.about .email {
 
 div.about .social {
   margin-top: 40px;
+}
+
+.rebels .column-block {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.rebels {
+  margin-bottom: 80px;
+}
+
+.rebels a {
+  background-image: url("/img/gridbg.png");
+  border: 5px solid #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.rebels .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.rebels a:hover .img-top {
+  display: inline;
+}
+
+.selected-rebel {
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: contain;
+}
+
+.rebel--detail {
+  border-bottom: 5px solid #1df2b6;
+  font-size: 25px;
+}
+
+.button--green {
+  background-color: #13f2b6;
+  display: block;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+
+.rebel--name {
+  font-weight: bold;
+}
+
+.rebel--info,
+.rebel--info span {
+  color: #13f2b6;
+  display: inline-block;
+  line-height: 77px;
+}
+
+.rebel--social a {
+  line-height: 77px;
+  padding: 0 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .about h3 {
+    font-size: 40px;
+  }
+
+  .selected-rebel {
+    border-bottom: none;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .rebel--info,
+  .rebel--info span {
+    line-height: inherit;
+  }
+
+  .button--green {
+    margin-top: 40px;
+  }
 }
 
 .tabs {

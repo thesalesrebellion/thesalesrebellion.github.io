@@ -26,7 +26,7 @@ $('.podcast').ready(function() {
     } else {
       $('#podcast-state').attr('src', '/img/icon-red-play.png');
       podcast.pause();
-   }
+    }
   });
 });
 
@@ -38,23 +38,54 @@ $('.vimeo a').on('click', function() {
   $iframe.show();
 })
 
+$('.rebels a').on('click', function(e) {
+  e.preventDefault();
+  var index = $('.rebels a').index($(this));
+
+  $.getJSON('/squad.json', function(data) {
+    var rebel = data[index];
+    $('.selected-rebel').attr('style', 'background-image: url("' + rebel.image_big + '")');
+    $('.rebel--name').html(rebel.name.toUpperCase());
+    $('.rebel--title').html(rebel.title);
+    $('.rebel--specialty').html(rebel.specialty);
+    $('.selected-rebel .button--green').attr('href', rebel.booking_link);
+    var $socials = $('.rebel--social');
+
+    $('.selected-rebel .youtube .video').hide();
+    var videoId = rebel.video.split('/').slice(-1)[0].split('?')[0];
+    players['rebel-video'].cueVideoById(videoId);
+    $('.youtube a').show();
+
+    $socials.empty()
+    $.each(rebel.socials, function(key, social) {
+      $socials.append('<a aria-label="" href="' + social.link + '"><i class="' + social.image + '"></i></a>');
+    });
+  });
+});
+
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('video', {
-    videoId: 'hH0SwbOPbR4',
-    width: '100%',
-    height: '100%',
-    playerVars: {
-      end: 0, autoplay: 0, loop: 0, controls: 0, showinfo: 0, modestbranding: 1, fs: 0, cc_load_policty: 0, iv_load_policy: 3, autohide: 0
-    }, events: {
-      'onReady': onPlayerReady
-    }
+  players = []
+  $('.video').each(function() {
+    players[this.id] = new YT.Player(this.id, {
+      videoId: 'hH0SwbOPbR4',
+      width: '100%',
+      height: '100%',
+      playerVars: {
+        end: 0, autoplay: 0, loop: 0, controls: 0, showinfo: 0, modestbranding: 1, fs: 0, cc_load_policty: 0, iv_load_policy: 3, autohide: 0
+      }, events: {
+        'onReady': onPlayerReady
+      }
+    });
   });
 
   function onPlayerReady(event) {
-    $('.youtube a').on('click', function() {
-      $(this).hide();
-      $('#video').show();
-      player.playVideo();
+    $('#' + event.target.f.id).parent().find('a').on('click', function() {
+      var overlay = $(this);
+      var video = overlay.parent().find('.video');
+
+      overlay.hide();
+      video.show();
+      event.target.playVideo();
     });
   }
 }

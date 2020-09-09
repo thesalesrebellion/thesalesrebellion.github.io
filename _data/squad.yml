@@ -1,0 +1,118 @@
+---
+- name: Chris Watson
+  title: The Rebel Voice
+  specialty: Storytelling
+  image: /img/chris.png
+  image_hover: /img/chris-hover.png
+  image_big: /img/chris-big.png
+  booking_link: "https://calendly.com/voiceoftherebellion/freestorytelling"
+  video: "https://www.youtube.com/embed/dXXNqB6p-oY?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/chris-watson-storyteller/"
+      image: "fab fa-linkedin"
+    - link: "mailto:chris@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Adam Snider
+  title: The Rebel Judge
+  specialty: Communication
+  image: /img/adam.png
+  image_hover: /img/adam-hover.png
+  image_big: /img/adam-big.png
+  booking_link: "mailto:adam@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
+  video: "https://www.youtube.com/embed/ub74nTiu1Jg?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/leadingsalesresults/"
+      image: "fab fa-linkedin"
+    - link: "mailto:adam@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Jack Wilson
+  title: The Rebel Son
+  specialty: Culture
+  image: /img/jack.png
+  image_hover: /img/jack-hover.png
+  image_big: /img/jack-big.png
+  booking_link: "mailto:jack@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
+  video: "https://www.youtube.com/embed/9DLYZOkzusk?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/jackdwilson/"
+      image: "fab fa-linkedin"
+    - link: "mailto:jack@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Michelle Hecht
+  title: The Rebel Pheonix
+  specialty: Women's Empowerment
+  image: /img/michelle.png
+  image_hover: /img/michelle-hover.png
+  image_big: /img/michelle-big.png
+  booking_link: "https://calendly.com/rebelmichelle"
+  video: "https://www.youtube.com/embed/JqaN9_jXlAw?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/michelle-hecht-0189b2138/"
+      image: "fab fa-linkedin"
+    - link: "mailto:michelle@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Paul Castaneda
+  title: The Rebel Director
+  specialty: Improvisation/Acting
+  image: /img/paul.png
+  image_hover: /img/paul-hover.png
+  image_big: /img/paul-big.png
+  booking_link: "mailto:paul@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
+  video: "https://www.youtube.com/embed/RKZXoZYhOvs?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/paulcastaneda/"
+      image: "fab fa-linkedin"
+    - link: "mailto:paul@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Josh Desha
+  title: The Rebel Lion
+  specialty: Leadership/LinkedIn
+  image: /img/josh.png
+  image_hover: /img/josh-hover.png
+  image_big: /img/josh-big.png
+  booking_link: "https://calendly.com/chatwithjoshua/20-minute-free-consultation"
+  video: "https://www.youtube.com/embed/ub74nTiu1Jg?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/joshuawdesha/"
+      image: "fab fa-linkedin"
+    - link: "mailto:josh@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Sebastian Vivicqua
+  title: The Rebel Wanderer
+  specialty: Mindset
+  image: /img/seb.png
+  image_hover: /img/seb-hover.png
+  image_big: /img/seb-big.png
+  booking_link: "mailto:seb@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
+  video: "https://www.youtube.com/embed/ub74nTiu1Jg?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/vivacqua-sebastian/"
+      image: "fab fa-linkedin"
+    - link: "seb@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: Joy Carvajal
+  title: The Rebel Ambassador
+  specialty: Spirituality
+  image: /img/joy.png
+  image_hover: /img/joy-hover.png
+  image_big: /img/joy-big.png
+  booking_link: "https://calendly.com/ambassadorjoy/intro-call"
+  video: "https://www.youtube.com/embed/mm_LqXimUl4?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/ambassadorjoy/"
+      image: "fab fa-linkedin"
+    - link: "joy@thesalesrebellion.com"
+      image: "far fa-envelope"
+- name: David Weiss
+  title: Rebel Mad Scientist
+  specialty: Sales Process
+  image: /img/david.png
+  image_hover: /img/david-hover.png
+  image_big: /img/david-big.png
+  booking_link: "mailto:david@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
+  video: "https://www.youtube.com/embed/ub74nTiu1Jg?ab_channel=SalesRebellion"
+  socials:
+    - link: "https://www.linkedin.com/in/davidlbweiss/"
+      image: "fab fa-linkedin"
+    - link: "david@thesalesrebellion.com"
+      image: "far fa-envelope"

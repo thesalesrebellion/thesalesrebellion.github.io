@@ -26,7 +26,7 @@ principles:
       <p class="watchme">watch me to start your own Rebellion</p>
       <div class="youtube">
         <a><img src="/img/icon-red-play.png" alt="Play button" /></a>
-        <div id="video" style="display:none"></div>
+        <div class="video" id="welcome-video" style="display:none"></div>
       </div>
     </div>
   </div>
