@@ -15,6 +15,9 @@ podcast-services:
     link: "https://play.google.com/music/m/I6nr6unquvf7iq3saaovthqerwu?t=Selling_Local_Stories__Tips__Service"
     image: "/img/podcast-google.svg"
 guest-posts:
+  - title: "Onboarding a Sales Rebel w/ Dale Dupree"
+    podcast: "The Sales Lift"
+    link: "https://thesaleslift.com/13-onboarding-a-sales-rebel-w-dale-dupree/"
   - title: "Dale Dupree - Starting the Sales Rebellion"
     podcast: "The Hot Mic @ Arch DevOps"
     link: "https://www.listennotes.com/podcasts/the-hot-mic-arch/dale-dupree-starting-the-uqUCy-6K0xF/"
