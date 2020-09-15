@@ -54,7 +54,7 @@ redirect_from:
     </div>
     <div class="row">
       <div class="column" style="padding-left:0">
-        <a href="https://calendly.com/thecopierwarrior" class="button secondary red ghost" style="font-weight:bold;max-width:100%">BOOK MEETING</a>
+        <a href="https://calendly.com/rebelleader" class="button secondary red ghost" style="font-weight:bold;max-width:100%">BOOK MEETING</a>
       </div>
     </div>
   </div>
