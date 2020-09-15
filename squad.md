@@ -37,7 +37,7 @@ redirect_from:
         <div style="background-color: #FE1643;box-shadow: 0 0 5px #FE1643, 0 0 25px #FE1643">
           <div class="row">
             <div class="column small-5">
-              <img src="{{ page.leader.image }}" style="padding:7px;width:100%" alt="{{ page.leader.image }} />
+              <img src="{{ page.leader.image }}" style="padding:7px;width:100%" alt="{{ page.leader.image }}" />
             </div>
             <div class="column small-7">
               <h1>{{ page.leader.name }}</h1>
