@@ -48,6 +48,7 @@ $('.rebels a').on('click', function(e) {
     $('.rebel--name').html(rebel.name.toUpperCase());
     $('.rebel--title').html(rebel.title);
     $('.rebel--specialty').html(rebel.specialty);
+    $('.about .button--green').attr('href', rebel.booking_link);
     $('.selected-rebel .button--green').attr('href', rebel.booking_link);
     var $socials = $('.rebel--social');
 

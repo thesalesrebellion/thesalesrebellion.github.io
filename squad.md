@@ -118,13 +118,13 @@ redirect_from:
         </div>
       </div>
       <div class="row column hide-for-large">
-        <a href="#" class="button--green">Book Now!</a>
+        <a href="{{ site.data.squad[0].booking_link }}" class="button--green" target="_blank">Book Now!</a>
       </div>
     </div>
   </div>
   <div class="row rebel--detail show-for-large">
     <div class="column medium-3" style="padding:0">
-      <a href="#" class="button--green">Book Now!</a>
+      <a href="{{ site.data.squad[0].booking_link }}" class="button--green" target="_blank">Book Now!</a>
     </div>
     <div class="column medium-7">
       <div class="rebel--info"><span class="rebel--name">{{ site.data.squad[0].name | upcase }}</span> &#8226; <span class="rebel--title">{{ site.data.squad[0].title }}</span> &#8226; <span class="rebel--specialty">{{ site.data.squad[0].specialty }}</span></div>
