@@ -28,8 +28,16 @@
   <link rel="manifest" href="/site.webmanifest">
   <script>var continuallySettings = { appID: "g4xrgm22rn3z" };</script><script src="https://cdn-app.continual.ly/js/embed/continually-embed.latest.min.js"></script>
   <script async src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5VKQJGV');
+  </script>
 </head>
 <body{% if page.section %} class="{{ page.section }}"{% endif %}>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VKQJGV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
