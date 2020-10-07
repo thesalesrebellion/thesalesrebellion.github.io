@@ -1,4 +1,4 @@
-name: Esteemed Build
+name: TSR Build
 on:
   push:
     branches: develop
