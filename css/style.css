@@ -906,3 +906,73 @@ body.train .join-cta {
     display: none;
   }
 }
+
+#blog-featured {
+  margin-bottom: 100px;
+}
+
+#blog-featured .orbit-figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+#blog-featured a {
+  background-color: #ff2947;
+  padding: 10px 20px;
+}
+
+.blog .column-container {
+  background-color: #fff;
+  padding: 5px;
+}
+
+.blog .column-container:hover {
+  background-color: #ff2947;
+}
+
+.blog .column-container a {
+  background-color: #fff;
+  color: #ff2947;
+  display: block;
+}
+
+.blog .column-container:hover a {
+  background-color: #ff2947;
+  color: #fff;
+  display: block;
+}
+
+.blog .column-container .content {
+  background: #050327;
+}
+
+.blog h2 {
+  padding: 0 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blog .column-container p {
+  padding: 0 40px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination a {
+  background-color: #fff;
+  color: #ff2947;
+  margin: 0 5px;
+}
+
+.pagination a:hover,
+.pagination li.active a {
+  background-color: #ff2947;
+  color: #fff;
+  margin: 0 5px;
+}
+
+.blog-post h1 {
+}

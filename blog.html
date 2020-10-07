@@ -1,0 +1,83 @@
+---
+title: Rebel Blog
+permalink: /blog/
+section: blog inverse
+pagination:
+  enabled: true
+---
+
+<div class="row expanded" style="background-color:#ff2947;color:#fff">
+  <h2 class="text-center" style="font-size:20px;font-weight:bold;margin:5px;text-transform:uppercase">Featured Articles</h2>
+</div>
+<div id="blog-featured" class="orbit" role="region" data-orbit>
+  <div class="orbit-wrapper">
+    <div class="orbit-controls">
+      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+    </div>
+    <ul class="orbit-container">
+      {% assign featured_posts = site.posts | where: 'featured', true %}
+      {% for post in featured_posts %}
+      <li class="{% if forloop.first %}is-active {% endif %}orbit-slide">
+        <figure class="orbit-figure text-center" style="background-image:url('{{ post.image }}')">
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.teaser }}</p>
+          <a href="{{ post.url }}">Read More</a>
+        </figure>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="row large-up-2">
+  {% for post in paginator.posts %}
+  <div class="column column-block text-center">
+    <div class="column-container">
+      <div class="content">
+        <img src="{{ post.image }}" />
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.teaser }}</p>
+        <a href="{{ post.url }}">Read More</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{%- if paginator.total_pages > 1 -%}
+<div class="row column">
+  <ul class="pagination pager">
+  {%- if paginator.first_page != page.pagination_info.curr_page -%}
+  <li class="previous">
+      <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Go to first page">&laquo; First</a>
+  </li>
+  {%- endif -%}
+
+  {%- if paginator.previous_page -%}
+  <li class="previous">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Go to previous page">&lsaquo; Previous</a>
+  </li>
+  {%- endif -%}
+
+  {%- if paginator.page_trail -%}
+    {%- for trail in paginator.page_trail -%}
+      <li {% if page.url == trail.path %}class="active"{% endif %}>
+          <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}" title="Go to page {{trail.title}}">{{ trail.num }}</a>
+      </li>
+    {%- endfor -%}
+  {%- endif -%}
+
+  {%- if paginator.next_page -%}
+  <li class="next">
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Go to next page">Next &rsaquo;</a>
+  </li>
+  {%- endif -%}
+
+  {%- if paginator.last_page != page.pagination_info.curr_page -%}
+  <li class="previous">
+      <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Go to last page">Last &raquo;</a>
+  </li>
+  {%- endif -%}
+  </ul>
+</div>
+{%- endif -%}

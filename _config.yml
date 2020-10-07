@@ -9,6 +9,24 @@ defaults:
       path: ""
     values:
       layout: default
+  -
+    scope:
+      type: "posts"
+    values:
+      permalink: '/blog/:year/:month/:day/:title/'
+      layout: post
+      section: blog-post inverse
+pagination:
+  enabled: true
+  per_page: 2
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 3
+    after: 3
 
 plugins:
   - jekyll-menus
