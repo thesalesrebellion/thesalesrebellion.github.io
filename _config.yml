@@ -13,3 +13,4 @@ defaults:
 plugins:
   - jekyll-menus
   - jekyll-redirect-from
+  - jekyll-paginate-v2
