@@ -1,11 +1,9 @@
 ---
 header:
-  - url: /squad/
-    title: Squad
-  - url: /basecamp/
-    title: Base Camp
   - url: /coaching/
     title: Coaching
+  - url: /basecamp/
+    title: Base Camp
   - url: /podcast/
     title: Podcast
   - url: /join/
