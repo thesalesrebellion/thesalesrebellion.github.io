@@ -29,7 +29,8 @@ body {
   margin: 0;
 }
 
-body.home {
+body.home,
+body.about {
   background-image: url('../img/bg-homepage.png');
   background-position-y: 120px;
 }
@@ -468,10 +469,10 @@ div.about .name {
   text-transform: uppercase;
 }
 
-div.about .title {
+div.about .title a {
   font-family: CFGlitchCity;
-  font-size: 16px;
-  padding: 0 30px 40px;
+  font-size: 24px;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -600,6 +601,10 @@ div.about .social {
   padding-left: 20px;
 }
 
+.tabs-content h2 {
+  font-family: 'Rebel';
+}
+
 .tabs-content h2,
 .tabs-content li p,
 .tabs-content li strong {
@@ -631,9 +636,9 @@ a#rebel-leader-label[aria-selected=true] {
   border-bottom: 2px solid #ff003b;
 }
 
-a#group-coaching-label:hover,
-a#group-coaching-label:focus,
-a#group-coaching-label[aria-selected=true] {
+a#rebel-factions-label:hover,
+a#rebel-factions-label:focus,
+a#rebel-factions-label[aria-selected=true] {
   border-bottom: 2px solid #00f7b2;
 }
 
