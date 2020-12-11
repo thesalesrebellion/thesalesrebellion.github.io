@@ -23,7 +23,7 @@ links:
       {% for link in page.links %}
       <div class="column column-block">
         <div class="about">
-          <img src="{{ link.image }}" alt="{{ link.title }}" />
+          <a href="{{ link.url }}"><img src="{{ link.image }}" alt="{{ link.title }}" /></a>
           <div class="title"><a href="{{ link.url }}">{{ link.title | newline_to_br }}</a></div>
         </div>
       </div>
