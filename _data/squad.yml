@@ -5,7 +5,7 @@
   image: /img/chris.png
   image_hover: /img/chris-hover.png
   image_big: /img/chris-big.png
-  booking_link: "https://calendly.com/voiceoftherebellion/freestorytelling"
+  booking_link: "https://calendly.com/voiceoftherebellion/"
   video: "https://www.youtube.com/embed/dXXNqB6p-oY?ab_channel=SalesRebellion"
   socials:
     - link: "https://www.linkedin.com/in/chris-watson-storyteller/"
@@ -96,7 +96,7 @@
   image: /img/joy.png
   image_hover: /img/joy-hover.png
   image_big: /img/joy-big.png
-  booking_link: "https://calendly.com/ambassadorjoy/intro-call"
+  booking_link: "https://calendly.com/rebellight/meeting-with-rebel-light"
   video: "https://www.youtube.com/embed/mm_LqXimUl4?ab_channel=SalesRebellion"
   socials:
     - link: "https://www.linkedin.com/in/ambassadorjoy/"
