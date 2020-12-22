@@ -82,6 +82,11 @@ function onYouTubeIframeAPIReady() {
   function onPlayerReady(event) {
     Object.keys(players).map(function(id) {
       $('#' + id).parent().find('a').on('click', function() {
+        // Pause other players.
+        Object.keys(players).filter(function(key) { return (key !== id); }).map(function(id) {
+          players[id].pauseVideo();
+        });
+
         var overlay = $(this);
         var video = overlay.parent().find('.video');
 
