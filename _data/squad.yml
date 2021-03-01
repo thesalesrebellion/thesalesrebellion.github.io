@@ -12,19 +12,6 @@
       image: "fab fa-linkedin"
     - link: "mailto:chris@thesalesrebellion.com"
       image: "far fa-envelope"
-- name: Adam Snider
-  title: The Rebel Judge
-  specialty: Communication
-  image: /img/adam.png
-  image_hover: /img/adam-hover.png
-  image_big: /img/adam-big.png
-  booking_link: "mailto:adam@thesalesrebellion.com?subject=Interested%20in%20Sales%20Coaching!"
-  video: "https://www.youtube.com/embed/ub74nTiu1Jg?ab_channel=SalesRebellion"
-  socials:
-    - link: "https://www.linkedin.com/in/leadingsalesresults/"
-      image: "fab fa-linkedin"
-    - link: "mailto:adam@thesalesrebellion.com"
-      image: "far fa-envelope"
 - name: Jack Wilson
   title: The Rebel Son
   specialty: Culture
