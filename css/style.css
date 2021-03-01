@@ -18,6 +18,11 @@
        url('../font/390BF8_0_0.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Lazer84';
+  src: url('../font/lazer84.woff');
+}
+
 .inverse *, .inverse h1, .inverse h2, .inverse p, .inverse a {
   color: #fff;
 }
