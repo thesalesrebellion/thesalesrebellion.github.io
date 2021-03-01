@@ -1,12 +1,26 @@
 ---
 header:
+  - url: /about/
+    title: About the Rebellion
+  - url: /basecamp/
+    title: Join the Rebellion
+  - url: /podcast/
+    title: Join the Community
+  - url: https://thesalesrebellion.us20.list-manage.com/subscribe?u=0170bc1bdd0492ffbf352ced8&id=b16ca2114b
+    title: Enlist
+    class: button
+join:
   - url: /coaching/
-    title: Coaching
+    title: 1-1 Coaching
+  - url: /podcast/
+    title: Team Training
+  - url: /podcast/
+    title: Factions
   - url: /basecamp/
     title: Base Camp
+community:
   - url: /podcast/
     title: Podcast
-  - url: /join/
-    title: Join the Rebellion
-    class: button
+  - url: /coming-soon/
+    title: Coming Soon
 ---
