@@ -3,6 +3,8 @@ title: Selling Local, Powered by The Sales Rebellion
 permalink: /podcast/
 section: podcast inverse
 heading: "**The Sales Rebellion Podcast.**"
+heading_blog: "**The Sales Rebel Blog**"
+subheading_blog: "Check out the Sales Rebel blog by Anonymous Rebel. If you’re looking for ways to improve your sales walk, this blog is for you. Each month we dive into a new topic and break it down for all the Sales Rebels out there."
 subheading: "Join Dale Dupree and Chris Watson as they discuss ideas, tell sales stories, and share their vision for The Sales Rebellion with you!"
 podcast-services:
   - title: Selling Local Podcast on iTunes
@@ -291,11 +293,19 @@ guest-posts:
 ---
 
 <div class="row" style="margin-bottom:40px">
-  <div class="column medium-8 medium-offset-2 text-center">
-    <h2 style="font-family:lazer84;font-size:80px">More Community Coming Soon...</h2>
+  <div class="column medium-6 text-center">
+    <a href="http://join.thesalesrebellion.com/blog/">
+      <img width="60%" src="/img/blog_cover.jpg" alt="">
+    </a>
+  </div>
+  <div class="column medium-6 text-center" style="padding-top: 80px">
+    <h1 style="margin-bottom:40px" class="text-xlarge">{{ page.heading_blog | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+    <p style="margin-bottom: 40px;">{{ page.subheading_blog }}</p>
+    <a href="http://join.thesalesrebellion.com/blog/" class="button">read the blog</a>
   </div>
 </div>
-<div class="row">
+<hr />
+<div class="row" style="margin-top:80px">
   <div class="column medium-8 medium-offset-2 text-center">
     <h1 class="text-xlarge">{{ page.heading | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
     <p>{{ page.subheading }}</p>
@@ -332,5 +342,10 @@ guest-posts:
       <a class="special" target="_blank" href="{{ post.link }}">Listen Here!</a>
     </div>
     {% endfor %}
+  </div>
+  <div class="row" style="margin-bottom:40px">
+    <div class="column medium-8 medium-offset-2 text-center">
+      <h2 style="font-family:lazer84;font-size:80px">More Community Coming Soon...</h2>
+    </div>
   </div>
 </div>
