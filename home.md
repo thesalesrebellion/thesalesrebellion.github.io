@@ -1,4 +1,7 @@
 ---
 layout: main
-title: home
+title: Home
+page_id: home
 ---
+
+Hello
