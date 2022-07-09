@@ -1,0 +1,30 @@
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{%- if page.layout == 'home' -%}
+		<title>{{- site.title -}}</title>
+	{%- else -%}
+		<title>{{ site.data.global.title | default: "The Sales Rebellion" }}</title>
+	{%- endif -%}
+
+	<meta name="description" content="Sales training and development done different" />
+	<meta property="og:title" content="The Sales Rebellion" />
+	<meta property="og:url" content="http://www.thesalesrebellion.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="The Sales Rebellion" />
+	<meta property="og:description" content="Sales training and development done different" />
+	<meta property="og:image" content="http://www.thesalesrebellion.com/img/logo-social.jpg" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="The Sales Rebellion" />
+	<meta name="twitter:description" content="Sales training and development done different" />
+	<meta name="twitter:image" content="http://www.thesalesrebellion.com/img/logo-social.jpg" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link rel="stylesheet" href="{{- '/css/styles.css' | relative_url -}}">
+</head>

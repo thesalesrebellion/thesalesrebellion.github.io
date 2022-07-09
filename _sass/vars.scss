@@ -1,0 +1,31 @@
+@mixin breakpoint($point) {
+    @if $point == larger {
+        @media (min-width: 1200px) { @content; }
+    }
+    @if $point == semi_large {
+        @media (min-width: 1120px) { @content; }
+    }
+    @if $point == large {
+        @media (min-width: 990px) { @content; }
+    }
+    @if $point == medium {
+        @media (min-width: 768px) { @content; }
+    }
+    @else if $point == smallish {
+        @media (min-width: 610px) { @content; }
+    }
+    @else if $point == small {
+        @media (min-width: 576px) { @content; }
+    }
+    @else if $point == smaller {
+        @media (min-width: 425px) { @content; }
+    }
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
