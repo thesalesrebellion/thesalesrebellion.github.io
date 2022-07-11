@@ -1,3 +1,10 @@
+$green: #7affdc;
+$blue: #7ab8ff;
+$purple: #f77aff;
+$red: #ff887a;
+$yellow: #fdff7a;
+
+
 @mixin breakpoint($point) {
     @if $point == larger {
         @media (min-width: 1200px) { @content; }
@@ -20,6 +27,14 @@
     @else if $point == smaller {
         @media (min-width: 425px) { @content; }
     }
+}
+
+@mixin glow_in($color) {
+    text-shadow:
+        0 0 10px #000,
+        0 0 16px #fff,
+        0 0 20px $color,
+        0 0 32px $color;
 }
 
 @mixin clearfix {

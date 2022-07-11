@@ -18,7 +18,34 @@
     }
 
     &__link {
-        text-shadow: 0 0 24px red;
+        color: #fff;
+        letter-spacing: 1px;
+        transition: text-shadow .1s linear;
+        &--green {
+            &:hover {
+                @include glow_in($green);
+            }
+        }
+        &--blue {
+            &:hover {
+                @include glow_in($blue);
+            }
+        }
+        &--purple {
+            &:hover {
+                @include glow_in($purple);
+            }
+        }
+        &--red {
+            &:hover {
+                @include glow_in($red);
+            }
+        }
+        &--yellow {
+            &:hover {
+                @include glow_in($yellow);
+            }
+        }
     }
 
 }
