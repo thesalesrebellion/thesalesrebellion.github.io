@@ -1,5 +1,13 @@
 .site-header {
 
-    display: flex;
+	padding-top: 100px;
+
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
 
 }
