@@ -134,7 +134,7 @@
 
             &--green {
                 &:hover {
-                    text-shadow: 0 0 1px $green;
+                    text-shadow: 2px 3px 24px $green;
                     box-shadow:
                         0 0 10px 1px $green,
                         inset 0 0 10px 1px $green;
@@ -142,7 +142,7 @@
             }
             &--blue {
                 &:hover {
-                    text-shadow: 0 0 1px $blue;
+                    text-shadow: 2px 3px 24px $blue;
                     box-shadow: 0 0 10px 1px $blue;
                 }
             }
