@@ -60,9 +60,11 @@
         &--left {
             flex-direction: column;
             padding-right: 20px;
+            flex-basis: 45%;
         }
         &--right {
             align-items: center;
+            flex-basis: 60%;
         }
     }
 
@@ -74,6 +76,7 @@
         text-shadow: 0 0 24px #000;
         text-align: center;
         font-weight: 400;
+        max-width: 302px;
 
         @include breakpoint(large) {
             font-size: 18px;
