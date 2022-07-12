@@ -19,9 +19,11 @@
 
                     <div class="hero__cta-section">
                         {%- for item in page.hero.cta -%}
-                            <a href="{{- item.url | relative_url -}}" class="hero__cta-item">
-                                {{- item.text -}}
-                            </a>
+                            <div class="hero__cta-item">
+                                <a href="{{- item.url | relative_url -}}" class="hero__cta-link">
+                                    {{ item.text }}
+                                </a>
+                            </div>
                         {%- endfor -%}
                     </div>
 

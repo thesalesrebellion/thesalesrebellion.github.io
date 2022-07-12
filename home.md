@@ -13,7 +13,7 @@ hero:
     text: |-
       I'll definitely finish at 175% of my quota and could even 3x the annual quota this quarter.
   cta:
-    - text: For Teams
+    - text: <span>For</span> <span>Teams</span>
       url: '#'
       glow_in: green
     - text: Individuals

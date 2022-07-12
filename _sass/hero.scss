@@ -97,4 +97,34 @@
         left: -5%;
     }
 
+    &__cta {
+
+        &-section {
+            margin-top: 50px;
+        }
+
+        &-item {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-link {
+            display: inline-block;
+            font-family: 'Lazer84';
+            font-weight: 400;
+            font-size: 24px;
+            color: #fff;
+            letter-spacing: 2px;
+            span {
+                margin-right: 0.6em;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+    }
+
 }
