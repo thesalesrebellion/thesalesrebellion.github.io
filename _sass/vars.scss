@@ -34,7 +34,9 @@ $yellow: #fdff7a;
         0 0 10px #000,
         0 0 16px #fff,
         0 0 20px $color,
-        0 0 32px $color;
+        0 0 32px $color,
+        0 0 48px $color,
+        0 0 148px $color;
 }
 
 @mixin clearfix {
