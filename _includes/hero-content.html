@@ -17,7 +17,19 @@
 
                 </div>
 
-                <div class="hero__col hero__col--right"></div>
+                <div class="hero__col hero__col--right">
+                    <div class="hero__aside">
+                        <h2 class="hero__aside-heading">
+                            {{ page.hero.aside.heading.line_1 }}
+                            {%- if page.hero.aside.heading.line_1 and page.hero.aside.heading.line_1.size > 0 -%}
+                                <br>{{ page.hero.aside.heading.line_2 }}
+                            {%- endif -%}
+                        </h2>
+                        <div class="hero__aside-text">
+                            {{ page.hero.aside.text | markdownify }}
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
