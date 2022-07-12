@@ -12,4 +12,11 @@ hero:
       line_2: Company - Industry
     text: |-
       I'll definitely finish at 175% of my quota and could even 3x the annual quota this quarter.
+  cta:
+    - text: For Teams
+      url: '#'
+      glow_in: green
+    - text: Individuals
+      url: '#'
+      glow_in: blue
 ---

@@ -7,12 +7,22 @@
 
                 <div class="hero__col hero__col--left">
 
-                    <h1 class="hero__heading">
-                        {{ page.hero.heading | upcase }}
-                    </h1>
+                    <div class="hero__content-wrapper">
+                        <h1 class="hero__heading">
+                            {{ page.hero.heading | upcase }}
+                        </h1>
 
-                    <div class="hero__text">
-                        {{ page.hero.text | markdownify }}
+                        <div class="hero__text">
+                            {{ page.hero.text | markdownify }}
+                        </div>
+                    </div>
+
+                    <div class="hero__cta-section">
+                        {%- for item in page.hero.cta -%}
+                            <a href="{{- item.url | relative_url -}}" class="hero__cta-item">
+                                {{- item.text -}}
+                            </a>
+                        {%- endfor -%}
                     </div>
 
                 </div>
