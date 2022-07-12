@@ -17,6 +17,9 @@
     &__content {
         color: #fff;
         padding: 50px 0;
+        background-image: url(/assets/images/grid_and_sun.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &__heading {
@@ -26,6 +29,7 @@
         letter-spacing: 1.5px;
         line-height: 1.3;
         margin-bottom: 8px;
+        text-shadow: 2px 2px 20px #000;
         @include breakpoint(large) {
             font-size: 48px;
         }
@@ -83,6 +87,11 @@
                 font-size: 20px;
             }
         }
+    }
+
+    &__person {
+        position: relative;
+        left: -5%;
     }
 
 }
