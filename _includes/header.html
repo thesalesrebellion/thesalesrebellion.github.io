@@ -13,7 +13,7 @@
                 {%- for item in site.data.navigation.items -%}
                     <li class="menu__item">
                         <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}">
-                            {{- item.name -}}
+                            {{- item.name | upcase -}}
                         </a>
                     </li>
                 {%- endfor -%}
