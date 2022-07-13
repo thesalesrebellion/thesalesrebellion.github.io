@@ -21,6 +21,11 @@
         background-image: url(/assets/images/grid_and_sun.png);
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include breakpoint(medium) {
+            background-image: url(/assets/images/grid_and_sun_small.png);
+            background-position: center 300px;
+        }
     }
 
     &__heading {
@@ -53,6 +58,13 @@
     &__cols {
         display: flex;
         padding: 0 20px;
+
+        @include breakpoint(medium) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
     }
 
     &__col {
@@ -64,6 +76,9 @@
             flex-basis: 45%;
             @include breakpoint(larger) {
                 flex: 1;
+            }
+            @include breakpoint(medium) {
+                padding: 0;
             }
         }
         &--right {
@@ -110,6 +125,9 @@
 
         &-section {
             margin-top: 50px;
+            @include breakpoint(medium) {
+                margin-top: 25px;
+            }
         }
 
         &-item {
