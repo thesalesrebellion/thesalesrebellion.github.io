@@ -39,7 +39,7 @@
     &__text {
         font-family: 'Big Noodle Titling';
         font-size: 20px;
-        line-height: 1.2;
+        line-height: 1.25;
         letter-spacing: 1px;
         text-shadow: 0 0 24px #000;
         p {
@@ -62,17 +62,25 @@
             flex-direction: column;
             padding-right: 20px;
             flex-basis: 45%;
+            @include breakpoint(larger) {
+                flex: 1;
+            }
         }
         &--right {
             align-items: center;
             flex-basis: 60%;
+            @include breakpoint(larger) {
+                flex: 1;
+                align-items: flex-start;
+                padding-top: 50px;
+            }
         }
     }
 
     &__aside {
         font-family: 'Big Noodle Titling';
         font-size: 20px;
-        line-height: 1.2;
+        line-height: 1.25;
         letter-spacing: 1px;
         text-shadow: 0 0 24px #000;
         text-align: center;
@@ -117,9 +125,9 @@
             font-family: 'Lazer84';
             font-weight: 400;
             font-size: 24px;
-            color: #e7e9ff;
+            color: #fff;
             letter-spacing: 2px;
-            border: 6px solid #e7e9ff;
+            border: 6px solid #fff;
             padding: 10px 25px;
             border-top-left-radius: $border-radius;
             border-bottom-left-radius: $border-radius;

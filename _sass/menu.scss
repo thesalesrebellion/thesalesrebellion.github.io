@@ -3,6 +3,10 @@
     &__items {
         list-style: none;
         display: flex;
+        @include breakpoint(medium) {
+            flex-direction: column;
+            padding-top: 90px;
+        }
     }
 
     &__item {
@@ -15,6 +19,32 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @include breakpoint(larger) {
+            margin: 0 12px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        @include breakpoint(large) {
+            font-size: 20px;
+            &:first-child {
+                margin-left: 20px;
+            }
+            &:last-child {
+                margin-right: 20px;
+            }
+        }
+
+        @include breakpoint(medium) {
+            margin: 20px;
+        }
+
+
     }
 
     &__link {
@@ -46,6 +76,22 @@
                 @include glow_in($yellow);
             }
         }
+    }
+
+    &__burger {
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    @include breakpoint(medium) {
+        position: absolute;
+        top: -36px;
+        right: 0;
+        padding: 0 20px;
+        z-index: 1;
+        min-height: 100vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0.6810925053615196) 100%);
     }
 
 }

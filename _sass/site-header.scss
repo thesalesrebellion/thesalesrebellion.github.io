@@ -2,11 +2,24 @@
 
 	padding-top: 100px;
 
+	@include breakpoint(medium) {
+		padding-top: 36px;
+	}
+
 
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		@include breakpoint(medium) {
+			position: relative;
+		}
+	}
+
+	&__logo {
+		@include breakpoint(medium) {
+			max-width: 150px;
+		}
 	}
 
 
