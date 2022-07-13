@@ -89,6 +89,14 @@
                 align-items: flex-start;
                 padding-top: 50px;
             }
+            @include breakpoint(medium) {
+                align-items: center;
+                justify-content: center;
+            }
+            @include breakpoint(smaller) {
+                flex-direction: column;
+                padding-top: 30px;
+            }
         }
     }
 
@@ -106,6 +114,10 @@
             font-size: 18px;
         }
 
+        @include breakpoint(medium) {
+            flex-basis: 60%;
+        }
+
         &-heading {
             font-size: 24px;
             font-weight: 400;
@@ -119,6 +131,15 @@
     &__person {
         position: relative;
         left: -5%;
+        @include breakpoint(medium) {
+            flex-basis: 40%;
+        }
+        @include breakpoint(smaller) {
+            position: static;
+            img {
+                width: 80%;
+            }
+        }
     }
 
     &__cta {
