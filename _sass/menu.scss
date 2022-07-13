@@ -103,7 +103,7 @@
         opacity: 1;
     }
 
-    $mobile_menu_width: 200px;
+    $mobile_menu_width: 220px;
 
     @include breakpoint(medium) {
         width: $mobile_menu_width;
@@ -119,6 +119,12 @@
         background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0.6810925053615196) 100%);
         transition: all .2s linear;
         overflow-y: auto;
+    }
+
+    @include breakpoint(smaller) {
+        width: 100%;
+        right: -100%;
+        text-align: center;
     }
 
 }
