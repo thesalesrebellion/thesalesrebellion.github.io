@@ -145,6 +145,7 @@
             font-size: 24px;
             color: #fff;
             letter-spacing: 2px;
+            text-align: center;
             border: 6px solid #fff;
             padding: 10px 25px;
             border-top-left-radius: $border-radius;
@@ -178,6 +179,12 @@
                 &:last-child {
                     margin-right: 0;
                 }
+            }
+
+            @include breakpoint(medium) {
+                border-width: 3px;
+                border-radius: 16px;
+                min-width: 230px;
             }
         }
 
