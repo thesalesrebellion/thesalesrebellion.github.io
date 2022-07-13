@@ -78,20 +78,47 @@
         }
     }
 
-    &__burger {
+    &__burger,
+    &__close {
+        display: none;
+        @include breakpoint(medium) {
+            display: block;
+        }
         cursor: pointer;
         z-index: 2;
     }
 
-    @include breakpoint(medium) {
-        position: absolute;
-        top: -36px;
+    &__close {
+        display: none;
+        svg {
+            width: 50px;
+            height: 40px;
+            fill: #fff;
+        }
+    }
+
+    &.menu__show {
         right: 0;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    $mobile_menu_width: 200px;
+
+    @include breakpoint(medium) {
+        width: $mobile_menu_width;
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        right: -$mobile_menu_width;
         padding: 0 20px;
         z-index: 1;
-        min-height: 100vh;
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0.6810925053615196) 100%);
+        transition: all .2s linear;
+        overflow-y: auto;
     }
 
 }

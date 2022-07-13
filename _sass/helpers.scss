@@ -1,0 +1,13 @@
+.hide {
+    display: none;
+}
+
+.show {
+    &--block {
+        display: block;
+    }
+}
+
+.do-not-scroll {
+    overflow: hidden;
+}

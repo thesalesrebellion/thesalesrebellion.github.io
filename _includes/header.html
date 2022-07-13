@@ -8,7 +8,7 @@
             </a>
         </div>
 
-        <nav class="menu">
+        <nav id="menu" class="menu">
             <ul class="menu__items">
                 {%- for item in site.data.navigation.items -%}
                     <li class="menu__item">
@@ -21,6 +21,9 @@
         </nav>
         <div id="menu__burger" class="menu__burger">
             {%- include svg/burger.svg -%}
+        </div>
+        <div id="menu__close" class="menu__close">
+            {%- include svg/close.svg -%}
         </div>
 
     </div>
