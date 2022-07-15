@@ -39,6 +39,12 @@ $yellow: #fdff7a;
         0 0 148px $color;
 }
 
+@mixin btn_glow_in($color) {
+    border-color: $color;
+    text-shadow: 2px 3px 24px $color;
+    box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
+}
+
 @mixin clearfix {
     &:after {
         content: "";

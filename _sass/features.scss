@@ -1,5 +1,8 @@
 .features {
 
+	color: #fff;
+	font-family: 'Lazer84';
+
 	&__row {
 		display: flex;
 	}
@@ -7,5 +10,23 @@
 	&__col {
 		flex: 1;
 	}
+
+	&__heading {
+		font-size: 56px;
+		font-weight: 400;
+		letter-spacing: 1.5px;
+		line-height: 1.3;
+		margin-bottom: 8px;
+		text-shadow: 2px 2px 20px #000;
+	}
+
+	&__text {
+		font-family: 'Big Noodle Titling';
+		font-size: 20px;
+		line-height: 1.25;
+		letter-spacing: 1px;
+		text-shadow: 0 0 24px #000;
+	}
+
 
 }
