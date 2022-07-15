@@ -1,5 +1,5 @@
 ---
-layout: main
+layout: home
 title: Home
 page_id: home
 hero:
