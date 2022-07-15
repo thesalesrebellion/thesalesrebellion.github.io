@@ -5,6 +5,20 @@
 
 	margin: 45px 0;
 
+	background-image: url(/assets/images/grid-2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+
+	padding-bottom: 3vw;
+
+	@include breakpoint(larger) {
+		padding-bottom: 1vw;
+	}
+	@include breakpoint(large) {
+		padding-bottom: .5vw;
+	}
+
 	.container {
 		max-width: 1000px;
 	}
