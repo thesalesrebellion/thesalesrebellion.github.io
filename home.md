@@ -47,4 +47,34 @@ features:
     image:
       path: /assets/images/network.png
       alt-text: A network of nodes with human figures inside each node
+community:
+ heading: <span>Check</span> <span>These</span> Out
+ items:
+  - title: Community
+    image:
+      path: '/assets/images/slack.png'
+      alt_text: 'Slack logo'
+    button:
+      text: Join Us
+      url: https://join.slack.com/t/salesrebels/shared_invite/zt-h56s3k7l-GxCbQb9~Z9hvqhz8PAcqxg
+      new_tab: true
+      glow_in: blue
+  - title: Podcast
+    image:
+      path: '/assets/images/podcast.png'
+      alt_text: 'The podcast cover'
+    button:
+      text: <span>Listen</span> Today
+      url: '/podcast/'
+      new_tab: false
+      glow_in: purple
+  - title: Blog
+    image:
+      path: '/assets/images/blog.png'
+      alt_text: 'The Blog cover'
+    button:
+      text: Read now
+      url: '/blog/'
+      new_tab: false
+      glow_in: blue
 ---

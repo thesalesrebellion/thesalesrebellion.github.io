@@ -10,3 +10,9 @@ html,
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.section {
+    .container {
+        max-width: 1000px;
+    }
+}

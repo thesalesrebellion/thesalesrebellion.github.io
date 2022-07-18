@@ -1,4 +1,4 @@
-<section class="features">
+<section class=" section features">
 
 	<div class="overlay overlay--top"></div>
 
@@ -14,7 +14,7 @@
 				<div class="features__text">
 					{{ feature.text }}
 				</div>
-				<a class="features__button btn btn--purple desktop-only desktop-only--inline-block" href="{{- feature.button.url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+				<a class="features__button btn btn--purple desktop-only desktop-only--inline-block" href="{{- feature.button.url | relative_url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
 					{{- feature.button.text -}}
 				</a>
 			{%- endcapture -%}
@@ -23,7 +23,7 @@
 				<div class="features__image-wrapper">
 					<img src="{{- feature.image.path | relative_url -}}" alt="{{- feature.image.alt_text -}}" class="features__image">
 				</div>
-				<a class="features__button features__button--mobile btn btn--purple mobile-only mobile-only--inline-block" href="{{- feature.button.url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+				<a class="features__button features__button--mobile btn btn--purple mobile-only mobile-only--inline-block" href="{{- feature.button.url | relative_url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
 					{{- feature.button.text -}}
 				</a>
 			{%- endcapture -%}
@@ -49,5 +49,7 @@
 
 
 	</div>
+
+	<div class="overlay overlay--bottom"></div>
 
 </section>

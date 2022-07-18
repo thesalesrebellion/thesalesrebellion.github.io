@@ -13,6 +13,8 @@ ol {
 
 body {
     background-color: #000;
+    color: #fff;
+    font-weight: 400;
 }
 
 .btn {
@@ -55,5 +57,17 @@ body {
     &--top {
         top: 0;
         background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    span {
+        margin-right: 0.4em;
     }
 }

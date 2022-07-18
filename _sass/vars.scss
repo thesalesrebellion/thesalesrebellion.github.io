@@ -6,7 +6,6 @@ $yellow: #fdff7a;
 
 $colors: 'green', 'blue', 'purple', 'red', 'yellow';
 
-
 @mixin breakpoint($point) {
     @if $point == larger {
         @media (max-width: 1200px) { @content; }
