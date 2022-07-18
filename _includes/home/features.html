@@ -12,7 +12,7 @@
 				<div class="features__text">
 					{{ feature.text }}
 				</div>
-				<a class="features__button btn btn--purple" href="{{- feature.button.url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+				<a class="features__button btn btn--purple desktop-only desktop-only--inline-block" href="{{- feature.button.url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
 					{{- feature.button.text -}}
 				</a>
 			{%- endcapture -%}
@@ -21,6 +21,9 @@
 				<div class="features__image-wrapper">
 					<img src="{{- feature.image.path | relative_url -}}" alt="{{- feature.image.alt_text -}}" class="features__image">
 				</div>
+				<a class="features__button features__button--mobile btn btn--purple mobile-only mobile-only--inline-block" href="{{- feature.button.url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+					{{- feature.button.text -}}
+				</a>
 			{%- endcapture -%}
 
 			<div class="features__row features__row--{{ the_cycle }}">

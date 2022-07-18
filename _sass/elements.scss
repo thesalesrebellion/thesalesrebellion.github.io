@@ -24,19 +24,18 @@ body {
     border-radius: 16px;
     text-align: center;
     padding: 10px 20px;
-    &--green {
-        @include btn_glow_in($green);
+    transition: text-shadow .1s ease-in, box-shadow .1s ease-in;
+
+    &:hover {
+        @include btn_glow_in();
     }
-    &--blue {
-        @include btn_glow_in($blue);
+
+    @each $color in $colors {
+        &--#{$color} {
+            &:hover {
+                @include glow_in(#{$color});
+            }
+        }
     }
-    &--purple {
-        @include btn_glow_in($purple);
-    }
-    &--red {
-        @include btn_glow_in($red);
-    }
-    &--yellow {
-        @include btn_glow_in($yellow);
-    }
+
 }

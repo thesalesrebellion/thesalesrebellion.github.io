@@ -11,3 +11,23 @@
 .do-not-scroll {
     overflow: hidden;
 }
+
+.mobile-only {
+    display: none !important;
+    @include breakpoint(medium) {
+        display: block;
+        &--inline-block {
+            display: inline-block !important;
+        }
+    }
+}
+
+.desktop-only {
+    display: block !important;
+    &--inline-block {
+        display: inline-block !important;
+    }
+    @include breakpoint(medium) {
+        display: none !important;
+    }
+}

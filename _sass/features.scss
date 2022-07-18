@@ -28,20 +28,41 @@
 		align-items: center;
 		margin-bottom: 80px;
 
+		@include breakpoint(medium) {
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 100px;
+		}
+
 		&--even {
 			.features__col--content {
 				text-align: right;
+				@include breakpoint(medium) {
+					text-align: center;
+				}
 			}
 			.features__text {
 				margin-left: auto;
+				@include breakpoint(medium) {
+					margin-left: 0;
+				}
+			}
+
+			@include breakpoint(medium) {
+				flex-direction: column-reverse;
 			}
 		}
 
 		&--odd {
 			.features__col--image {
 				text-align: right;
+				@include breakpoint(medium) {
+					text-align: center;
+				}
 			}
 		}
+
 	}
 
 	&__col {
@@ -60,6 +81,14 @@
 			padding-right: 20px;
 		}
 
+		@include breakpoint(medium) {
+			padding: 0;
+			&--image,
+			&--content {
+				text-align: center;
+			}
+		}
+
 	}
 
 	&__heading {
@@ -70,6 +99,9 @@
 		line-height: 1.2;
 		margin-bottom: 8px;
 		text-shadow: 2px 2px 20px #000;
+		@include breakpoint(smaller) {
+			font-size: 40px;
+		}
 	}
 
 	&__text {
@@ -84,12 +116,18 @@
 	&__button {
 		display: inline-block;
 		margin-top: 22px;
+		&--mobile {
+			margin-top: 6px;
+		}
 	}
 
 	&__image {
 		max-width: 340px;
 		@include breakpoint(large) {
 			max-width: 90%;
+		}
+		@include breakpoint(medium) {
+			max-width: 300px;
 		}
 	}
 

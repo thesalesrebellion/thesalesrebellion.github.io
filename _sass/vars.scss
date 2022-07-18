@@ -4,6 +4,8 @@ $purple: #f77aff;
 $red: #ff887a;
 $yellow: #fdff7a;
 
+$colors: 'green', 'blue', 'purple', 'red', 'yellow';
+
 
 @mixin breakpoint($point) {
     @if $point == larger {
@@ -39,7 +41,7 @@ $yellow: #fdff7a;
         0 0 148px $color;
 }
 
-@mixin btn_glow_in($color) {
+@mixin btn_glow_in($color: #fff) {
     border-color: $color;
     text-shadow: 2px 3px 24px $color;
     box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
