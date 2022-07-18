@@ -39,3 +39,21 @@ body {
     }
 
 }
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+
+    &--bottom {
+        bottom: 0;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+    }
+
+    &--top {
+        top: 0;
+        background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+    }
+}
