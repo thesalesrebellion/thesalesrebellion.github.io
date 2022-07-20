@@ -1,5 +1,10 @@
 .home-cta {
 
+    &__text {
+        font-family: 'Lazer84';
+        font-size: 24px;
+    }
+
     &__button {
         display: inline-block;
         font-size: 33px;

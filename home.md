@@ -41,7 +41,7 @@ features:
   - title: Group<br>Coaching
     text: Find your tribe and learn alongside other Sale Rebels
     button:
-      text: Join Today
+      text: <span>Join</span> Today
       url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
       new_tab: true
     image:
@@ -78,7 +78,7 @@ community:
       new_tab: false
       glow_in: blue
 cta:
-  text: Sign up for the Sales Rebellion’s email experience extravaganza
+  text: Sign<span class="space"></span>up<span class="space"></span>for<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion’s<span class="space"></span>email<span class="space"></span>experience<span class="space"></span>extravaganza
   button:
     text: Coming<br>Soon
     url: ''
