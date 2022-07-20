@@ -17,6 +17,7 @@
         justify-content: space-around;
         align-items: center;
         padding-top: 30px;
+        flex-wrap: wrap;
         @include breakpoint(medium) {
             flex-direction: column;
         }
@@ -26,6 +27,7 @@
 
         margin: 0 12px;
         margin-top: 0;
+        margin-bottom: 45px;
 
         flex-basis: 30%;
 
@@ -57,10 +59,6 @@
             @include breakpoint(medium) {
                 border-radius: 16px;
             }
-        }
-
-        @include breakpoint(medium) {
-            margin-bottom: 45px;
         }
 
     }
