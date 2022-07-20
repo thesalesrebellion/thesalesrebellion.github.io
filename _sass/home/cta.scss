@@ -1,0 +1,19 @@
+.home-cta {
+
+    &__button {
+        display: inline-block;
+        font-size: 33px;
+        line-height: 1.3;
+        letter-spacing: 2px;
+        &--span {
+            @include btn_defaults;
+            @include btn_glow_in($blue);
+            font-size: 33px;
+            line-height: 1.3;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 6px $blue;
+            box-shadow: 0 0 34px 2px $blue, inset 0 0 45px 0px $blue;
+        }
+    }
+
+}

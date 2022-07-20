@@ -1,0 +1,26 @@
+<section class="section home-cta">
+
+    <div class="container">
+
+        <div class="home-cta__cols">
+            <div class="home-cta__col home-cta__col--left">
+                {{ page.cta.text }}
+            </div>
+            <div class="home-cta__col home-cta__col--right">
+
+                {%- if page.cta.button.url and page.cta.button.url.size > 0 -%}
+                    <a class="home-cta__button btn" href="{{- page.cta.button.url | relative_url -}}"{% if page.cta.button.new_tab == true %} target="_blank"{% endif %}>
+                        {{- page.cta.button.text -}}
+                    </a>
+                {%- else -%}
+                    <span class="home-cta__button home-cta__button--span">
+                        {{- page.cta.button.text -}}
+                    </span>
+                {%- endif -%}
+
+            </div>
+        </div>
+
+    </div>
+
+</section>

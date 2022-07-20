@@ -77,4 +77,10 @@ community:
       url: '/blog/'
       new_tab: false
       glow_in: blue
+cta:
+  text: Sign up for the Sales Rebellion’s email experience extravaganza
+  button:
+    text: Coming<br>Soon
+    url: ''
+    new_tab: false
 ---
