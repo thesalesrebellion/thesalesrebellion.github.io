@@ -2,6 +2,7 @@
 layout: home
 title: Home
 page_id: home
+permalink: '/'
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-
