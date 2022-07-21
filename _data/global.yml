@@ -1,0 +1,10 @@
+social:
+  facebook: 'https://www.facebook.com/salesrebellion/'
+  linkedin: 'https://www.linkedin.com/company/salesrebellion/'
+footer:
+  message: "To draw, you must close your eyes and sing."
+  note: "- Pablo Picasso"
+  cta:
+    text: 'Submit a prayer request'
+    url: '#'
+    new_tab: false

@@ -2,6 +2,42 @@
 
     padding: 50px 0;
 
+    &__cols {
+        display: flex;
+        align-items: flex-end;
+        @include breakpoint(medium) {
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    &__col {
+        @include breakpoint(medium) {
+            margin-bottom: 45px;
+        }
+        &--left {
+            @include breakpoint(medium) {
+                order: 3;
+            }
+        }
+        &--middle {
+            flex-grow: 2;
+            text-align: center;
+            padding: 0 20px;
+            align-self: center;
+            @include breakpoint(medium) {
+                padding: 0;
+                order: 1;
+            }
+        }
+        &--right {
+            @include breakpoint(medium) {
+                order: 2;
+            }
+        }
+    }
+
     &__social {
 
         &-link {
@@ -15,6 +51,45 @@
             }
         }
 
+    }
+
+    &__copyright {
+        font-family: 'Big Noodle Titling';
+        font-weight: 400;
+        letter-spacing: .6px;
+        margin-top: 8px;
+        @include breakpoint(medium) {
+            margin-top: 3px;
+        }
+    }
+
+    &__message,
+    &__note,
+    &__cta {
+        font-family: 'Big Noodle Titling';
+        font-weight: 400;
+        letter-spacing: .6px;
+    }
+
+    &__message,
+    &__note {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    &__message {
+        margin-bottom: 12px;
+        @include breakpoint(medium) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__note {
+        margin-bottom: 0;
+    }
+
+    &__cta {
+        display: inline-block;
     }
 
 }

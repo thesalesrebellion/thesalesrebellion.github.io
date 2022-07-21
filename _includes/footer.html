@@ -5,16 +5,32 @@
         <div class="site-footer__cols">
             <div class="site-footer__col site-footer__col--left">
                 <div class="site-footer__social">
-                    <a class="site-footer__social-link site-footer__social-link--fb" href="https://www.facebook.com/salesrebellion/" target="_blank">
+                    <a class="site-footer__social-link site-footer__social-link--fb" href="{{- site.data.global.social.facebook -}}" target="_blank">
                         {%- include svg/facebook.svg -%}
                     </a>
-                    <a class="site-footer__social-link site-footer__social-link--in" href="https://www.linkedin.com/company/salesrebellion/" target="_blank">
+                    <a class="site-footer__social-link site-footer__social-link--in" href="{{- site.data.global.social.linkedin -}}" target="_blank">
                         {%- include svg/linkedin.svg -%}
                     </a>
                 </div>
+                <div class="site-footer__copyright">
+                    Copyright &copy; Sales Rebellion 2022
+                </div>
             </div>
-            <div class="site-footer__col site-footer__col--middle"></div>
-            <div class="site-footer__col site-footer__col--right"></div>
+            <div class="site-footer__col site-footer__col--middle">
+                <p class="site-footer__message">
+                    {{ site.data.global.footer.message }}
+                </p>
+                {%- if site.data.global.footer.note and site.data.global.footer.note.size > 0 -%}
+                    <p class="site-footer__note">
+                        {{ site.data.global.footer.note }}
+                    </p>
+                {%- endif -%}
+            </div>
+            <div class="site-footer__col site-footer__col--right">
+                <a href="{{- site.data.global.footer.cta.url | relative_url -}}" class="site-footer__cta btn btn--blue"{% if site.data.global.footer.cta.new_tab == true %} target="_blank"{% endif %}>
+                    {{ site.data.global.footer.cta.text }}
+                </a>
+            </div>
         </div>
 
     </div>
