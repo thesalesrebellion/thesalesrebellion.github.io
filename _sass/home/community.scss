@@ -3,7 +3,26 @@
     font-family: 'Big Noodle Titling';
     font-weight: 400;
 
+    padding-top: 45px;
+
+    position: relative;
+
     text-align: center;
+
+	background-image: url(/assets/images/space_bg_4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+    .container {
+        margin-top: 35px;
+    }
+
+    .overlay {
+        &--bottom {
+            height: 30px;
+        }
+    }
 
     &__heading {
         margin-top: 0;

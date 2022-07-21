@@ -1,7 +1,19 @@
 .home-cta {
 
+    position: relative;
+
+	background-image: url(/assets/images/space_bg_narrow.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
     .container {
         max-width: 820px;
+        padding: 50px 0;
+    }
+
+    .overlay {
+        height: 30px;
     }
 
     &__cols {
