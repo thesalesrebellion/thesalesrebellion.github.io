@@ -3,6 +3,7 @@ layout: home
 title: Home
 page_id: home
 permalink: '/'
+has_video_modal: true
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-
@@ -81,9 +82,11 @@ community:
 testimonials:
   heading: Words<br>of our<br>students
   video:
+    id: MifNZlKehgM
     thumbnail:
       path: /assets/images/home-video-thumbnail.jpg
       alt_text: 'Link to video testimonial'
+cta:
   text: Sign<span class="space"></span>up<span class="space"></span>for<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion’s<span class="space"></span>email<span class="space"></span>experience<span class="space"></span>extravaganza
   button:
     text: Coming<br>Soon

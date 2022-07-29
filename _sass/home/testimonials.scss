@@ -1,5 +1,7 @@
 .testimonials {
 
+    position: relative;
+
 	background-image: url(/assets/images/space_bg_3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -9,12 +11,23 @@
 
     text-align: center;
 
+    .container {
+        padding-bottom: 30px;
+    }
+
+    .overlay {
+        &--bottom {
+            height: 30px;
+        }
+    }
+
     &__heading {
         font-family: 'Lazer84';
         font-weight: 400;
         font-size: 30px;
         line-height: 1.3;
         letter-spacing: 1.5px;
+        margin-bottom: 32px;
     }
 
     &__video {
@@ -22,7 +35,7 @@
         display: inline-block;
         .icon-play {
             stroke: $red;
-
+            filter: drop-shadow(3px 3px 2px $purple);
             position: absolute;
             top: 0;
             left: 0;

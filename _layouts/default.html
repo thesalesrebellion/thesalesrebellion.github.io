@@ -12,5 +12,13 @@
     <script src="{{- '/assets/js/jquery.js' -}}"></script>
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
 
+    {%- if page.has_video_modal == true -%}
+        <script src="{{- '/assets/js/jquery-modal-video.min.js' -}}"></script>
+        <script>
+            $(".js-modal-el").modalVideo();
+            jQuery(document).keyup(function(e) { if (e.keyCode == 27) { jQuery(".modal-video-close-btn.js-modal-video-dismiss-btn").trigger("click") } });
+        </script>
+    {%- endif -%}
+
 </body>
 </html>

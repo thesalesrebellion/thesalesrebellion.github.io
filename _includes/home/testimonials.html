@@ -8,7 +8,7 @@
             <h2 class="testimonials__heading">{{- page.testimonials.heading -}}</h2>
         {%- endif -%}
 
-        <div class="testimonials__video">
+        <div class="testimonials__video js-modal-el" data-video-id="{{- page.testimonials.video.id -}}">
             <img src="{{- page.testimonials.video.thumbnail.path | relatuve_url -}}" alt="" class="testimonials__video-thumb">
             {%- include svg/play.svg -%}
         </div>
