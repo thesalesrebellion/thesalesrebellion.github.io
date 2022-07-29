@@ -78,7 +78,12 @@ community:
       url: '/blog/'
       new_tab: false
       glow_in: blue
-cta:
+testimonials:
+  heading: Words<br>of our<br>students
+  video:
+    thumbnail:
+      path: /assets/images/home-video-thumbnail.jpg
+      alt_text: 'Link to video testimonial'
   text: Sign<span class="space"></span>up<span class="space"></span>for<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion’s<span class="space"></span>email<span class="space"></span>experience<span class="space"></span>extravaganza
   button:
     text: Coming<br>Soon

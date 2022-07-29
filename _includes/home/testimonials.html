@@ -1,0 +1,20 @@
+<section class="section testimonials">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
+            <h2 class="testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="testimonials__video">
+            <img src="{{- page.testimonials.video.thumbnail.path | relatuve_url -}}" alt="" class="testimonials__video-thumb">
+            {%- include svg/play.svg -%}
+        </div>
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>
