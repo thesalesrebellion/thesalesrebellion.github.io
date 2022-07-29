@@ -116,6 +116,11 @@
     background: transparent;
   }
 
+.modal-video-close-btn,
+.js-modal-video-dismiss-btn {
+  cursor: pointer;
+}
+
   @media (orientation: landscape) {
     .modal-video-close-btn {
       top: 0;
