@@ -17,13 +17,25 @@
                 </div>
             </div>
             <div class="site-footer__col site-footer__col--middle">
-                <p class="site-footer__message">
-                    {{ site.data.global.footer.message }}
-                </p>
-                {%- if site.data.global.footer.note and site.data.global.footer.note.size > 0 -%}
-                    <p class="site-footer__note">
-                        {{ site.data.global.footer.note }}
+                {%- if page.footer.message and page.footer.message.size > 0 -%}
+                    <p class="site-footer__message">
+                        {{ page.footer.message }}
                     </p>
+
+                    {%- if page.footer.note and page.footer.note.size > 0 -%}
+                        <p class="site-footer__note">
+                            {{ page.footer.note }}
+                        </p>
+                    {%- endif -%}
+                {%- else -%}
+                    <p class="site-footer__message">
+                        {{ site.data.global.footer.message }}
+                    </p>
+                    {%- if site.data.global.footer.note and site.data.global.footer.note.size > 0 -%}
+                        <p class="site-footer__note">
+                            {{ site.data.global.footer.note }}
+                        </p>
+                    {%- endif -%}
                 {%- endif -%}
             </div>
             <div class="site-footer__col site-footer__col--right">

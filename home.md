@@ -13,7 +13,7 @@ hero:
       line_1: Name
       line_2: Company - Industry
     text: |-
-      I'll definitely finish at 175% of my quota and could even 3x the annual quota this quarter.
+      I’ll finish at 175% of the annual quota this quarter.
   cta:
     - text: <span>For</span> <span>Teams</span>
       url: '#'
@@ -92,4 +92,7 @@ cta:
     text: Coming<br>Soon
     url: ''
     new_tab: false
+footer:
+  message: "To draw, you must close your eyes and sing."
+  note: "- Pablo Picasso"
 ---
