@@ -46,6 +46,15 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
 }
 
+@mixin btn_box_shadow($color: #fff) {
+    border-color: $color;
+    box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
+}
+
+@mixin btn_text_shadow($color: #fff) {
+    text-shadow: 2px 3px 24px $color;
+}
+
 @mixin btn_defaults {
     font-family: 'Lazer84';
     font-size: 18px;

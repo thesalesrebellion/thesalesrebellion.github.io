@@ -42,6 +42,8 @@
 
         &--teams {
             background-image: url(/assets/images/grid-green-bg.png);
+            background-position-y: 320px;
+            padding-bottom: 260px;
         }
 
         @include breakpoint(medium) {
@@ -239,6 +241,20 @@
                 border-width: 3px;
                 border-radius: 16px;
                 min-width: 230px;
+            }
+        }
+
+        &-btn {
+            display: inline-block;
+            line-height: 1.2;
+            background: rgba(0,0,0,.7);
+            &--teams {
+                font-size: 35px;
+                padding: 12px 70px;
+                @include btn_box_shadow($green);
+                &:hover {
+                    @include btn_glow_in($green);
+                }
             }
         }
 
