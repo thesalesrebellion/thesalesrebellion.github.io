@@ -54,7 +54,7 @@
     }
 
     &__copyright {
-        font-family: 'Big Noodle Titling';
+        @include noodle;
         font-weight: 400;
         letter-spacing: .6px;
         margin-top: 8px;
@@ -66,7 +66,7 @@
     &__message,
     &__note,
     &__cta {
-        font-family: 'Big Noodle Titling';
+        @include noodle;
         font-weight: 400;
         letter-spacing: .6px;
     }

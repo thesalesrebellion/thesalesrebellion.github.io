@@ -69,7 +69,7 @@
     }
 
     &__heading {
-        font-family: 'Lazer84';
+        @include lazer;
         font-size: 56px;
         font-weight: 400;
         letter-spacing: 1.5px;
@@ -95,7 +95,7 @@
     }
 
     &__text {
-        font-family: 'Big Noodle Titling';
+        @include noodle;
         font-size: 22px;
         line-height: 1.25;
         letter-spacing: 1px;
@@ -159,7 +159,7 @@
     }
 
     &__aside {
-        font-family: 'Big Noodle Titling';
+        @include noodle;
         font-size: 20px;
         line-height: 1.25;
         letter-spacing: 1px;
@@ -219,7 +219,7 @@
         &-link {
             $border-radius: 40px;
             display: inline-block;
-            font-family: 'Lazer84';
+            @include lazer;
             font-weight: 400;
             font-size: 24px;
             color: #fff;

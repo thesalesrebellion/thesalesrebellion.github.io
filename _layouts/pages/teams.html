@@ -18,11 +18,38 @@ layout: page
                     {{- item.text -}}
                 </div>
 
-                <a href="{{- item.button.url -}}" class="teams__feature-btn btn btn--purple">
+                <a href="{{- item.button.url -}}" class="teams__feature-btn btn btn--purple"{% if item.button.new_tab == true %} target="_blank"{% endif %}>
                     {{- item.button.text -}}
                 </a>
             </div>
         {%- endfor -%}
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>
+
+{%- comment -%} --- TESTIMONIAL --- {%- endcomment -%}
+<section class="section teams__quote">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        <div class="teams__quote-content">
+            <div class="teams__quote-content-item teams__quote-image-wrapper">
+                <img src="{{- page.quote.image.path | relative_url -}}" alt="{{- page.quote.image.alt_text -}}" class="teams__quote-image">
+            </div>
+            <div class="teams__quote-content-item teams__quote-text">
+                <h3 class="teams__quote-name">
+                    {{- page.quote.name -}}
+                </h3>
+                <p class="teams__quote-desc">
+                    {{ page.quote.text }}
+                </p>
+            </div>
+        </div>
 
     </div>
 

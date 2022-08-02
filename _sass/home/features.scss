@@ -3,7 +3,7 @@
 	position: relative;
 
 	color: #fff;
-	font-family: 'Lazer84';
+	@include lazer;
 
 	padding-top: 45px;
 
@@ -107,7 +107,7 @@
 	}
 
 	&__text {
-		font-family: 'Big Noodle Titling';
+		@include noodle;
 		font-size: 24px;
 		line-height: 1.25;
 		letter-spacing: 1px;

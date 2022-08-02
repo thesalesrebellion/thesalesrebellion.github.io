@@ -10,7 +10,7 @@
     }
 
     &__item {
-        font-family: 'Lazer84';
+        @include lazer;
         font-size: 24px;
         margin: 0 24px;
         &:first-child {
