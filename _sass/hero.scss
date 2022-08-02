@@ -18,6 +18,11 @@
         margin-left: auto;
         margin-right: auto;
 
+        &--page {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
         .container {
             margin-right: 0;
         }
@@ -44,6 +49,15 @@
             background-image: url(/assets/images/grid-green-bg.png);
             background-position-y: 320px;
             padding-bottom: 260px;
+            @include breakpoint(medium) {
+                background-image: url(/assets/images/grid-green-bg-small.png);
+                background-position-y: 420px;
+                padding-bottom: 360px;
+                background-size: contain;
+            }
+            @include breakpoint(small) {
+                background-position-y: 520px;
+            }
         }
 
         @include breakpoint(medium) {
@@ -68,6 +82,12 @@
 
         &--teams {
             font-size: 70px;
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+            @include breakpoint(small) {
+                font-size: 48px;
+            }
         }
     }
 
@@ -254,6 +274,10 @@
                 @include btn_box_shadow($green);
                 &:hover {
                     @include btn_glow_in($green);
+                }
+                @include breakpoint(small) {
+                    font-size: 28px;
+                    padding: 10px 60px;
                 }
             }
         }
