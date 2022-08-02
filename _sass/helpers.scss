@@ -37,4 +37,9 @@ span.space {
         content: ' ';
         margin-right: .35em;
     }
+    &--big {
+        &:after {
+            margin-right: .6em;
+        }
+    }
 }

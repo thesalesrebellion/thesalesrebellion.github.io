@@ -4,6 +4,10 @@
         background-image: url(/assets/images/hero_space_bg.jpg);
     }
 
+    &--teams {
+        background-image: url(/assets/images/team-hero-bg.jpg);
+    }
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -19,6 +23,12 @@
         }
     }
 
+    &__content-wrapper {
+        &--teams {
+            text-align: center;
+        }
+    }
+
     &__content {
         color: #fff;
         padding: 50px 0;
@@ -28,6 +38,10 @@
 
         &--home {
             background-image: url(/assets/images/grid_and_sun.png);
+        }
+
+        &--teams {
+            background-image: url(/assets/images/grid-green-bg.png);
         }
 
         @include breakpoint(medium) {
@@ -49,6 +63,10 @@
         @include breakpoint(large) {
             font-size: 48px;
         }
+
+        &--teams {
+            font-size: 70px;
+        }
     }
 
     &__text {
@@ -59,6 +77,11 @@
         text-shadow: 0 0 24px #000;
         p {
             margin-top: 0;
+        }
+        &--teams {
+            margin-top: 20px;
+            font-size: 26px;
+            line-height: 1.4;
         }
         @include breakpoint(large) {
             font-size: 18px;
