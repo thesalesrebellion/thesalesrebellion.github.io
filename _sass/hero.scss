@@ -1,6 +1,9 @@
 .hero {
 
-    background-image: url(/assets/images/hero_space_bg.jpg);
+    &--home {
+        background-image: url(/assets/images/hero_space_bg.jpg);
+    }
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -20,13 +23,18 @@
         color: #fff;
         padding: 50px 0;
         padding-bottom: 160px;
-        background-image: url(/assets/images/grid_and_sun.png);
         background-repeat: no-repeat;
         background-size: cover;
 
+        &--home {
+            background-image: url(/assets/images/grid_and_sun.png);
+        }
+
         @include breakpoint(medium) {
-            background-image: url(/assets/images/grid_and_sun_small.png);
-            background-position: center 300px;
+            &--home {
+                background-image: url(/assets/images/grid_and_sun_small.png);
+                background-position: center 300px;
+            }
         }
     }
 
