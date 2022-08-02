@@ -1,0 +1,31 @@
+---
+layout: page
+---
+{%- comment -%} --- FEATURES --- {%- endcomment -%}
+<section class="section teams__features">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        {%- for item in page.features.items -%}
+            <div class="teams__feature">
+                <h2 class="teams__feature-title">
+                    {{- item.title -}}
+                </h2>
+
+                <div class="teams__feature-text">
+                    {{- item.text -}}
+                </div>
+
+                <a href="{{- item.button.url -}}" class="teams__feature-btn btn btn--purple">
+                    {{- item.button.text -}}
+                </a>
+            </div>
+        {%- endfor -%}
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>

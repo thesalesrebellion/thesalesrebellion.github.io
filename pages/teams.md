@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pages/teams
 permalink: /teams/
 page_id: teams
 hero:
@@ -10,4 +10,24 @@ hero:
     text: Reach<br>Out
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
     new_tab: true
+features:
+  items:
+    - title: Training and Coaching
+      text: Outreach methodology, maximize the pipeline, sales process with a twist, systems that simplify, leadership and communication
+      button:
+        text: <span>Talk</span> to<br><span>a</span> Rebel
+        url: https://thesalesrebellion.typeform.com/teamsinbound
+        new_tab: true
+    - title: SKOs and Events
+      text: An SKO from the Sales Rebellion fires up your team AND hands over the keys that have unlocked 7-figure sellers, rapid promotions, and quotas destroyed so badly even the company legal department will be suspicious.
+      button:
+        text: Get <span>One</span> Today
+        url: https://thesalesrebellion.typeform.com/teamsinbound
+        new_tab: true
+    - title: <span>Fractional</span> Support
+      text: Fractional CRO/VP of sales, Full sales process buildout and overview, Go to Market strategies, Sales team support - Custom Sales Campaigns
+      button:
+        text: Learn More
+        url: https://calendly.com/jeremiah-salesrebellion/30min-1
+        new_tab: true
 ---

@@ -88,6 +88,9 @@
             @include breakpoint(small) {
                 font-size: 48px;
             }
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
         }
     }
 
