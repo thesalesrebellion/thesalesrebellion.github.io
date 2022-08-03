@@ -32,7 +32,7 @@ features:
         new_tab: true
 quote:
   name: '<span>Eddie <span>@</span> <span>Smart</span> Technologies'
-  text: "“I’ve never had a team that was more excited to prospect or be engaged with the sales process.”"
+  text: "<span class='quote quote--beginning'>“</span>I’ve never had a team that was more excited to prospect or be engaged with the sales process.I’ve never had a team that was more excited to prospect or be engaged with the sales process.<span class='quote quote--end'>”</span>"
   image:
     path: /images/st-logo.png
     alt_text: Samrt Technologies logo
