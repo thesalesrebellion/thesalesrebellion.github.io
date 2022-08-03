@@ -36,4 +36,20 @@ quote:
   image:
     path: /images/st-logo.png
     alt_text: Samrt Technologies logo
+downloads:
+  heading: No Email…<br>No <span>nurture</span> sequence…<br>Just <span>a</span> <span>Free</span> Download
+  items:
+    - image:
+        path: '/images/cover-prospect-like-a-sales-rebel.jpg'
+        alt_text: 'White Paper - Prospect like a Sales Rebel'
+      download_path: '/downloads/white-papers/White Paper - Prospect like a Sales Rebel - PUB22.06.20.pdf'
+    - image:
+        path: '/images/cover-how-segmentation-can-help-you-change-the-game.jpg'
+        alt_text: 'White Paper - How Segmentation Can Help You Change The Game'
+      download_path: '/downloads/white-papers/White Paper - How Segmentation Can Help You ChangeTheGame.pdf'
+    - image:
+        path: '/images/cover-the-sales-culture-revolution.jpg'
+        alt_text: 'White Paper - The Sales Culture Revolution'
+      download_path: '/downloads/white-papers/White Paper - The Sales Culture Revolution - PUB_22.06.20.pdf'
+
 ---

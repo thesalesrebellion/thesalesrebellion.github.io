@@ -107,5 +107,54 @@
 
     }
 
+    &__dl {
+
+        background-image: url(/assets/images/team-downloads-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 50px;
+        padding-bottom: 120px;
+
+        text-align: center;
+
+        &-heading {
+            @include lazer;
+            font-size: 32px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+        &-items {
+            display: flex;
+            @include breakpoint(smallish) {
+                flex-direction: column;
+            }
+        }
+
+        &-img {
+            box-shadow: 0 0 16px 2px $blue;
+            transition: box-shadow .1s linear;
+        }
+
+        &-item {
+            margin: 0 18px;
+            &:hover {
+                .teams__dl-img {
+                    box-shadow: 0 0 16px 6px $purple;
+                }
+            }
+            @include breakpoint(smallish) {
+                margin-bottom: 60px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+    }
+
 
 }
