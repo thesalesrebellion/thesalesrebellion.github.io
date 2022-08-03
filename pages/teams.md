@@ -31,9 +31,9 @@ features:
         url: https://calendly.com/jeremiah-salesrebellion/30min-1
         new_tab: true
 quote:
-  name: 'Eddie @ Smart Technologies'
-  text: "I’ve never had a team that was more excited to prospect or be engaged with the sales process."
+  name: '<span>Eddie <span>@</span> <span>Smart</span> Technologies'
+  text: "“I’ve never had a team that was more excited to prospect or be engaged with the sales process.”"
   image:
-    path: /images/smart-techologies-logo.png
+    path: /images/st-logo.png
     alt_text: Samrt Technologies logo
 ---
