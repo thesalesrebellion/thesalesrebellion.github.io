@@ -82,6 +82,27 @@ layout: page
 
 </section>
 
+{%- comment -%} --- VIDEO - TESTIMONIAL --- {%- endcomment -%}
+<section class="section teams__video">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        <h2 class="teams__video-heading">
+            {{ page.contact.heading }}
+        </h2>
+
+        <div class="teams__video-video_wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{- page.video.video_id -}}?autoplay=1&mute=1&loop=1&playlist={{- page.video.video_id -}}" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>
+
 {%- comment -%} --- CONTACT --- {%- endcomment -%}
 <section class="section teams__contact">
 

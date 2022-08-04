@@ -120,10 +120,13 @@
 
         &-heading {
             @include lazer;
-            font-size: 32px;
+            font-size: 40px;
             letter-spacing: 2px;
             line-height: 1.4;
             margin-bottom: 40px;
+            @include breakpoint(small) {
+                font-size: 32px;
+            }
         }
 
         &-items {
@@ -168,15 +171,71 @@
         &-heading {
             @include lazer;
             text-align: center;
-            font-size: 32px;
+            font-size: 40px;
             letter-spacing: 2px;
             line-height: 1.4;
             margin-bottom: 40px;
+            @include breakpoint(small) {
+                font-size: 32px;
+            }
         }
 
         &-form_wrapper {
             & > div:first-child {
                 box-shadow: 0 14px 24px -12px $purple;
+            }
+        }
+
+    }
+
+    &__video {
+
+        background-image: url(/assets/images/team-video-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        padding-top: 50px;
+        padding-bottom: 120px;
+
+        .container {
+            display: flex;
+            align-items: center;
+            @include breakpoint(smallish) {
+                flex-direction: column;
+            }
+        }
+
+        &-heading {
+            @include lazer;
+            font-size: 32px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            flex-basis: 40%;
+            padding-right: 20px;
+            @include breakpoint(smallish) {
+                padding-right: 0;
+                text-align: center;
+            }
+        }
+
+        &-video_wrapper {
+            box-shadow: 0 0 16px 0px $purple;
+            flex-basis: 60%;
+            overflow: hidden;
+            position: relative;
+            width:100%;
+            &::after {
+                padding-top: 56.25%;
+                display: block;
+                content: '';
+            }
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
             }
         }
 
