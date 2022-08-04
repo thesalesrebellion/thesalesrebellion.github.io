@@ -12,7 +12,7 @@
             <ul class="menu__items">
                 {%- for item in site.data.navigation.items -%}
                     <li class="menu__item">
-                        <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}">
+                        <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}{% if item.url == page.url %} menu__link--active{% endif %}">
                             {{- item.name | upcase -}}
                         </a>
                     </li>

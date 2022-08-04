@@ -52,27 +52,32 @@
         letter-spacing: 1px;
         transition: text-shadow .1s ease-in;
         &--green {
-            &:hover {
+            &:hover,
+            &.menu__link--active {
                 @include glow_in($green);
             }
         }
         &--blue {
-            &:hover {
+            &:hover,
+            &.menu__link--active {
                 @include glow_in($blue);
             }
         }
         &--purple {
-            &:hover {
+            &:hover,
+            &.menu__link--active {
                 @include glow_in($purple);
             }
         }
         &--red {
-            &:hover {
+            &:hover,
+            &.menu__link--active {
                 @include glow_in($red);
             }
         }
         &--yellow {
-            &:hover {
+            &:hover,
+            &.menu__link--active {
                 @include glow_in($yellow);
             }
         }
