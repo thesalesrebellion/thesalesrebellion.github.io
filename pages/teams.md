@@ -51,5 +51,6 @@ downloads:
         path: '/images/cover-the-sales-culture-revolution.jpg'
         alt_text: 'White Paper - The Sales Culture Revolution'
       download_path: '/downloads/white-papers/White Paper - The Sales Culture Revolution - PUB_22.06.20.pdf'
-
+contact:
+  heading: Talk with <span>a</span> <span>Rebel</span> today
 ---
