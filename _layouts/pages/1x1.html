@@ -2,27 +2,27 @@
 layout: page
 ---
 {%- comment -%} --- FEATURES --- {%- endcomment -%}
-<section class="section teams__features">
+<section class="section one-x-one__features">
 
     <div class="overlay overlay--top"></div>
 
     <div class="container">
 
-        {%- for item in page.features.items -%}
-            <div class="teams__feature">
-                <h2 class="teams__feature-title">
-                    {{- item.title -}}
-                </h2>
-
-                <div class="teams__feature-text">
-                    {{- item.text -}}
+        <h2 class="one-x-one__features-heading">
+            {%- for line in page.features.heading_lines -%}
+                <div class="one-x-one__features-heading-line one-x-one__features-heading-line--{{ forloop.index }}">
+                    {{- line -}}
                 </div>
+            {%- endfor -%}
+        </h2>
 
-                <a href="{{- item.button.url -}}" class="teams__feature-btn btn btn--purple"{% if item.button.new_tab == true %} target="_blank"{% endif %}>
-                    {{- item.button.text -}}
-                </a>
-            </div>
-        {%- endfor -%}
+        <ul class="one-x-one__features-text">
+            {%- for item in page.features.items -%}
+                <li class="one-x-one__features-text-item">
+                    - {{ item }}
+                </li>
+            {%- endfor -%}
+        </ul>
 
     </div>
 

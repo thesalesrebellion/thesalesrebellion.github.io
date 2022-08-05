@@ -1,0 +1,50 @@
+.one-x-one {
+
+    &__features {
+        position: relative;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        background-image: url(/assets/images/1x1-features-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        text-align: center;
+
+        &-heading {
+            @include lazer;
+            font-size: 50px;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            margin-bottom: 80px;
+
+            &-line {
+                line-height: 1;
+                margin-bottom: 16px;
+
+                $line_font_size: 36px;
+                @for $i from 0 through 4 {
+                    &--#{$i + 1} {
+                        font-size: $line_font_size + 20 * $i;
+                    }
+                  }
+
+            }
+        }
+
+        &-text {
+            @include noodle;
+            list-style: none;
+
+            &-item {
+                font-size: 30px;
+                line-height: 1.4;
+                letter-spacing: 1.3px;
+                margin-bottom: 60px;
+            }
+        }
+
+    }
+
+}
