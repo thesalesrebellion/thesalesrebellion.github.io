@@ -96,6 +96,15 @@
 
         &--teams {
             font-size: 70px;
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+            @include breakpoint(small) {
+                font-size: 48px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
         }
 
     }
@@ -113,9 +122,6 @@
             margin-top: 20px;
             font-size: 26px;
             line-height: 1.4;
-        }
-        @include breakpoint(large) {
-            font-size: 18px;
         }
     }
 
@@ -298,6 +304,12 @@
                 @include btn_box_shadow($blue);
                 &:hover {
                     @include btn_glow_in($blue);
+                }
+                @include breakpoint(medium) {
+                    font-size: 22px;
+                }
+                @include breakpoint(small) {
+                    padding: 20px 24px;
                 }
             }
         }
