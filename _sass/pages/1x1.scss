@@ -45,6 +45,13 @@
             }
         }
 
+        &-footer_text {
+            @include lazer;
+            letter-spacing: 2px;
+            font-size: 60px;
+            line-height: 1.3;
+        }
+
     }
 
 }
