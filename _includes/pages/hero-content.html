@@ -4,16 +4,16 @@
 
         <div class="hero__content-wrapper hero__content-wrapper--{{ page.page_id }}">
 
-                <h1 class="hero__heading hero__heading--{{ page.page_id }}">
+                <h1 class="hero__heading hero__heading--page hero__heading--{{ page.page_id }}">
                     {{ page.hero.heading }}
                 </h1>
 
-                <div class="hero__text hero__text--{{ page.page_id }}">
+                <div class="hero__text hero__text--page hero__text--{{ page.page_id }}">
                     {{ page.hero.text | markdownify }}
                 </div>
 
                 <div class="hero__cta hero__cta--{{ page.page_id }}">
-                    <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
+                    <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
                         {{- page.hero.cta.text -}}
                     </a>
                 </div>
