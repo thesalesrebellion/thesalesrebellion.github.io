@@ -54,33 +54,11 @@
         }
 
         &--teams {
-            background-image: url(/assets/images/grid-green-bg.png);
-            background-position-y: 320px;
-            padding-bottom: 260px;
-            @include breakpoint(medium) {
-                background-image: url(/assets/images/grid-green-bg-small.png);
-                background-position-y: 420px;
-                padding-bottom: 360px;
-                background-size: contain;
-            }
-            @include breakpoint(small) {
-                background-position-y: 520px;
-            }
+            @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
         }
 
         &--1x1 {
-            background-image: url(/assets/images/grid-blue-bg.png);
-            background-position-y: 320px;
-            padding-bottom: 260px;
-            @include breakpoint(medium) {
-                background-image: url(/assets/images/grid-blue-bg-small.png);
-                background-position-y: 420px;
-                padding-bottom: 360px;
-                background-size: contain;
-            }
-            @include breakpoint(small) {
-                background-position-y: 520px;
-            }
+            @include page_hero_grid_bg('/assets/images/grid-blue-bg.png', '/assets/images/grid-blue-bg-small.png');
         }
 
         @include breakpoint(medium) {

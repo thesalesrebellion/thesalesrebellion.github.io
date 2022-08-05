@@ -76,6 +76,21 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     padding: 10px 20px;
 }
 
+@mixin page_hero_grid_bg($img, $img_small) {
+    background-image: url($img);
+    background-position-y: 320px;
+    padding-bottom: 260px;
+    @include breakpoint(medium) {
+        background-image: url($img_small);
+        background-position-y: 420px;
+        padding-bottom: 360px;
+        background-size: contain;
+    }
+    @include breakpoint(small) {
+        background-position-y: 520px;
+    }
+}
+
 @mixin clearfix {
     &:after {
         content: "";
