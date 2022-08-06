@@ -19,7 +19,7 @@ body {
 
 .btn {
     @include btn_defaults;
-    transition: text-shadow .1s ease-in, box-shadow .1s ease-in;
+    transition: all .1s ease-in;
 
     &:hover {
         @include btn_glow_in();

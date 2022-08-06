@@ -74,6 +74,7 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     border-radius: 16px;
     text-align: center;
     padding: 10px 20px;
+    transition: all .1s linear;
 }
 
 @mixin page_hero_grid_bg($img, $img_small) {

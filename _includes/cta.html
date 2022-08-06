@@ -6,19 +6,19 @@
 
         <div class="home-cta__cols">
             <div class="home-cta__col home-cta__col--left">
-                <p class="home-cta__text">
-                    {{ page.cta.text }}
+                <p class="home-cta__text{% if include.type %} home-cta__text--{{ include.type }}{% endif %}">
+                    {{ include.cta.text }}
                 </p>
             </div>
             <div class="home-cta__col home-cta__col--right">
 
-                {%- if page.cta.button.url and page.cta.button.url.size > 0 -%}
-                    <a class="home-cta__button btn" href="{{- page.cta.button.url | relative_url -}}"{% if page.cta.button.new_tab == true %} target="_blank"{% endif %}>
-                        {{- page.cta.button.text -}}
+                {%- if include.cta.button.url and include.cta.button.url.size > 0 -%}
+                    <a class="home-cta__button btn" href="{{- include.cta.button.url | relative_url -}}"{% if include.cta.button.new_tab == true %} target="_blank"{% endif %}>
+                        {{- include.cta.button.text -}}
                     </a>
                 {%- else -%}
                     <span class="home-cta__button home-cta__button--span">
-                        {{- page.cta.button.text -}}
+                        {{- include.cta.button.text -}}
                     </span>
                 {%- endif -%}
 
