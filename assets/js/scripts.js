@@ -25,5 +25,28 @@
 
     handle_menu();
 
+    var handle_faq = function(){
+
+        var que = $('.faq__q'),
+            ans = $('.faq__a');
+
+        // ans.hide();
+
+        que.on('click', function(){
+
+            var $this = $(this),
+                ans = $this.siblings('.faq__a'),
+                icon = $this.children('.faq__icon');
+
+            ans.slideToggle();
+
+            icon.toggleClass('rotate-45');
+
+        });
+
+    }
+
+    handle_faq();
+
 
 })();

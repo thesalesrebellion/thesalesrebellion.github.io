@@ -62,3 +62,22 @@ layout: page
     <div class="overlay overlay--bottom"></div>
 
 </section>
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section one-x-one__faq">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        <h2 class="faq__heading one-x-one__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>

@@ -59,6 +59,8 @@
 
         &--1x1 {
             @include page_hero_grid_bg('/assets/images/grid-blue-bg.png', '/assets/images/grid-blue-bg-small.png');
+            background-attachment: fixed;
+            background-position-y: 500px;
         }
 
         @include breakpoint(medium) {
