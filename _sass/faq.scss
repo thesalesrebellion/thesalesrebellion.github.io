@@ -30,6 +30,9 @@
         @include breakpoint(medium) {
             font-size: 28px;
         }
+        @include breakpoint(small) {
+            font-size: 24px;
+        }
     }
 
     &__a {
@@ -37,6 +40,9 @@
         font-family: Helvetica, sans-serif;
         font-size: 20px;
         line-height: 1.4;
+        @include breakpoint(small) {
+            font-size: 19px;
+        }
     }
 
     &__icon {
