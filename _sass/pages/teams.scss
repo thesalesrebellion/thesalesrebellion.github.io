@@ -159,35 +159,6 @@
 
     }
 
-    &__contact {
-
-        background-image: url(/assets/images/team-downloads-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        padding-top: 50px;
-        padding-bottom: 120px;
-
-        &-heading {
-            @include lazer;
-            text-align: center;
-            font-size: 40px;
-            letter-spacing: 2px;
-            line-height: 1.4;
-            margin-bottom: 40px;
-            @include breakpoint(small) {
-                font-size: 32px;
-            }
-        }
-
-        &-form_wrapper {
-            & > div:first-child {
-                box-shadow: 0 14px 24px -12px $purple;
-            }
-        }
-
-    }
-
     &__video {
 
         background-image: url(/assets/images/team-video-bg.jpg);
