@@ -12,6 +12,10 @@
         background-image: url(/assets/images/1x1-hero-bg.jpg);
     }
 
+    &--group {
+        background-image: url(/assets/images/group-hero-bg.jpg);
+    }
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -27,7 +31,8 @@
             padding-right: 20px;
         }
 
-        &--1x1 {
+        &--1x1,
+        &--group {
             max-width: 1000px;
         }
 
@@ -37,7 +42,8 @@
     }
 
     &__content-wrapper {
-        &--teams {
+        &--teams,
+        &--group {
             text-align: center;
         }
     }
@@ -109,6 +115,20 @@
             }
         }
 
+        &--group {
+            font-size: 60px;
+            line-height: 1.35;
+            @include breakpoint(large) {
+                font-size: 50px;
+            }
+            @include breakpoint(small) {
+                font-size: 45px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 40px;
+            }
+        }
+
     }
 
     &__text {
@@ -124,6 +144,11 @@
             margin-top: 20px;
             font-size: 26px;
             line-height: 1.4;
+        }
+        &--group {
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
@@ -312,6 +337,22 @@
                 }
                 @include breakpoint(small) {
                     padding: 20px 24px;
+                }
+            }
+            &--group {
+                font-size: 28px;
+                letter-spacing: 2px;
+                padding: 18px 22px;
+                line-height: 1.5;
+                @include btn_box_shadow($purple);
+                &:hover {
+                    @include btn_glow_in($purple);
+                }
+                @include breakpoint(medium) {
+                    font-size: 22px;
+                }
+                @include breakpoint(small) {
+                    padding: 20px;
                 }
             }
         }

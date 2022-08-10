@@ -3,4 +3,6 @@ layout: default
 ---
 {%- include pages/hero.html -%}
 
-{{ content }}
+<div class="page__content page__content--{{ page.page_id }}">
+    {{ content }}
+</div>

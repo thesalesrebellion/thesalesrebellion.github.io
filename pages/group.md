@@ -1,14 +1,14 @@
 ---
-layout: pages/1x1
+layout: pages/group
 permalink: /group/
 page_id: group
 hero:
-  heading: <span>Don’t</span> walk alone…<br><span>Learn</span> from <span>a</span> Rebel
+  heading: <span>Change</span> <span>The</span> <span>Game</span> <span>with</span> <span>like-minded</span> <span>Sales</span> Rebels
   text: |-
-    Redefine what it means to have success<br>both personally and professionally
+    Solve real-world problems with others who heard the call and answered it
   cta:
-    text: '#ChooseLegendary'
-    url: https://calendly.com/jeremiah-salesrebellion/30min-1
+    text: Join <span>a</span> Squadron
+    url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
     new_tab: true
 features:
   heading_lines:
