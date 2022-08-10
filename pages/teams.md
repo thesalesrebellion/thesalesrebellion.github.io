@@ -52,10 +52,10 @@ downloads:
         alt_text: 'White Paper - The Sales Culture Revolution'
       download_path: '/downloads/white-papers/White Paper - The Sales Culture Revolution - PUB_22.06.20.pdf'
 video:
-  heading: Take your team to new levels…
+  heading: <span>Take</span> <span>your</span> <span>team</span> <span>to</span> <span>new</span> levels…
   video_id: y2Z69Mf9adw
 contact:
-  heading: Talk with <span>a</span> <span>Rebel</span> today
+  heading: <span>Talk</span> with <span>a</span> <span>Rebel</span> today
 footer:
   message: "The human race is governed by its imagination"
   note: "- Napoleon Bonaparte"
