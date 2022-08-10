@@ -92,6 +92,17 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     }
 }
 
+@mixin ul_dashed {
+    list-style-type: none;
+    & > li {
+        text-indent: -5px;
+        &:before {
+            content: "- ";
+            text-indent: -5px;
+        }
+    }
+}
+
 @mixin clearfix {
     &:after {
         content: "";

@@ -12,16 +12,21 @@ hero:
     new_tab: true
 features:
   heading_lines:
-    - Become
-    - <span>a</span> rebel
-    - leader
+    - <span>Rebel</span> Squadrons…
+    - Topic-specific
+    - cohort groups
   items:
-    - One on One coaching with a certified Sales Rebel
-    - Design and refine your go to market strategy
-    - Ongoing accountability and support from sales experts
-    - Build a living pipeline and cadences that yield results for years to come
-    - Reignite your passion, build your personal brand, and lean into your authenticity
-  footer_text: Your<span class="space"></span>life<span class="space"></span>will<span class="space"></span><span>never<span class="space"></span>be<span class="space"></span>the<span class="space"></span>same
+    - title: '<span>Current</span> <span>Squadron</span> Topics:'
+      text: |-
+        * Prospecting
+        * Leadership
+        * Brand-Building
+    - title: '<span>Next</span> <span>Squadron</span> <span>Starts</span> <span>in</span> May:'
+      text: |-
+        Who: Adam Snider<br>
+        What: Prospecting<br>
+        When: TBD<br>
+        Where: In The Interwebs…
 testimonials:
   image:
     path: /images/1x1-testimonials.png
