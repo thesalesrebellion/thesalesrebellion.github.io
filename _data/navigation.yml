@@ -6,7 +6,7 @@ items:
    url: '/1x1/'
    glow_in: 'blue'
  - name: 'Group'
-   url: '#'
+   url: '/group/'
    glow_in: 'purple'
  - name: 'About'
    url: '#'
