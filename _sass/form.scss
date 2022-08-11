@@ -10,6 +10,14 @@
         background-position: center;
     }
 
+    &--group {
+        background-image: none;
+        .overlay--top,
+        .overlay--bottom {
+            display: none;
+        }
+    }
+
     padding-top: 50px;
     padding-bottom: 120px;
 
