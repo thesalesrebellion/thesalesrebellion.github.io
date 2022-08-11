@@ -37,25 +37,22 @@ faq:
   items:
   - q: How long is the program?
     a: |-
-      As long as you want your Rebellion to last. :) Program length can vary depending on individual student needs, but historically our most successful students commit to being coached through the full Rebellion curriculum. Jedi commitment like that is 6 months, which is still half the time it took for Luke to free Han Solo from his carbonite prison.
-  - q: What are the typical results?
+      Rebel Squadrons are 16 weeks - 8 total coaching sessions of 90 minutes each.
+  - q: Who are Squadrons for?
     a: |-
-      Those who follow the system faithfully outperform quota by at least 25%. Most do much better and results like 177% to plan, 3x of quota, going from 44th to 2nd overall in the company, and 282% to goal happen about as frequently as Chewbacca shouts something unintelligible to human comprehension.
-  - q: Who would be my coach?
+      New or seasoned sales reps who aren’t yet ready to go full Rebel Jedi, but need to build a full and healthy pipeline in the next 180 days.
+  - q: How many people are in each group?
     a: |-
-      Students are placed with coaches based on several different factors. Some of these factors include personality, industry experience, total sales experience, etc  (although you can request a specific coach). All of our coaches have been refined in the fire of Rebellion and each one has had success using the system in their own personal sales efforts. Think of them as your own personal Sales Yoda.
-  - q: What topics are covered during the program?
-    a: |-
-      Some things you expect (prospecting, pipeline management, mindset, social selling) and some you might not (empathy, giving experiences, gifting, how to find and close whales...) For a detailed description of the curriculum visit - www.thesalesrebellion.teachable.com/courses.
-  - q: Who is the program for?
-    a: |-
-      The 1:1 program is for new OR seasoned sales reps who need to reach BIG goals, and are looking to enjoy their sales efforts while they reach them. Typically, they are full-cycle AE's (SMB to Enterprise) who loathe manipulative sales tactics, mass automation, and surface-level-only relationships - like the one between Vader and the Emperor.
+      There are 8 main rebels in our favorite saga, with 6 seeing the overthrow of the Empire. It’s only fitting that Squadrons be limited to 6-8 rebels.
   - q: How much does the program cost?
     a: |-
-      Total cost varies depending on engagement length and frequency of coaching - 1:1 coaching is between $1,200-$2,500 monthly. Hard-working rebels have no problem earning a return on investment of at least 4x what they put in.
-  - q: Do you have free learning resources?
+      $429/mo. for 4 mos.
+  - q: Once I signup, then what happens?
     a: |-
-      YES! The Sales Rebel Slack group is full of advice, tools, and ideas for rebels worldwide to overthrow the Evil Empire of old-school sales tactics and maneuvers. See the Resources page to join us.
+      Each squadron has an official intro call and members are placed in a private group with their fellow 6-7 rebels. Rebellion market tools are shared so each member can start tailoring them for their prospects. This kickstarts the build of a prospecting and pipeline system you will use to create meetings-on-demand.
+  - q: What kind of support will I get?
+    a: |-
+      Apart from group coaching calls, Rebels have access to a private Slack channel for their Squadron only, where you can post questions, submit pieces for feedback, share wins, etc. Your coach and other Rebel coaches/support personnel are in the channel daily to help.
 cta:
   text: 'Are<span class="space"></span>you<span class="space"></span>ready<span class="space"></span>to<span class="space"></span>#ChangeTheGame'
   button:

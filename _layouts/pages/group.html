@@ -67,3 +67,22 @@ layout: page
 
 {%- comment -%} --- CONTACT --- {%- endcomment -%}
 {%- include form.html -%}
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section group__faq">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        <h2 class="faq__heading group__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>

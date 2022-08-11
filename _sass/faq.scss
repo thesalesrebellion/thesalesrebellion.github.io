@@ -23,26 +23,18 @@
     }
 
     &__q {
-        @include noodle;
+        font-family: 'Big Noodle Titling Oblique';
         font-size: 36px;
         letter-spacing: 1.2px;
         cursor: pointer;
-        @include breakpoint(medium) {
-            font-size: 28px;
-        }
-        @include breakpoint(small) {
-            font-size: 24px;
-        }
     }
 
     &__a {
         display: none;
-        font-family: Helvetica, sans-serif;
-        font-size: 20px;
+        @include noodle;
+        font-size: 26px;
+        letter-spacing: 1.2px;
         line-height: 1.4;
-        @include breakpoint(small) {
-            font-size: 19px;
-        }
     }
 
     &__icon {
