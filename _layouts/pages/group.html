@@ -39,3 +39,28 @@ layout: page
     <div class="overlay overlay--bottom"></div>
 
 </section>
+
+{%- comment -%} --- VIDEO --- {%- endcomment -%}
+<section class="section group-testimonials">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
+            <h2 class="group-testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="group-testimonials__content">
+
+            <div class="group-testimonials__video-wrapper video-wrapper">
+                {%- include video.html video_id=page.testimonials.video_id -%}
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="overlay overlay--bottom"></div>
+
+</section>

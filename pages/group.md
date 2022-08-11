@@ -28,11 +28,8 @@ features:
         When: TBD<br>
         Where: In The Interwebs…
 testimonials:
-  image:
-    path: /images/1x1-testimonials.png
-    alt_text: 'Testimonials from clients'
-  heading: <span>Uber</span> Focused
-  video_id: kOguAX8D3Zw
+  heading: <span>See</span> <span>what</span> <span>students</span> <span>have</span> <span>to</span> say…
+  video_id: 38Dlolt13JE
 contact:
   heading: '<span>Are</span> you <span>ready</span> <span>to</span> #ChangeTheGame'
 faq:
