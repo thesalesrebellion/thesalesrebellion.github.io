@@ -33,6 +33,7 @@
 }
 
 span.space {
+    margin: 0 !important;
     &:after {
         content: ' ';
         margin-right: .3em;
