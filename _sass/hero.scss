@@ -69,6 +69,15 @@
             background-position-y: 500px;
         }
 
+        &--group {
+            @include breakpoint(medium) {
+                padding-bottom: 340px;
+                background-image: url(/assets/images/ringed-planet.png);
+                background-size: 600px;
+                background-position: 150px 350px;
+            }
+        }
+
         @include breakpoint(medium) {
             &--home {
                 background-image: url(/assets/images/grid_and_sun_small.png);
