@@ -60,6 +60,6 @@ cta:
     url: 'https://calendly.com/jeremiah-salesrebellion/30min-1'
     new_tab: true
 footer:
-  message: "What lies behind us and what lies before us are tiny matters compared to what lies within us"
-  note: "- Ralph Waldo Emerson"
+  message: ""
+  note: ""
 ---
