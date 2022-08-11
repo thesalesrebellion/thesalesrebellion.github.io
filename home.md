@@ -3,6 +3,7 @@ layout: home
 title: Home
 page_id: home
 permalink: '/'
+has_video: true
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-

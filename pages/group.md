@@ -2,6 +2,7 @@
 layout: pages/group
 permalink: /group/
 page_id: group
+has_video: true
 hero:
   heading: <span>Change</span> <span>The</span> <span>Game</span> <span>with</span> <span>like-minded</span> <span>Sales</span> Rebels
   text: |-

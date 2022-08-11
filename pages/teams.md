@@ -2,6 +2,7 @@
 layout: pages/teams
 permalink: /teams/
 page_id: teams
+has_video: true
 hero:
   heading: <span>Get</span><span>your</span> team<br><span>to</span><span>the</span>top!
   text: |-
