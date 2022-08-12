@@ -1,6 +1,7 @@
 .group {
 
     &__features {
+
         position: relative;
 
         padding-top: 50px;
@@ -78,6 +79,18 @@
                 ul {
                     @include ul_dashed;
                 }
+            }
+        }
+
+        &-cta {
+            margin-top: 60px;
+        }
+
+        &-btn {
+            @include btn_box_shadow($purple);
+            padding: 16px 32px;
+            &:hover {
+                @include btn_glow_in($purple);
             }
         }
 

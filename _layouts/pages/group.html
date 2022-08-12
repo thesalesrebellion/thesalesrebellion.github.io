@@ -33,6 +33,11 @@ layout: page
             {%- endfor -%}
         </div>
 
+        <div class="group__features-cta">
+            <a href="{{- page.features.cta.url -}}" class="group__features-btn btn"{% if page.features.cta.new_tab == true %} target="_blank"{% endif %}>
+                {{- page.features.cta.text -}}
+            </a>
+        </div>
 
     </div>
 

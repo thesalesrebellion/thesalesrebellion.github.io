@@ -28,6 +28,10 @@ features:
         What: Prospecting<br>
         When: TBD<br>
         Where: In The Interwebs…
+  cta:
+    text: Join<span class="space"></span>Squardrons
+    url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
+    new_tab: true
 testimonials:
   heading: <span>See</span> <span>what</span> <span>students</span> <span>have</span> <span>to</span> say…
   video_id: 38Dlolt13JE
