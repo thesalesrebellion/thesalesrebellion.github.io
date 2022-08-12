@@ -10,22 +10,15 @@ hero:
 
     In these moments we are called to rise against the status quo and **Create Wonder**. We must heed the call to **Serve Others** and build communities. Arise from your slumber and claim the power provided to you through rebellion. Join us as we **Change The Game**.
 features:
-  heading_lines:
-    - <span>Rebel</span> Squadrons…
-    - Topic-specific
-    - cohort groups
   items:
-    - title: '<span>Current</span> <span>Squadron</span> Topics:'
-      text: |-
-        * Prospecting
-        * Leadership
-        * Brand-Building
-    - title: '<span>Next</span> <span>Squadron</span> <span>Starts</span> <span>in</span> May:'
-      text: |-
-        Who: Adam Snider<br>
-        What: Prospecting<br>
-        When: TBD<br>
-        Where: In The Interwebs…
+    - title: Choose Legendary
+      text: The pursuit of excellence in all endeavors - Personal, Professional, and Private
+    - title: Create Wonder
+      text: Making the human experience the primary objective at every level
+    - title: Serve Others
+      text: Servant leadership for all people in all things
+    - title: Change The Game
+      text: To reject the status quo and relentlessly peruse creativity
   cta:
     text: Join<span class="space"></span>Squardrons
     url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron

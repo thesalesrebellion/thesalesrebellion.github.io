@@ -4,7 +4,8 @@
 
         position: relative;
 
-        &--group {
+        &--group,
+        &--about {
             background-image: url(/assets/images/group-content-bg.jpg);
             background-repeat: no-repeat;
             background-size: cover;
