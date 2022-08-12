@@ -149,10 +149,19 @@
         line-height: 1.25;
         letter-spacing: 1px;
         text-shadow: 0 0 24px #000;
+
         p {
             margin-top: 0;
             margin-bottom: .4em;
         }
+
+        strong,
+        b {
+            font-family: 'Big Noodle Titling Oblique';
+            color: $blue;
+            text-shadow: 0 0 10px #000, 0 0 16px #fff, 0 0 20px $blue;
+        }
+
         &--page {
             margin-top: 20px;
             font-size: 26px;
