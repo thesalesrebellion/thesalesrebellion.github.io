@@ -81,6 +81,13 @@
             }
         }
 
+        &--about {
+            padding-bottom: 120px;
+            @include breakpoint(smallish) {
+                padding-bottom: 100px;
+            }
+        }
+
         @include breakpoint(medium) {
             &--home {
                 background-image: url(/assets/images/grid_and_sun_small.png);
@@ -141,6 +148,23 @@
             }
         }
 
+        &--about {
+            @include breakpoint(smallish) {
+                font-family: 'Franklin Gothic';
+                color: #ffe81f;
+                font-size: 45px;
+                text-transform: uppercase;
+                line-height: 1.2;
+                span {
+                    margin: 0;
+                    &:after {
+                        content: '';
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
     }
 
     &__text {
@@ -176,6 +200,21 @@
         &--about {
             margin-top: 30px;
             font-size: 24px;
+            @include breakpoint(smallish) {
+                font-family: 'Franklin Gothic';
+                color: #ffe81f;
+                text-align: justify;
+                font-size: 22px;
+                font-weight: 300;
+                line-height: 1.5;
+                strong,
+                b {
+                    font-family: 'Franklin Gothic';
+                    color: #ffe81f;
+                    font-style: oblique;
+                    text-shadow: none;
+                }
+            }
         }
     }
 
