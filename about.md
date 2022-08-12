@@ -1,4 +1,5 @@
 ---
+published: false
 title: Rebel Squadron
 permalink: /about/
 section: about inverse

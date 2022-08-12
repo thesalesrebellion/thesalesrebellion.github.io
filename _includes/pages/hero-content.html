@@ -12,11 +12,14 @@
                     {{ page.hero.text | markdownify }}
                 </div>
 
-                <div class="hero__cta hero__cta--{{ page.page_id }}">
-                    <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
-                        {{- page.hero.cta.text -}}
-                    </a>
-                </div>
+                {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
+                    <div class="hero__cta hero__cta--{{ page.page_id }}">
+                        <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
+                            {{- page.hero.cta.text -}}
+                        </a>
+                    </div>
+                {%- endif -%}
+
 
         </div>
 
