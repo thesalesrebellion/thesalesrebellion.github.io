@@ -48,9 +48,9 @@
 
     handle_faq();
 
-    var handle_hero_parallax = function(){
+    var handle_hero_parallax = function(el){
 
-        const page_content = document.querySelector('.hero__content'),
+        const page_content = document.querySelector(el),
               page_style = getComputedStyle(page_content),
               initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
 
@@ -67,6 +67,6 @@
 
     };
 
-    handle_hero_parallax();
+    handle_hero_parallax('.hero__content');
 
 })();

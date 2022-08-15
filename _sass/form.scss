@@ -1,17 +1,17 @@
 .form {
 
-    background-image: url(/assets/images/team-downloads-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url(/assets/images/team-downloads-bg.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
 
-    &--1x1 {
-        background-image: url(/assets/images/1x1-form-bg.jpg);
-        background-attachment: fixed;
-        background-position: center;
-    }
+    // &--1x1 {
+    //     background-image: url(/assets/images/1x1-form-bg.jpg);
+    //     background-attachment: fixed;
+    //     background-position: center;
+    // }
 
     &--group {
-        background-image: none;
+        // background-image: none;
         .overlay--top,
         .overlay--bottom {
             display: none;
@@ -19,7 +19,7 @@
     }
 
     padding-top: 50px;
-    padding-bottom: 120px;
+    padding-bottom: 50px;
 
     &__heading {
         @include lazer;

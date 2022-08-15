@@ -5,8 +5,12 @@ layout: default
 
 {%- include home/features.html -%}
 
-{%- include home/testimonials.html -%}
+<div class="page__content page__content--{{ page.page_id }}">
 
-{%- include home/community.html -%}
+    {%- include home/testimonials.html -%}
 
-{%- include cta.html cta=page.cta type='home' -%}
+    {%- include home/community.html -%}
+
+    {%- include cta.html cta=page.cta type='home' -%}
+
+</div>
