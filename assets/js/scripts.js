@@ -48,4 +48,25 @@
 
     handle_faq();
 
+    var handle_hero_parallax = function(){
+
+        const page_content = document.querySelector('.hero__content'),
+              page_style = getComputedStyle(page_content),
+              initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
+
+        console.log('initial_bgYpos', initial_bgYpos);
+
+        window.addEventListener('scroll', function(){
+            let offset = window.pageYOffset;
+            if (initial_bgYpos > 0) {
+                page_content.style.backgroundPositionY = initial_bgYpos - offset * .2 + 'px';
+            } else {
+                page_content.style.backgroundPositionY = offset * .7 + 'px';
+            }
+        });
+
+    };
+
+    handle_hero_parallax();
+
 })();
