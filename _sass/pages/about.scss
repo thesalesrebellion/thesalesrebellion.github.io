@@ -70,6 +70,9 @@
                 top: 0;
                 left: 0;
                 width: 160px;
+                @include breakpoint(smallish) {
+                    display: none;
+                }
             }
 
             &-bottom-right-img {
@@ -77,6 +80,22 @@
                 bottom: 0;
                 right: 0;
                 width: 270px;
+                @include breakpoint(smallish) {
+                    display: none;
+                }
+            }
+
+            &--desktop {
+                @include breakpoint(smallish) {
+                    display: none;
+                }
+            }
+
+            &--mobile {
+                display: none;
+                @include breakpoint(smallish) {
+                    display: block;
+                }
             }
         }
 
@@ -84,9 +103,15 @@
             flex-basis: 200px;
             &--first {
                 margin-left: 200px;
+                @include breakpoint(smallish) {
+                    margin: 0;
+                }
             }
             &--last {
                 margin-right: 200px;
+                @include breakpoint(smallish) {
+                    margin: 0;
+                }
             }
         }
 

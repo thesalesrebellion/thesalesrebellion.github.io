@@ -10,9 +10,16 @@
     {%- include footer.html -%}
 
     <script src="{{- '/assets/js/jquery.js' -}}"></script>
+    {%- if page.has_carousel == true -%}
+        <script src="{{- '/assets/js/slick.min.js' -}}"></script>
+        <script>
+            $('.about__team-members--mobile').slick({
+                arrows: false,
+                dots: true
+            });
+        </script>
+    {%- endif -%}
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
-    {%- comment -%} <script src="{{- '/assets/js/yt.js' -}}"></script> {%- endcomment -%}
-
 
     {%- if page.has_video == true -%}
         {%- include youtube_api.html -%}

@@ -2,7 +2,7 @@
 layout: pages/about
 permalink: /about/
 page_id: about
-has_video: true
+has_carousel: true
 hero:
   heading: <span>Culture</span> <span>Eats</span> <span>Strategy</span> <span>For</span> Breakfast…
   text: |-

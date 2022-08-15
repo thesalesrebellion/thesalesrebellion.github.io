@@ -35,7 +35,7 @@ layout: page
             {{- page.team.title -}}
         </h2>
 
-        <div class="about__team-members">
+        <div class="about__team-members about__team-members--desktop">
             {%- for item in page.team.members -%}
                 <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
                     <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
@@ -44,6 +44,12 @@ layout: page
 
             <img src="{{- '/images/rebelBoy.png' | relative_url -}}" alt="" class="about__team-members-top-left-img">
             <img src="{{- '/images/plastic-bag.png' | relative_url -}}" alt="" class="about__team-members-bottom-right-img">
+        </div>
+
+        <div class="about__team-members about__team-members--mobile">
+            {%- for item in page.team.members -%}
+                    <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+            {%- endfor -%}
         </div>
 
     </div>
