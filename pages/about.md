@@ -23,11 +23,25 @@ features:
     text: Join<span class="space"></span>Squardrons
     url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
     new_tab: true
-testimonials:
-  heading: <span>See</span> <span>what</span> <span>students</span> <span>have</span> <span>to</span> say…
-  video_id: 38Dlolt13JE
-contact:
-  heading: Join<span class="space"></span>the<span class="space"></span>ranks<span class="space"></span>of<span class="space"></span>those<span class="space"></span>who<span class="space"></span>have<span class="space"></span>changed<span class="space"></span>the<span class="space"></span>game<span class="space"></span>for<span class="space"></span>their<span class="space"></span>sales<span class="space"></span>career
+team:
+  title: Meet <span>our</span> team
+  members:
+    - img:
+        path: /images/team/1.png
+        alt_text: Team member
+    - img:
+        path: /images/team/2.png
+        alt_text: Team member
+    - img:
+        path: /images/team/3.png
+        alt_text: Team member
+    - img:
+        path: /images/team/4.png
+        alt_text: Team member
+    - img:
+        path: /images/team/5.png
+        alt_text: Team member
+
 faq:
   heading: FAQ
   items:

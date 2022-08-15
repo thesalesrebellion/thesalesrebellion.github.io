@@ -26,21 +26,24 @@ layout: page
 
 </section>
 
-{%- comment -%} --- VIDEO --- {%- endcomment -%}
-<section class="section group-testimonials">
+{%- comment -%} --- TEAM --- {%- endcomment -%}
+<section class="section about__team">
 
     <div class="container">
 
-        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
-            <h2 class="group-testimonials__heading">{{- page.testimonials.heading -}}</h2>
-        {%- endif -%}
+        <h2 class="about__team-title">
+            {{- page.team.title -}}
+        </h2>
 
-        <div class="group-testimonials__content">
+        <div class="about__team-members">
+            {%- for item in page.team.members -%}
+                <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
+                    <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+                </div>
+            {%- endfor -%}
 
-            <div class="group-testimonials__video-wrapper video-wrapper">
-                {%- include video.html video_id=page.testimonials.video_id -%}
-            </div>
-
+            <img src="{{- '/images/rebelBoy.png' | relative_url -}}" alt="" class="about__team-members-top-left-img">
+            <img src="{{- '/images/plastic-bag.png' | relative_url -}}" alt="" class="about__team-members-bottom-right-img">
         </div>
 
     </div>
