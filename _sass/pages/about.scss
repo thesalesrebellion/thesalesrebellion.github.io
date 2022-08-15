@@ -2,7 +2,7 @@
 
     &__features {
 
-        padding-top: 50px;
+        padding-top: 100px;
 
         text-align: center;
 
@@ -12,12 +12,12 @@
             }
         }
 
-        .container {
-            padding-top: 40px;
-            padding-bottom: 40px;
+        &-items {
+            padding: 40px 20px;
             border: 4px solid $purple;
             box-shadow: 0 0 18px 3px $purple, inset 0 0 18px 3px $purple;
             @include btn_box_shadow($purple);
+
         }
 
         &-item {

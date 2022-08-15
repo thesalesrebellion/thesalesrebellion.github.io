@@ -13,11 +13,11 @@ features:
   items:
     - title: Choose Legendary
       text: The pursuit of excellence in all endeavors - Personal, Professional, and Private
-    - title: Create Wonder
+    - title: <span>Create</span> Wonder
       text: Making the human experience the primary objective at every level
     - title: Serve Others
       text: Servant leadership for all people in all things
-    - title: Change The Game
+    - title: <span>Change</span> <span>The</span> Game
       text: To reject the status quo and relentlessly peruse creativity
   cta:
     text: Join<span class="space"></span>Squardrons
