@@ -41,35 +41,25 @@ team:
     - img:
         path: /images/team/5.png
         alt_text: Team member
-
 faq:
-  heading: FAQ
+  heading: Things we get asked
   items:
-  - q: How long is the program?
+  - q: What are you Rebelling against?
     a: |-
-      Rebel Squadrons are 16 weeks - 8 total coaching sessions of 90 minutes each.
-  - q: Who are Squadrons for?
+      We are rebelling against the status quo sales results and interactions. We believe the marketplace is yearning for creative, engaging, and authentic sales interactions. And we help businesses and individuals understand how to offer creative experiences this in the modern sales environment.
+  - q: How can I join what you all are doing?
     a: |-
-      New or seasoned sales reps who aren’t yet ready to go full Rebel Jedi, but need to build a full and healthy pipeline in the next 180 days.
-  - q: How many people are in each group?
+      Being a Sales Rebel is simple… Just believe. Believe that human engagement is as valuable as net margin. Believe that creativity and fun are not only allowed in business but they are the missing links. Believe that others are out there fighting for the same as you…. That’s what makes you a Rebel. There are tons of resources and community members. Just get involved!
+  - q: Are you hiring?
     a: |-
-      There are 8 main rebels in our favorite saga, with 6 seeing the overthrow of the Empire. It’s only fitting that Squadrons be limited to 6-8 rebels.
-  - q: How much does the program cost?
-    a: |-
-      $429/mo. for 4 mos.
-  - q: Once I signup, then what happens?
-    a: |-
-      Each squadron has an official intro call and members are placed in a private group with their fellow 6-7 rebels. Rebellion market tools are shared so each member can start tailoring them for their prospects. This kickstarts the build of a prospecting and pipeline system you will use to create meetings-on-demand.
-  - q: What kind of support will I get?
-    a: |-
-      Apart from group coaching calls, Rebels have access to a private Slack channel for their Squadron only, where you can post questions, submit pieces for feedback, share wins, etc. Your coach and other Rebel coaches/support personnel are in the channel daily to help.
+      Maybe… But we are definitely looking to develop good relationships with people and orgs who want to #ChangeTheGame. Wanna publish content together? Wanna sell the Sales Rebellion to all your friends? Wanna become a Rebel and coach students to achieve legendary status? Let’s talk…
 cta:
-  text: 'Are<span class="space"></span>you<span class="space"></span>ready<span class="space"></span>to<span class="space"></span>#ChangeTheGame'
+  text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:
-    text: Start<br>Today
-    url: 'https://calendly.com/jeremiah-salesrebellion/30min-1'
-    new_tab: true
+    text: Coming<br>Soon
+    url: ''
+    new_tab: false
 footer:
-  message: ""
-  note: ""
+  message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
+  note: "- Robert F. Kennedy"
 ---

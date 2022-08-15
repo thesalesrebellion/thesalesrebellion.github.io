@@ -1,6 +1,4 @@
-<section class="section home-cta">
-
-    <div class="overlay overlay--top"></div>
+<section class="section home-cta{% if include.type and include.type != 'home' %} {{ include.type }}-cta{% endif %}">
 
     <div class="container">
 

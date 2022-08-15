@@ -56,15 +56,12 @@ layout: page
 
 </section>
 
-{%- comment -%} --- CONTACT --- {%- endcomment -%}
-{%- include form.html -%}
-
 {%- comment -%} --- FAQ --- {%- endcomment -%}
-<section class="section group__faq">
+<section class="section about__faq">
 
     <div class="container">
 
-        <h2 class="faq__heading group__faq-heading">
+        <h2 class="faq__heading about__faq-heading">
             {{- page.faq.heading -}}
         </h2>
 
@@ -72,6 +69,7 @@ layout: page
 
     </div>
 
-    <div class="overlay overlay--bottom"></div>
-
 </section>
+
+{%- comment -%} --- CTA --- {%- endcomment -%}
+{%- include cta.html cta=page.cta type="page" -%}
