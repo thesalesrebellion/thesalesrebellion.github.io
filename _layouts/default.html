@@ -13,9 +13,17 @@
     {%- if page.has_carousel == true -%}
         <script src="{{- '/assets/js/slick.min.js' -}}"></script>
         <script>
-            $('.about__team-members--mobile').slick({
+            $('.slick-me').slick({
                 arrows: false,
                 dots: true
+            });
+
+            $('.slick-me-center').slick({
+                arrows: false,
+                dots: true,
+                centerMode: true,
+                centerPadding: '90px',
+                slidesToShow: 1
             });
         </script>
     {%- endif -%}

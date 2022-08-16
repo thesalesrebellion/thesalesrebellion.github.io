@@ -26,6 +26,14 @@
                             {%- endfor -%}
                         </div>
 
+                        <div class="{{ page.page_id }}__hero-tiles {{ page.page_id }}__hero-tiles--mobile slick-me-center">
+                            {%- for img in page.hero.tiles.images -%}
+                                <div class="{{ page.page_id }}__hero-tile">
+                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                </div>
+                            {%- endfor -%}
+                        </div>
+
                     </div>
 
                 {%- endif -%}

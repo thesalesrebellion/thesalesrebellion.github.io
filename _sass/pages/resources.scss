@@ -22,11 +22,36 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            @include breakpoint(smallish) {
+                display: none;
+            }
+
+            &--mobile {
+                display: none;
+                @include breakpoint(smallish) {
+                    display: block;
+                }
+            }
+
+            .slick-slide {
+                transform: scale(.8);
+                transition: transform .1s ease-in-out;
+            }
+
+            .slick-center {
+                transform: scale(1);
+            }
         }
 
         &-tile {
             flex-basis: 20%;
             margin: 30px;
+            @include breakpoint(smallish) {
+                margin: 12px;
+                img {
+                    display: inline-block;
+                }
+            }
         }
 
     }

@@ -45,6 +45,11 @@
             max-width: 1000px;
         }
 
+        &--resources {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .container {
             margin-right: 0;
         }
@@ -94,6 +99,10 @@
             @include breakpoint(smallish) {
                 padding-bottom: 100px;
             }
+        }
+
+        &--resources {
+            padding-bottom: 100px;
         }
 
         @include breakpoint(medium) {
