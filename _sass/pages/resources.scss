@@ -1,0 +1,35 @@
+.resources {
+
+    &__hero {
+
+        &-tiles-wrapper {
+            position: relative;
+            margin-top: 60px;
+        }
+
+        // &-tiles-title {
+        //     position: absolute;
+        //     top: 0;
+        //     left: 50%;
+        //     @include lazer;
+        //     @include glow_in($purple);
+        //     transform: translateX(-50%) rotate(-15deg) skew(-35deg,0deg);
+        //     font-size: 30px;
+        //     letter-spacing: 2px;
+        // }
+
+        &-tiles {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        &-tile {
+            flex-basis: 20%;
+            margin: 30px;
+        }
+
+    }
+
+
+}

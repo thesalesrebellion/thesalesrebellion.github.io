@@ -8,9 +8,27 @@
                     {{ page.hero.heading }}
                 </h1>
 
-                <div class="hero__text hero__text--page hero__text--{{ page.page_id }}">
-                    {{ page.hero.text | markdownify }}
-                </div>
+                {%- if page.hero.text and page.hero.text.size > 0 -%}
+                    <div class="hero__text hero__text--page hero__text--{{ page.page_id }}">
+                        {{ page.hero.text | markdownify }}
+                    </div>
+                {%- endif -%}
+
+                {%- if page.hero.tiles -%}
+
+                    <div class="{{ page.page_id }}__hero-tiles-wrapper">
+
+                        <div class="{{ page.page_id }}__hero-tiles">
+                            {%- for img in page.hero.tiles.images -%}
+                                <div class="{{ page.page_id }}__hero-tile">
+                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                </div>
+                            {%- endfor -%}
+                        </div>
+
+                    </div>
+
+                {%- endif -%}
 
                 {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
                     <div class="hero__cta hero__cta--{{ page.page_id }}">

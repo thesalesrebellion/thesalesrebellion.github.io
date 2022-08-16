@@ -1,0 +1,69 @@
+---
+layout: page
+---
+{%- comment -%} --- FEATURES --- {%- endcomment -%}
+<section class="section about__features">
+
+    <div class="overlay overlay--top"></div>
+
+    <div class="container">
+
+        <div class="resources__hero-items">
+            {%- for item in page.hero.items -%}
+                <div class="resources__hero-item">
+                    <img src="{{- item.image.path | relative_url -}}" alt="{{- item.image.alt_text -}}" class="resources__hero-item-img">
+                </div>
+            {%- endfor -%}
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- TEAM --- {%- endcomment -%}
+<section class="section about__team">
+
+    <div class="container">
+
+        <h2 class="about__team-title">
+            {{- page.team.title -}}
+        </h2>
+
+        <div class="about__team-members about__team-members--desktop">
+            {%- for item in page.team.members -%}
+                <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
+                    <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+                </div>
+            {%- endfor -%}
+
+            <img src="{{- '/images/rebelBoy.png' | relative_url -}}" alt="" class="about__team-members-top-left-img">
+            <img src="{{- '/images/plastic-bag.png' | relative_url -}}" alt="" class="about__team-members-bottom-right-img">
+        </div>
+
+        <div class="about__team-members about__team-members--mobile">
+            {%- for item in page.team.members -%}
+                    <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+            {%- endfor -%}
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section about__faq">
+
+    <div class="container">
+
+        <h2 class="faq__heading about__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+</section>
+
+{%- comment -%} --- CTA --- {%- endcomment -%}
+{%- include cta.html cta=page.cta type="page" -%}

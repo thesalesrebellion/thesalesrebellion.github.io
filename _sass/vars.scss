@@ -103,6 +103,10 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     }
 }
 
+@mixin skew {
+    transform: rotate(-15deg) skew(-35deg,0deg);
+}
+
 @mixin clearfix {
     &:after {
         content: "";
