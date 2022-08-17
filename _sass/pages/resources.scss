@@ -7,17 +7,6 @@
             margin-top: 60px;
         }
 
-        // &-tiles-title {
-        //     position: absolute;
-        //     top: 0;
-        //     left: 50%;
-        //     @include lazer;
-        //     @include glow_in($purple);
-        //     transform: translateX(-50%) rotate(-15deg) skew(-35deg,0deg);
-        //     font-size: 30px;
-        //     letter-spacing: 2px;
-        // }
-
         &-tiles {
             display: flex;
             justify-content: space-around;
@@ -51,6 +40,49 @@
                 img {
                     display: inline-block;
                 }
+            }
+        }
+
+    }
+
+    &__slack {
+
+        padding-top: 50px;
+
+        text-align: center;
+
+        &-img {
+            max-width: 600px;
+        }
+
+        &-text {
+            @include noodle;
+            line-height: 1.4;
+            font-size: 24px;
+            letter-spacing: 1.2px;
+            max-width: 500px;
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &-cta {
+            margin-top: 40px;
+        }
+
+        &-btn {
+            display: inline-block;
+            @include btn_box_shadow($blue);
+            padding: 12px 38px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            &:hover {
+                @include btn_box_shadow($blue);
+                @include btn_text_shadow($blue);
+
             }
         }
 

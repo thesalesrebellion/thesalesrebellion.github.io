@@ -18,36 +18,15 @@ hero:
         alt_text: Market Tools
       - path: /assets/images/tile-course-work.png
         alt_text: Sales Rebel Academy
-team:
-  title: Meet <span>our</span> team
-  members:
-    - img:
-        path: /images/team/1.png
-        alt_text: Team member
-    - img:
-        path: /images/team/2.png
-        alt_text: Team member
-    - img:
-        path: /images/team/3.png
-        alt_text: Team member
-    - img:
-        path: /images/team/4.png
-        alt_text: Team member
-    - img:
-        path: /images/team/5.png
-        alt_text: Team member
-faq:
-  heading: Things we get asked
-  items:
-  - q: What are you Rebelling against?
-    a: |-
-      We are rebelling against the status quo sales results and interactions. We believe the marketplace is yearning for creative, engaging, and authentic sales interactions. And we help businesses and individuals understand how to offer creative experiences this in the modern sales environment.
-  - q: How can I join what you all are doing?
-    a: |-
-      Being a Sales Rebel is simple… Just believe. Believe that human engagement is as valuable as net margin. Believe that creativity and fun are not only allowed in business but they are the missing links. Believe that others are out there fighting for the same as you…. That’s what makes you a Rebel. There are tons of resources and community members. Just get involved!
-  - q: Are you hiring?
-    a: |-
-      Maybe… But we are definitely looking to develop good relationships with people and orgs who want to #ChangeTheGame. Wanna publish content together? Wanna sell the Sales Rebellion to all your friends? Wanna become a Rebel and coach students to achieve legendary status? Let’s talk…
+slack:
+  img:
+    path: /assets/images/slack-horizontal.png
+    alt_text: Sales Rebels Slack
+  text: The Sales Rebel Slack Workspace is a place for Rebels to come and explore. Learn new sales approaches, develop scripts and outreach campaigns, or just network with other like-minded Sales Rebels… It’s all waiting within... Find your tribe...
+  cta:
+    text: Join Us
+    url: https://join.slack.com/t/salesrebels/shared_invite/zt-h56s3k7l-GxCbQb9~Z9hvqhz8PAcqxg
+    new_tab: true
 cta:
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:
