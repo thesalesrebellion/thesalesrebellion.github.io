@@ -32,6 +32,9 @@
     &--podcasts {
       @include btn_box_shadow($green);
     }
+    &--blog {
+      @include btn_box_shadow($purple);
+    }
   }
 
   .modal__cta-btn {
@@ -42,14 +45,24 @@
     transform: translateX(-50%);
     bottom: 22px;
     @include breakpoint(larger) {
-        font-size: 24px !important;
+      font-size: 24px !important;
     }
     @include breakpoint(medium) {
-        font-size: 20px !important;
+      font-size: 20px !important;
+    }
+    @include breakpoint(small) {
+      font-size: 16px !important;
     }
 
-    @include breakpoint(small) {
-        font-size: 16px !important;
+    &--blog {
+      font-size: 24px !important;
+      @include breakpoint(larger) {
+          font-size: 20px !important;
+      }
+      @include breakpoint(small) {
+          font-size: 16px !important;
+      }
+
     }
   }
 

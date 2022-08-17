@@ -53,6 +53,9 @@
 
         &-img {
             max-width: 600px;
+            @include breakpoint(medium) {
+                max-width: 100%;
+            }
         }
 
         &-text {
@@ -106,6 +109,44 @@
                 @include btn_text_shadow($green);
 
             }
+        }
+
+    }
+
+    &__blog {
+
+        padding-top: 200px;
+
+        &-btn {
+            display: inline-block;
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            font-size: 36px;
+            transform: translateX(-50%);
+            background-color: rgba(0,0,0,.5);
+
+            @include breakpoint(medium) {
+                font-size: 28px;
+            }
+
+            @include breakpoint(small) {
+                font-size: 22px;
+                bottom: 18px
+            }
+
+            @include breakpoint(smaller) {
+                font-size: 16px;
+                bottom: 12px
+            }
+
+            @include btn_box_shadow($purple);
+            &:hover {
+                @include btn_box_shadow($purple);
+                @include btn_text_shadow($purple);
+
+            }
+
         }
 
     }

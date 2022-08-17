@@ -41,8 +41,19 @@ layout: page
 
 </section>
 
+{%- comment -%} --- BLOG --- {%- endcomment -%}
+<section class="section resources__blog">
+
+    <img src="{{ page.blog.img.path | relative_url }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
+
+    <a data-micromodal-trigger="blog-modal" href='javascript:void(0);' class="resources__blog-btn btn"{% if page.blog.cta.new_tab == true %} target="_blank"{% endif %}>
+        {{- page.blog.cta.text -}}
+    </a>
+</section>
+
 {%- comment -%} --- CTA --- {%- endcomment -%}
 {%- include cta.html cta=page.cta type="page" -%}
 
 {%- comment -%} --- MODALS --- {%- endcomment -%}
 {%- include modals/podcasts.html -%}
+{%- include modals/blog.html -%}

@@ -35,6 +35,13 @@ podcast:
   cta:
     text: Listen Now
     url: ""
+blog:
+  img:
+    path: /assets/images/resources-blog-bg.png
+    alt_text: Sales Rebels Blog
+  cta:
+    text: Read<span class="space"></span>Today
+    url: ""
 cta:
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:
