@@ -33,5 +33,32 @@
         {%- include youtube_api.html -%}
     {%- endif -%}
 
+    {%- if page.has_modal == true -%}
+        <script src="{{- '/assets/js/micromodal.js' -}}"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+
+  try {
+
+    MicroModal.init({
+      awaitCloseAnimation: true,// set to false, to remove close animation
+      onShow: function(modal) {
+        console.log("micromodal open");
+      },
+      onClose: function(modal) {
+        console.log("micromodal close");
+      }
+    });
+
+  } catch (e) {
+    console.log("micromodal error: ", e);
+  }
+
+});
+
+        </script>
+
+    {%- endif -%}
+
 </body>
 </html>

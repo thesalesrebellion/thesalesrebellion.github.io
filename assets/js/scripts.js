@@ -54,8 +54,6 @@
               page_style = getComputedStyle(page_content),
               initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
 
-        console.log('initial_bgYpos', initial_bgYpos);
-
         window.addEventListener('scroll', function(){
             let offset = window.pageYOffset;
             if (initial_bgYpos > 0) {

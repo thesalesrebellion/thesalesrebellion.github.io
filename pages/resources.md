@@ -2,8 +2,9 @@
 layout: pages/resources
 permalink: /resources/
 page_id: resources
-has_video: true
+has_video: false
 has_carousel: true
+has_modal: true
 hero:
   heading: <span>All</span> <span>Things</span> Rebellion…
   tiles:
