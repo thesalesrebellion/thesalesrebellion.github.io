@@ -73,15 +73,37 @@
         &-btn {
             display: inline-block;
             @include btn_box_shadow($blue);
-            padding: 12px 38px;
-            border-top-left-radius: 50px;
-            border-bottom-left-radius: 50px;
-            border-top-right-radius: 50px;
-            border-bottom-right-radius: 50px;
+            padding: 10px 40px;
+            border-radius: 16px;
 
             &:hover {
                 @include btn_box_shadow($blue);
                 @include btn_text_shadow($blue);
+
+            }
+        }
+
+    }
+
+    &__podcast {
+
+        padding-top: 200px;
+
+        text-align: center;
+
+        &-cta {
+            margin-top: 36px;
+        }
+
+        &-btn {
+            display: inline-block;
+            @include btn_box_shadow($green);
+            padding: 12px 38px;
+            border-radius: 50px;
+
+            &:hover {
+                @include btn_box_shadow($green);
+                @include btn_text_shadow($green);
 
             }
         }

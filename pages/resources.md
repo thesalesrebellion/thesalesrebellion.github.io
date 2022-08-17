@@ -27,6 +27,13 @@ slack:
     text: Join Us
     url: https://join.slack.com/t/salesrebels/shared_invite/zt-h56s3k7l-GxCbQb9~Z9hvqhz8PAcqxg
     new_tab: true
+podcast:
+  img:
+    path: /assets/images/podcasts-planet.png
+    alt_text: Selling Local Podcast
+  cta:
+    text: Listen Now
+    url: ""
 cta:
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:

@@ -24,5 +24,22 @@ layout: page
 
 </section>
 
+{%- comment -%} --- PODCAST --- {%- endcomment -%}
+<section class="section resources__podcast">
+
+    <div class="container">
+
+        <img src="{{ page.podcast.img.path | relative_url }}" alt="{{- page.podcast.img.alt_text -}}" class="resources__podcast-img">
+
+        <div class="resources__podcast-cta">
+            <a href="{{- page.podcast.cta.url -}}" class="resources__podcast-btn btn"{% if page.podcast.cta.new_tab == true %} target="_blank"{% endif %}>
+                {{- page.podcast.cta.text -}}
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
 {%- comment -%} --- CTA --- {%- endcomment -%}
 {%- include cta.html cta=page.cta type="page" -%}
