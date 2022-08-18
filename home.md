@@ -4,22 +4,23 @@ title: Home
 page_id: home
 permalink: '/'
 has_video: true
+has_modal: true
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-
     Attract marketplace leaders with<br>sales approaches that #changethegame
   aside:
     heading:
-      line_1: Name
-      line_2: Company - Industry
+      line_1: ''
+      line_2: ''
     text: |-
       I’ll finish at 175% of the annual quota this quarter.
   cta:
     - text: <span>For</span> <span>Teams</span>
-      url: '#'
+      url: '/teams/'
       glow_in: green
     - text: Individuals
-      url: '#'
+      url: '1x1'
       glow_in: blue
 features:
   - title: Team<br>training
@@ -67,18 +68,20 @@ community:
       alt_text: 'The podcast cover'
     button:
       text: <span>Listen</span> Today
-      url: '/podcast/'
+      url: 'javascript:void(0);'
       new_tab: false
       glow_in: purple
+    modal_target: podcasts
   - title: Blog
     image:
       path: '/assets/images/blog.png'
       alt_text: 'The Blog cover'
     button:
       text: Read now
-      url: '/blog/'
+      url: 'javascript:void(0);'
       new_tab: false
       glow_in: blue
+    modal_target: blog
 testimonials:
   image:
     path: /images/home-testimonials.png

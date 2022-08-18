@@ -270,10 +270,16 @@
                 font-size: 36px;
                 margin-top: 0;
                 display: inline;
+                @include breakpoint(small) {
+                    font-size: 34px;
+                }
 
                 &--2 {
                     letter-spacing: .15em;
                     font-size: 55px;
+                    @include breakpoint(small) {
+                        font-size: 38px
+                    }
                 }
             }
 
