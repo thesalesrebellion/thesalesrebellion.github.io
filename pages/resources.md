@@ -117,6 +117,6 @@ merch:
       alt_text: merch 3
       url: www.store.thesalesrebellion.com
 footer:
-  message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
-  note: "- Robert F. Kennedy"
+  message: "There is no scarcity of opportunity, only scarcity of imagination"
+  note: "- Napoleon hill"
 ---
