@@ -104,6 +104,18 @@ learn:
       alt_text: gem
       shadow_color: blue
       url: https://thesalesrebellion.teachable.com/p/rebelgem
+merch:
+  heading: Sales Rebel Merch…<br>Join the movement!
+  images:
+    - path: /images/merch/merch-1.jpg
+      alt_text: merch 1
+      url: www.store.thesalesrebellion.com
+    - path: /images/merch/merch-2.jpg
+      alt_text: merch 2
+      url: www.store.thesalesrebellion.com
+    - path: /images/merch/merch-3.jpg
+      alt_text: merch 3
+      url: www.store.thesalesrebellion.com
 footer:
   message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
   note: "- Robert F. Kennedy"
