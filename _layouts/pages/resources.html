@@ -74,13 +74,13 @@ layout: page
                         {{- page.market_tools.row1.right_col.supertitle -}}
                     </h4>
                     <h3 class="resources__mt-title">
-                        <span class="resources__mt-title-row resources__mt-title-row--1">
+                        <div class="resources__mt-title-row resources__mt-title-row--1">
                             {{- page.market_tools.row1.right_col.title.first_row -}}
-                        </span>
+                        </div>
                         <br>
-                        <span class="resources__mt-title-row resources__mt-title-row--2">
+                        <div class="resources__mt-title-row resources__mt-title-row--2">
                             {{- page.market_tools.row1.right_col.title.second_row -}}
-                        </span>
+                        </div>
                     </h3>
 
                     <a href="{{- page.market_tools.row1.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--1 resources__mt-cta--desktop btn"{% if  page.market_tools.row1.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
@@ -102,8 +102,31 @@ layout: page
                     <img src="{{- page.market_tools.row2.left_col.img.path | relative_url -}}" alt="{{- page.market_tools.row2.left_col.img.alt_text -}}" class="resources__mt-left-img">
                 </div>
                 <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--right">
+                    <div class="resources__mt-titles-wrapper">
+                        <div class="resources__mt-titles">
+                            <h3 class="resources__mt-title">
+                                <div class="resources__mt-title-row resources__mt-title-row--1">
+                                    {{- page.market_tools.row2.right_col.title.first_row -}}
+                                </div>
+                                <br>
+                                <div class="resources__mt-title-row resources__mt-title-row--2">
+                                    {{- page.market_tools.row2.right_col.title.second_row -}}
+                                </div>
+                            </h3>
+                            <h4 class="resources__mt-subtitle">
+                                {{- page.market_tools.row2.right_col.subtitle -}}
+                            </h4>
+                        </div>
+                    </div>
+
                     <div class="video-wrapper resources__mt-video-wrapper">
                         {%- include video.html video_id=page.market_tools.row2.right_col.video_id -%}
+                    </div>
+
+                    <div class="_center _mt50 _mt26--medium">
+                        <a href="{{- page.market_tools.row2.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--2 btn"{% if  page.market_tools.row2.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                            {{- page.market_tools.row2.right_col.cta.text -}}
+                        </a>
                     </div>
                 </div>
             </div>

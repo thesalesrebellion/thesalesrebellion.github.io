@@ -2,7 +2,7 @@
 layout: pages/resources
 permalink: /resources/
 page_id: resources
-has_video: true
+has_video: false
 has_carousel: true
 has_modal: true
 hero:
@@ -71,7 +71,7 @@ market_tools:
       title:
         first_row: Letter
         second_row: Campaign
-        subtitle: For taking it to the next level
+      subtitle: For taking it to the next level
       video_id: I630izFLbgc
       cta:
         text: Choose Legendary

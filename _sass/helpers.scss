@@ -48,3 +48,17 @@ span.space {
 .rotate-45 {
     transform: rotate(45deg);
 }
+
+._center {
+    text-align: center;
+}
+
+._mt50 {
+    margin-top: 50px;
+}
+
+._mt26--medium {
+    @include breakpoint(medium) {
+        margin-top: 26px;
+    }
+}
