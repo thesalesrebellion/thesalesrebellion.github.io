@@ -77,6 +77,33 @@ market_tools:
         text: Choose Legendary
         url:  https://join.thesalesrebellion.com/lettercampaign/
         new_tab: true
+learn:
+  heading: <span>Sales</span> Rebel Academy - Learn like a Rebel
+  images:
+    - path: /images/course-work/the-living-pipeline.jpg
+      alt_text: the living pipeline
+      shadow_color: red
+      url: https://thesalesrebellion.teachable.com/p/livingpipeline
+    - path: /images/course-work/roots.jpg
+      alt_text: roots
+      shadow_color: blue
+      url: https://thesalesrebellion.teachable.com/p/roots
+    - path: /images/course-work/rebel-invasion.jpg
+      alt_text: rebel invasion
+      shadow_color: blue
+      url: https://thesalesrebellion.teachable.com/p/rebel-i-n-v-a-s-i-o-n
+    - path: /images/course-work/xochil-presence.jpg
+      alt_text: xochil presence
+      shadow_color: red
+      url: https://thesalesrebellion.teachable.com/p/xochil-presence
+    - path: /images/course-work/reason.jpg
+      alt_text: reason
+      shadow_color: purple
+      url: https://thesalesrebellion.teachable.com/p/reason
+    - path: /images/course-work/gem.jpg
+      alt_text: gem
+      shadow_color: blue
+      url: https://thesalesrebellion.teachable.com/p/rebelgem
 footer:
   message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
   note: "- Robert F. Kennedy"

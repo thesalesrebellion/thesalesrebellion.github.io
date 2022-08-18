@@ -136,6 +136,37 @@ layout: page
 
 </section>
 
+{%- comment -%} --- LEARN --- {%- endcomment -%}
+<section class="section  resources__learn">
+    <div class="container">
+
+        <h2 class="resources__learn-heading">
+            {{- page.learn.heading -}}
+        </h2>
+
+        <div class="resources__learn-items resources__learn-items--desktop">
+            {%- for item in page.learn.images -%}
+                <div class="resources__learn-item">
+                    <a href="{{- item.url -}}" class="resources__learn-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="resources__learn-items resources__learn-items--mobile slick-me-center-50">
+            {%- for item in page.learn.images -%}
+                <div class="resources__learn-item">
+                    <a href="{{- item.url -}}" class="resources__learn-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+    </div>
+</section>
+
 {%- comment -%} --- CTA --- {%- endcomment -%}
 {%- include cta.html cta=page.cta type="page" -%}
 
