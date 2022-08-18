@@ -120,11 +120,19 @@
         &-btn {
             display: inline-block;
             position: absolute;
-            bottom: 35px;
+            bottom: 76px;
             left: 50%;
             font-size: 36px;
             transform: translateX(-50%);
             background-color: rgba(0,0,0,.5);
+
+            @include breakpoint(larger) {
+                bottom: 56px;
+            }
+
+            @include breakpoint(large) {
+                bottom: 36px;
+            }
 
             @include breakpoint(medium) {
                 font-size: 28px;
