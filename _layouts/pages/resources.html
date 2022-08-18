@@ -51,6 +51,68 @@ layout: page
     </a>
 </section>
 
+{%- comment -%} --- MARKET TOOLS --- {%- endcomment -%}
+<section class="section  resources__mt">
+
+    <div class="container">
+        <h2 class="resources__mt-heading">
+            {{- page.market_tools.heading -}}
+        </h2>
+    </div>
+
+    <div class="resources__mt-rows-wrapper">
+
+        <div class="container">
+            <div class="resources__mt-rows resources__mt-rows--1">
+                <div class="resources__mt-row resources__mt-row--1 resources__mt-row--1--left">
+                    <div class="video-wrapper resources__mt-video-wrapper">
+                        {%- include video.html video_id=page.market_tools.row1.left_col.video_id -%}
+                    </div>
+                </div>
+                <div class="resources__mt-row resources__mt-row--1 resources__mt-row--1--right">
+                    <h4 class="resources__mt-supertitle">
+                        {{- page.market_tools.row1.right_col.supertitle -}}
+                    </h4>
+                    <h3 class="resources__mt-title">
+                        <span class="resources__mt-title-row resources__mt-title-row--1">
+                            {{- page.market_tools.row1.right_col.title.first_row -}}
+                        </span>
+                        <br>
+                        <span class="resources__mt-title-row resources__mt-title-row--2">
+                            {{- page.market_tools.row1.right_col.title.second_row -}}
+                        </span>
+                    </h3>
+
+                    <a href="{{- page.market_tools.row1.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--1 resources__mt-cta--desktop btn"{% if  page.market_tools.row1.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                        {{- page.market_tools.row1.right_col.cta.text -}}
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="resources__mt-cta-mobile-wrapper container">
+                <a href="{{- page.market_tools.row1.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--1 resources__mt-cta--mobile btn"{% if  page.market_tools.row1.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                    {{- page.market_tools.row1.right_col.cta.text -}}
+                </a>
+            </div>
+
+            <div class="resources__mt-rows resources__mt-rows--2">
+                <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--left">
+                    <img src="{{- page.market_tools.row2.left_col.img.path | relative_url -}}" alt="{{- page.market_tools.row2.left_col.img.alt_text -}}" class="resources__mt-left-img">
+                </div>
+                <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--right">
+                    <div class="video-wrapper resources__mt-video-wrapper">
+                        {%- include video.html video_id=page.market_tools.row2.right_col.video_id -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
 {%- comment -%} --- CTA --- {%- endcomment -%}
 {%- include cta.html cta=page.cta type="page" -%}
 

@@ -2,7 +2,7 @@
 layout: pages/resources
 permalink: /resources/
 page_id: resources
-has_video: false
+has_video: true
 has_carousel: true
 has_modal: true
 hero:
@@ -48,6 +48,35 @@ cta:
     text: Coming<br>Soon
     url: ''
     new_tab: false
+market_tools:
+  heading: <span>Use</span> <span>the</span> <span>tools</span> <span>of</span> <span>the</span> Rebellion…
+  row1:
+    left_col:
+      video_id: 8RXrd5SmEpI
+    right_col:
+      supertitle: The one… The only
+      title:
+        first_row: Crumpled
+        second_row: Letter
+      cta:
+        text: Get Yours
+        url:  http://www.crumpledletter.com
+        new_tab: true
+  row2:
+    left_col:
+      img:
+        path: /assets/images/arcade-machine.png
+        alt_text: Arcade machine
+    right_col:
+      title:
+        first_row: Letter
+        second_row: Campaign
+        subtitle: For taking it to the next level
+      video_id: I630izFLbgc
+      cta:
+        text: Choose Legendary
+        url:  https://join.thesalesrebellion.com/lettercampaign/
+        new_tab: true
 footer:
   message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
   note: "- Robert F. Kennedy"
