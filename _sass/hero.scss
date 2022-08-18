@@ -13,7 +13,8 @@
     }
 
     &--group,
-    &--about {
+    &--about,
+    &--404 {
         background-image: url(/assets/images/group-hero-bg.jpg);
     }
 
@@ -41,7 +42,8 @@
         &--1x1,
         &--group,
         &--about,
-        &--resources {
+        &--resources,
+        &--404 {
             max-width: 1000px;
         }
 
@@ -192,6 +194,12 @@
             @include breakpoint(smaller) {
                 font-size: 40px;
             }
+        }
+
+        &--404 {
+            margin-top: 50px;
+            font-size: 28px;
+            text-align: center;
         }
 
     }

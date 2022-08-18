@@ -6,5 +6,5 @@ footer:
   note: "- Pablo Picasso"
   cta:
     text: 'Submit a prayer request'
-    url: '#'
+    url: 'http://join.thesalesrebellion.com/prayer/'
     new_tab: false
