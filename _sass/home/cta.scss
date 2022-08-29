@@ -24,6 +24,11 @@
             flex-direction: column;
             text-align: center;
         }
+
+        &--no-text {
+            display: block;
+            text-align: center;
+        }
     }
 
     &__col {

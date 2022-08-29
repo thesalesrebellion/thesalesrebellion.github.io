@@ -95,6 +95,7 @@
     text-align: center;
 
     .container {
+        max-width: 1200px;
         padding-bottom: 30px;
     }
 
@@ -122,7 +123,8 @@
     }
 
     &__image-wrapper {
-        margin-right: 50px;
+        margin-right: 40px;
+        flex-basis: 55%;
         @include breakpoint(medium) {
             display: none;
         }

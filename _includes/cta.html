@@ -1,15 +1,26 @@
 {%- unless include.cta.show == false -%}
+
+    {%- if include.cta.text and include.cta.text.size > 0 -%}
+        {%- assign cta_has_text = true -%}
+    {%- else -%}
+        {%- assign cta_has_text = false -%}
+    {%- endif -%}
+
     <section class="section home-cta{% if include.type and include.type != 'home' %} {{ include.type }}-cta{% endif %}">
 
         <div class="container">
 
-            <div class="home-cta__cols">
-                <div class="home-cta__col home-cta__col--left">
-                    <p class="home-cta__text{% if include.type %} home-cta__text--{{ include.type }}{% endif %}">
-                        {{ include.cta.text }}
-                    </p>
-                </div>
-                <div class="home-cta__col home-cta__col--right">
+            <div class="home-cta__cols{% if cta_has_text == false %} home-cta__cols--no-text{% endif %}">
+
+                {%- if cta_has_text == true -%}
+                    <div class="home-cta__col home-cta__col--left">
+                        <p class="home-cta__text{% if include.type %} home-cta__text--{{ include.type }}{% endif %}">
+                            {{ include.cta.text }}
+                        </p>
+                    </div>
+                {%- endif -%}
+
+                <div class="home-cta__col{% if cta_has_text == true %} home-cta__col--right{% endif %}">
 
                     {%- if include.cta.button.url and include.cta.button.url.size > 0 -%}
                         <a class="home-cta__button btn" href="{{- include.cta.button.url | relative_url -}}"{% if include.cta.button.new_tab == true %} target="_blank"{% endif %}>
