@@ -2,44 +2,46 @@
 layout: page
 ---
 {%- comment -%} --- FEATURES --- {%- endcomment -%}
-<section class="section group__features">
+{%- unless page.features.show == false -%}
+    <section class="section group__features">
 
-    <div class="container">
+        <div class="container">
 
-        <h2 class="group__features-heading">
-            {%- for line in page.features.heading_lines -%}
-                <div class="group__features-heading-line{% if forloop.last %} group__features-heading-line--last{% endif %}">
-                    {{- line -}}
-                </div>
-            {%- endfor -%}
-        </h2>
+            <h2 class="group__features-heading">
+                {%- for line in page.features.heading_lines -%}
+                    <div class="group__features-heading-line{% if forloop.last %} group__features-heading-line--last{% endif %}">
+                        {{- line -}}
+                    </div>
+                {%- endfor -%}
+            </h2>
 
-        <div class="group__features-items">
-            {%- for item in page.features.items -%}
-                {%- capture the_cycle -%}{%- cycle 'odd', 'even' -%}{%- endcapture -%}
+            <div class="group__features-items">
+                {%- for item in page.features.items -%}
+                    {%- capture the_cycle -%}{%- cycle 'odd', 'even' -%}{%- endcapture -%}
 
-                <div class="group__features-item group__features-item--{{ the_cycle }}">
-                    <div class="group__features-item-content">
-                        <h3 class="group__features-item-title">
-                            {{- item.title -}}
-                        </h3>
-                        <div class="group__features-item-text">
-                            {{ item.text | markdownify }}
+                    <div class="group__features-item group__features-item--{{ the_cycle }}">
+                        <div class="group__features-item-content">
+                            <h3 class="group__features-item-title">
+                                {{- item.title -}}
+                            </h3>
+                            <div class="group__features-item-text">
+                                {{ item.text | markdownify }}
+                            </div>
                         </div>
                     </div>
-                </div>
-            {%- endfor -%}
+                {%- endfor -%}
+            </div>
+
+            <div class="group__features-cta">
+                <a href="{{- page.features.cta.url -}}" class="group__features-btn btn"{% if page.features.cta.new_tab == true %} target="_blank"{% endif %}>
+                    {{- page.features.cta.text -}}
+                </a>
+            </div>
+
         </div>
 
-        <div class="group__features-cta">
-            <a href="{{- page.features.cta.url -}}" class="group__features-btn btn"{% if page.features.cta.new_tab == true %} target="_blank"{% endif %}>
-                {{- page.features.cta.text -}}
-            </a>
-        </div>
-
-    </div>
-
-</section>
+    </section>
+{%- endunless -%}
 
 {%- comment -%} --- VIDEO --- {%- endcomment -%}
 <section class="section group-testimonials">
@@ -61,9 +63,6 @@ layout: page
     </div>
 
 </section>
-
-{%- comment -%} --- CONTACT --- {%- endcomment -%}
-{%- include form.html -%}
 
 {%- comment -%} --- FAQ --- {%- endcomment -%}
 <section class="section group__faq">
