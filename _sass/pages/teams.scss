@@ -56,6 +56,7 @@
 
         &-content {
             display: flex;
+            align-items: center;
             @include breakpoint(smallish) {
                 flex-direction: column;
             }
@@ -168,26 +169,21 @@
         padding-top: 50px;
         padding-bottom: 120px;
 
-        .container {
-            display: flex;
-            align-items: center;
-            @include breakpoint(smallish) {
-                flex-direction: column;
-            }
-        }
+        // .container {
+        //     display: flex;
+        //     align-items: center;
+        //     @include breakpoint(smallish) {
+        //         flex-direction: column;
+        //     }
+        // }
 
         &-heading {
             @include lazer;
+            text-align: center;
             font-size: 32px;
             letter-spacing: 2px;
             line-height: 1.4;
             margin-bottom: 40px;
-            flex-basis: 40%;
-            padding-right: 20px;
-            @include breakpoint(smallish) {
-                padding-right: 0;
-                text-align: center;
-            }
         }
 
         &-video_wrapper {

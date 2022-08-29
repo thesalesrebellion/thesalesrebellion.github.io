@@ -79,6 +79,7 @@
 
         &--teams {
             @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
+            background-attachment: fixed;
         }
 
         &--1x1 {

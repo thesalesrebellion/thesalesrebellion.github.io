@@ -8,7 +8,7 @@ hero:
   text: |-
     Transformative training and coaching for sales teams<br>who want to dominate their market
   cta:
-    text: Reach<br>Out
+    text: Reach Out
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
     new_tab: true
 features:
@@ -33,7 +33,7 @@ features:
         new_tab: true
 quote:
   name: '<span>Eddie <span>@</span> <span>Smart</span> Technologies'
-  text: "<span class='quote quote--beginning'>“</span>I’ve never had a team that was more excited to prospect or be engaged with the sales process.I’ve never had a team that was more excited to prospect or be engaged with the sales process.<span class='quote quote--end'>”</span>"
+  text: "<span class='quote quote--beginning'>“</span>I’ve never had a team that was more excited to prospect or be engaged with the sales process.<span class='quote quote--end'>”</span>"
   image:
     path: /images/st-logo.png
     alt_text: Samrt Technologies logo

@@ -65,6 +65,6 @@
 
     };
 
-    handle_hero_parallax('.hero__content');
+    handle_hero_parallax('.hero__content:not(.hero__content--teams)');
 
 })();
