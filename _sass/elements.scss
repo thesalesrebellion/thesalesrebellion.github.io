@@ -88,3 +88,15 @@ iframe {
         height: 100%;
     }
 }
+
+.goto {
+    img {
+        transition: transform .1s ease-in;
+    }
+
+    &:hover {
+        img {
+            transform: rotate(4deg);
+        }
+    }
+}

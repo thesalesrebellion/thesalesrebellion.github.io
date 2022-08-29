@@ -67,4 +67,25 @@
 
     handle_hero_parallax('.hero__content:not(.hero__content--teams)');
 
+    // scrolls to the corresponing section when menu with internal href is clicked
+    var scroll_to = function(button_id, the_href){
+
+        $('#'+button_id).on('click', function(event){
+            event.preventDefault();
+
+            var the_element = document.getElementById(the_href);
+
+            the_element.scrollIntoView({
+                behavior: 'smooth'
+            });
+
+        });
+    };
+
+    scroll_to('goto-podcast', 'podcast');
+    scroll_to('goto-slack', 'slack');
+    scroll_to('goto-blog', 'blog');
+    scroll_to('goto-market-tools', 'market-tools');
+    scroll_to('goto-course-work', 'course-work');
+
 })();

@@ -2,7 +2,7 @@
 layout: page
 ---
 {%- comment -%} --- SLACK --- {%- endcomment -%}
-<section class="section resources__slack">
+<section id="slack" class="section resources__slack">
 
     <div class="container">
 
@@ -23,7 +23,7 @@ layout: page
 </section>
 
 {%- comment -%} --- PODCAST --- {%- endcomment -%}
-<section class="section resources__podcast">
+<section id="podcast" class="section resources__podcast">
 
     <div class="container">
 
@@ -42,15 +42,17 @@ layout: page
 {%- comment -%} --- BLOG --- {%- endcomment -%}
 <section class="section resources__blog">
 
-    <img src="{{ page.blog.img.path | relative_url }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
+    <div id="blog">
+        <img src="{{ page.blog.img.path | relative_url }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
 
-    <a data-micromodal-trigger="blog-modal" href='javascript:void(0);' class="resources__blog-btn btn"{% if page.blog.cta.new_tab == true %} target="_blank"{% endif %}>
-        {{- page.blog.cta.text -}}
-    </a>
+        <a data-micromodal-trigger="blog-modal" href='javascript:void(0);' class="resources__blog-btn btn"{% if page.blog.cta.new_tab == true %} target="_blank"{% endif %}>
+            {{- page.blog.cta.text -}}
+        </a>
+    </div>
 </section>
 
 {%- comment -%} --- MARKET TOOLS --- {%- endcomment -%}
-<section class="section  resources__mt">
+<section id="market-tools" class="section resources__mt">
 
     <div class="container">
         <h2 class="resources__mt-heading">
@@ -135,7 +137,7 @@ layout: page
 </section>
 
 {%- comment -%} --- LEARN --- {%- endcomment -%}
-<section class="section  resources__learn">
+<section id="course-work" class="section resources__learn">
     <div class="container">
 
         <h2 class="resources__learn-heading">

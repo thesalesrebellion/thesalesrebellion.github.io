@@ -11,14 +11,19 @@ hero:
     images:
       - path: /assets/images/tile-podcast.png
         alt_text: Selling Local Podcast
+        target: podcast
       - path: /assets/images/tile-slack.png
         alt_text: Sales Rebels Slack
+        target: slack
       - path: /assets/images/tile-blog.png
         alt_text: Sales Rebels Blog
+        target: blog
       - path: /assets/images/tile-market-tools.png
         alt_text: Market Tools
+        target: market-tools
       - path: /assets/images/tile-course-work.png
         alt_text: Sales Rebel Academy
+        target: course-work
 slack:
   img:
     path: /assets/images/slack-horizontal.png

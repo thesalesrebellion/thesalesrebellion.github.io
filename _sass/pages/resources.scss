@@ -48,6 +48,7 @@
     &__slack {
 
         padding-top: 50px;
+        padding-bottom: 50px;
 
         text-align: center;
 
@@ -90,7 +91,8 @@
 
     &__podcast {
 
-        padding-top: 200px;
+        padding-top: 150px;
+        padding-bottom: 50px;
 
         text-align: center;
 
@@ -115,7 +117,7 @@
 
     &__blog {
 
-        padding-top: 200px;
+        padding-top: 150px;
 
         &-btn {
             display: inline-block;

@@ -21,7 +21,9 @@
                         <div class="{{ page.page_id }}__hero-tiles">
                             {%- for img in page.hero.tiles.images -%}
                                 <div class="{{ page.page_id }}__hero-tile">
-                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                    <a id="goto-{{- img.target -}}" class="goto" href="#{{- img.target -}}">
+                                        <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                    </a>
                                 </div>
                             {%- endfor -%}
                         </div>
@@ -29,7 +31,9 @@
                         <div class="{{ page.page_id }}__hero-tiles {{ page.page_id }}__hero-tiles--mobile slick-me-center">
                             {%- for img in page.hero.tiles.images -%}
                                 <div class="{{ page.page_id }}__hero-tile">
-                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                    <a id="goto-{{- img.target -}}" class="goto" href="#{{- img.target -}}">
+                                        <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
+                                    </a>
                                 </div>
                             {%- endfor -%}
                         </div>
