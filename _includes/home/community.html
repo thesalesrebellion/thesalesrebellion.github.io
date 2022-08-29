@@ -1,4 +1,4 @@
-<section class="section comm">
+<section class="section comm{% if page.cta.show == false %} comm--is-last-section{% endif %}">
 
     <div class="container">
 
@@ -29,5 +29,9 @@
         </div>
 
     </div>
+
+    {%- if page.cta.show == false -%}
+        <div class="overlay overlay--bottom"></div>
+    {%- endif -%}
 
 </section>

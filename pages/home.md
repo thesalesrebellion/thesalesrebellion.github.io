@@ -89,6 +89,7 @@ testimonials:
   heading: ''
   video_id: te3pw5DBXi8
 cta:
+  show: false
   text: Sign<span class="space"></span>up<span class="space"></span>for<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion’s<span class="space"></span>email<span class="space"></span>experience<span class="space"></span>extravaganza
   button:
     text: Coming<br>Soon
