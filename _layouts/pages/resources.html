@@ -178,7 +178,7 @@ layout: page
         <div class="resources__merch-items resources__merch-items--desktop">
             {%- for item in page.merch.images -%}
                 <div class="resources__merch-item">
-                    <a href="{{- item.url -}}" class="resources__merch-link">
+                    <a href="{{- item.url | relative_url -}}" class="resources__merch-link">
                         <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__merch-img">
                     </a>
                 </div>

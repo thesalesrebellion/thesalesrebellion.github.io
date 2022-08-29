@@ -114,13 +114,13 @@ merch:
   images:
     - path: /images/merch/merch-1.jpg
       alt_text: merch 1
-      url: www.store.thesalesrebellion.com
+      url: https://store.thesalesrebellion.com/
     - path: /images/merch/merch-2.jpg
       alt_text: merch 2
-      url: www.store.thesalesrebellion.com
+      url: https://store.thesalesrebellion.com/
     - path: /images/merch/merch-3.jpg
       alt_text: merch 3
-      url: www.store.thesalesrebellion.com
+      url: https://store.thesalesrebellion.com/
 footer:
   message: "There is no scarcity of opportunity, only scarcity of imagination"
   note: "- Napoleon hill"
