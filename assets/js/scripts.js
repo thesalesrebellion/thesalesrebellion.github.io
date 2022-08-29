@@ -57,7 +57,7 @@
         window.addEventListener('scroll', function(){
             let offset = window.pageYOffset;
             if (initial_bgYpos > 0) {
-                page_content.style.backgroundPositionY = initial_bgYpos - offset * .2 + 'px';
+                page_content.style.backgroundPositionY = initial_bgYpos - offset * .1 + 'px';
             } else {
                 page_content.style.backgroundPositionY = offset * .7 + 'px';
             }
@@ -65,7 +65,7 @@
 
     };
 
-    handle_hero_parallax('.hero__content:not(.hero__content--teams)');
+    handle_hero_parallax('.hero__content');
 
     // scrolls to the corresponing section when menu with internal href is clicked
     var scroll_to = function(button_id, the_href){
@@ -87,5 +87,11 @@
     scroll_to('goto-blog', 'blog');
     scroll_to('goto-market-tools', 'market-tools');
     scroll_to('goto-course-work', 'course-work');
+
+    scroll_to('goto-podcast--mobile', 'podcast');
+    scroll_to('goto-slack--mobile', 'slack');
+    scroll_to('goto-blog--mobile', 'blog');
+    scroll_to('goto-market-tools--mobile', 'market-tools');
+    scroll_to('goto-course-work--mobile', 'course-work');
 
 })();
