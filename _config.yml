@@ -16,8 +16,13 @@ defaults:
       permalink: '/blog/:year/:month/:day/:title/'
       layout: post
       section: blog-post inverse
+  -
+    scope:
+      path: "_old"
+    values:
+      published: false
 pagination:
-  enabled: true
+  enabled: false
   per_page: 2
   permalink: '/page/:num/'
   title: ':title - page :num of :max'
