@@ -9,6 +9,20 @@
         background-size: cover;
         background-attachment: fixed;
 
+        .section {
+            position: relative;
+            &:first-child {
+                &:before {
+                    @include overlay--top;
+                }
+            }
+            &:last-child {
+                &:after {
+                    @include overlay--bottom;
+                }
+            }
+        }
+
     }
 
 }

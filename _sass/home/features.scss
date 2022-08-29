@@ -134,4 +134,12 @@
 		}
 	}
 
+	&:before {
+		@include overlay--top;
+	}
+
+	&:after {
+		@include overlay--bottom;
+	}
+
 }
