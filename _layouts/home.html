@@ -11,10 +11,7 @@ layout: default
 
     {%- include home/community.html -%}
 
-    {%- unless page.cta.show == false -%}
-        {%- include cta.html cta=page.cta type='home' -%}
-    {%- endunless -%}
-
+    {%- include cta.html cta=page.cta type='home' -%}
 
 </div>
 

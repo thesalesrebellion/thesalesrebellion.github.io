@@ -54,6 +54,7 @@ faq:
     a: |-
       Maybe… But we are definitely looking to develop good relationships with people and orgs who want to #ChangeTheGame. Wanna publish content together? Wanna sell the Sales Rebellion to all your friends? Wanna become a Rebel and coach students to achieve legendary status? Let’s talk…
 cta:
+  show: false
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:
     text: Coming<br>Soon

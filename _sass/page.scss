@@ -11,12 +11,13 @@
 
         .section {
             position: relative;
-            &:first-child {
+            &:first-of-type {
                 &:before {
                     @include overlay--top;
                 }
             }
-            &:last-child {
+            &:last-of-type {
+                padding-bottom: 100px;
                 &:after {
                     @include overlay--bottom;
                 }
