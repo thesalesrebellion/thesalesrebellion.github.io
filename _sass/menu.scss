@@ -91,6 +91,9 @@
         }
         cursor: pointer;
         z-index: 2;
+        position: fixed;
+        top: 16px;
+        right: 16px;
     }
 
     &__close {

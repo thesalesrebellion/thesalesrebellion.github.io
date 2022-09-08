@@ -1,26 +1,28 @@
 .hero {
 
-    &--home {
-        background-image: url(/assets/images/hero_space_bg.jpg);
-    }
+    background-image: url(/assets/images/hero_space_bg.jpg);
 
-    &--teams {
-        background-image: url(/assets/images/team-hero-bg.jpg);
-    }
+    // &--home {
+    //     background-image: url(/assets/images/hero_space_bg.jpg);
+    // }
 
-    &--1x1 {
-        background-image: url(/assets/images/1x1-hero-bg.jpg);
-    }
+    // &--teams {
+    //     background-image: url(/assets/images/hero_space_bg.jpg);
+    // }
 
-    &--group,
-    &--about,
-    &--404 {
-        background-image: url(/assets/images/group-hero-bg.jpg);
-    }
+    // &--1x1 {
+    //     background-image: url(/assets/images/hero_space_bg.jpg);
+    // }
 
-    &--resources {
-        background-image: url(/assets/images/resources-hero-bg.jpg);
-    }
+    // &--group,
+    // &--about,
+    // &--404 {
+    //     background-image: url(/assets/images/hero_space_bg.jpg);
+    // }
+
+    // &--resources {
+    //     background-image: url(/assets/images/resources-hero-bg.jpg);
+    // }
 
     background-repeat: no-repeat;
     background-size: cover;
