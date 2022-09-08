@@ -75,6 +75,8 @@
 
         &--home {
             background-image: url(/assets/images/grid_and_sun.png);
+            background-position-y: 200px;
+            background-attachment: fixed;
         }
 
         &--teams {
@@ -210,7 +212,7 @@
         font-size: 22px;
         line-height: 1.25;
         letter-spacing: 1px;
-        text-shadow: 0 0 24px #000;
+        @include black_text_shadow;
 
         p {
             margin-top: 0;
@@ -303,10 +305,10 @@
 
     &__aside {
         @include noodle;
+        @include black_text_shadow;
         font-size: 24px;
         line-height: 1.25;
         letter-spacing: 1px;
-        text-shadow: 0 0 24px #000;
         text-align: center;
         font-weight: 400;
         max-width: 302px;
