@@ -77,6 +77,12 @@
             background-image: url(/assets/images/grid_and_sun.png);
             background-position-y: 200px;
             background-attachment: fixed;
+            @include breakpoint(large) {
+                padding-top: 30px;
+            }
+            @include breakpoint(small) {
+                padding-top: 20px;
+            }
         }
 
         &--teams {
@@ -289,16 +295,19 @@
             flex-basis: 60%;
             @include breakpoint(larger) {
                 flex: 1;
-                align-items: flex-start;
                 padding-top: 50px;
+            }
+            @include breakpoint(large) {
+                flex-direction: column;
+                padding-top: 0;
             }
             @include breakpoint(medium) {
                 align-items: center;
                 justify-content: center;
+                padding-top: 40px;
             }
             @include breakpoint(smaller) {
-                flex-direction: column;
-                padding-top: 30px;
+                flex-direction: column;                padding-top: 30px;
             }
         }
     }
@@ -314,7 +323,7 @@
         max-width: 302px;
 
         @include breakpoint(large) {
-            font-size: 18px;
+            order: 2;
         }
 
         @include breakpoint(medium) {
@@ -334,6 +343,10 @@
     &__person {
         position: relative;
         left: -5%;
+        @include breakpoint(large) {
+            order: 1;
+            left: 0;
+        }
         @include breakpoint(medium) {
             flex-basis: 40%;
         }
@@ -341,6 +354,12 @@
             position: static;
             img {
                 width: 80%;
+            }
+        }
+
+        &-img {
+            @include breakpoint(large) {
+                max-width: 280px;
             }
         }
     }
@@ -353,6 +372,16 @@
             margin-top: 50px;
             @include breakpoint(medium) {
                 margin-top: 25px;
+            }
+            @include breakpoint(large) {
+                display: none;
+            }
+            &--mobile {
+                display: none;
+                @include breakpoint(large) {
+                    display: block;
+                    order: 3;
+                }
             }
         }
 

@@ -18,6 +18,9 @@
 
 	&__logo {
 		max-width: 100px;
+		@include breakpoint(small) {
+			max-width: 85px;
+		}
 	}
 
 }

@@ -44,6 +44,15 @@
                     <div class="hero__person">
                         <img src="{{- '/images/man-triangle.png' | relative_url -}}" alt="A person" class="hero__person-img">
                     </div>
+                    <div class="hero__cta-section hero__cta-section--mobile">
+                        {%- for item in page.hero.cta -%}
+                            <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
+                                <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
+                                    {{ item.text }}
+                                </a>
+                            </div>
+                        {%- endfor -%}
+                    </div>
                 </div>
 
             </div>
