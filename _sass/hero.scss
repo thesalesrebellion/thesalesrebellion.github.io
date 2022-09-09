@@ -309,7 +309,8 @@
                 padding-top: 40px;
             }
             @include breakpoint(smaller) {
-                flex-direction: column;                padding-top: 30px;
+                flex-direction: column;
+                padding-top: 30px;
             }
         }
     }
