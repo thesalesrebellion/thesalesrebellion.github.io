@@ -42,7 +42,7 @@
 
         &--teams,
         &--1x1 {
-            max-width: 1280px;
+            max-width: 1220px;
         }
 
         &--group,
@@ -156,7 +156,8 @@
             }
         }
 
-        &--teams {
+        &--teams,
+        &--1x1 {
             font-size: 60px;
             margin-top: 0;
             @include breakpoint(large) {
@@ -292,7 +293,8 @@
             padding: 0;
         }
 
-        &--teams {
+        &--teams,
+        &--1x1 {
             padding: 0;
         }
     }
@@ -323,7 +325,18 @@
                     padding-top: 50px;
                 }
             }
+
+            &--1x1 {
+                flex-basis: 40%;
+                @include breakpoint(larger) {
+                    flex-basis: 50%;
+                }
+                @include breakpoint(semi_large) {
+                    flex-basis: 65%;;
+                }
+            }
         }
+
         &--right {
             align-items: center;
             flex-basis: 60%;
@@ -352,10 +365,25 @@
                 padding-left: 40px;
                 @include breakpoint(larger) {
                     padding-left: 0;
+                    padding-top: 0;
                 }
                 @include breakpoint(medium) {
                     order: 1;
                     padding-top: 0;
+                }
+            }
+
+            &--1x1 {
+                padding-left: 20px;
+                @include breakpoint(larger) {
+                    flex-basis: 50%;
+                    padding-left: 0;
+                    padding-top: 0;
+                    flex-direction: column;
+                }
+                @include breakpoint(semi_large) {
+                    flex-basis: 40%;
+                    padding-left: 20px;
                 }
             }
         }
@@ -371,7 +399,7 @@
         font-weight: 400;
         max-width: 302px;
 
-        @include breakpoint(large) {
+        @include breakpoint(larger) {
             order: 2;
         }
 
@@ -401,6 +429,14 @@
                 }
             }
         }
+
+        &--1x1 {
+            position: relative;
+            left: 40px;
+            @include breakpoint(larger) {
+                position: static;
+            }
+        }
     }
 
     &__person {
@@ -425,7 +461,8 @@
                 max-width: 280px;
             }
 
-            &--teams {
+            &--teams,
+            &--1x1 {
                 @include breakpoint(larger) {
                     max-width: 300px;
                 }
@@ -434,8 +471,13 @@
 
         &--teams {
             @include breakpoint(larger) {
+                order: 1;
                 left: 0;
             }
+        }
+
+        &--1x1 {
+            position: static;
         }
     }
 

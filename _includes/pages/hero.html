@@ -4,6 +4,8 @@
 
     {%- if page.layout == 'pages/teams' -%}
         {%- include pages/teams/hero-content.html -%}
+    {%- elsif page.layout == 'pages/1x1' -%}
+        {%- include pages/one-x-one/hero-content.html -%}
     {%- else -%}
         {%- include pages/hero-content.html -%}
     {%- endif -%}
