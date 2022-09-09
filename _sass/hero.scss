@@ -385,6 +385,10 @@
                     flex-basis: 40%;
                     padding-left: 20px;
                 }
+                @include breakpoint(medium) {
+                    padding-left: 0;
+                    padding-top: 50px;
+                }
             }
         }
     }
@@ -411,7 +415,8 @@
             font-size: 28px;
             font-weight: 400;
 
-            &--teams {
+            &--teams,
+            &--1x1 {
                 @include breakpoint(medium) {
                     margin-top: 0;
                     margin-bottom: 12px;
@@ -420,7 +425,8 @@
         }
 
         &-text {
-            &--teams {
+            &--teams,
+            &--1x1 {
                 p {
                     @include breakpoint(medium) {
                         margin-top: 12px;
@@ -611,7 +617,8 @@
             }
         }
 
-        &--teams {
+        &--teams,
+        &--1x1 {
             @include breakpoint(medium) {
                 display: none;
             }

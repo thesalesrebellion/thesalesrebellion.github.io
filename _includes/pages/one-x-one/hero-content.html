@@ -43,13 +43,13 @@
                     <img src="{{- '/images/man-blue-triangle.png' | relative_url -}}" alt="A person" class="hero__person-img hero__person-img--{{ page.page_id }}">
                 </div>
 
-                {%- comment -%} {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
+                {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
                     <div class="hero__cta hero__cta--{{ page.page_id }} hero__cta--{{ page.page_id }}--mobile">
                         <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
                             {{- page.hero.cta.text -}}
                         </a>
                     </div>
-                {%- endif -%} {%- endcomment -%}
+                {%- endif -%}
 
             </div>
 
