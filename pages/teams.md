@@ -4,9 +4,9 @@ permalink: /teams/
 page_id: teams
 has_video: true
 hero:
-  heading: <span>Get</span><span>your</span> team<br><span>to</span><span>the</span>top!
+  heading: <span>Get</span> <span>your</span> <span>team</span> <span>to</span> <span>the</span> top!
   text: |-
-    Transformative training and coaching for sales teams<br>who want to dominate their market
+    Transformative training and coaching for sales teams who want to dominate their market
   aside:
     heading:
       line_1: Chief Operating Officer

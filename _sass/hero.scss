@@ -41,7 +41,10 @@
         }
 
         &--teams,
-        &--1x1,
+        &--1x1 {
+            max-width: 1280px;
+        }
+
         &--group,
         &--about,
         &--resources,
@@ -90,6 +93,7 @@
         &--teams {
             @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
             background-attachment: fixed;
+            background-position-y: 430px;
         }
 
         &--1x1 {
@@ -152,7 +156,8 @@
         }
 
         &--teams {
-            font-size: 70px;
+            font-size: 60px;
+            margin-top: 0;
             @include breakpoint(large) {
                 font-size: 55px;
             }
@@ -239,6 +244,11 @@
             font-size: 26px;
             line-height: 1.4;
         }
+
+        &--teams {
+            max-width: 500px;
+        }
+
         &--group {
             max-width: 500px;
             margin-left: auto;
@@ -291,6 +301,12 @@
             @include breakpoint(medium) {
                 padding: 0;
             }
+
+            &--teams {
+                flex-direction: row;
+                flex-basis: 50%;
+                align-items: center;
+            }
         }
         &--right {
             align-items: center;
@@ -311,6 +327,13 @@
             @include breakpoint(smaller) {
                 flex-direction: column;
                 padding-top: 30px;
+            }
+
+            &--teams {
+                flex-direction: column;
+                flex-basis: 50%;
+                align-items: flex-start;
+                padding-left: 40px;
             }
         }
     }
@@ -334,12 +357,8 @@
         }
 
         &-heading {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 400;
-
-            @include breakpoint(large) {
-                font-size: 20px;
-            }
         }
     }
 

@@ -2,56 +2,60 @@
 
     <div class="hero__container hero__container--page hero__container--{{ page.page_id }}">
 
-        <div class="hero__content-wrapper hero__content-wrapper--{{ page.page_id }}">
+        <div class="hero__cols hero__cols--{{ page.page_id }}">
 
-            <h1 class="hero__heading hero__heading--page hero__heading--{{ page.page_id }}">
-                {{ page.hero.heading }}
-            </h1>
+            <div class="hero__col hero__col--left hero__col--{{ page.page_id }} hero__col--left--{{ page.page_id }}">
 
-            {%- if page.hero.text and page.hero.text.size > 0 -%}
-                <div class="hero__text hero__text--page hero__text--{{ page.page_id }}">
-                    {{ page.hero.text | markdownify }}
-                </div>
-            {%- endif -%}
-
-            {%- if page.hero.tiles -%}
-
-                <div class="{{ page.page_id }}__hero-tiles-wrapper">
-
-                    <div class="{{ page.page_id }}__hero-tiles">
-                        {%- for img in page.hero.tiles.images -%}
-                            <div class="{{ page.page_id }}__hero-tile">
-                                <a id="goto-{{- img.target -}}" class="goto" href="#{{- img.target -}}">
-                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
-                                </a>
-                            </div>
-                        {%- endfor -%}
+                <div class="hero__aside">
+                    <h2 class="hero__aside-heading">
+                        {{ page.hero.aside.heading.line_1 }}
+                        {%- if page.hero.aside.heading.line_1 and page.hero.aside.heading.line_1.size > 0 -%}
+                            <br>{{ page.hero.aside.heading.line_2 }}
+                        {%- endif -%}
+                    </h2>
+                    <div class="hero__aside-text">
+                        {{ page.hero.aside.text | markdownify }}
                     </div>
+                </div>
+                <div class="hero__person">
+                    <img src="{{- '/images/man-triangle.png' | relative_url -}}" alt="A person" class="hero__person-img">
+                </div>
+                <div class="hero__cta-section hero__cta-section--mobile">
+                    {%- for item in page.hero.cta -%}
+                        <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
+                            <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
+                                {{ item.text }}
+                            </a>
+                        </div>
+                    {%- endfor -%}
+                </div>
 
-                    <div class="{{ page.page_id }}__hero-tiles {{ page.page_id }}__hero-tiles--mobile slick-me-center">
-                        {%- for img in page.hero.tiles.images -%}
-                            <div class="{{ page.page_id }}__hero-tile">
-                                <a id="goto-{{- img.target -}}--mobile" class="goto" href="#{{- img.target -}}">
-                                    <img src="{{- img.path | relative_url -}}" alt="{{- img.alt_text -}}" class="resources__hero-tile-img">
-                                </a>
-                            </div>
-                        {%- endfor -%}
+            </div>
+
+            <div class="hero__col hero__col--right hero__col--{{ page.page_id }} hero__col--right--{{ page.page_id }}">
+
+                <h1 class="hero__heading hero__heading--page hero__heading--{{ page.page_id }}">
+                    {{ page.hero.heading }}
+                </h1>
+
+                {%- if page.hero.text and page.hero.text.size > 0 -%}
+                    <div class="hero__text hero__text--page hero__text--{{ page.page_id }}">
+                        {{ page.hero.text | markdownify }}
                     </div>
+                {%- endif -%}
 
-                </div>
+                {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
+                    <div class="hero__cta hero__cta--{{ page.page_id }}">
+                        <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
+                            {{- page.hero.cta.text -}}
+                        </a>
+                    </div>
+                {%- endif -%}
 
-            {%- endif -%}
-
-            {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
-                <div class="hero__cta hero__cta--{{ page.page_id }}">
-                    <a href="{{- page.hero.cta.url -}}" class="hero__cta-btn hero__cta-btn--page hero__cta-btn--{{ page.page_id }} btn"{% if page.hero.cta.new_tab == true %} target="_blank"{% endif %}>
-                        {{- page.hero.cta.text -}}
-                    </a>
-                </div>
-            {%- endif -%}
-
+            </div>
 
         </div>
+
 
     </div>
 
