@@ -3,6 +3,7 @@ layout: pages/teams
 permalink: /teams/
 page_id: teams
 has_video: true
+has_carousel: true
 hero:
   heading: <span>Get</span> <span>your</span> <span>team</span> <span>to</span> <span>the</span> top!
   text: |-

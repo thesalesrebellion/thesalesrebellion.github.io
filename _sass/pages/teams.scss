@@ -135,6 +135,31 @@
             @include breakpoint(smallish) {
                 flex-direction: column;
             }
+            &--desktop {
+                @include breakpoint(smallish) {
+                    display: none;
+                }
+            }
+            &--mobile {
+                display: none;
+                @include breakpoint(smallish) {
+                    display: block;
+                }
+            }
+
+            .slick-track {
+                top: 16px;
+                .slick-slide {
+                    img {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+
+            .slick-dots {
+                bottom: -32px;;
+            }
         }
 
         &-img {
