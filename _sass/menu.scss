@@ -5,6 +5,9 @@
         display: flex;
         @include breakpoint(medium) {
             flex-direction: column;
+            padding-top: 90px;
+        }
+        @include breakpoint(smaller) {
             padding-top: 32px;
         }
     }
@@ -42,6 +45,16 @@
 
         @include breakpoint(medium) {
             margin: 20px;
+        }
+
+        &--mobile {
+            display: none;
+            @include breakpoint(smaller) {
+                display: block;
+                max-width: 85px;
+                margin-left: auto !important;
+                margin-right: auto !important;
+            }
         }
 
 
