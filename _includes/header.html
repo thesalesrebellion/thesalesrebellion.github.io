@@ -10,6 +10,11 @@
 
         <nav id="menu" class="menu">
             <ul class="menu__items">
+                <li class="menu__item menu__item--mobile site-header__logo _m-auto">
+                    <a href="{{- '/' | relative_url -}}" class="menu__link">
+                        <img src="{{- '/assets/images/logo.png' -}}" alt="Sales Rebellion Home page">
+                    </a>
+                </li>
                 {%- for item in site.data.navigation.items -%}
                     <li class="menu__item">
                         <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}{% if item.url == page.url %} menu__link--active{% endif %}">
