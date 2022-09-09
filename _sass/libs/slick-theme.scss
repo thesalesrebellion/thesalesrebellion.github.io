@@ -203,3 +203,31 @@
     color: #fff;
     @include glow_in($purple);
 }
+
+.slick-slider {
+
+    .slick-dots {
+        bottom: -32px;
+        li {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            &:last-child {
+                margin-right: 0;
+            }
+            svg {
+                display: block;
+                width: 100%;
+                height: 100%;
+                transition: filter .1s linear;
+            }
+            &.slick-active,
+            &:hover {
+                svg {
+                    filter: drop-shadow(0 0 8px #fff);
+                }
+            }
+        }
+    }
+
+}

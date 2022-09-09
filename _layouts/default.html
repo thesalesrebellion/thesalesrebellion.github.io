@@ -17,7 +17,10 @@
         <script>
             $('.slick-me').slick({
                 arrows: false,
-                dots: true
+                dots: true,
+                customPaging: function(slick,index) {
+                  return '{% include svg/triangle.svg %}';
+                }
             });
 
             $('.slick-me-center').slick({
@@ -25,7 +28,10 @@
                 dots: true,
                 centerMode: true,
                 centerPadding: '90px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                customPaging: function(slick,index) {
+                  return '{% include svg/triangle.svg %}';
+                }
             });
 
             $('.slick-me-center-50').slick({
@@ -33,7 +39,10 @@
                 dots: true,
                 centerMode: true,
                 centerPadding: '50px',
-                slidesToShow: 1
+                slidesToShow: 1,
+                customPaging: function(slick,index) {
+                  return '{% include svg/triangle.svg %}';
+                }
             });
         </script>
     {%- endif -%}

@@ -90,7 +90,7 @@
             display: block;
         }
         cursor: pointer;
-        z-index: 2;
+        z-index: 12;
         position: fixed;
         top: 16px;
         right: 16px;
@@ -122,7 +122,7 @@
         bottom: 0;
         right: -$mobile_menu_width;
         padding: 0 20px;
-        z-index: 1;
+        z-index: 10;
         background: rgb(0,0,0);
         background: linear-gradient(180deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0.6810925053615196) 100%);
         transition: all .2s linear;
