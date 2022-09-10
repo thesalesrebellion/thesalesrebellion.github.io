@@ -45,8 +45,8 @@ layout: page
         </div>
 
         <div class="about__team-members about__team-members--mobile slick-me">
-            {%- for item in page.team.members -%}
-                <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+            {%- for item in page.team.members_mobile -%}
+                <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img about__team-img--mobile">
             {%- endfor -%}
         </div>
 

@@ -27,19 +27,53 @@ team:
   title: Meet <span>our</span> team
   members:
     - img:
-        path: /images/team/1.png
+        path: /images/team/m1.png
         alt_text: Team member
     - img:
-        path: /images/team/2.png
+        path: /images/team/m2.png
         alt_text: Team member
     - img:
-        path: /images/team/3.png
+        path: /images/team/m3.png
         alt_text: Team member
     - img:
-        path: /images/team/4.png
+        path: /images/team/m4.png
         alt_text: Team member
     - img:
-        path: /images/team/5.png
+        path: /images/team/m5.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m6.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m7.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m8.png
+        alt_text: Team member
+  members_mobile:
+    - img:
+        path: /images/team/m5.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m1.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m2.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m3.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m4.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m6.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m7.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m8.png
         alt_text: Team member
 faq:
   heading: Things we get asked

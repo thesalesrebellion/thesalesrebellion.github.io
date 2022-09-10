@@ -64,23 +64,24 @@
             position: relative;
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
 
             &-top-left-img {
                 position: absolute;
-                top: 0;
-                left: 0;
+                top: -35;
+                left: -130px;
                 width: 160px;
-                @include breakpoint(smallish) {
+                @include breakpoint(semi_large) {
                     display: none;
                 }
             }
 
             &-bottom-right-img {
                 position: absolute;
-                bottom: 0;
-                right: 0;
+                bottom: -46px;
+                right: -166px;
                 width: 270px;
-                @include breakpoint(smallish) {
+                @include breakpoint(semi_large) {
                     display: none;
                 }
             }
@@ -101,18 +102,6 @@
 
         &-member {
             flex-basis: 200px;
-            &--first {
-                margin-left: 200px;
-                @include breakpoint(smallish) {
-                    margin: 0;
-                }
-            }
-            &--last {
-                margin-right: 200px;
-                @include breakpoint(smallish) {
-                    margin: 0;
-                }
-            }
         }
 
     }
