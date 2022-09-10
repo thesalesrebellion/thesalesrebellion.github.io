@@ -179,21 +179,33 @@
         }
 
         &-rows {
-            display: flex;
-            align-items: center;
             @include breakpoint(medium) {
                 flex-direction: column;
                 text-align: center;
             }
 
             &--1 {
-                @include breakpoint(medium) {
-                    flex-direction: column-reverse;
+                .container {
+                    display: flex;
+                    align-items: center;
+                    @include breakpoint(medium) {
+                        flex-direction: column-reverse;
+                    }
                 }
             }
 
             &--2 {
-                margin-top: 70px;
+                margin-top: 120px;
+                .container {
+                    max-width: 1600px;
+                    &--inner {
+                        display: flex;
+                        align-items: center;
+                        max-width: 1200px;
+                        margin-left: 0;
+                        padding: 0;
+                    }
+                }
             }
         }
 
@@ -219,13 +231,17 @@
             &--2 {
                 flex: 1;
                 &--left {
-                    flex-basis: 55%;
+                    flex-basis: 60%;
                     @include breakpoint(medium) {
                         display: none;
                     }
                 }
                 &--right {
-                    flex-basis: 45%;
+                    flex-basis: 40%;
+                    padding-left: 40px;
+                    @include breakpoint(large) {
+                        padding-left: 0;
+                    }
                 }
             }
 
@@ -283,6 +299,15 @@
                 &--2 {
                     letter-spacing: .15em;
                     font-size: 55px;
+                    @include breakpoint(semi_large) {
+                        font-size: 50px;
+                    }
+                    @include breakpoint(large) {
+                        font-size: 40px;
+                    }
+                    @include breakpoint(medium) {
+                        font-size: 55px;
+                    }
                     @include breakpoint(small) {
                         font-size: 38px
                     }
@@ -329,7 +354,7 @@
         &-left-img {
             @include breakpoint(semi_large) {
                 position: relative;
-                left: -45px;
+                left: -50px;
             }
         }
 

@@ -70,7 +70,7 @@ market_tools:
   row2:
     left_col:
       img:
-        path: /assets/images/arcade-machine.png
+        path: /images/arcade-machine.png
         alt_text: Arcade machine
     right_col:
       title:
