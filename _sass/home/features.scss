@@ -1,0 +1,145 @@
+.features {
+
+	position: relative;
+
+	color: #fff;
+	@include lazer;
+
+	padding-top: 45px;
+
+	background-image: url(/assets/images/grid-2.png), url(/assets/images/space_bg_2.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-size: contain, cover;
+	background-position: bottom, center;
+	background-attachment: scroll, fixed;
+
+	padding-bottom: 3vw;
+
+	@include breakpoint(larger) {
+		padding-bottom: 1vw;
+	}
+	@include breakpoint(large) {
+		padding-bottom: .5vw;
+	}
+
+	.container {
+		max-width: 1000px;
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		margin-bottom: 80px;
+
+		@include breakpoint(medium) {
+			flex-direction: column;
+			text-align: center;
+			justify-content: center;
+			margin-bottom: 100px;
+		}
+
+		&--even {
+			.features__col--content {
+				text-align: right;
+				@include breakpoint(medium) {
+					text-align: center;
+				}
+			}
+			.features__text {
+				margin-left: auto;
+				@include breakpoint(medium) {
+					margin-left: 0;
+				}
+			}
+
+			@include breakpoint(medium) {
+				flex-direction: column-reverse;
+			}
+		}
+
+		&--odd {
+			.features__col--image {
+				text-align: right;
+				@include breakpoint(medium) {
+					text-align: center;
+				}
+			}
+		}
+
+	}
+
+	&__col {
+		flex: 1;
+		align-items: center;
+
+		&--content {
+			flex-basis: 60%;
+		}
+
+		&--image {
+			flex-basis: 40%;
+		}
+
+		&--left {
+			padding-right: 20px;
+		}
+
+		@include breakpoint(medium) {
+			padding: 0;
+			&--image,
+			&--content {
+				text-align: center;
+			}
+		}
+
+	}
+
+	&__heading {
+		margin-top: 0;
+		font-size: 60px;
+		font-weight: 400;
+		letter-spacing: 1.5px;
+		line-height: 1.2;
+		margin-bottom: 8px;
+		text-shadow: 2px 2px 20px #000;
+		@include breakpoint(smaller) {
+			font-size: 40px;
+		}
+	}
+
+	&__text {
+		@include noodle;
+		font-size: 24px;
+		line-height: 1.25;
+		letter-spacing: 1px;
+		text-shadow: 0 0 24px #000;
+		max-width: 430px;
+	}
+
+	&__button {
+		display: inline-block;
+		margin-top: 22px;
+		&--mobile {
+			margin-top: 6px;
+		}
+	}
+
+	&__image {
+		max-width: 340px;
+		@include breakpoint(large) {
+			max-width: 90%;
+		}
+		@include breakpoint(medium) {
+			max-width: 300px;
+		}
+	}
+
+	&:before {
+		@include overlay--top;
+	}
+
+	&:after {
+		@include overlay--bottom;
+	}
+
+}

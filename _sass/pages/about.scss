@@ -1,0 +1,117 @@
+.about {
+
+    &__features {
+
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        text-align: center;
+
+        .ovelray {
+            &--top {
+                height: 30px;
+            }
+        }
+
+        &-items {
+            padding: 40px 20px;
+            border: 4px solid $purple;
+            box-shadow: 0 0 18px 3px $purple, inset 0 0 18px 3px $purple;
+            @include btn_box_shadow($purple);
+
+        }
+
+        &-item {
+
+            margin-bottom: 42px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+
+            &-title {
+                @include lazer;
+                font-size: 30px;
+                line-height: 1.3;
+                margin-top: 0;
+                margin-bottom: 16px;
+                letter-spacing: 1.3px;
+            }
+            &-text {
+                @include noodle;
+                font-size: 22px;
+                line-height: 1.3;
+                letter-spacing: 1.2px;
+            }
+        }
+
+    }
+
+    &__team {
+
+        text-align: center;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &-title {
+            @include lazer;
+            font-size: 40px;
+            line-height: 1.3;
+        }
+
+        &-members {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-top-left-img {
+                position: absolute;
+                top: -35;
+                left: -130px;
+                width: 160px;
+                @include breakpoint(semi_large) {
+                    display: none;
+                }
+            }
+
+            &-bottom-right-img {
+                position: absolute;
+                bottom: -46px;
+                right: -166px;
+                width: 270px;
+                @include breakpoint(semi_large) {
+                    display: none;
+                }
+            }
+
+            &--desktop {
+                @include breakpoint(smallish) {
+                    display: none;
+                }
+            }
+
+            &--mobile {
+                display: none;
+                @include breakpoint(smallish) {
+                    display: block;
+                }
+            }
+        }
+
+        &-member {
+            flex-basis: 200px;
+        }
+
+    }
+
+    &__faq {
+
+        &-heading {
+            font-size: 46px;
+        }
+
+    }
+
+}

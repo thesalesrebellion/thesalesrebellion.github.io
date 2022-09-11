@@ -1,0 +1,50 @@
+<section class="section features">
+
+	<div class="container">
+
+		{%- for feature in page.features -%}
+			{%- capture the_cycle -%}{%- cycle 'odd', 'even' -%}{%- endcapture -%}
+
+			{%- capture content_col -%}
+				<h2 class="features__heading">
+					{{- feature.title -}}
+				</h2>
+				<div class="features__text">
+					{{ feature.text }}
+				</div>
+				<a class="features__button btn btn--purple desktop-only desktop-only--inline-block" href="{{- feature.button.url | relative_url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+					{{- feature.button.text -}}
+				</a>
+			{%- endcapture -%}
+
+			{%- capture image_col -%}
+				<div class="features__image-wrapper">
+					<img src="{{- feature.image.path | relative_url -}}" alt="{{- feature.image.alt_text -}}" class="features__image">
+				</div>
+				<a class="features__button features__button--mobile btn btn--purple mobile-only mobile-only--inline-block" href="{{- feature.button.url | relative_url -}}"{% if feature.button.new_tab == true %} target="_blank"{% endif %}>
+					{{- feature.button.text -}}
+				</a>
+			{%- endcapture -%}
+
+			<div class="features__row features__row--{{ the_cycle }}">
+				{%- if the_cycle == 'odd' -%}
+					<div class="features__col features__col--left features__col--content">
+						{{ content_col }}
+					</div>
+					<div class="features__col features__col--right features__col--image">
+						{{ image_col }}
+					</div>
+				{%- elsif the_cycle == 'even' -%}
+					<div class="features__col features__col--left features__col--image">
+						{{ image_col }}
+					</div>
+					<div class="features__col features__col--right features__col--content">
+						{{ content_col }}
+					</div>
+				{%- endif -%}
+			</div>
+		{%- endfor -%}
+
+	</div>
+
+</section>

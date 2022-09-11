@@ -1,89 +1,50 @@
-<div class="inverse" style="background-color:#000;padding-bottom:40px;padding-top:60px">
-  <div class="row">
-    <div class="column medium-3">
-      <p>Change the game, and become a legend in your community</p>
-      <p style="margin-bottom:20px"><a class="special" href="/">Become a member</a></p>
-      <p style="margin-bottom:20px"><a class="special" target="_blank" href="http://join.thesalesrebellion.com/prayer/">Submit a prayer request</a></p>
-      <p><a href="https://www.c12group.com/" target="_blank"><img src="/img/c12.png" alt="C12 Group" /></a></p>
-      <p>
-        <a aria-label="The Sales Rebellion Instagram" href="https://www.instagram.com/salesrebellion/"><i class="fab fa-instagram"></i></a>
-        <a aria-label="The Sales Rebellion YouTube Channel" href="https://www.youtube.com/channel/UC-BqyrLcd1uRE9zjAZuFDeg"><i class="fab fa-youtube"></i></a>
-        <a aria-label="The Sales Rebellion LinkedIn" href="https://www.linkedin.com/company/salesrebellion/"><i class="fab fa-linkedin"></i></a>
-        <a aria-label="The Sales Rebellion Facebook" href="https://www.facebook.com/salesrebellion/"><i class="fab fa-facebook"></i></a>
-      </p>
+<footer class="site-footer">
+
+    <div class="container">
+
+        <div class="site-footer__cols">
+            <div class="site-footer__col site-footer__col--left">
+                <div class="site-footer__social">
+                    <a class="site-footer__social-link site-footer__social-link--fb" href="{{- site.data.global.social.facebook -}}" target="_blank">
+                        {%- include svg/facebook.svg -%}
+                    </a>
+                    <a class="site-footer__social-link site-footer__social-link--in" href="{{- site.data.global.social.linkedin -}}" target="_blank">
+                        {%- include svg/linkedin.svg -%}
+                    </a>
+                </div>
+                <div class="site-footer__copyright">
+                    Copyright &copy; Sales Rebellion 2022
+                </div>
+            </div>
+            <div class="site-footer__col site-footer__col--middle">
+                {%- if page.footer.message and page.footer.message.size > 0 -%}
+                    <p class="site-footer__message">
+                        {{ page.footer.message }}
+                    </p>
+
+                    {%- if page.footer.note and page.footer.note.size > 0 -%}
+                        <p class="site-footer__note">
+                            {{ page.footer.note }}
+                        </p>
+                    {%- endif -%}
+                {%- else -%}
+                    <p class="site-footer__message">
+                        {{ site.data.global.footer.message }}
+                    </p>
+                    {%- if site.data.global.footer.note and site.data.global.footer.note.size > 0 -%}
+                        <p class="site-footer__note">
+                            {{ site.data.global.footer.note }}
+                        </p>
+                    {%- endif -%}
+                {%- endif -%}
+            </div>
+            <div class="site-footer__col site-footer__col--right">
+                <a href="{{- site.data.global.footer.cta.url | relative_url -}}" class="site-footer__cta btn btn--blue"{% if site.data.global.footer.cta.new_tab == true %} target="_blank"{% endif %}>
+                    {{ site.data.global.footer.cta.text }}
+                </a>
+            </div>
+        </div>
+
     </div>
-    <div class="column medium-6"></div>
-    <div class="column medium-3">
-      <ul class="menu align-right vertical">
-        {% for item in site.data.menus.header %}
-        {% if item.class == null %}
-        <li>
-          <a class="{{ item.class }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div class="row" style="background-color:#000">
-    <div class="column">
-      <p style="color:#cacaca;font-size:14px">&copy; {{ "now" | date: "%Y" }} The Sales Rebellion</p>
-    </div>
-  </div>
-</div>
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "The Sales Rebellion",
-    "legalName" : "The Sales Rebellion",
-    "url": "https://www.thesalesrebellion.com",
-    "logo": "",
-    "foundingDate": "2019",
-    "founders": [
-      {
-        "@type": "Person",
-        "name": "Dale Dupree"
-      },
-      {
-        "@type": "Person",
-        "name": "Jeff Villegas"
-      }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Orlando",
-      "addressRegion": "FL",
-      "postalCode": "32751",
-      "addressCountry": "USA"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "telephone": "[+407-719-2844]",
-      "email": "dale@thesalesrebellion.com"
-    },
-    "sameAs": [
-      "https://www.instagram.com/salesrebellion/",
-      "https://www.youtube.com/channel/UC-BqyrLcd1uRE9zjAZuFDeg",
-      "https://www.linkedin.com/company/salesrebellion/",
-      "https://www.facebook.com/salesrebellion/",
-      "https://www.twitter.com/salesrebellion"
-    ]
-  }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/what-input@5.1.4/dist/what-input.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script src="/js/rebellion.js"></script>
-<script>
-$(document).foundation();
-</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135473528-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-135473528-1');
-</script>
+
+</footer>

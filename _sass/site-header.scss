@@ -1,0 +1,26 @@
+.site-header {
+
+	padding-top: 36px;
+
+	@include breakpoint(medium) {
+		padding-top: 16px;
+	}
+
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include breakpoint(medium) {
+			position: relative;
+		}
+	}
+
+	&__logo {
+		max-width: 100px;
+		@include breakpoint(small) {
+			max-width: 85px;
+		}
+	}
+
+}

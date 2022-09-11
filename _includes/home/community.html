@@ -1,0 +1,33 @@
+<section class="section comm">
+
+    <div class="container">
+
+        {%- if page.community.heading and page.community.heading.size > 0 -%}
+            <h2 class="comm__heading">{{- page.community.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="comm__items">
+            {%- for item in page.community.items -%}
+                {%- if item.title and item.title.size > 0 -%}
+                    <div class="comm__item">
+                        <h3 class="comm__item-title">
+                            {{- item.title -}}
+                        </h3>
+
+						<a{% if item.modal_target and item.modal_target.size > 0 %} data-micromodal-trigger="{{ item.modal_target }}-modal"{% endif %} href="{{ item.button.url | relative_url }}" class="comm__item-image-link"{% if item.button.new_tab == true %} target="_blank"{% endif %}>
+                        	<img src="{{- item.image.path | relative_url -}}" alt="{{- item.image.alt_text -}}" class="comm__item-img">
+						</a>
+
+						<div class="comm__item-button-wrapper">
+							<a{% if item.modal_target and item.modal_target.size > 0 %} data-micromodal-trigger="{{ item.modal_target }}-modal"{% endif %} href="{{ item.button.url | relative_url }}" class="comm__item-button btn btn--{{ item.button.glow_in }}"{% if item.button.new_tab == true %} target="_blank"{% endif %}>
+								{{- item.button.text -}}
+							</a>
+						</div>
+                    </div>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+
+    </div>
+
+</section>

@@ -1,0 +1,29 @@
+.page {
+
+    &__content {
+
+        position: relative;
+
+        background-image: url(/assets/images/group-content-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+        .section {
+            position: relative;
+            &:first-of-type {
+                &:before {
+                    @include overlay--top;
+                }
+            }
+            &:last-of-type {
+                padding-bottom: 100px;
+                &:after {
+                    @include overlay--bottom;
+                }
+            }
+        }
+
+    }
+
+}

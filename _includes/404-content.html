@@ -1,0 +1,26 @@
+<section class="hero hero--{{ page.page_id }}">
+
+    {%- include header.html -%}
+
+    <div class="hero__content hero__content--{{ page.page_id }}">
+
+        <div class="hero__container hero__container--page hero__container--{{ page.page_id }}">
+
+            <div class="hero__content-wrapper hero__content-wrapper--{{ page.page_id }}">
+
+                <img src="{{- '/images/404.png' -}}" alt=" Error 404">
+
+                <h1 class="hero__heading hero__heading--page hero__heading--{{ page.page_id }}">
+                    <span>We</span> <span>can't</span> <span>find</span> <span>the</span> <span>page</span> <span>you're</span> <span>looking</span> for.
+                </h1>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="hero__overlay"></div>
+
+</section>

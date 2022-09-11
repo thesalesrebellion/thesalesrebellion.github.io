@@ -1,0 +1,142 @@
+$green: #7affdc;
+$blue: #7ab8ff;
+$purple: #f77aff;
+$red: #ff887a;
+$yellow: #fdff7a;
+
+$colors: 'green', 'blue', 'purple', 'red', 'yellow';
+
+@mixin breakpoint($point) {
+    @if $point == larger {
+        @media (max-width: 1200px) { @content; }
+    }
+    @if $point == semi_large {
+        @media (max-width: 1120px) { @content; }
+    }
+    @if $point == large {
+        @media (max-width: 990px) { @content; }
+    }
+    @if $point == medium {
+        @media (max-width: 768px) { @content; }
+    }
+    @else if $point == smallish {
+        @media (max-width: 610px) { @content; }
+    }
+    @else if $point == small {
+        @media (max-width: 576px) { @content; }
+    }
+    @else if $point == smaller {
+        @media (max-width: 425px) { @content; }
+    }
+}
+
+@mixin lazer {
+    font-family: 'Lazer84';
+    font-weight: 400;
+}
+
+@mixin noodle {
+    font-family: 'Big Noodle Titling';
+    font-weight: 400;
+}
+
+@mixin glow_in($color) {
+    text-shadow:
+        0 0 10px #000,
+        0 0 16px #fff,
+        0 0 20px $color,
+        0 0 32px $color,
+        0 0 48px $color,
+        0 0 148px $color;
+}
+
+@mixin btn_glow_in($color: #fff) {
+    border-color: $color;
+    text-shadow: 2px 3px 24px $color;
+    box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
+}
+
+@mixin btn_box_shadow($color: #fff) {
+    border-color: $color;
+    box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
+}
+
+@mixin btn_text_shadow($color: #fff) {
+    text-shadow: 2px 3px 24px $color;
+}
+
+@mixin btn_defaults {
+    @include lazer;
+    font-size: 18px;
+    letter-spacing: 1.2px;
+    color: #fff;
+    border: 4px solid #fff;
+    border-radius: 16px;
+    text-align: center;
+    padding: 10px 20px;
+    transition: all .1s linear;
+}
+
+@mixin page_hero_grid_bg($img, $img_small) {
+    background-image: url($img);
+    background-position-y: 320px;
+    padding-bottom: 260px;
+    @include breakpoint(medium) {
+        background-image: url($img_small);
+        background-position-y: 420px;
+        padding-bottom: 360px;
+        background-size: contain;
+    }
+    @include breakpoint(small) {
+        background-position-y: 520px;
+    }
+}
+
+@mixin ul_dashed {
+    list-style-type: none;
+    & > li {
+        text-indent: -5px;
+        &:before {
+            content: "- ";
+            text-indent: -5px;
+        }
+    }
+}
+
+@mixin skew {
+    transform: rotate(-15deg) skew(-35deg,0deg);
+}
+
+@mixin overlay {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+}
+
+@mixin overlay--top {
+    @include overlay;
+    top: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+}
+
+@mixin overlay--bottom {
+    @include overlay;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+
+}
+
+@mixin black_text_shadow {
+    text-shadow: 0px 0px 10px #000, 0 0 20px #000, 0 0 50px #000, 0 0 80px #000;
+}
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

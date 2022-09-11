@@ -1,0 +1,21 @@
+<div class="row" style="margin-bottom:80px; max-width:80rem">
+  <div class="column small-6 medium-2">
+    <a aria-label="Homepage" href="/"><img class="logo-head" alt="The Sales Rebellion Logo" src="/img/logo.png" /></a>
+  </div>
+  <div class="column small-6 medium-10">
+    <div class="title-bar-right" data-responsive-toggle="rebellion-menu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="rebellion-menu" aria-label="Menu"></button>
+    </div>
+    <div class="top-bar" id="rebellion-menu" data-animate="slide-in-right slide-out-right">
+      <div class="top-bar-right">
+        <ul class="menu">
+        {% for item in site.data.menus.header %}
+          <li>
+            <a class="{{ item.class }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}" title="Go to {{ item.title }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

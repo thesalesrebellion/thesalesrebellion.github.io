@@ -1,0 +1,133 @@
+.one-x-one {
+
+    &__features {
+        position: relative;
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+
+        text-align: center;
+
+        &-heading {
+            @include lazer;
+            font-size: 50px;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            margin-bottom: 80px;
+
+            &-line {
+                line-height: 1;
+                margin-bottom: 16px;
+
+                $line_font_size: 36px;
+                $line_font_size_mobile: 22px;
+
+                @for $i from 0 through 4 {
+                    &--#{$i + 1} {
+                        font-size: $line_font_size + 20 * $i;
+                    }
+                }
+
+                @include breakpoint(medium) {
+                    @for $i from 0 through 4 {
+                        &--#{$i + 1} {
+                            font-size: $line_font_size_mobile + 15 * $i;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &-text {
+            @include noodle;
+            list-style: none;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+
+            &-item {
+                font-size: 30px;
+                line-height: 1.4;
+                letter-spacing: 1.3px;
+                margin-bottom: 60px;
+                @include breakpoint(medium) {
+                    font-size: 28px;
+                }
+                @include breakpoint(small) {
+                    font-size: 24px;
+                }
+            }
+        }
+
+        &-footer_text {
+            @include lazer;
+            letter-spacing: 2px;
+            font-size: 60px;
+            line-height: 1.3;
+            @include breakpoint(medium) {
+                font-size: 40px;
+            }
+            @include breakpoint(small) {
+                font-size: 32px;
+            }
+        }
+
+    }
+
+    &__faq {
+
+        position: relative;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+}
+
+.one-x-one-testimonials {
+
+    position: relative;
+
+    padding: 60px 0;
+
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        padding-bottom: 30px;
+    }
+
+    .overlay {
+        &--bottom {
+            height: 30px;
+        }
+    }
+
+    &__heading {
+        @include lazer;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.3;
+        letter-spacing: 1.5px;
+        margin-bottom: 36px;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__video-wrapper {
+        box-shadow: 0 0 16px 0px $blue;
+    }
+
+    &__image-wrapper {
+        margin-right: 40px;
+        flex-basis: 55%;
+        @include breakpoint(medium) {
+            display: none;
+        }
+    }
+
+}

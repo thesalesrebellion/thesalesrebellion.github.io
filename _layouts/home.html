@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- include home/hero.html -%}
+
+{%- include home/features.html -%}
+
+<div class="page__content page__content--{{ page.page_id }}">
+
+    {%- include home/testimonials.html -%}
+
+    {%- include home/community.html -%}
+
+    {%- include cta.html cta=page.cta type='home' -%}
+
+</div>
+
+{%- comment -%} --- MODALS --- {%- endcomment -%}
+{%- include modals/podcasts.html -%}
+{%- include modals/blog.html -%}

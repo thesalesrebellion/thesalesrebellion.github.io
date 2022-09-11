@@ -1,0 +1,102 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    padding-left: 0;
+}
+
+.btn {
+    @include btn_defaults;
+    transition: all .1s ease-in;
+
+    &:hover {
+        @include btn_glow_in();
+    }
+
+    @each $color in $colors {
+        &--#{$color} {
+            &:hover {
+                @include glow_in(#{$color});
+            }
+        }
+    }
+
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 60px;
+    z-index: 1;
+
+    &--bottom {
+        bottom: 0;
+        background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 60%);
+    }
+
+    &--top {
+        top: 0;
+        background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 60%);
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    span {
+        margin-right: 0.3em;
+    }
+}
+
+iframe {
+    max-width: 100%;
+    display: block;
+}
+
+.video-wrapper {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    align-self: center;
+    &::after {
+        padding-top: 56.25%;
+        display: block;
+        content: '';
+    }
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.goto {
+    img {
+        transition: transform .1s ease-in;
+    }
+
+    &:hover {
+        img {
+            transform: rotate(4deg);
+        }
+    }
+}

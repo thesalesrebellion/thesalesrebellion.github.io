@@ -1,0 +1,33 @@
+---
+title: Rebel Squadron
+permalink: /join/
+section: about inverse
+links:
+  - title: |-
+      Meet
+      the
+      Programs
+    image: /img/badge-coaches.png
+    url: /coaching/programs/
+  - title: |-
+      Meet
+      the
+      Curriculum
+    image: /img/badge-programs.png
+    url: /basecamp/
+---
+
+<div class="row" style="padding:80px 0">
+  <div class="column large-6 large-offset-3">
+    <div class="row large-up-2">
+      {% for link in page.links %}
+      <div class="column column-block">
+        <div class="about">
+          <a href="{{ link.url }}"><img src="{{ link.image }}" alt="{{ link.title }}" /></a>
+          <div class="title"><a href="{{ link.url }}">{{ link.title | newline_to_br }}</a></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

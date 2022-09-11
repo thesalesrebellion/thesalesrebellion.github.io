@@ -1,0 +1,84 @@
+.comm {
+
+    @include noodle;
+    font-weight: 400;
+
+    padding-top: 45px;
+    padding-bottom: 50px;
+
+    position: relative;
+
+    text-align: center;
+
+	// background-image: url(/assets/images/space_bg_4.jpg);
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	// background-position: center;
+
+    .container {
+        margin-top: 35px;
+    }
+
+    .overlay {
+        &--bottom {
+            height: 30px;
+        }
+    }
+
+    &__heading {
+        margin-top: 0;
+        @include lazer;
+        letter-spacing: 1.5px;
+        font-size: 30px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+        flex-wrap: wrap;
+        @include breakpoint(medium) {
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+
+        margin: 0 12px;
+        margin-top: 0;
+        margin-bottom: 45px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        &-title {
+            margin-top: 0;
+            font-size: 26px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            @include breakpoint(medium) {
+                margin-bottom: 12px;
+            }
+        }
+
+        &-img {
+            max-width: 160px;
+        }
+
+        &-button-wrapper {
+            padding: 20px 0;
+        }
+
+        &-button {
+            display: inline-block;
+            border-radius: 30px;
+            @include breakpoint(medium) {
+                border-radius: 16px;
+            }
+        }
+
+    }
+
+}

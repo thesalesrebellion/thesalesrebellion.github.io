@@ -1,0 +1,23 @@
+<section class="section testimonials">
+
+    <div class="container">
+
+        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
+            <h2 class="testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="testimonials__content">
+
+            <div class="testimonials__image-wrapper">
+                <img class="testimonials__image" src="{{- page.testimonials.image.path | relative_url -}}" alt="{{- page.testimonials.image.alt_text -}}">
+            </div>
+
+            <div class="testimonials__video-wrapper video-wrapper">
+                {%- include video.html video_id=page.testimonials.video_id -%}
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

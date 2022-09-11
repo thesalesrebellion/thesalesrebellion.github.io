@@ -1,0 +1,219 @@
+.teams {
+
+    &__features {
+        position: relative;
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        // background-image: url(/assets/images/team-features-bg.jpg);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+    }
+
+    &__feature {
+
+        text-align: center;
+        margin-bottom: 100px;
+
+        &-title {
+            @include lazer;
+            font-size: 50px;
+            letter-spacing: 2px;
+            margin-bottom: 22px;
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
+        }
+
+        &-text {
+            @include noodle;
+            font-size: 22px;
+            max-width: 502px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.3;
+
+        }
+
+        &-btn {
+            display: inline-block;
+            margin-top: 22px;
+            font-size: 20px;
+            line-height: 1.3;
+        }
+
+    }
+
+    &__quote {
+
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        // background-image: url(/assets/images/team-quote-bg.jpg);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        &-content {
+            display: flex;
+            align-items: center;
+            @include breakpoint(smallish) {
+                flex-direction: column;
+            }
+        }
+
+        &-image-wrapper {
+            flex-basis: 700px;
+            @include breakpoint(smallish) {
+                flex-basis: unset;
+                max-width: 340px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &-name {
+            @include lazer;
+            font-size: 32px;
+            line-height: 1.3;
+            margin-bottom: 0;
+            @include breakpoint(smallish) {
+                margin-top: 8px;
+            }
+        }
+
+        &-desc {
+            @include noodle;
+            font-size: 26px;
+            line-height: 1.3;
+            position: relative;
+            padding: 0 32px;
+
+            .quote {
+                position: absolute;
+                font-size: 120px;
+                height: 0;
+                text-shadow: 0 0 14px #fff;
+                &--beginning {
+                    top: -40px;
+                    left: -14px;
+                }
+                &--end {
+                    transform: translateY(-26px);
+                    margin-left: 8px;
+                }
+            }
+
+        }
+
+    }
+
+    &__dl {
+
+        // background-image: url(/assets/images/team-downloads-bg.jpg);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        padding-top: 50px;
+        padding-bottom: 120px;
+
+        text-align: center;
+
+        &-heading {
+            @include lazer;
+            font-size: 40px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            @include breakpoint(small) {
+                font-size: 32px;
+            }
+        }
+
+        &-items {
+            display: flex;
+            @include breakpoint(smallish) {
+                flex-direction: column;
+            }
+            &--desktop {
+                @include breakpoint(smallish) {
+                    display: none;
+                }
+            }
+            &--mobile {
+                display: none;
+                @include breakpoint(smallish) {
+                    display: block;
+                }
+            }
+
+            .slick-track {
+                top: 16px;
+                .slick-slide {
+                    img {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+
+        }
+
+        &-img {
+            box-shadow: 0 0 16px 2px $blue;
+            transition: box-shadow .1s linear;
+        }
+
+        &-item {
+            margin: 0 18px;
+            &:hover {
+                .teams__dl-img {
+                    box-shadow: 0 0 16px 6px $purple;
+                }
+            }
+            @include breakpoint(smallish) {
+                margin-bottom: 60px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+    }
+
+    &__video {
+
+        // background-image: url(/assets/images/team-video-bg.jpg);
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        padding-top: 50px;
+        padding-bottom: 120px;
+
+        // .container {
+        //     display: flex;
+        //     align-items: center;
+        //     @include breakpoint(smallish) {
+        //         flex-direction: column;
+        //     }
+        // }
+
+        &-heading {
+            @include lazer;
+            text-align: center;
+            font-size: 32px;
+            letter-spacing: 2px;
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+        &-video_wrapper {
+            box-shadow: 0 0 16px 0px $purple;
+            flex-basis: 60%;
+        }
+
+    }
+
+
+}

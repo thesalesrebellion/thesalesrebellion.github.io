@@ -1,0 +1,77 @@
+---
+layout: page
+---
+{%- comment -%} --- FEATURES --- {%- endcomment -%}
+<section class="section one-x-one__features">
+
+    <div class="container">
+
+        <h2 class="one-x-one__features-heading">
+            {%- for line in page.features.heading_lines -%}
+                <div class="one-x-one__features-heading-line one-x-one__features-heading-line--{{ forloop.index }}">
+                    {{- line -}}
+                </div>
+            {%- endfor -%}
+        </h2>
+
+        <ul class="one-x-one__features-text">
+            {%- for item in page.features.items -%}
+                <li class="one-x-one__features-text-item">
+                    - {{ item }}
+                </li>
+            {%- endfor -%}
+        </ul>
+
+        <p class="one-x-one__features-footer_text">
+            {{ page.features.footer_text }}
+        </p>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- VIDEO --- {%- endcomment -%}
+<section class="section one-x-one-testimonials">
+
+    <div class="container">
+
+        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
+            <h2 class="one-x-one-testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="one-x-one-testimonials__content">
+
+            <div class="one-x-one-testimonials__image-wrapper">
+                <img class="one-x-one-testimonials__image" src="{{- page.testimonials.image.path | relative_url -}}" alt="{{- page.testimonials.image.alt_text -}}">
+            </div>
+
+            <div class="one-x-one-testimonials__video-wrapper video-wrapper">
+                {%- include video.html video_id=page.testimonials.video_id -%}
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- CONTACT --- {%- endcomment -%}
+{%- include form.html -%}
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section one-x-one__faq">
+
+    <div class="container">
+
+        <h2 class="faq__heading one-x-one__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+</section>
+
+{%- comment -%} --- CTA --- {%- endcomment -%}
+{%- include cta.html cta=page.cta type="page" -%}
