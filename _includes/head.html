@@ -3,9 +3,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	{%- unless jekyll.environment == 'dev' -%}
+	{%- if jekyll.environment == 'dev' -%}
 		<meta name="robots" content="noindex, nofollow">
-	{%- endunless -%}
+	{%- endif -%}
 
 	{%- if page.layout == 'home' -%}
 		<title>{{- site.title -}}</title>
