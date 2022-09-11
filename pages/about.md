@@ -84,9 +84,6 @@ faq:
   - q: How can I join what you all are doing?
     a: |-
       Being a Sales Rebel is simple… Just believe. Believe that human engagement is as valuable as net margin. Believe that creativity and fun are not only allowed in business but they are the missing links. Believe that others are out there fighting for the same as you…. That’s what makes you a Rebel. There are tons of resources and community members. Just get involved!
-  - q: Are you hiring?
-    a: |-
-      Maybe… But we are definitely looking to develop good relationships with people and orgs who want to #ChangeTheGame. Wanna publish content together? Wanna sell the Sales Rebellion to all your friends? Wanna become a Rebel and coach students to achieve legendary status? Let’s talk…
 cta:
   show: false
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
