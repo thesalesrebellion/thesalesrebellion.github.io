@@ -30,6 +30,14 @@
 
     position: relative;
 
+    &__container-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        &--teams {
+            max-width: 1550px;
+        }
+    }
+
     &__container {
         max-width: 1600px;
         margin-left: auto;
@@ -40,7 +48,13 @@
             padding-right: 20px;
         }
 
-        &--teams,
+        &--teams {
+            max-width: 1330px;
+            margin-right: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
         &--1x1 {
             max-width: 1220px;
         }
@@ -94,6 +108,7 @@
             @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
             background-attachment: fixed;
             background-position-y: 430px;
+            padding-top: 60px;
         }
 
         &--1x1 {
@@ -154,6 +169,10 @@
             @include breakpoint(smaller) {
                 font-size: 36px;
             }
+        }
+
+        &--teams {
+            font-size: 65px;
         }
 
         &--teams,
@@ -315,9 +334,8 @@
             }
 
             &--teams {
-                flex-direction: row;
+                flex-direction: column;
                 flex-basis: 50%;
-                align-items: center;
                 @include breakpoint(larger) {
                     flex-direction: column;
                 }
@@ -360,10 +378,10 @@
             }
 
             &--teams {
-                flex-direction: column;
+                flex-direction: row;
                 flex-basis: 50%;
-                align-items: flex-start;
-                padding-left: 40px;
+                align-items: center;
+                padding-left: 0;
                 @include breakpoint(larger) {
                     padding-left: 0;
                     padding-top: 0;
@@ -410,6 +428,10 @@
 
         @include breakpoint(medium) {
             flex-basis: 60%;
+        }
+
+        &--teams {
+            max-width: 240px;
         }
 
         &-heading {
@@ -461,6 +483,10 @@
             img {
                 width: 80%;
             }
+        }
+
+        &--teams {
+            left: -10%;
         }
 
         &-img {
