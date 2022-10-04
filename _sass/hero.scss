@@ -31,11 +31,7 @@
     position: relative;
 
     &__container-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        &--teams {
-            max-width: 1550px;
-        }
+        padding: 0 40px;
     }
 
     &__container {
@@ -49,10 +45,23 @@
         }
 
         &--teams {
-            max-width: 1330px;
-            margin-right: 0;
-            padding-left: 40px;
-            padding-right: 40px;
+            max-width: 1600px;
+            padding-left: 250px;
+            @media screen and (max-width: 1550px) {
+                padding-left: 200px;
+            }
+            @media screen and (max-width: 1500px) {
+                padding-left: 150px;
+            }
+            @media screen and (max-width: 1400px) {
+                padding-left: 100px;
+            }
+            @media screen and (max-width: 1350px) {
+                padding-left: 50px;
+            }
+            @media screen and (max-width: 1200px) {
+                padding-left: 0;
+            }
         }
 
         &--1x1 {
@@ -171,14 +180,26 @@
             }
         }
 
-        &--teams {
-            font-size: 65px;
-        }
-
         &--teams,
         &--1x1 {
             font-size: 60px;
             margin-top: 0;
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+            @include breakpoint(small) {
+                font-size: 48px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
+        }
+
+        &--teams {
+            font-size: 65px;
+            @include breakpoint(larger) {
+                font-size: 60px;
+            }
             @include breakpoint(large) {
                 font-size: 55px;
             }
@@ -338,10 +359,14 @@
                 flex-basis: 50%;
                 @include breakpoint(larger) {
                     flex-direction: column;
+                    padding-right: 10%;
+                    @include breakpoint(large) {
+                        padding-right: 20px;
+                    }
                 }
                 @include breakpoint(medium) {
-                    order: 2;
-                    padding-top: 50px;
+                    // order: 2;
+                    padding-bottom: 50px;
                 }
             }
 
@@ -381,8 +406,11 @@
                 flex-direction: row;
                 flex-basis: 50%;
                 align-items: center;
-                padding-left: 0;
+                justify-content: flex-end;
+                padding-left: 20px;
                 @include breakpoint(larger) {
+                    flex-direction: column;
+                    flex: 1;
                     padding-left: 0;
                     padding-top: 0;
                 }
@@ -485,13 +513,13 @@
             }
         }
 
-        &--teams {
-            left: -10%;
-        }
-
         &-img {
             @include breakpoint(large) {
                 max-width: 280px;
+            }
+
+            &--teams {
+                max-width: 330px;
             }
 
             &--teams,
