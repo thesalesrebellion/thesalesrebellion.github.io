@@ -575,6 +575,10 @@
             }
         }
 
+        &--teams {
+            left: -10%;
+        }
+
         &-img {
             @include breakpoint(large) {
                 max-width: 280px;
