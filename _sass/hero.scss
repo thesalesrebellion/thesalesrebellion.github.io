@@ -235,6 +235,22 @@
             }
         }
 
+        &--teams {
+            font-size: 65px;
+            @include breakpoint(larger) {
+                font-size: 60px;
+            }
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+            @include breakpoint(small) {
+                font-size: 48px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
+        }
+
         &--group {
             font-size: 60px;
             line-height: 1.35;
@@ -573,10 +589,6 @@
             img {
                 width: 80%;
             }
-        }
-
-        &--teams {
-            left: -10%;
         }
 
         &-img {
