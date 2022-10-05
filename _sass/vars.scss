@@ -6,6 +6,8 @@ $yellow: #fdff7a;
 
 $colors: 'green', 'blue', 'purple', 'red', 'yellow';
 
+$neon_green: #7dff7a;
+
 @mixin breakpoint($point) {
     @if $point == larger {
         @media (max-width: 1200px) { @content; }
@@ -56,9 +58,9 @@ $colors: 'green', 'blue', 'purple', 'red', 'yellow';
     box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
 }
 
-@mixin btn_box_shadow($color: #fff) {
+@mixin btn_box_shadow($color: #fff, $shadow_width: 10px) {
     border-color: $color;
-    box-shadow: 0 0 10px 1px $color, inset 0 0 10px 1px $color;
+    box-shadow: 0 0 $shadow_width 1px $color, inset 0 0 $shadow_width 1px $color;
 }
 
 @mixin btn_text_shadow($color: #fff) {
