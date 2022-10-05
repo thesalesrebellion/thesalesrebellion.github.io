@@ -84,6 +84,7 @@
             }
             @media screen and (max-width: 1200px) {
                 padding-left: 0;
+                padding-right: 0;
             }
             @include breakpoint(medium) {
                 padding: 0;
@@ -405,7 +406,7 @@
             &--1x1 {
                 flex-basis: 55%;
                 @include breakpoint(larger) {
-                    flex-basis: 50%;
+                    flex-basis: 55%;
                 }
                 @include breakpoint(semi_large) {
                     flex-basis: 65%;;
@@ -466,10 +467,12 @@
                 }
 
                 @include breakpoint(larger) {
-                    flex-basis: 50%;
+                    flex-basis: 45%;
                     padding-left: 0;
                     padding-top: 0;
                     flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
                 @include breakpoint(semi_large) {
                     flex-basis: 40%;
@@ -708,10 +711,17 @@
             &--1x1 {
                 font-size: 28px;
                 letter-spacing: 2px;
-                padding: 26px 32px;
-                @include btn_box_shadow($blue);
+                box-shadow: 0 0 10px 1px $blue,0 0 20px 1px $blue, inset 0 0 40px 1px $blue;
+                border-width: 6px;
+                border-radius: 26px;
+                padding: 12px;
+                border-color: #fff;
                 &:hover {
-                    @include btn_glow_in($blue);
+                    box-shadow: 0 0 10px 1px $blue,0 0 20px 1px $blue, inset 0 0 40px 1px $blue;
+                    border-width: 6px;
+                    border-radius: 26px;
+                    border-color: #fff;
+                    text-shadow: 2px 3px 12px $blue;
                 }
                 @include breakpoint(medium) {
                     font-size: 22px;
