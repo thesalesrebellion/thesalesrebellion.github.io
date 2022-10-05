@@ -235,9 +235,9 @@
             }
         }
 
-        &--teams {
+        &--1x1 {
             font-size: 65px;
-            @include breakpoint(larger) {
+            @media screen and (max-width: 1600px) {
                 font-size: 60px;
             }
             @include breakpoint(large) {
@@ -594,6 +594,10 @@
         &-img {
             @include breakpoint(large) {
                 max-width: 280px;
+            }
+
+            &--1x1 {
+                max-width: 350px;
             }
 
             &--1x1 {
