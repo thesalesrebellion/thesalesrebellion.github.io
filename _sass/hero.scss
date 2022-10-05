@@ -464,6 +464,12 @@
 
         &--teams {
             max-width: 240px;
+            @include breakpoint(larger) {
+                max-width: unset;
+            }
+            @include breakpoint(medium) {
+                max-width: 320px;
+            }
         }
 
         &-heading {
@@ -503,6 +509,11 @@
     &__person {
         position: relative;
         left: -5%;
+
+        &--teams {
+            position: static;
+        }
+
         @include breakpoint(large) {
             order: 1;
             left: 0;

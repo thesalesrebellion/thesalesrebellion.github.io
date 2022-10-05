@@ -10,10 +10,10 @@ hero:
     Transformative training and coaching for sales teams who want to dominate their market
   aside:
     heading:
-      line_1: Master of sales
-      line_2: Google Inc
+      line_1: Chief Operating Officer
+      line_2: Business Technology Firm
     text: |-
-      I'll definitely finish at 175% of my quota and could even 3x the annual quota this quarter.
+      When covid hit we decided to invest in our people and get training. We’ve grown by 30% each year since.
   cta:
     text: Reach Out!
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
