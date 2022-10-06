@@ -438,10 +438,13 @@
             &--teams {
                 flex-direction: row;
                 flex-basis: 50%;
-                align-items: center;
+                align-items: flex-start;
                 justify-content: flex-end;
                 padding-left: 20px;
+                position: relative;
+                top: 65px;
                 @include breakpoint(larger) {
+                    position: static;
                     flex-direction: column;
                     flex: 1;
                     padding-left: 0;
