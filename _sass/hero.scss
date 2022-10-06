@@ -438,11 +438,13 @@
             &--teams {
                 flex-direction: row;
                 flex-basis: 50%;
-                align-items: flex-start;
+                align-items: center;
                 justify-content: flex-end;
                 padding-left: 20px;
-                position: relative;
-                top: 65px;
+                padding-top: 65px;
+                @media screen and (max-width: 1600px) {
+                    padding-top: 0;
+                }
                 @include breakpoint(larger) {
                     position: static;
                     flex-direction: column;
