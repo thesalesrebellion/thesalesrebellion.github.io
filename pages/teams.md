@@ -15,7 +15,7 @@ hero:
     text: |-
       When covid hit we decided to invest in our people and get training. We’ve grown by 30% each year since.
   cta:
-    text: Reach Out
+    text: Reach Out!
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
     new_tab: true
 features:

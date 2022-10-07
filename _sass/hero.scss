@@ -30,6 +30,10 @@
 
     position: relative;
 
+    &__container-wrapper {
+        padding: 0 40px;
+    }
+
     &__container {
         max-width: 1600px;
         margin-left: auto;
@@ -40,9 +44,51 @@
             padding-right: 20px;
         }
 
-        &--teams,
+        &--teams {
+            max-width: 1600px;
+            padding-left: 250px;
+            @media screen and (max-width: 1550px) {
+                padding-left: 200px;
+            }
+            @media screen and (max-width: 1500px) {
+                padding-left: 150px;
+            }
+            @media screen and (max-width: 1400px) {
+                padding-left: 100px;
+            }
+            @media screen and (max-width: 1350px) {
+                padding-left: 50px;
+            }
+            @media screen and (max-width: 1200px) {
+                padding-left: 0;
+            }
+            @include breakpoint(medium) {
+                padding: 0;
+            }
+        }
+
         &--1x1 {
-            max-width: 1220px;
+            max-width: 1600px;
+            padding-left: 250px;
+            @media screen and (max-width: 1600px) {
+                padding-left: 200px;
+            }
+            @media screen and (max-width: 1500px) {
+                padding-left: 150px;
+            }
+            @media screen and (max-width: 1400px) {
+                padding-left: 100px;
+            }
+            @media screen and (max-width: 1350px) {
+                padding-left: 50px;
+            }
+            @media screen and (max-width: 1200px) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+            @include breakpoint(medium) {
+                padding: 0;
+            }
         }
 
         &--group,
@@ -94,6 +140,7 @@
             @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
             background-attachment: fixed;
             background-position-y: 430px;
+            padding-top: 60px;
         }
 
         &--1x1 {
@@ -156,10 +203,27 @@
             }
         }
 
-        &--teams,
+        &--teams {
+            font-size: 65px;
+            @include breakpoint(larger) {
+                font-size: 60px;
+            }
+            @include breakpoint(large) {
+                font-size: 55px;
+            }
+            @include breakpoint(small) {
+                font-size: 48px;
+            }
+            @include breakpoint(smaller) {
+                font-size: 36px;
+            }
+        }
+
         &--1x1 {
-            font-size: 60px;
-            margin-top: 0;
+            font-size: 65px;
+            @media screen and (max-width: 1600px) {
+                font-size: 60px;
+            }
             @include breakpoint(large) {
                 font-size: 55px;
             }
@@ -298,6 +362,15 @@
         &--1x1 {
             padding: 0;
         }
+
+        &--1x1 {
+            display: block;
+            position: relative;
+            @media screen and (max-width: 1600px) {
+                display: flex;
+                position: static;
+            }
+        }
     }
 
     &__col {
@@ -315,22 +388,25 @@
             }
 
             &--teams {
-                flex-direction: row;
+                flex-direction: column;
                 flex-basis: 50%;
-                align-items: center;
                 @include breakpoint(larger) {
                     flex-direction: column;
+                    padding-right: 10%;
+                    @include breakpoint(large) {
+                        padding-right: 20px;
+                    }
                 }
                 @include breakpoint(medium) {
-                    order: 2;
-                    padding-top: 50px;
+                    // order: 2;
+                    padding-bottom: 50px;
                 }
             }
 
             &--1x1 {
-                flex-basis: 40%;
+                flex-basis: 55%;
                 @include breakpoint(larger) {
-                    flex-basis: 50%;
+                    flex-basis: 55%;
                 }
                 @include breakpoint(semi_large) {
                     flex-basis: 65%;;
@@ -360,27 +436,48 @@
             }
 
             &--teams {
-                flex-direction: column;
+                flex-direction: row;
                 flex-basis: 50%;
-                align-items: flex-start;
-                padding-left: 40px;
+                align-items: center;
+                justify-content: flex-end;
+                padding-left: 20px;
+                padding-top: 65px;
+                @media screen and (max-width: 1600px) {
+                    padding-top: 0;
+                }
                 @include breakpoint(larger) {
+                    position: static;
+                    flex-direction: column;
+                    flex: 1;
                     padding-left: 0;
                     padding-top: 0;
                 }
                 @include breakpoint(medium) {
                     order: 1;
-                    padding-top: 0;
+                    padding-left: 0;
+                    padding-right: 0;
                 }
             }
 
             &--1x1 {
-                padding-left: 20px;
+                padding-left: 0;
+                flex-basis: 60%;
+                justify-content: flex-end;
+                position: absolute;
+                right: 0;
+                top: 40%;
+
+                @media screen and (max-width: 1600px) {
+                    position: static;
+                }
+
                 @include breakpoint(larger) {
-                    flex-basis: 50%;
+                    flex-basis: 45%;
                     padding-left: 0;
                     padding-top: 0;
                     flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
                 @include breakpoint(semi_large) {
                     flex-basis: 40%;
@@ -412,6 +509,16 @@
             flex-basis: 60%;
         }
 
+        &--teams {
+            max-width: 240px;
+            @include breakpoint(larger) {
+                max-width: unset;
+            }
+            @include breakpoint(medium) {
+                max-width: 320px;
+            }
+        }
+
         &-heading {
             font-size: 28px;
             font-weight: 400;
@@ -440,7 +547,7 @@
         &--1x1 {
             position: relative;
             left: 40px;
-            @include breakpoint(larger) {
+            @media screen and (max-width: 1600px) {
                 position: static;
             }
         }
@@ -449,6 +556,11 @@
     &__person {
         position: relative;
         left: -5%;
+
+        &--teams {
+            position: static;
+        }
+
         @include breakpoint(large) {
             order: 1;
             left: 0;
@@ -466,6 +578,10 @@
         &-img {
             @include breakpoint(large) {
                 max-width: 280px;
+            }
+
+            &--1x1 {
+                max-width: 350px;
             }
 
             &--teams,
@@ -580,18 +696,33 @@
                 }
             }
             &--teams {
-                @include btn_box_shadow($green);
+                @include btn_box_shadow($neon_green, 40px);
+                border-color: #fff;
+                border-width: 6px;
+                border-radius: 26px;
+                padding: 12px 32px;
                 &:hover {
-                    @include btn_glow_in($green);
+                    @include btn_box_shadow($neon_green, 40px);
+                    border-color: #fff;
+                    border-width: 6px;
+                    border-radius: 26px;
+                    text-shadow: 2px 3px 18px $neon_green;
                 }
             }
             &--1x1 {
                 font-size: 28px;
                 letter-spacing: 2px;
-                padding: 26px 32px;
-                @include btn_box_shadow($blue);
+                box-shadow: 0 0 10px 1px $blue,0 0 20px 1px $blue, inset 0 0 40px 1px $blue;
+                border-width: 6px;
+                border-radius: 26px;
+                padding: 12px;
+                border-color: #fff;
                 &:hover {
-                    @include btn_glow_in($blue);
+                    box-shadow: 0 0 10px 1px $blue,0 0 20px 1px $blue, inset 0 0 40px 1px $blue;
+                    border-width: 6px;
+                    border-radius: 26px;
+                    border-color: #fff;
+                    text-shadow: 2px 3px 12px $blue;
                 }
                 @include breakpoint(medium) {
                     font-size: 22px;
