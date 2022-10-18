@@ -3,6 +3,7 @@ layout: pages/group
 permalink: /group/
 page_id: group
 has_video: true
+pipedrive_bot: 6cqqo16g8a6eBV7ztHzHnLM5HpAGOo0z5dLnPldx3LdPWZNYQ6rusFUXN4bAHsGQgP
 hero:
   heading: <span>Change</span> <span>The</span> <span>Game</span> <span>with</span> <span>like-minded</span> <span>Sales</span> Rebels
   text: |-
