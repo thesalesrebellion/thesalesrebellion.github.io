@@ -1,83 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-{%- include head.html -%}
-
+{% include head.html -%}
 <body>
-
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VKQJGV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {{ content }}
 
-    {%- include footer.html -%}
-
-    <script src="{{- '/assets/js/jquery.js' -}}"></script>
-    {%- if page.has_carousel == true -%}
-        <script src="{{- '/assets/js/slick.min.js' -}}"></script>
-        <script>
-            $('.slick-me').slick({
-                arrows: false,
-                dots: true,
-                customPaging: function(slick,index) {
-                  return '{% include svg/triangle.svg %}';
-                }
-            });
-
-            $('.slick-me-center').slick({
-                arrows: false,
-                dots: true,
-                centerMode: true,
-                centerPadding: '90px',
-                slidesToShow: 1,
-                customPaging: function(slick,index) {
-                  return '{% include svg/triangle.svg %}';
-                }
-            });
-
-            $('.slick-me-center-50').slick({
-                arrows: false,
-                dots: true,
-                centerMode: true,
-                centerPadding: '50px',
-                slidesToShow: 1,
-                customPaging: function(slick,index) {
-                  return '{% include svg/triangle.svg %}';
-                }
-            });
-        </script>
-    {%- endif -%}
+    {%- include footer.html %}
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
+    <script>
+    {% if page.has_carousel == true -%}
+    $('.slick-me').slick({
+        arrows: false,
+        dots: true,
+        customPaging: function(slick,index) {
+          return '{% include svg/triangle.svg %}';
+        }
+    });
+
+    $('.slick-me-center').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        centerPadding: '90px',
+        slidesToShow: 1,
+        customPaging: function(slick,index) {
+          return '{% include svg/triangle.svg %}';
+        }
+    });
+
+    $('.slick-me-center-50').slick({
+        arrows: false,
+        dots: true,
+        centerMode: true,
+        centerPadding: '50px',
+        slidesToShow: 1,
+        customPaging: function(slick,index) {
+          return '{% include svg/triangle.svg %}';
+        }
+    });
+    {%- endif -%}
 
     {%- if page.has_video == true -%}
-        {%- include youtube_api.html -%}
+    {% include youtube_api.html %}
     {%- endif -%}
 
-    {%- if page.has_modal == true -%}
-        <script src="{{- '/assets/js/micromodal.js' -}}"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
+    {%- if page.has_modal == true %}
+    document.addEventListener("DOMContentLoaded", function() {
 
-            try {
+    try {
 
-              MicroModal.init({
-                awaitCloseAnimation: true,// set to false, to remove close animation
-                onShow: function(modal) {
-                  console.log("micromodal open");
-                },
-                onClose: function(modal) {
-                  console.log("micromodal close");
-                }
-              });
+      MicroModal.init({
+        awaitCloseAnimation: true,// set to false, to remove close animation
+        onShow: function(modal) {
+          console.log("micromodal open");
+        },
+        onClose: function(modal) {
+          console.log("micromodal close");
+        }
+      });
 
-            } catch (e) {
-              console.log("micromodal error: ", e);
-            }
+    } catch (e) {
+      console.log("micromodal error: ", e);
+    }
 
-          });
-
-        </script>
-
-    {%- endif -%}
+    });
+    {% endif -%}
+    </script>
 
     {%- if page.pipedrive_bot -%}
 
@@ -85,7 +74,7 @@
       <script src="https://webforms.pipedrive.com/f/loader"></script>
     </div>
 
-    {%- endif -%}
+    {% endif %}
 
 </body>
 </html>

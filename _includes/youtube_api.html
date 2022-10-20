@@ -1,15 +1,13 @@
-<script>
 var myElement = document.getElementById('video');
 var bounding = myElement.getBoundingClientRect();
 var myElementHeight = myElement.offsetHeight;
 var myElementWidth = myElement.offsetWidth;
 
 function elementInViewport() {
-
     var bounding = myElement.getBoundingClientRect();
 
     if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
-       return true;
+        return true;
     } else {
         return false;
     }
@@ -37,7 +35,6 @@ function onPlayerReady(event) {
   $(window).on('resize scroll', function(){
       if(elementInViewport()){
           player.playVideo();
-
         }
   });
 
@@ -52,5 +49,3 @@ var tag = document.createElement("script");
 tag.src = "//www.youtube.com/player_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-</script>

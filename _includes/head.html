@@ -4,26 +4,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	{%- if jekyll.environment == 'dev' -%}
-		<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="noindex, nofollow">
 	{%- endif -%}
 
-	{%- if page.layout == 'home' -%}
-		<title>{{- site.title -}}</title>
-	{%- else -%}
+	{% if page.layout == 'home' %}
+	<title>{{- site.title -}}</title>
+	{%- else %}
 		<title>{{ site.data.global.title | default: "The Sales Rebellion" }}</title>
-	{%- endif -%}
+	{% endif %}
 
 	<meta name="description" content="Sales training and development done different" />
 	<meta property="og:title" content="The Sales Rebellion" />
-	<meta property="og:url" content="http://www.thesalesrebellion.com" />
+	<meta property="og:url" content="https://www.thesalesrebellion.com" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="The Sales Rebellion" />
 	<meta property="og:description" content="Sales training and development done different" />
-	<meta property="og:image" content="http://www.thesalesrebellion.com/img/logo-social.jpg" />
+	<meta property="og:image" content="https://www.thesalesrebellion.com/img/logo-social.jpg" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="The Sales Rebellion" />
 	<meta name="twitter:description" content="Sales training and development done different" />
-	<meta name="twitter:image" content="http://www.thesalesrebellion.com/img/logo-social.jpg" />
+	<meta name="twitter:image" content="https://www.thesalesrebellion.com/img/logo-social.jpg" />
 
 	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
@@ -39,7 +39,7 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-5VKQJGV');
 	</script>
-  {%- if page.pipedrive_bot -%}
+  {% if page.pipedrive_bot -%}
   <script>window.pipedriveLeadboosterConfig = {base: 'leadbooster-chat.pipedrive.com',companyId: 11973269,playbookUuid: '0da9be88-973f-4e35-9a6f-14a70ae0b091',version: 2};(function () {var w = window;if (w.LeadBooster) {console.warn('LeadBooster already exists');} else {w.LeadBooster = {q: [],on: function (n, h) {this.q.push({ t: 'o', n: n, h: h });},trigger: function (n) {this.q.push({ t: 't', n: n });},};}})();</script><script src="https://leadbooster-chat.pipedrive.com/assets/loader.js" async></script>
-  {%- endif -%}
+  {% endif -%}
 </head>
