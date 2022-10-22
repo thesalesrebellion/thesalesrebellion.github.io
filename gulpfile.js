@@ -65,7 +65,10 @@ export const cssProd = () => gulp.src('./_sass/styles.scss')
     .pipe(postcss([purgecss({
         content: [
           '_site/**/*.html'
-        ]
+        ],
+        safelist: {
+          greedy: [/slick/]
+        }
       }),
       removeComments({ removeAll: true }),
       cssnano()
