@@ -12,42 +12,10 @@ layout: compress
 
     {%- include footer.html %}
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
-    <script>
-    {% if page.has_carousel == true -%}
-    $('.slick-me').slick({
-        arrows: false,
-        dots: true,
-        customPaging: function(slick,index) {
-          return '{% include svg/triangle.svg %}';
-        }
-    });
-
-    $('.slick-me-center').slick({
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        centerPadding: '90px',
-        slidesToShow: 1,
-        customPaging: function(slick,index) {
-          return '{% include svg/triangle.svg %}';
-        }
-    });
-
-    $('.slick-me-center-50').slick({
-        arrows: false,
-        dots: true,
-        centerMode: true,
-        centerPadding: '50px',
-        slidesToShow: 1,
-        customPaging: function(slick,index) {
-          return '{% include svg/triangle.svg %}';
-        }
-    });
-    {%- endif -%}
-
     {%- if page.has_video == true -%}
-    {% include youtube_api.html %}
+      {% include youtube_api.html %}
     {%- endif -%}
+    <script>
 
     {%- if page.has_modal == true %}
     document.addEventListener("DOMContentLoaded", function() {
