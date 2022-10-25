@@ -11,40 +11,75 @@ layout: compress
     {{ content }}
 
     {%- include footer.html %}
+
+
+
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
+
+    {%- if page.has_modal == true -%}
+      {%- include micromodal.html -%}
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+          try {
+
+            MicroModal.init({
+              awaitCloseAnimation: true,
+            });
+
+          } catch (e) {
+            console.log("micromodal error: ", e);
+          }
+
+        });
+      </script>
+    {%- endif -%}
+
+    {%- if page.has_carousel == true -%}
+      <script>
+        $('.slick-me').slick({
+            arrows: false,
+            dots: true,
+            customPaging: function(slick,index) {
+              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
+            }
+        });
+
+        $('.slick-me-center').slick({
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            centerPadding: '90px',
+            slidesToShow: 1,
+            customPaging: function(slick,index) {
+              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
+            }
+        });
+
+        $('.slick-me-center-50').slick({
+            arrows: false,
+            dots: true,
+            centerMode: true,
+            centerPadding: '50px',
+            slidesToShow: 1,
+            customPaging: function(slick,index) {
+              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
+            }
+        });
+
+      </script>
+    {%- endif -%}
+
+
     {%- if page.has_video == true -%}
       {% include youtube_api.html %}
     {%- endif -%}
-    <script>
-
-    {%- if page.has_modal == true %}
-    document.addEventListener("DOMContentLoaded", function() {
-
-    try {
-
-      MicroModal.init({
-        awaitCloseAnimation: true,// set to false, to remove close animation
-        onShow: function(modal) {
-          console.log("micromodal open");
-        },
-        onClose: function(modal) {
-          console.log("micromodal close");
-        }
-      });
-
-    } catch (e) {
-      console.log("micromodal error: ", e);
-    }
-
-    });
-    {% endif -%}
-    </script>
 
     {%- if page.pipedrive_bot -%}
 
-    <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ page.pipedrive_bot }}">
-      <script src="https://webforms.pipedrive.com/f/loader"></script>
-    </div>
+      <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ page.pipedrive_bot }}">
+        <script src="https://webforms.pipedrive.com/f/loader"></script>
+      </div>
 
     {% endif %}
 
