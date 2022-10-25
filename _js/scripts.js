@@ -67,41 +67,6 @@
 
     handle_hero_parallax('.hero__content');
 
-    var handle_carousels = function(){
-        $('.slick-me').slick({
-            arrows: false,
-            dots: true,
-            customPaging: function(slick,index) {
-              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
-            }
-        });
-
-        $('.slick-me-center').slick({
-            arrows: false,
-            dots: true,
-            centerMode: true,
-            centerPadding: '90px',
-            slidesToShow: 1,
-            customPaging: function(slick,index) {
-              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
-            }
-        });
-
-        $('.slick-me-center-50').slick({
-            arrows: false,
-            dots: true,
-            centerMode: true,
-            centerPadding: '50px',
-            slidesToShow: 1,
-            customPaging: function(slick,index) {
-              return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
-            }
-        });
-
-    };
-
-    handle_carousels();
-
     // scrolls to the corresponing section when menu with internal href is clicked
     var scroll_to = function(button_id, the_href){
 
