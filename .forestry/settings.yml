@@ -5,9 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: pages/about.md
+  label: About
+  match: "**/*"
+- type: document
   path: pages/1x1.md
   label: 1x1
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
