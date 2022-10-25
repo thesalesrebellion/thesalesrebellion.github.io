@@ -11,40 +11,40 @@ layout: compress
     {{ content }}
 
     {%- include footer.html %}
+
+
+
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
+
+    {%- if page.has_modal == true -%}
+      {%- include micromodal.html -%}
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+
+          try {
+
+            MicroModal.init({
+              awaitCloseAnimation: true,
+            });
+
+          } catch (e) {
+            console.log("micromodal error: ", e);
+          }
+
+        });
+      </script>
+    {%- endif -%}
+
+
     {%- if page.has_video == true -%}
       {% include youtube_api.html %}
     {%- endif -%}
-    <script>
-
-    {%- if page.has_modal == true %}
-    document.addEventListener("DOMContentLoaded", function() {
-
-    try {
-
-      MicroModal.init({
-        awaitCloseAnimation: true,// set to false, to remove close animation
-        onShow: function(modal) {
-          console.log("micromodal open");
-        },
-        onClose: function(modal) {
-          console.log("micromodal close");
-        }
-      });
-
-    } catch (e) {
-      console.log("micromodal error: ", e);
-    }
-
-    });
-    {% endif -%}
-    </script>
 
     {%- if page.pipedrive_bot -%}
 
-    <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ page.pipedrive_bot }}">
-      <script src="https://webforms.pipedrive.com/f/loader"></script>
-    </div>
+      <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ page.pipedrive_bot }}">
+        <script src="https://webforms.pipedrive.com/f/loader"></script>
+      </div>
 
     {% endif %}
 

@@ -102,30 +102,6 @@
 
     handle_carousels();
 
-    var handle_micromodal = function(){
-        document.addEventListener("DOMContentLoaded", function() {
-
-            try {
-
-              MicroModal.init({
-                awaitCloseAnimation: true, // set to false, to remove close animation
-                onShow: function(modal) {
-                  console.log("micromodal open");
-                },
-                onClose: function(modal) {
-                  console.log("micromodal close");
-                }
-              });
-
-            } catch (e) {
-              console.log("micromodal error: ", e);
-            }
-
-            });
-    };
-
-    handle_micromodal();
-
     // scrolls to the corresponing section when menu with internal href is clicked
     var scroll_to = function(button_id, the_href){
 

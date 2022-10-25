@@ -27,7 +27,7 @@ export const cssWatch = () => gulp.watch('./_css/**/*.scss', cssDev);
 export const jsDev = () => gulp.src([
     './node_modules/jquery/dist/jquery.js',
     './_js/slick.min.js',
-    './_js/micromodal.js',
+    // './_js/micromodal.js',
     './_js/scripts.js'
   ])
   .pipe(sourcemaps.init())
@@ -78,7 +78,7 @@ export const cssProd = () => gulp.src('./_sass/styles.scss')
 export const jsProd = () => gulp.src([
       './node_modules/jquery/dist/jquery.js',
       './_js/slick.min.js',
-      './_js/micromodal.js',
+      // './_js/micromodal.js',
       './_js/scripts.js'
     ])
     .pipe(concat('scripts.js'))
