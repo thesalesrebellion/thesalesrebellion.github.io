@@ -30,35 +30,38 @@
                 </div>
 
                 <div class="hero__col hero__col--right">
-                    <div class="hero__aside">
-                        <h2 class="hero__aside-heading">
-                            {{ page.hero.aside.heading.line_1 }}
-                            {%- if page.hero.aside.heading.line_1 and page.hero.aside.heading.line_1.size > 0 -%}
-                                <br>{{ page.hero.aside.heading.line_2 }}
-                            {%- endif -%}
-                        </h2>
-                        <div class="hero__aside-text">
-                            {{ page.hero.aside.text | markdownify }}
+                  <div class="hero__slider slick-fade opacity">
+                      {% for slides in site.data.sliders.home %}
+                      <div class="hero__slider-content paths">
+                          <div class="hero__aside flicker ">
+                            <div class="hero__aside-text">
+                               {{ slides.testimonial | markdownify }}
                         </div>
+                              <h2 class="hero__aside-heading">
+                                    {{ slides.industry }}
+                              </h2>
                     </div>
-                    <div class="hero__person">
-                        <img src="{{- '/images/man-triangle.png' | relative_url -}}" alt="A person" class="hero__person-img hero__person-img--{{ page.page_id }}">
+                      <img src="{{- slides.image.path -}}"/>
                     </div>
-                    <div class="hero__cta-section hero__cta-section--mobile">
-                        {%- for item in page.hero.cta -%}
-                            <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
-                                <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
-                                    {{ item.text }}
-                                </a>
-                            </div>
-                        {%- endfor -%}
-                    </div>
+                      {%- endfor -%}
+                  </div>
+
+
+                  <div class="hero__cta-section hero__cta-section--mobile">
+                       {%- for item in page.hero.cta -%}
+                           <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
+                               <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
+                                   {{ item.text }}
+                               </a>
+                           </div>
+                       {%- endfor -%}
+                   </div>
+
                 </div>
 
             </div>
 
         </div>
     </div>
-
 
 </div>

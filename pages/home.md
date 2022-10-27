@@ -5,16 +5,11 @@ page_id: home
 permalink: '/'
 has_video: true
 has_modal: true
+has_carousel: true
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-
     Attract marketplace leaders with<br>sales approaches that #changethegame
-  aside:
-    heading:
-      line_1: Enterprise Sales Rep
-      line_2: Employee Recognition Platform
-    text: |-
-      I’ll finish at 175% of the annual quota this quarter.
   cta:
     - text: <span>For</span> <span>Teams</span>
       url: '/teams/'

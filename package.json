@@ -19,5 +19,8 @@
     "postcss": "^8.4.16",
     "postcss-discard-comments": "^5.1.2",
     "sass": "^1.54.4"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
   }
 }

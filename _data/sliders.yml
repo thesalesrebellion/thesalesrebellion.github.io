@@ -1,0 +1,51 @@
+---
+home:
+- testimonial: |-
+           "I’m well over the quota for the year already. I could potentially finish the year at 300% of quota… So, I feel like the numbers speak for themselves."
+  industry: Employee Recognition Platform
+  image:
+      path: '/images/pink-triangle-enterprise-rep.png'
+- testimonial: |-
+             "I wasn’t finding any meaning in my job and that all changed when I started the Rebellion training… Prior to the Rebellion, I was going to quit. Now, the way I perceive my job is different and I enjoy my job every day…"
+  industry: Business Technology
+  image:
+      path: '/images/pink-triangle-full-cycle-ae.png'
+- testimonial: |-
+            "I was skeptical about some of these things we when began. But, the strategies I got from the Sales Rebellion definitely influenced my ability to win back opportunities that had gone dark because they changed the tone of the relationship.""
+  industry: Cloud Services
+  image:
+      path: '/images/pink-triangle-mid-smb.png'
+
+teams:
+- testimonial: |-
+           "Do I measure the fact that we are up 280% since the beginning the Sales Rebellion’s program… Or do I measure the fact that I have the best team I’ve ever had…Yes, the ROI is there, but the true value is so much more than the money!"
+  industry: Business Technology
+  image:
+      path: '/images/green-triangle-coo.png'
+- testimonial: |-
+             "Before the Rebellion we were running between 30k and 50k in monthly gross profit… We are now pushing over $200,000 in gross profit every single month. On top of that my team is closer in comradery and connection than they have ever been and it's all from the Rebellion."
+  industry: Information Technology Services
+  image:
+      path: '/images/green-triangle-sales-director.png'
+- testimonial: |-
+            "The Sales Rebellion fits right in line with the way we want to run the company and the culture that we want to build here. That means it has helped me cultivate my sales teams with the safety to try new things and the accountability that comes along with servant leadership.""
+  industry: Business Technology
+  image:
+      path: '/images/green-triangle-coo-2.png'
+
+1x1:
+- testimonial: |-
+           "Take a leap of faith because this has changed my life. This could absolutely be life-changing if you are open to it and open to connecting with people in a wya that is much more meaningful than the way we’re usually taught."
+  industry: Copier Sales
+  image:
+      path: '/images/blue-triangle-full-cycle-ae.png'
+- testimonial: |-
+             "The game starts when you lose a deal and choose to build a relationship with them anyway… Relationships are everything and the Sales Rebellion has helped me to build more authentic relationships."
+  industry: Business Technology
+  image:
+      path: '/images/blue-triangle-sales-director.png'
+- testimonial: |-
+            "I set 14 net new meetings in one week which was a record in the company. It got the attention of my boss and totally changed they way I approach sales in general. And it all started with the Crumpled Letter.""
+  industry: Business Technology
+  image:
+      path: '/images/blue-triangle-ae.png'
