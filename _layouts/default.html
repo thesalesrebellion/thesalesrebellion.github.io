@@ -39,6 +39,8 @@ layout: compress
 
       <script>
 
+        document.addEventListener("DOMContentLoaded", function() {
+
           $('.slick-fade').slick({
           arrows: false,
           dots: false,
@@ -81,6 +83,7 @@ layout: compress
               return '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-triangle" width="44" height="44" viewBox="0 0 100 100" fill="#f77aff" stroke-width="0" stroke="#f77aff" fill="none" stroke-linecap="round" stroke-linejoin="round"><polygon points="50 15, 100 100, 0 100"/></svg>';
             }
         });
+      });
 
       </script>
     {%- endif -%}
