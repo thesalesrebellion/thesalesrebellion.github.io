@@ -30,20 +30,24 @@
 
                 <div class="hero__col hero__col--right hero__col--{{ page.page_id }} hero__col--right--{{ page.page_id }}">
 
-                    <div class="hero__aside hero__aside--{{ page.page_id }}">
-                        <h2 class="hero__aside-heading hero__aside-heading--{{ page.page_id }}">
-                            {{ page.hero.aside.heading.line_1 }}
-                            {%- if page.hero.aside.heading.line_1 and page.hero.aside.heading.line_1.size > 0 -%}
-                                <br>{{ page.hero.aside.heading.line_2 }}
-                            {%- endif -%}
-                        </h2>
-                        <div class="hero__aside-text hero__aside-text--{{ page.page_id }}">
-                            {{ page.hero.aside.text | markdownify }}
-                        </div>
-                    </div>
-                    <div class="hero__person hero__person--{{ page.page_id }}">
-                        <img src="{{- '/images/man-blue-triangle.png' | relative_url -}}" alt="A person" class="hero__person-img hero__person-img--{{ page.page_id }}">
-                    </div>
+
+                    <div class="hero__slider slick-fade opacity">
+                        {% for slides in site.data.sliders.1x1 %}
+                        <div class="hero__slider-content paths">
+                            <div class="hero__aside flicker">
+                                <h2 class="hero__aside-heading">
+                                    {{ slides.heading.line_1 }}
+                                      <br>
+                                      {{ slides.heading.line_2 }}
+                                </h2>
+                              <div class="hero__aside-text">
+                                 {{ slides.text | markdownify }}
+                          </div>
+                      </div>
+                        <img src="{{- slides.image.path -}}"/>
+                      </div>
+                        {%- endfor -%}
+                      </div>
 
                     {%- if page.hero.cta.url and page.hero.cta.url.size > 0 -%}
                         <div class="hero__cta hero__cta--{{ page.page_id }} hero__cta--{{ page.page_id }}--mobile">

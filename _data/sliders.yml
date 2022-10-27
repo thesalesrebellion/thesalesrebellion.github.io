@@ -1,0 +1,71 @@
+---
+
+home:
+- heading:
+    line_1: Enterprise Sales Rep - home
+    line_2: Employee Recognition Platform
+  text: |-
+          I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person1-pink-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - home
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person2-pink-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - home
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person3-pink-triangle.png'
+
+
+teams:
+- heading:
+    line_1: Enterprise Sales Rep - teams
+    line_2: Employee Recognition Platform
+  text: |-
+          I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person1-green-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - teams
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person2-green-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - teams
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person3-green-triangle.png'
+
+1x1:
+- heading:
+    line_1: Enterprise Sales Rep - 1x1
+    line_2: Employee Recognition Platform
+  text: |-
+          I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person1-blue-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - 1x1
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person2-blue-triangle.png'
+- heading:
+    line_1: Enterprise Sales Rep - 1x1
+    line_2: Employee Recognition Platform
+  text: |-
+        I’ll finish at 175% of the annual quota this quarter.
+  image:
+      path: '/images/person3-blue-triangle.png'

@@ -36,7 +36,22 @@ layout: compress
     {%- endif -%}
 
     {%- if page.has_carousel == true -%}
+
       <script>
+
+          $('.slick-fade').slick({
+          arrows: false,
+          dots: false,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true,
+          speed: 1,
+          cssEase: 'linear'
+        });
+
         $('.slick-me').slick({
             arrows: false,
             dots: true,
