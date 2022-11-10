@@ -1,36 +1,9 @@
-/*
-@mixin breakpoint($point) {
-    @if $point == larger {
-        @media (max-width: 1200px) { @content; }
-    }
-    @if $point == semi_large {
-        @media (max-width: 1120px) { @content; }
-    }
-    @if $point == large {
-        @media (max-width: 990px) { @content; }
-    }
-    @if $point == medium {
-        @media (max-width: 768px) { @content; }
-    }
-    @else if $point == smallish {
-        @media (max-width: 610px) { @content; }
-    }
-    @else if $point == small {
-        @media (max-width: 576px) { @content; }
-    }
-    @else if $point == smaller {
-        @media (max-width: 425px) { @content; }
-    }
-}
-*/
-
-
 .hero__slider {
     max-width: 625px;
 
 }
 
-@media (max-width: 1120px) {
+@media screen and (max-width: 1120px) {
 
     .hero__slider {
         max-width: 400px;
@@ -45,7 +18,7 @@
   justify-content: end;
 }
 
-@media (max-width: 1120px) {
+@media screen and (max-width: 1120px) {
 
     .hero__slider-content {
       display: flex !important;
@@ -56,9 +29,14 @@
  }
 
  .hero__aside-heading {
-   font-family: Lazer84;
-   font-size: 20px;
+   font-size: 28px;
+   line-height: 32px;
    letter-spacing: 1.5px;
+ }
+
+ .hero__aside-text {
+   font-size: 20px;
+   line-height: 24px;
  }
 
 .hero__slider-content img {
@@ -75,16 +53,8 @@
 
 .paths {
   position: relative;
-  animation: paths 6s step-end infinite;
+  animation: paths 8s step-end infinite;
 }
-
-@media (max-width: 1120px) {
-
-  .paths {
-    animation: paths 3s step-end infinite;
-  }
-
- }
 
 
 @keyframes paths {
@@ -375,16 +345,11 @@
 
 }
 
-
-
 /*
-
-CRT Effect and Colors
-
+Flicker Colors
 neon green: rgba(57,255,20, 0.5)
 neon blue: rgba(4,217,255,0.5)
 neon red: rgba(255, 87, 51, 0.5)
-
 */
 
 @keyframes flicker {
@@ -449,7 +414,7 @@ neon red: rgba(255, 87, 51, 0.5)
     opacity: 0.36108;
   }
   100% {
-    opacity: 0.24387;
+    opacity: 0.54387;
   }
 }
 
@@ -470,7 +435,7 @@ neon red: rgba(255, 87, 51, 0.5)
     text-shadow: 3.4794037899852017px 0 1px rgba(0,30,255,0.5), -3.4794037899852017px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
   25% {
-    text-shadow: 15px 5px 1px rgba(57,255,20, 0.5), -10px -7px 1px rgba(4,217,255,0.5), 0 0 3px;
+    text-shadow: 5px 3px 1px rgba(57,255,20, 0.5), -8px -5px 1px rgba(4,217,255,0.5), 0 0 3px;
   }
   30% {
     text-shadow: 0.7015590085143956px 0 1px rgba(0,30,255,0.5), -0.7015590085143956px 0 1px rgba(255,0,80,0.3), 0 0 3px;
@@ -515,38 +480,10 @@ neon red: rgba(255, 87, 51, 0.5)
     text-shadow: 2.1841838852799786px 0 1px rgba(0,30,255,0.5), -2.1841838852799786px 0 1px rgba(255,0,80,0.3), 0 0 3px;
   }
   100% {
-    text-shadow: 12px 0 1px rgba(57,255,20, 0.5), -8px 0 1px rgba(255, 87, 51, 0.5), 0 0 3px;
+    text-shadow: 6px 0 1px rgba(57,255,20, 0.5), -8px 0 1px rgba(255, 87, 51, 0.5), 0 0 3px;
   }
 }
 
-.crt:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(18, 16, 16, 0.1);
-  opacity: 0;
-  z-index: 2;
-  pointer-events: none;
-  animation: flicker 0.15s infinite;
-}
-.crt:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-  z-index: 2;
-  background-size: 100% 2px, 3px 100%;
-  pointer-events: none;
-}
-
 .flicker {
-  animation: textShadow 4s infinite;
+  animation: textShadow 6s infinite;
 }

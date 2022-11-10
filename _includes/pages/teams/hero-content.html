@@ -34,14 +34,12 @@
                       {% for slides in site.data.sliders.teams %}
                       <div class="hero__slider-content paths">
                           <div class="hero__aside flicker">
-                              <h2 class="hero__aside-heading">
-                                  {{ slides.heading.line_1 }}
-                                    <br>
-                                    {{ slides.heading.line_2 }}
-                              </h2>
                             <div class="hero__aside-text">
-                               {{ slides.text | markdownify }}
+                               {{ slides.testimonial | markdownify }}
                         </div>
+                              <h2 class="hero__aside-heading">
+                                  {{ slides.industry }}
+                              </h2>
                     </div>
                       <img src="{{- slides.image.path -}}"/>
                     </div>
