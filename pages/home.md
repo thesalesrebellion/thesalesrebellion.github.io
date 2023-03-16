@@ -79,7 +79,7 @@ community:
     modal_target: blog
 testimonials:
   image:
-    path: /images/home-testimonials.png
+    path: /images/home-testimonials.webp
     alt_text: 'Testimonials from clients'
   heading: ''
   video_id: te3pw5DBXi8
