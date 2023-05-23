@@ -50,6 +50,9 @@ team:
     - img:
         path: /images/team/m8.png
         alt_text: Team member
+    - img:
+        path: /images/team/m9.png
+        alt_text: Team member
   members_mobile:
     - img:
         path: /images/team/m5.png
@@ -74,6 +77,9 @@ team:
         alt_text: Team member
     - img:
         path: /images/team/m8.png
+        alt_text: Team member
+    - img:
+        path: /images/team/m9.png
         alt_text: Team member
 faq:
   heading: Things we get asked
