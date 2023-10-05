@@ -18,7 +18,7 @@ features:
     - title: Serve Others
       text: Servant leadership for all people in all things
     - title: <span>Change</span> <span>The</span> Game
-      text: To reject the status quo and relentlessly peruse creativity
+      text: To reject the status quo and relentlessly persue creativity
   cta:
     text: Join<span class="space"></span>Squardrons
     url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
