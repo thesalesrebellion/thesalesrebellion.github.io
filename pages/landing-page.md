@@ -43,21 +43,6 @@ speakers:
         name: Kevin “KD” Dorsey
         path: /images/speakers/kd-hs-triangle.png
         alt_text: Kevin “KD” Dorsey
-    # - img:
-    #     name: Stu Heinecke
-    #     path: /images/speakers/stu-hs-triangle.png
-    #     alt_text: Stu Heinecke
-    # - img:
-    #     name: Kevin “KD” Dorsey
-    #     path: /images/speakers/kd-hs-triangle.png
-    #     alt_text: Kevin “KD” Dorsey
-  # members_mobile:
-  #   - img:
-  #       path: /images/speakers/stu-hs-triangle.png
-  #       alt_text: Team member
-  #   - img:
-  #       path: /images/speakers/kd-hs-triangle.png
-  #       alt_text: Team member
   more: And many more to be announced!
 footer:
   header: The Sales Rebellion Way
