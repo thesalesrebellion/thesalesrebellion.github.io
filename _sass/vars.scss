@@ -12,9 +12,6 @@ $red: #ff887a;
 $yellow: #fdff7a;
 
 $colors: 'green', 'blue', 'purple', 'red', 'yellow';
-
-// fonts
-$font-kufam: 'Kufam', sans-serif;
   
 @mixin breakpoint($point) {
     @if $point == larger {
