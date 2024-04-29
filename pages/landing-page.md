@@ -29,6 +29,7 @@ meetup:
     - feature: Engage with like-minded people
 cta:
   text: Get your Totality pass here
+  text_vip: Get your VIP Totality pass here
   url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
   description: Join us on September 26, 27, and 28th!
 speakers:

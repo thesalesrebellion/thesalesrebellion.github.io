@@ -84,30 +84,6 @@
         });
     };
 
-
-    // NOTE: temporary solution for component placement on the promo page - will 
-    // circle back around to come up with a more suitable approach for displaying 
-    // promo hero component and overlay content in the future
-    const handle_promo_feature_section = function(el) {
-            const heroSection = document.querySelector('.landing-page__hero--icon'),
-                nextSection = document.querySelector(el);
-            
-            if (heroSection && nextSection) {
-                setTimeout(() => {
-                    const rect = heroSection.getBoundingClientRect(),
-                        heroHeight = rect.top;
-        
-                    nextSection.style.paddingTop = heroHeight + 60 + 'px';
-                }, 10)
-            }
-    }
-
-    handle_promo_feature_section('.landing-page__features');
-
-    // NOTE: this is to prevent high CLS on the promo page due to the way the hero
-    // component is set up - will remove this in the future when a reusable component
-    // for promo hero is built
-
     scroll_to('goto-podcast', 'podcast');
     scroll_to('goto-slack', 'slack');
     scroll_to('goto-blog', 'blog');

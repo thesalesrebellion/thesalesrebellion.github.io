@@ -42,7 +42,9 @@ layout: page
         <!-- CTA Container -->
         <div class="landing-page__cta--container">
 
-            <a class="landing-page__cta landing-page__cta--mobile-full" href="">{{ page.cta.text }}</a>
+            <a href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3" class="landing-page__cta landing-page__cta--mobile-full" href="">{{ page.cta.text }}</a>
+
+            <a href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY" class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full" href="">{{ page.cta.text_vip }}</a>
     
             <p class="landing-page__cta--description">{{ page.cta.description }}</p>
 
@@ -77,14 +79,26 @@ layout: page
                 {%- endfor -%}
 
             </ul>
-            
-            <a href="" class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block">{{ page.cta.text }}</a>
+
+            <div class="landing-page__cta--container">
+
+                <a href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3" class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block">{{ page.cta.text }}</a>
+                
+                <a href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY" class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block">{{ page.cta.text_vip }}</a>
+
+            </div>
 
         </div>
         
     </section>
 
-    <a href="" class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block">{{ page.cta.text }}</a>
+    <div class="landing-page__cta--container">
+
+        <a href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3" class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block">{{ page.cta.text }}</a>
+        
+        <a href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY" class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block">{{ page.cta.text_vip }}</a>
+
+    </div>
 
     {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
 
@@ -122,23 +136,27 @@ layout: page
 
         <p class="landing-page__footer--description">{{ page.footer.description }}</p>
 
-        <a href="" class="landing-page__cta landing-page__cta--desktop-full landing-page__cta--secondary desktop-only">{{ page.cta.text }}</a>
+        <div class="landing-page__cta--container">
+
+            <a href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3" class="landing-page__cta landing-page__cta--desktop-full desktop-only">{{ page.cta.text }}</a>
+            
+            <a href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY" class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only">{{ page.cta.text_vip }}</a>
+
+        </div>
 
     </section>
 
     <div class="landing-page__footer--cta-container">
 
-        <a href="" class="landing-page__cta landing-page__cta--mobile-full landing-page__cta--secondary mobile-only">{{ page.cta.text }}</a>
+        <div class="landing-page__cta--container">
+
+            <a href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3" class="landing-page__cta landing-page__cta--mobile-full mobile-only">{{ page.cta.text }}</a>
+
+            <a href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY" class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only">{{ page.cta.text_vip }}</a>
+
+        </div>
+
 
     </div>
         
 </div>
-
-<script>
-    // NOTE: this forces the page back to the top on reload to prevent any 
-    // unexpected placement for the content below the fold of the promo hero.
-    // Remove this once reusable promo hero component is built
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    };
-</script>
