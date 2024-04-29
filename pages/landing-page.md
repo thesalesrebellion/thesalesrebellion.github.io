@@ -7,8 +7,8 @@ hero:
   eyebrow: "Yo, this is not your momma's sales conference"
   heading: "Get ready for the first ever experience of its kind!"
   image: 
-    path: "/assets/images/hero_sunset_city_bg.png"
-    mobile_path: "/assets/images/hero_sunset_city_bg_mobile.png"
+    path: "/assets/images/hero_sunset_city_bg.webp"
+    mobile_path: "/assets/images/hero_sunset_city_bg_mobile.webp"
     alt: ""
 features:
   header: Totality
@@ -30,7 +30,8 @@ meetup:
 cta:
   text: Get your Totality pass here
   text_vip: Get your VIP Totality pass here
-  url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
+  url: https://buy.stripe.com/9AQeVf9Umg5M9c4cN3
+  url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: Join us on September 26, 27, and 28th!
 speakers:
   header: Totality Guest Speakers
@@ -38,11 +39,11 @@ speakers:
   members:
     - img:
         name: Stu Heinecke
-        path: /images/speakers/stu-hs-triangle.png
+        path: /images/speakers/stu-hs-triangle.webp
         alt_text: Stu Heinecke
     - img:
         name: Kevin “KD” Dorsey
-        path: /images/speakers/kd-hs-triangle.png
+        path: /images/speakers/kd-hs-triangle.webp
         alt_text: Kevin “KD” Dorsey
   more: And many more to be announced!
 footer:

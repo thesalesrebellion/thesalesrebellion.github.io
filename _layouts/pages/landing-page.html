@@ -24,7 +24,7 @@ layout: page
             <p class="landing-page__hero--eyebrow">{{ page.hero.eyebrow }}</p>
             <h1 class="landing-page__hero--header">{{ page.hero.heading }}</h1>
 
-            <div class="landing-page__hero--icon">
+            <div class="landing-page__hero--icon bounce">
                 {%- include svg/chevron-group.svg -%}
             </div>
         </header>
@@ -44,13 +44,13 @@ layout: page
 
         <div class="landing-page__cta--container">
             <a
-                href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3"
+                href="{{ page.cta.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full"
                 href=""
                 >{{ page.cta.text }}</a
             >
             <a
-                href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY"
+                href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
                 href=""
                 >{{ page.cta.text_vip }}</a
@@ -91,12 +91,12 @@ layout: page
 
             <div class="landing-page__cta--container">
                 <a
-                    href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3"
+                    href="{{ page.cta.url }}"
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                     >{{ page.cta.text }}</a
                 >
                 <a
-                    href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY"
+                    href="{{ page.cta.url_vip }}"
                     class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                     >{{ page.cta.text_vip }}</a
                 >
@@ -106,12 +106,12 @@ layout: page
 
     <div class="landing-page__cta--container">
         <a
-            href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3"
+            href="{{ page.cta.url }}"
             class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
             >{{ page.cta.text }}</a
         >
         <a
-            href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY"
+            href="{{ page.cta.url_vip }}"
             class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
             >{{ page.cta.text_vip }}</a
         >
@@ -161,12 +161,12 @@ layout: page
 
         <div class="landing-page__cta--container">
             <a
-                href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3"
+                href="{{ page.cta.url }}"
                 class="landing-page__cta landing-page__cta--desktop-full desktop-only"
                 >{{ page.cta.text }}</a
             >
             <a
-                href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY"
+                href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
                 >{{ page.cta.text_vip }}</a
             >
@@ -176,12 +176,12 @@ layout: page
     <div class="landing-page__footer--cta-container">
         <div class="landing-page__cta--container">
             <a
-                href="https://buy.stripe.com/9AQeVf9Umg5M9c4cN3"
+                href="{{ page.cta.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only"
                 >{{ page.cta.text }}</a
             >
             <a
-                href="https://buy.stripe.com/6oE5kF2rU5r8ag8bIY"
+                href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
                 >{{ page.cta.text_vip }}</a
             >

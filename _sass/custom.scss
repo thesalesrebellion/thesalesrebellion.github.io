@@ -508,3 +508,18 @@ neon red: rgba(255, 87, 51, 0.5)
 .flicker {
   animation: textShadow 9s infinite;
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0.8, 0.8, 1, 1);
+  }
+  50% {
+    transform: translateY(30px);
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.bounce {
+  animation: bounce 1.5s var(--animation-iterations);
+}

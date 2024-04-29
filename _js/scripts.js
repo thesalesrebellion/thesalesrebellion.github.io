@@ -96,4 +96,23 @@
     scroll_to('goto-market-tools--mobile', 'market-tools');
     scroll_to('goto-course-work--mobile', 'course-work');
 
+    // this allows for a smooth animation ending on the landing page
+    // hero icon when the user begins to scroll.
+    const handle_landing_page_hero_animation = function() {
+        let animationCount = 0;
+        const element = document.querySelector('.landing-page__hero--icon');
+    
+        document.documentElement.style.setProperty('--animation-iterations', 'infinite');
+    
+        element.addEventListener('animationiteration', () => {
+            animationCount++;
+        });
+    
+        window.addEventListener('scroll', () => {
+            document.documentElement.style.setProperty('--animation-iterations', animationCount + 1);
+        });
+    }
+    
+    handle_landing_page_hero_animation()
+
 })();

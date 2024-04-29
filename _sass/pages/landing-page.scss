@@ -385,6 +385,7 @@
     display: inline-block;
     border-radius: 4px;
     background-color: $neon_pink;
+    transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-out;
 
     color: $white;
     @include noodle;
@@ -399,6 +400,15 @@
       flex: 1;
     }
 
+    &:hover {
+      box-shadow: 0 0 10px $neon_pink, 0 0 20px $neon_pink;
+    }
+
+    &:active {
+      transform: scale(0.95);
+      box-shadow: 0 0 5px $neon_pink, 0 0 10px $neon_pink;
+    }
+
     @include breakpoint(medium) {    
       padding: 16px;
       font-size: 26px;
@@ -407,6 +417,15 @@
     &--secondary {
       color: $black;
       background-color: $light_green;
+
+      &:hover {
+        box-shadow: 0 0 10px $light_green, 0 0 20px $light_green;
+      }
+
+      &:active {
+        transform: scale(0.95);
+        box-shadow: 0 0 5px $light_green, 0 0 10px $light_green;
+      }
     }
 
     &--desktop-full {
