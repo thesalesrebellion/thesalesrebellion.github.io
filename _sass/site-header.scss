@@ -16,11 +16,37 @@
 		}
 	}
 
+	&__dates {
+		text-align: end;
+
+		&--date-range {
+			color: $light_green;
+			font-family: $font-kufam;
+			font-size: 32px;
+			font-weight: 700;
+
+			@include breakpoint(medium) {
+				font-size: 18px;
+			}
+		}
+
+		&--month-year {
+			color: $neon_pink;
+			font-family: $font-kufam;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 130%;
+
+			@include breakpoint(medium) {
+				font-size: 18px;
+			}
+		}
+	}
+
 	&__logo {
 		max-width: 100px;
 		@include breakpoint(small) {
 			max-width: 85px;
 		}
 	}
-
 }

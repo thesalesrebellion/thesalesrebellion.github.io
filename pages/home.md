@@ -6,6 +6,7 @@ permalink: '/'
 has_video: true
 has_modal: true
 has_carousel: true
+landing_page: false
 hero:
   heading: Sell like a<br>sales rebel!
   text: |-
@@ -69,7 +70,7 @@ community:
     modal_target: podcasts
   - title: Blog
     image:
-      path: '/assets/images/blog.png'
+      path: '/assets/images/blog.webp'
       alt_text: 'The Blog cover'
     button:
       text: Read now

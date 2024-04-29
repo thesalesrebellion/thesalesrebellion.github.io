@@ -12,8 +12,10 @@ layout: compress
 
     <div data-tf-sidetab="M6xjp3kX" data-tf-opacity="100" data-tf-iframe-props="title=Inbound Website - Individual" data-tf-transitive-search-params data-tf-button-color="#FF00FC" data-tf-button-text="Connect With Us" data-tf-medium="snippet" style="all:unset;"></div>
 
-    {%- include footer.html %}
-
+    {%- if page.landing_page == false -%}
+      {%- include footer.html %}
+    {%- endif -%}
+    
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
 
     {%- if page.has_modal == true -%}

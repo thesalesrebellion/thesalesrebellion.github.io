@@ -8,28 +8,41 @@
             </a>
         </div>
 
-        <nav id="menu" class="menu">
-            <ul class="menu__items">
-                <li class="menu__item menu__item--mobile">
-                    <a href="{{- '/' | relative_url -}}" class="menu__link">
-                        <img src="{{- '/assets/images/logo.png' -}}" alt="Sales Rebellion Home page">
-                    </a>
-                </li>
-                {%- for item in site.data.navigation.items -%}
-                    <li class="menu__item">
-                        <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}{% if item.url == page.url %} menu__link--active{% endif %}">
-                            {{- item.name | upcase -}}
+        {%- comment -%}
+            The following section displays date information for promotional campaigns. To display 
+            dates on a specific page, set 'landing_page: true' on the page's markdown file and update 
+            the 'site.data.dates' in the data files with the appropriate date range.
+        {%- endcomment -%}
+
+        {%- if page.landing_page -%}
+            <div class="site-header__dates">
+                <div class="site-header__dates--date-range">{{- site.data.landing-page.dates.date_range -}}</div>
+                <div class="site-header__dates--month-year">{{- site.data.landing-page.dates.month_year | upcase -}}</div>
+            </div>
+        {%- else -%}
+            <nav id="menu" class="menu">
+                <ul class="menu__items">
+                    <li class="menu__item menu__item--mobile">
+                        <a href="{{- '/' | relative_url -}}" class="menu__link">
+                            <img src="{{- '/assets/images/logo.png' -}}" alt="Sales Rebellion Home page">
                         </a>
                     </li>
-                {%- endfor -%}
-            </ul>
-        </nav>
-        <div id="menu__burger" class="menu__burger">
-            {%- include svg/burger.svg -%}
-        </div>
-        <div id="menu__close" class="menu__close">
-            {%- include svg/close.svg -%}
-        </div>
+                    {%- for item in site.data.navigation.items -%}
+                        <li class="menu__item">
+                            <a href="{{- item.url | relative_url -}}" class="menu__link menu__link--{{ item.glow_in }}{% if item.url == page.url %} menu__link--active{% endif %}">
+                                {{- item.name | upcase -}}
+                            </a>
+                        </li>
+                    {%- endfor -%}
+                </ul>
+            </nav>
+            <div id="menu__burger" class="menu__burger">
+                {%- include svg/burger.svg -%}
+            </div>
+            <div id="menu__close" class="menu__close">
+                {%- include svg/close.svg -%}
+            </div>
+        {%- endif -%}
 
     </div>
 

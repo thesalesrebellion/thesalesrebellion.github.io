@@ -50,19 +50,21 @@
 
     var handle_hero_parallax = function(el){
 
-        const page_content = document.querySelector(el),
-              page_style = getComputedStyle(page_content),
-              initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
+        const page_content = document.querySelector(el)
 
-        window.addEventListener('scroll', function(){
-            let offset = window.pageYOffset;
-            if (initial_bgYpos > 0) {
-                page_content.style.backgroundPositionY = initial_bgYpos - offset * .1 + 'px';
-            } else {
-                page_content.style.backgroundPositionY = offset * .7 + 'px';
-            }
-        });
+        if (page_content) {
+            const page_style = getComputedStyle(page_content),
+                  initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
 
+            window.addEventListener('scroll', function(){
+                let offset = window.pageYOffset;
+                if (initial_bgYpos > 0) {
+                    page_content.style.backgroundPositionY = initial_bgYpos - offset * .1 + 'px';
+                } else {
+                    page_content.style.backgroundPositionY = offset * .7 + 'px';
+                }
+            });
+        }
     };
 
     handle_hero_parallax('.hero__content');
@@ -81,6 +83,30 @@
 
         });
     };
+
+
+    // NOTE: temporary solution for component placement on the promo page - will 
+    // circle back around to come up with a more suitable approach for displaying 
+    // promo hero component and overlay content in the future
+    const handle_promo_feature_section = function(el) {
+            const heroSection = document.querySelector('.landing-page__hero--icon'),
+                nextSection = document.querySelector(el);
+            
+            if (heroSection && nextSection) {
+                setTimeout(() => {
+                    const rect = heroSection.getBoundingClientRect(),
+                        heroHeight = rect.top;
+        
+                    nextSection.style.paddingTop = heroHeight + 60 + 'px';
+                }, 10)
+            }
+    }
+
+    handle_promo_feature_section('.landing-page__features');
+
+    // NOTE: this is to prevent high CLS on the promo page due to the way the hero
+    // component is set up - will remove this in the future when a reusable component
+    // for promo hero is built
 
     scroll_to('goto-podcast', 'podcast');
     scroll_to('goto-slack', 'slack');

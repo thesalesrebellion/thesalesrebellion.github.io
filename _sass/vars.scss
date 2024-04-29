@@ -1,13 +1,21 @@
+// colors
+$white: #fff;
+$black: #000;
 $green: #7affdc;
+$neon_green: #7dff7a;
+$light_green: #66ffc8;
 $blue: #7ab8ff;
 $purple: #f77aff;
+$dark_purple: #eb38cf;
+$neon_pink: #ff3adf;
 $red: #ff887a;
 $yellow: #fdff7a;
 
 $colors: 'green', 'blue', 'purple', 'red', 'yellow';
 
-$neon_green: #7dff7a;
-
+// fonts
+$font-kufam: 'Kufam', sans-serif;
+  
 @mixin breakpoint($point) {
     @if $point == larger {
         @media (max-width: 1200px) { @content; }

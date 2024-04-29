@@ -1,0 +1,413 @@
+.landing-page {
+  padding: 0 171px;
+
+  @include breakpoint(medium) {
+    padding: 0 20px;
+  }
+
+  // ------ HERO BG START ------
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+
+    &--image {
+      width: 100vw;
+      height: auto;
+      position: relative;
+      z-index: -2;
+    }
+
+    &--overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 100%);
+      z-index: -1;
+    }
+  }
+  // ------ HERO BG END ------
+
+  // ------ HERO START ------
+  &__hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpoint(medium) {
+      top: 25%;
+    }
+
+    &--eyebrow {
+      margin: 0 0 32px 0;
+      font-family: $font-kufam;
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 120%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        width: 72%;
+        font-size: 20px;
+      }
+    }
+
+    &--header {
+      margin: 0 0 32px 0;
+      width: 58%;
+      color: $neon_pink;
+      @include lazer;
+      font-size: 54px;
+      line-height: 140%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        font-size: 34px;
+        width: 70%;
+      }
+    }
+
+    &--icon svg {
+      width: 92px;
+      height: 92px;
+      
+      @include breakpoint(medium) {
+        width: 72px;
+        height: 72px;
+      }
+    }
+  }
+  // ------ HERO END ------
+
+  // ------ FEATURES START ------
+  &__features {
+    // padding-top: 700px;
+
+    &--header {
+      margin: 0 0 32px 0;
+      color: $neon_pink;
+      @include lazer;
+      font-size: 54px;
+      line-height: 140%;
+      text-align: start;
+
+      @include breakpoint(medium) {
+        margin: 30px auto 32px auto;
+        font-size: 34px;
+        width: 70%;
+        text-align: center;
+      }
+    }
+
+    &--subheader {
+      margin: 0 0 12px 0;
+      color: $light-green;
+      font-family: $font-kufam;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 120%;
+
+      @include breakpoint(medium) {
+        margin: 0 auto 12px auto;        
+        font-size: 24px;
+        width: 80%;
+        text-align: center;
+      }
+    }
+
+    &--description {
+      margin: 0 0 32px 0;
+      font-family: $font-kufam;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+
+      @include breakpoint(medium) {
+        margin: 0 auto 32px 0;        
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+  }
+  // ------ FEATURES END ------
+
+  // ------ MEETUP START ------
+  &__meetup {
+    margin: 96px auto 36px auto;
+    border: solid 3px $dark_purple;
+
+    @include breakpoint(medium) {    
+      margin: 65px auto 24px auto;
+    }
+
+    &--container {
+      padding: 73px 72px;
+
+      @include breakpoint(medium) {    
+        padding: 24px 14px;
+      }
+    }
+
+    &--eyebrow {
+      margin: 0 0 12px 0;
+      font-family: $font-kufam;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include breakpoint(medium) {
+        margin: 0 0 24px 0;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    &--title {
+      margin: 0;
+      color: $light_green;
+      @include lazer;
+      font-size: 48px;
+      line-height: 120%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        font-size: 36px;
+      }
+    }
+
+    &--description {
+      margin: 20px auto 72px auto;
+      max-width: 954px;
+      font-family: $font-kufam;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        margin: 24px 0;
+        font-size: 18px;
+      }
+    }
+
+    &--features {
+      margin: 0 0 72px 0;
+      list-style: none;
+    }
+
+    &--feature-container {
+      display: flex;
+      align-items: center;
+
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+
+      &:nth-child(5) .landing-page__meetup--feature {
+        @include breakpoint(medium) {
+          width: 185px;
+        }
+      }
+      
+      @include breakpoint(medium) {
+        margin: auto;
+        max-width: 180px;
+        flex-direction: column;
+
+        &:not(:first-child) {
+          margin-top: 32px;
+        }
+      }
+    }
+
+    &--feature {
+      margin: 0 0 0 20px;
+      font-family: $font-kufam;
+      font-size: 28px;
+      font-weight: 600;
+
+      @include breakpoint(medium) {
+        width: 200px;
+        margin: 16px 0 0;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
+
+    &--cta {
+      margin-top: 72px;
+      width: 100%;
+    }
+  }
+  // ------ MEETUP END ------
+
+  // ------ SPEAKERS START ------
+  &__speakers {
+    @include breakpoint(medium) {
+      margin: 40px 0 0;
+    }
+
+    &--icon {
+      text-align: center;
+
+      svg {
+      width: 72px;
+      height: 72px;
+      }
+
+    }
+
+    &--header {
+      margin: 34px 0 35px;
+      @include lazer;
+      font-size: 48px;
+      line-height: 120%;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        font-size: 36px;
+      }
+    }
+    
+    &--image-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 56px;
+
+      @include breakpoint(medium) {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+
+    &--name {
+      margin: 21px 0 0;
+      color: $light_green;
+      font-family: $font-kufam;
+      font-size: 36px;
+      text-align: center;
+      line-height: 130%;
+    }
+
+    &--more {
+      margin: 5px 0 0;
+      font-family: $font-kufam;
+      font-size: 20px;
+      text-align: center;
+
+      @include breakpoint(medium) {
+        margin: 16px 0 0;
+        font-size: 16px;
+      }
+    }
+  }
+  // ------ SPEAKERS END ------
+
+  // ------ FOOTER START ------
+  &__footer {
+    margin: 72px 0 240px 0;
+    padding: 72px;
+    text-align: center;
+    border: solid 3px $light_green;
+
+    @include breakpoint(medium) {
+      margin: 65px 0 0;
+      padding: 38px 14px 24px;
+    }
+
+    &--header {
+      margin: 0 0 25px;
+      color: $neon_pink;
+      @include lazer;
+      font-size: 36px;
+      line-height: 120%;
+    }
+
+    &--description {
+      margin: 36px 0;
+      font-family: $font-kufam;
+      font-size: 20px;
+      line-height: 150%;
+
+      @include breakpoint(medium) {
+        margin: 0;
+        font-size: 18px;
+        line-height: 170%;
+      }
+    }
+
+    &--cta-container {
+      margin: 24px 0 120px;
+    }
+  }
+  // ------ FOOTER END ------
+
+  // ------ CTA START ------
+  &__cta {
+    padding: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: $neon_pink;
+
+    color: $white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+
+    @include breakpoint(medium) {    
+      padding: 16px;
+      font-size: 18px;
+    }
+
+    &--secondary {
+      color: $black;
+      background-color: $light_green;
+    }
+
+    &--desktop-full {
+      width: 100%;
+    }
+
+    &--mobile-full {
+      @include breakpoint(medium) {
+        width: 100%;
+      }
+    }
+
+    &--container {
+      display: flex;
+      align-items: center;
+
+      @include breakpoint(medium) {    
+        display: initial;
+      }
+    }
+
+    &--description {
+      margin-left: 20px;
+      font-family: $font-kufam;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+
+      @include breakpoint(medium) {    
+        margin: 8px auto 0;    
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+  // ------ CTA END ------
+}
