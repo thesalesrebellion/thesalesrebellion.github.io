@@ -110,18 +110,20 @@
     } 
 
     &--header {
-      margin: 0 0 32px 0;
-      color: $neon_pink;
-      @include lazer;
-      font-size: 54px;
-      line-height: 140%;
-      text-align: start;
+      margin: 0;
 
       @include breakpoint(medium) {
-        margin: 30px auto 32px auto;
-        font-size: 34px;
-        width: 70%;
-        text-align: center;
+        margin: 0 auto 0 auto;
+        width: fit-content;
+      }
+
+      svg {
+        margin-left: -11px;
+        height: 120px;
+  
+        @include breakpoint(medium) {
+          height: 84px;
+        }
       }
     }
 
@@ -292,6 +294,7 @@
 
     &--header {
       margin: 34px 0 35px;
+      color: $neon_pink;
       @include lazer;
       font-size: 48px;
       line-height: 120%;
@@ -299,6 +302,17 @@
 
       @include breakpoint(medium) {
         font-size: 36px;
+      }
+
+      svg {
+        margin-bottom: -35px;
+        height: 100px;
+        
+        @include breakpoint(medium) {
+          width: 100%;
+          margin-bottom: -27px;
+          height: 78px;
+        }
       }
     }
     
@@ -412,6 +426,10 @@
     @include breakpoint(medium) {    
       padding: 16px;
       font-size: 26px;
+    }
+
+    @media (max-width: 350px) {
+      font-size: 22px;
     }
 
     &--secondary {

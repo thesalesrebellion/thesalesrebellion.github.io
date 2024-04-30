@@ -33,7 +33,7 @@ layout: page
     {%- comment -%} --- FEATURES --- {%- endcomment -%}
     <section class="landing-page__features">
         <h2 class="landing-page__features--header">
-            {{ page.features.header }}
+            {%- include svg/totality-logo.svg -%}
         </h2>
         <h3 class="landing-page__features--subheader">
             {{ page.features.subheader }}
@@ -124,7 +124,7 @@ layout: page
         </div>
 
         <h2 class="landing-page__speakers--header">
-            {{ page.speakers.header }}
+            <span>{%- include svg/totality-logo.svg -%}</span>{{ page.speakers.header }}
         </h2>
 
         <div class="landing-page__speakers--image-wrapper">
