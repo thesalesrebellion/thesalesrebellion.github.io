@@ -14,7 +14,6 @@ hero:
     mobile_path: "/assets/images/hero_sunset_city_bg_mobile.webp"
     alt: "Sunset city background image"
 features:
-  header: Totality
   subheader: The final curtain for the status quo
   description: A 3-day immersive event into the next generation of what selling is and will become.
 meetup:
