@@ -50,19 +50,21 @@
 
     var handle_hero_parallax = function(el){
 
-        const page_content = document.querySelector(el),
-              page_style = getComputedStyle(page_content),
-              initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
+        const page_content = document.querySelector(el)
 
-        window.addEventListener('scroll', function(){
-            let offset = window.pageYOffset;
-            if (initial_bgYpos > 0) {
-                page_content.style.backgroundPositionY = initial_bgYpos - offset * .1 + 'px';
-            } else {
-                page_content.style.backgroundPositionY = offset * .7 + 'px';
-            }
-        });
+        if (page_content) {
+            const page_style = getComputedStyle(page_content),
+                  initial_bgYpos = parseInt(page_style.backgroundPositionY, 10);
 
+            window.addEventListener('scroll', function(){
+                let offset = window.pageYOffset;
+                if (initial_bgYpos > 0) {
+                    page_content.style.backgroundPositionY = initial_bgYpos - offset * .1 + 'px';
+                } else {
+                    page_content.style.backgroundPositionY = offset * .7 + 'px';
+                }
+            });
+        }
     };
 
     handle_hero_parallax('.hero__content');
@@ -93,5 +95,24 @@
     scroll_to('goto-blog--mobile', 'blog');
     scroll_to('goto-market-tools--mobile', 'market-tools');
     scroll_to('goto-course-work--mobile', 'course-work');
+
+    // this allows for a smooth animation ending on the landing page
+    // hero icon when the user begins to scroll.
+    const handle_landing_page_hero_animation = function() {
+        let animationCount = 0;
+        const element = document.querySelector('.landing-page__hero--icon');
+    
+        document.documentElement.style.setProperty('--animation-iterations', 'infinite');
+    
+        element.addEventListener('animationiteration', () => {
+            animationCount++;
+        });
+    
+        window.addEventListener('scroll', () => {
+            document.documentElement.style.setProperty('--animation-iterations', animationCount + 1);
+        });
+    }
+    
+    handle_landing_page_hero_animation()
 
 })();

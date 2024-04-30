@@ -16,11 +16,36 @@
 		}
 	}
 
+	&__dates {
+		text-align: end;
+
+		&--date-range {
+			color: $light_green;
+			@include noodle;
+			font-size: 40px;
+			line-height: 130%;
+
+			@include breakpoint(medium) {
+				font-size: 26px;
+			}
+		}
+
+		&--month-year {
+			color: $neon_pink;
+			@include noodle;
+			font-size: 40px;
+			line-height: 130%;
+
+			@include breakpoint(medium) {
+				font-size: 26px;
+			}
+		}
+	}
+
 	&__logo {
 		max-width: 100px;
 		@include breakpoint(small) {
 			max-width: 85px;
 		}
 	}
-
 }

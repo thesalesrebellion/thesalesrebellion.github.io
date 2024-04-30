@@ -24,6 +24,10 @@
     //     background-image: url(/assets/images/resources-hero-bg.jpg);
     // }
 
+    &--landing-page {
+        background-image: none;
+    }
+
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

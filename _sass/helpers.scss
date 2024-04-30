@@ -15,7 +15,7 @@
 .mobile-only {
     display: none !important;
     @include breakpoint(medium) {
-        display: block;
+        display: block !important;
         &--inline-block {
             display: inline-block !important;
         }

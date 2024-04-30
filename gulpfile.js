@@ -22,7 +22,7 @@ export const cssDev = () => gulp.src('./_sass/styles.scss')
     .on('error', sass.logError))
     .pipe(gulp.dest('./assets/css'));
 
-export const cssWatch = () => gulp.watch('./_css/**/*.scss', cssDev);
+export const cssWatch = () => gulp.watch('./_sass/**/*.scss', cssDev);
 
 export const jsDev = () => gulp.src([
     './node_modules/jquery/dist/jquery.js',

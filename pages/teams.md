@@ -4,7 +4,7 @@ permalink: /teams/
 page_id: teams
 has_video: true
 has_carousel: true
-pipedrive_bot: cB7kTtVmnCJOYpzB66ns93jMb2QB1wMFwg8Od36A0YUT1BVTqjlZtBUDZCIHziyUh5
+landing_page: false
 hero:
   heading: <span>Get</span> <span>your</span> <span>team</span> <span>to</span> <span>the</span> top!
   text: |-

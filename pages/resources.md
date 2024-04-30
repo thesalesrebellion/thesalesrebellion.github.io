@@ -5,6 +5,7 @@ page_id: resources
 has_video: false
 has_carousel: true
 has_modal: true
+landing_page: false
 hero:
   heading: <span>All</span> <span>Things</span> Rebellion…
   tiles:
