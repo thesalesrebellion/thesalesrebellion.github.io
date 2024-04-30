@@ -3,6 +3,9 @@ layout: pages/landing-page
 permalink: /totality/
 page_id: landing-page
 landing_page: true
+dates:
+  date_range: '26 - 28' 
+  month_year: 'September 2024'
 hero:
   eyebrow: "Yo, this is not your momma's sales conference"
   heading: "Get ready for the first ever experience of its kind!"
