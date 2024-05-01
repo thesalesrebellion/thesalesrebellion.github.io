@@ -113,7 +113,7 @@
       margin: 0;
 
       @include breakpoint(medium) {
-        margin: 0 auto 0 auto;
+        margin: 32px auto 0 auto;
         width: fit-content;
       }
 
