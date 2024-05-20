@@ -49,12 +49,14 @@ layout: page
                 href=""
                 >{{ page.cta.text }}</a
             >
+            <p class="landing-page__cta--copy">{{ page.cta.copy_text }}</p>
             <a
                 href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
                 href=""
                 >{{ page.cta.text_vip }}</a
             >
+            <p class="landing-page__cta--copy">{{ page.cta.copy_text_vip }}</p>
             <p class="landing-page__cta--description">
                 {{ page.cta.description }}
             </p>
@@ -95,11 +97,13 @@ layout: page
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                     >{{ page.cta.text }}</a
                 >
+                <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text }}</p>
                 <a
                     href="{{ page.cta.url_vip }}"
                     class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                     >{{ page.cta.text_vip }}</a
                 >
+                <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text_vip }}</p>
             </div>
         </div>
     </section>
@@ -110,11 +114,13 @@ layout: page
             class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
             >{{ page.cta.text }}</a
         >
+        <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text }}</p>
         <a
             href="{{ page.cta.url_vip }}"
             class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
             >{{ page.cta.text_vip }}</a
         >
+        <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text_vip }}</p>
     </div>
 
     {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
@@ -136,11 +142,6 @@ layout: page
                     class="landing-page__team-img"
                 />
                 <p class="landing-page__speakers--name">{{ item.img.name }}</p>
-                {%- if forloop.last -%}
-                <p class="landing-page__speakers--more">
-                    {{ page.speakers.more }}
-                </p>
-                {%- endif -%}
             </div>
             {%- endfor -%}
         </div>
@@ -165,11 +166,13 @@ layout: page
                 class="landing-page__cta landing-page__cta--desktop-full desktop-only"
                 >{{ page.cta.text }}</a
             >
+            <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text }}</p>
             <a
                 href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
                 >{{ page.cta.text_vip }}</a
             >
+            <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text_vip }}</p>
         </div>
     </section>
 
@@ -180,11 +183,13 @@ layout: page
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only"
                 >{{ page.cta.text }}</a
             >
+            <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text }}</p>
             <a
                 href="{{ page.cta.url_vip }}"
                 class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
                 >{{ page.cta.text_vip }}</a
             >
+            <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text_vip }}</p>
         </div>
     </div>
 </div>

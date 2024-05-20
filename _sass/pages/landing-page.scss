@@ -320,6 +320,10 @@
       display: flex;
       justify-content: center;
       gap: 56px;
+
+      @include breakpoint(larger) {
+        flex-wrap: wrap;
+      }
       
       @include breakpoint(medium) {
         flex-direction: column;
@@ -466,6 +470,27 @@
         flex-direction: column;
         gap: 12px;
       }
+    }
+
+    &--copy,
+    &--copy-secondary {
+      margin: 10px 0 0;
+      @include noodle;
+      letter-spacing: 1px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 120%;
+
+      @include breakpoint(medium) {    
+        margin: 5px auto 0;    
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+
+    &--copy-secondary {
+      margin: 0 auto;
+      text-align: center;
     }
 
     &--description {
