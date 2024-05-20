@@ -320,6 +320,10 @@
       display: flex;
       justify-content: center;
       gap: 56px;
+
+      @include breakpoint(larger) {
+        flex-wrap: wrap;
+      }
       
       @include breakpoint(medium) {
         flex-direction: column;

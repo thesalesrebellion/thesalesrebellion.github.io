@@ -51,13 +51,12 @@ speakers:
         alt_text: Kevin “KD” Dorsey
     - img:
         name: DeJuan Brown
-        path: /images/speakers/kd-hs-triangle.webp
+        path: /images/speakers/dejuan-hs-triangle.webp
         alt_text: DeJuan Brown
     - img:
         name: Leslie Venetz
-        path: /images/speakers/kd-hs-triangle.webp
+        path: /images/speakers/leslie-hs-triangle.webp
         alt_text: Leslie Venetz
-  more: And many more to be announced!
 footer:
   header: The &nbsp;Sales Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.

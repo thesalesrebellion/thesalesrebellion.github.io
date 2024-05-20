@@ -142,11 +142,6 @@ layout: page
                     class="landing-page__team-img"
                 />
                 <p class="landing-page__speakers--name">{{ item.img.name }}</p>
-                {%- if forloop.last -%}
-                <p class="landing-page__speakers--more">
-                    {{ page.speakers.more }}
-                </p>
-                {%- endif -%}
             </div>
             {%- endfor -%}
         </div>
