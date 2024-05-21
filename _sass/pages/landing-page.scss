@@ -556,11 +556,6 @@
     top: 0;
     z-index: 1;
     transition: all 0.3s;
-    
-    &--visible {
-      opacity: 1;
-      visibility: visible;
-    }
 
     &--content {
       align-content: center;
@@ -609,4 +604,9 @@
   }
   // ------ MODAL END ------
 
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
 }
