@@ -67,7 +67,7 @@ export const cssProd = () => gulp.src('./_sass/styles.scss')
           '_site/**/*.html'
         ],
         safelist: {
-          greedy: [/slick/]
+          greedy: [/slick/, /show-modal/]
         }
       }),
       removeComments({ removeAll: true }),
