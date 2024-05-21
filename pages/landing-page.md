@@ -37,6 +37,7 @@ cta:
   url: https://buy.stripe.com/9AQeVf9Umg5M9c4cN3
   url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: Join us on September 26, 27, and 28th!
+  link_text: Learn More
 speakers:
   header: Guest Speakers
   title: Meet <span>our</span> team
@@ -57,6 +58,7 @@ speakers:
         name: Leslie Venetz
         path: /images/speakers/leslie-hs-triangle.webp
         alt_text: Leslie Venetz
+  more: And more to be announced!
 footer:
   header: The &nbsp;Sales Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
