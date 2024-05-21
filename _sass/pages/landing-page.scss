@@ -472,7 +472,6 @@
 
       @include breakpoint(medium) {    
         flex-direction: column;
-        // gap: 12px;
       }
     }
 
@@ -488,6 +487,7 @@
 
     &--wrapper-secondary {
       width: 100%;
+      flex: 1;
       text-align: center;
     }
 
@@ -508,10 +508,10 @@
     }
 
     &--link {
+      padding: 0;
+      margin: 15px 0 0 2px;
       @include noodle;
       font-size: 20px;
-      margin-top: 15px;
-      padding: 0;
       text-decoration: underline;
       cursor: pointer;
 
@@ -590,7 +590,7 @@
     &--close {
       position: absolute;
       right: 3%;
-      color: #aaa;;
+      color: #aaa;
       font-size: 28px;
       font-weight: bold;
     
