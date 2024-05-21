@@ -123,7 +123,7 @@
     
         if (!modal || links.length === 0 || !closeButton) return;
     
-        const toggleModal = () => modal.classList.toggle('visible');
+        const toggleModal = () => modal.classList.toggle('show-modal');
     
         links.forEach((link) => {
             link.addEventListener('click', (event) => {
