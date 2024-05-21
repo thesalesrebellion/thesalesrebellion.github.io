@@ -145,7 +145,7 @@
     }
 
     &--description {
-      margin: 0 0 32px 0;
+      margin: 0 0 12px 0;
       @include noodle;
       letter-spacing: 1px;
       font-size: 28px;
@@ -153,7 +153,7 @@
       line-height: 120%;
 
       @include breakpoint(medium) {
-        margin: 0 auto 32px 0;        
+        margin: 0 auto 12px 0;        
         font-size: 26px;
         text-align: center;
       }
@@ -374,8 +374,12 @@
       margin: 0 0 25px;
       color: $neon_pink;
       @include lazer;
-      font-size: 36px;
+      font-size: 48px;
       line-height: 120%;
+
+      @include breakpoint(medium) {
+        font-size: 36px;
+      }
     }
 
     &--description {
@@ -468,23 +472,51 @@
 
       @include breakpoint(medium) {    
         flex-direction: column;
-        gap: 12px;
+        // gap: 12px;
       }
+    }
+
+    &--wrapper {
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint(medium) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &--wrapper-secondary {
+      width: 100%;
+      text-align: center;
     }
 
     &--copy,
     &--copy-secondary {
-      margin: 10px 0 0;
+      padding: 20px;
       @include noodle;
       letter-spacing: 1px;
-      font-size: 20px;
+      font-size: 26px;
       font-weight: 700;
-      line-height: 120%;
+      line-height: 130%;
 
       @include breakpoint(medium) {    
-        margin: 5px auto 0;    
-        font-size: 16px;
+        padding: 16px;
+        font-size: 20px;
         text-align: center;
+      }
+    }
+
+    &--link {
+      @include noodle;
+      font-size: 20px;
+      margin-top: 15px;
+      padding: 0;
+      text-decoration: underline;
+      cursor: pointer;
+
+      @include breakpoint(medium) {      
+        font-size: 16px;
       }
     }
 
@@ -494,7 +526,7 @@
     }
 
     &--description {
-      margin: 0;
+      margin: 0 0 32px;
       @include noodle;
       letter-spacing: 1px;
       font-size: 28px;
@@ -502,11 +534,79 @@
       line-height: 120%;
 
       @include breakpoint(medium) {    
-        margin: 0 auto;    
+        margin: 0 auto 32px;    
         font-size: 24px;
         text-align: center;
       }
     }
   }
   // ------ CTA END ------
+
+  // ------ MODAL START ------
+  &__modal {
+    padding: 60px 15px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85);
+    opacity: 0;
+    position: fixed;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s;
+    
+    &--visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &--content {
+      align-content: center;
+      padding: 20px;
+      max-width: 60%;
+      background-color: #222;
+      color: #fff;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      border: 1px solid $neon_pink;
+      border-radius: 10px;
+      text-align: center;
+      transform: translate(-50%, -50%);
+    
+      @include breakpoint(medium) {
+        max-width: 100%;
+        left: 0;
+        transform: translate(0%, -50%);
+      }
+    }
+
+    &--content-secondary {
+      border: 1px solid $light-green;
+    }
+
+    &--close {
+      position: absolute;
+      right: 3%;
+      color: #aaa;;
+      font-size: 28px;
+      font-weight: bold;
+    
+      &:hover,
+      &:focus {
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      @include breakpoint(medium) {
+        top: 5%;
+        right: 5%;
+      }
+    }
+  }
+  // ------ MODAL END ------
+
 }

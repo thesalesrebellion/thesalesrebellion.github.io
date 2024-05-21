@@ -41,25 +41,30 @@ layout: page
         <p class="landing-page__features--description">
             {{ page.features.description }}
         </p>
+        <p class="landing-page__cta--description">
+            {{ page.cta.description }}
+        </p>
 
         <div class="landing-page__cta--container">
-            <a
-                href="{{ page.cta.url }}"
-                class="landing-page__cta landing-page__cta--mobile-full"
-                href=""
-                >{{ page.cta.text }}</a
-            >
-            <p class="landing-page__cta--copy">{{ page.cta.copy_text }}</p>
-            <a
-                href="{{ page.cta.url_vip }}"
-                class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
-                href=""
-                >{{ page.cta.text_vip }}</a
-            >
-            <p class="landing-page__cta--copy">{{ page.cta.copy_text_vip }}</p>
-            <p class="landing-page__cta--description">
-                {{ page.cta.description }}
-            </p>
+            <div class="landing-page__cta--wrapper">
+                <a
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full"
+                    href=""
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link">{{ page.cta.link_text }}</a>
+            </div>
+
+            <div class="landing-page__cta--wrapper">
+                <a
+                    href="{{ page.cta.url_vip }}"
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
+                    href=""
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link">{{ page.cta.link_text }}</a>
+            </div>
         </div>
     </section>
 
@@ -92,35 +97,43 @@ layout: page
             </ul>
 
             <div class="landing-page__cta--container">
-                <a
-                    href="{{ page.cta.url }}"
-                    class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                    >{{ page.cta.text }}</a
-                >
-                <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text }}</p>
-                <a
-                    href="{{ page.cta.url_vip }}"
-                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                    >{{ page.cta.text_vip }}</a
-                >
-                <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text_vip }}</p>
+                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                    <a
+                        href="{{ page.cta.url }}"
+                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
+                        >{{ page.cta.text }}</a
+                    >
+                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>                
+                </div>
+                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                    <a
+                        href="{{ page.cta.url_vip }}"
+                        class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
+                        >{{ page.cta.text_vip }}</a
+                    >
+                    <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="landing-page__cta--container">
-        <a
-            href="{{ page.cta.url }}"
-            class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-            >{{ page.cta.text }}</a
-        >
-        <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text }}</p>
-        <a
-            href="{{ page.cta.url_vip }}"
-            class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-            >{{ page.cta.text_vip }}</a
-        >
-        <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text_vip }}</p>
+        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+            <a
+                href="{{ page.cta.url }}"
+                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
+                >{{ page.cta.text }}</a
+            >
+            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>    
+        </div>
+        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+            <a
+                href="{{ page.cta.url_vip }}"
+                class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
+                >{{ page.cta.text_vip }}</a
+            >
+            <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+        </div>
     </div>
 
     {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
@@ -142,18 +155,19 @@ layout: page
                     class="landing-page__team-img"
                 />
                 <p class="landing-page__speakers--name">{{ item.img.name }}</p>
-            </div>
+                {%- if forloop.last -%}
+                <p class="landing-page__speakers--more">
+                    {{ page.speakers.more }}
+                </p>
+                {%- endif -%}
+            </div>            
             {%- endfor -%}
         </div>
     </section>
 
     {%- comment -%} --- FOOTER --- {%- endcomment -%}
     <section class="landing-page__footer">
-        <div class="desktop-only">
-            {%- include svg/the-sales-rebellion-way.svg -%}
-        </div>
-
-        <h2 class="landing-page__footer--header mobile-only">
+        <h2 class="landing-page__footer--header">
             {{ page.footer.header }}
         </h2>
         <p class="landing-page__footer--description">
@@ -161,35 +175,58 @@ layout: page
         </p>
 
         <div class="landing-page__cta--container">
-            <a
-                href="{{ page.cta.url }}"
-                class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                >{{ page.cta.text }}</a
-            >
-            <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text }}</p>
-            <a
-                href="{{ page.cta.url_vip }}"
-                class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
-                >{{ page.cta.text_vip }}</a
-            >
-            <p class="landing-page__cta--copy-secondary desktop-only">{{ page.cta.copy_text_vip }}</p>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.url_vip }}"
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+            </div>
         </div>
     </section>
 
     <div class="landing-page__footer--cta-container">
         <div class="landing-page__cta--container">
-            <a
-                href="{{ page.cta.url }}"
-                class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                >{{ page.cta.text }}</a
-            >
-            <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text }}</p>
-            <a
-                href="{{ page.cta.url_vip }}"
-                class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
-                >{{ page.cta.text_vip }}</a
-            >
-            <p class="landing-page__cta--copy-secondary mobile-only">{{ page.cta.copy_text_vip }}</p>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.url_vip }}"
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+            </div>
+        </div>
+    </div>
+
+    {%- comment -%} --- MODAL --- {%- endcomment -%}
+    <div id="learnMoreModal" class="landing-page__modal">
+        <div class="landing-page__modal--content">
+            <span class="landing-page__modal--close">&times;</span>
+            <p class="landing-page__cta--copy">{{ page.cta.copy_text }}</p>
+        </div>
+    </div>
+
+    <div id="learnMoreVipModal" class="landing-page__modal">
+        <div class="landing-page__modal--content landing-page__modal--content-secondary">
+            <span class="landing-page__modal--close">&times;</span>
+            <p class="landing-page__cta--copy">{{ page.cta.copy_text_vip }}</p>
         </div>
     </div>
 </div>

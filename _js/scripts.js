@@ -115,4 +115,33 @@
     
     handle_landing_page_hero_animation()
 
+    // Modal logic
+    const handleModal = (modalId, linkClass) => {
+        const modal = document.getElementById(modalId);
+        const links = document.querySelectorAll(linkClass);
+        const closeButton = modal.querySelector(".landing-page__modal--close");
+    
+        if (!modal || links.length === 0 || !closeButton) return;
+    
+        const toggleModal = () => modal.classList.toggle('landing-page__modal--visible');
+    
+        links.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                toggleModal();
+            });
+        });
+    
+        closeButton.addEventListener('click', toggleModal);
+    
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) toggleModal();
+        });
+    };
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        handleModal('learnMoreModal', '.learnMoreLink');
+        handleModal('learnMoreVipModal', '.learnMoreLinkVip');
+    });    
+
 })();
