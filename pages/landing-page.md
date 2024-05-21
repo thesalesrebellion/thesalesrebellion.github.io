@@ -60,6 +60,6 @@ speakers:
         alt_text: Leslie Venetz
   more: And more to be announced!
 footer:
-  header: The &nbsp;Sales Rebellion &nbsp;Way
+  header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
 ---
