@@ -3,6 +3,7 @@ layout: pages/landing-page
 permalink: /totality/
 page_id: landing-page
 landing_page: true
+location: Knoxville, TN
 dates:
   date_range: '26 - 28' 
   month_year: 'September 2024'
@@ -36,7 +37,9 @@ cta:
   copy_text_vip: Everything in General admission + VIP access to private sessions and encounters at Totality event, extra special swag, additional & exclusive hangout (Saturday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers, other cool stuff we will surprise you with!
   url: https://buy.stripe.com/9AQeVf9Umg5M9c4cN3
   url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
-  description: Join us on September 26, 27, and 28th!
+  description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"
+  hotel: "🔥🤯 Reminder: <span style='color:#ff3adf'>Your hotel is on us!</span> 🤯🔥"
+  ticket_prices: "Ticket price increase on <span style='color:#ff3adf'>July 1st</span>. Don't overthink it, buy now!"
   link_text: Learn More
 speakers:
   header: Guest Speakers

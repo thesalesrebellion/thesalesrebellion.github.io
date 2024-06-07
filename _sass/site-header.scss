@@ -40,6 +40,17 @@
 				font-size: 26px;
 			}
 		}
+
+		&--location {
+			color: $light-green;
+			@include noodle;
+			font-size: 40px;
+			line-height: 130%;
+
+			@include breakpoint(medium) {
+				font-size: 26px;
+			}
+    }
 	}
 
 	&__logo {
