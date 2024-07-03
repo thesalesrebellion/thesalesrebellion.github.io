@@ -100,11 +100,10 @@
     // hero icon when the user begins to scroll.
     const handle_landing_page_hero_animation = function() {
         let animationCount = 0;
-        const element = document.querySelector('.landing-page__hero--icon');
     
         document.documentElement.style.setProperty('--animation-iterations', 'infinite');
     
-        element.addEventListener('animationiteration', () => {
+        document.querySelector('.landing-page__hero--icon')?.addEventListener('animationiteration', () => {
             animationCount++;
         });
     
@@ -119,9 +118,12 @@
     const handleModal = (modalId, linkClass) => {
         const modal = document.getElementById(modalId);
         const links = document.querySelectorAll(linkClass);
+
+        if (!modal || links.length === 0) return;
+
         const closeButton = modal.querySelector(".landing-page__modal--close");
     
-        if (!modal || links.length === 0 || !closeButton) return;
+        if (!closeButton) return;
     
         const toggleModal = () => modal.classList.toggle('show-modal');
     
