@@ -39,7 +39,7 @@ cta:
   url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"
   hotel: "🔥🤯 Reminder: <span style='color:#ff3adf'>Your hotel is on us!</span> 🤯🔥"
-  ticket_prices: "Ticket price increase on <span style='color:#ff3adf'>July 1st</span>. Don't overthink it, buy now!"
+  ticket_prices: "Ticket price increase on <span style='color:#ff3adf'>July 10th</span>. Don't overthink it, buy now!"
   link_text: Learn More
 speakers:
   header: Guest Speakers
