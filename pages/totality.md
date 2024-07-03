@@ -1,5 +1,5 @@
 ---
-layout: pages/landing-page
+layout: pages/totality
 permalink: /totality/
 page_id: landing-page
 landing_page: true
