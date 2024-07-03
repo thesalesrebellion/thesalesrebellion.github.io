@@ -46,6 +46,14 @@ speakers:
   title: Meet <span>our</span> team
   members:
     - img:
+        name: Dale<br>Dupree
+        path: /images/speakers/dale-hs-triangle.webp
+        alt_text: Dale Dupree
+    - img:
+        name: Enrika Greathouse
+        path: /images/speakers/enrika-hs-triangle.webp
+        alt_text: Enrika Greathouse
+    - img:
         name: Stu Heinecke
         path: /images/speakers/stu-hs-triangle.webp
         alt_text: Stu Heinecke
