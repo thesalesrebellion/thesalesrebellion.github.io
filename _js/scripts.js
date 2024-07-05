@@ -140,10 +140,20 @@
             if (event.target === modal) toggleModal();
         });
     };
+
+    const displayTotality = (totalityModal) => {
+        totalityModal.classList.toggle('show-modal');
+        totalityModal
+          .querySelector(".landing-page__modal--close")
+          .addEventListener('click', () => totalityModal.classList.toggle('show-modal'));
+    }
     
     document.addEventListener('DOMContentLoaded', () => {
         handleModal('learnMoreModal', '.learnMoreLink');
         handleModal('learnMoreVipModal', '.learnMoreLinkVip');
+        const totalityModal = document.getElementById('learnMoreTotality');
+
+        if (totalityModal) displayTotality(totalityModal);
     });    
 
 })();
