@@ -70,6 +70,16 @@ speakers:
         path: /images/speakers/leslie-hs-triangle.webp
         alt_text: Leslie Venetz
   more: And more to be announced!
+sponsors:
+  header: Sponsors
+  title: Meet <span>our</span> team
+  details:
+    - img:
+        path: /images/sponsors/salesreach.webp
+        alt_text: SalesReach.io
+    - img:
+        path: /images/sponsors/pitchfire.webp
+        alt_text: Pitchfire
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.

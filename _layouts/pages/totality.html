@@ -175,6 +175,29 @@ layout: page
         </div>
     </section>
 
+    {%- comment -%} --- SPONSORS --- {%- endcomment -%}
+    <section class="landing-page__speakers">
+        <div class="landing-page__speakers--icon">
+            {%- include svg/chevron-group.svg -%}
+        </div>
+
+        <h2 class="landing-page__speakers--header">
+            <span>{%- include svg/totality-logo.svg -%}</span>{{ page.sponsors.header }}
+        </h2>
+
+        <div class="landing-page__speakers--image-wrapper">
+            {%- for item in page.sponsors.details -%}
+            <div class="landing-page__speakers--image-container">
+                <img
+                    src="{{- item.img.path | relative_url -}}"
+                    alt="{{- item.img.alt_text -}}"
+                    class="landing-page__team-img"
+                />
+            </div>
+            {%- endfor -%}
+        </div>
+    </section>
+
     {%- comment -%} --- FOOTER --- {%- endcomment -%}
     <section class="landing-page__footer">
         <h2 class="landing-page__footer--header">
