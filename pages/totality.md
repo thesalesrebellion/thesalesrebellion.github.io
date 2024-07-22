@@ -69,6 +69,22 @@ speakers:
         name: Leslie Venetz
         path: /images/speakers/leslie-hs-triangle.webp
         alt_text: Leslie Venetz
+    - img:
+        name: Stephen Courson
+        path: /images/speakers/stephen-courson.webp
+        alt_text: Stephen Courson
+    - img:
+        name: James Buckley
+        path: /images/speakers/james-buckley.webp
+        alt_text: James Buckley
+    - img:
+        name: Christine White
+        path: /images/speakers/christine-white.webp
+        alt_text: Christine White
+    - img:
+        name: Mike Simmons
+        path: /images/speakers/mike-simmons.webp
+        alt_text: Mike Simmons
   more: And more to be announced!
 sponsors:
   header: Sponsors
