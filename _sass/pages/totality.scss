@@ -318,8 +318,13 @@
     
     &--image-wrapper {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 56px;
+
+      img {
+        max-width: 300px;
+      }
 
       @include breakpoint(larger) {
         flex-wrap: wrap;
