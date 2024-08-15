@@ -35,7 +35,7 @@ cta:
   text_vip: Get your VIP Totality pass here
   copy_text: This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
   copy_text_vip: Everything in General admission + VIP access to private sessions and encounters at Totality event, extra special swag, additional & exclusive hangout (Saturday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers, other cool stuff we will surprise you with!
-  url: https://buy.stripe.com/9AQ9AVfeG1aSag89AS
+  url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
   url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"
   hotel: "🔥🤯 Reminder: <span style='color:#ff3adf'>Your hotel is on us!</span> 🤯🔥"
