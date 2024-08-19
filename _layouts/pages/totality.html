@@ -248,14 +248,14 @@ layout: page
     <div id="learnMoreModal" class="landing-page__modal">
         <div class="landing-page__modal--content">
             <span class="landing-page__modal--close">&times;</span>
-            <p class="landing-page__cta--copy">{{ page.cta.copy_text }}</p>
+            {{ page.cta.copy_text | markdownify}}
         </div>
     </div>
 
     <div id="learnMoreVipModal" class="landing-page__modal">
         <div class="landing-page__modal--content landing-page__modal--content-secondary">
             <span class="landing-page__modal--close">&times;</span>
-            <p class="landing-page__cta--copy">{{ page.cta.copy_text_vip }}</p>
+            {{ page.cta.copy_text_vip | markdownify }}
         </div>
     </div>
 </div>

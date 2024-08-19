@@ -33,8 +33,20 @@ meetup:
 cta:
   text: Get your Totality pass here
   text_vip: Get your VIP Totality pass here
-  copy_text: This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
-  copy_text_vip: Everything in General admission + VIP access to private sessions and encounters at Totality event, extra special swag, additional & exclusive hangout (Saturday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers, other cool stuff we will surprise you with!
+  copy_text: |
+    This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
+    * Arrival on Thursday the 26th: 5:00pm EST
+    * First event at 6:00pm EST
+    * Departure on Saturday the 28th: 2:00pm EST or later
+    * Final keynote ends at 12:00pm EST
+  copy_text_vip: |
+    Everything in General admission ➕
+    * VIP access to private sessions and encounters at Totality event
+    * Extra special swag
+    * Additional & exclusive hangout (Saturday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers
+    * Other cool stuff we will surprise you with!
+    * Last event ends at 6pm
+    * Departure on Saturday night at 8pm or later (or departure Sunday morning)
   url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
   url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"

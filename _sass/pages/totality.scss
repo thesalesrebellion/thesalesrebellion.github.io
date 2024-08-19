@@ -631,3 +631,40 @@
     }
   }
 }
+
+.landing-page__modal--content {
+  p {
+    padding: 20px;
+    @include noodle;
+    letter-spacing: 1px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 130%;
+
+    @include breakpoint(medium) {
+      padding: 16px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  ul {
+    @include noodle;
+    list-style: none;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+        font-size: 30px;
+        letter-spacing: 1.3px;
+
+        @include breakpoint(medium) {
+            font-size: 28px;
+        }
+        @include breakpoint(small) {
+            font-size: 24px;
+        }
+    }
+  }
+}
