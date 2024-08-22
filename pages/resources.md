@@ -1,4 +1,5 @@
 ---
+title: Resources
 layout: pages/resources
 permalink: /resources/
 page_id: resources

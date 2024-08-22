@@ -1,4 +1,5 @@
 ---
+title: About
 layout: pages/about
 permalink: /about/
 page_id: about

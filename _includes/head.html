@@ -7,11 +7,7 @@
 	<meta name="robots" content="noindex, nofollow">
 	{%- endif -%}
 
-	{% if page.layout == 'home' %}
-	<title>{{- site.title -}}</title>
-	{%- else %}
-		<title>{{ site.data.global.title | default: "The Sales Rebellion" }}</title>
-	{% endif %}
+	<title>{% if page.title %}{{- page.title }} | {% endif %}{{ site.title -}}</title>
 
 	<meta name="description" content="Sales training and development done different" />
 	<meta property="og:title" content="The Sales Rebellion" />

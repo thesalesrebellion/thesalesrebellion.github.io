@@ -1,4 +1,5 @@
 ---
+title: Teams
 layout: pages/teams
 permalink: /teams/
 page_id: teams

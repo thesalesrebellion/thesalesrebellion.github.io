@@ -1,4 +1,5 @@
 ---
+title: Group
 layout: pages/group
 permalink: /group/
 page_id: group
