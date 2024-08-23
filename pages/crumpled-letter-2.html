@@ -2,6 +2,9 @@
 title: The Crumpled Letter
 layout: default
 permalink: /crumpled-letter-preview/
+buy:
+  crumpled_letter: "https://buy.stripe.com/6oE4gB7Me06O9c4aEF"
+  legendary_letter_set: "https://buy.stripe.com/00gdRb3vY4n45ZScN7"
 rebels:
   - image: "/assets/images/angela-roman.webp"
     name: Angela Roman
@@ -41,7 +44,7 @@ rebels:
     word-spacing: 300px;
   }
 
-  button {
+  .button {
     border: 2px solid #ff3adf;
     border-radius: 5px;
     font-size: 20px;
@@ -136,7 +139,7 @@ rebels:
   }
 
   @media (min-width: 768px) {
-    button {
+    .button {
       width: auto;
     }
 
@@ -166,8 +169,8 @@ rebels:
         <img class="delta-image" src="/assets/images/crumpled-letter.webp">
         <h1 class="hero__heading">The Crumpled Letter</h1>
         <p class="font-green">A Rebellutionary Way To Cut Through The Noise And Book More Meetings. The Crumpled Letter is designed for sales people looking for outreach that doesn’t suck and actually works.</p>
-        <button type="button" class="pink">Get The Crumpled Letter for $14.99</button>
-        <button type="button" class="ghost">Get The Legendary Set for $129</button>
+        <a class="pink button" href="{{ page.buy.crumpled_letter }}">Get The Crumpled Letter for $14.99</a>
+        <a class="ghost button" href="{{ page.buy.legendary_letter_set }}">Get The Legendary Set for $129</a>
       </div>
     </div>
   </div>
@@ -243,7 +246,7 @@ rebels:
         <img class="delta-image" src="/assets/images/crumpled-letter-2.webp">
         <h2 class="hero__heading">Get your copy now!</h2>
         <p>Simply click the button below to get your copy of The Crumpled Letter for just one small payment of $14.99... And you can start sending high-converting outreach your prospects will actually enjoy receiving.</p>
-        <button type="button" class="green">Get the Crumpled Letter for $14.99</button>
+        <a class="green button" href="{{ page.buy.crumpled_letter }}">Get the Crumpled Letter for $14.99</a>
       </div>
     </div>
   </div>
@@ -279,7 +282,7 @@ rebels:
         <h2 class="hero__heading text-center" style="color:#eb38cf">Get The Legendary Letter Set</h2>
         <p class="text-center">The Letter Campaign is a versatile sales outreach campaign designed to create curiosity while utilizing interrupt marketing. Applicable to almost any industry, the letter campaign is the effective sales outreach you have been looking for... The Question is... Are you Rebellious enough to #ChangeTheGame?</p>
         <p class="text-center">From a single letter and follow-up phone call to a 10 touch cadence that every prospect is sure to remember, the Letter Campaign is a must have for every Sales Rebel.</p>
-        <button type="button" class="green" style="width:100%">Get The Legendary Letter Set for $129</button>
+        <a class="green button" href="{{ page.buy.legendary_letter_set }}" style="display:block;text-align:center;width:100%">Get The Legendary Letter Set for $129</a>
       </div>
     </div>
   </div>
