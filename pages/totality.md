@@ -110,6 +110,12 @@ sponsors:
     - img:
         path: /images/sponsors/pitchfire.webp
         alt_text: Pitchfire
+    - img:
+        path: /images/sponsors/luster.webp
+        alt_text: Luster
+    - img:
+        path: /images/sponsors/copyai.webp
+        alt_text: Copy.ai
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
