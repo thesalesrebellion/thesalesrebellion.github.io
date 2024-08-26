@@ -96,6 +96,10 @@ speakers:
         name: Mike Simmons
         path: /images/speakers/mike-simmons.webp
         alt_text: Mike Simmons
+    - img:
+        name: Christina Brady
+        path: /images/speakers/christina-brady.webp
+        alt_text: Christina Brady
   more: And more to be announced!
 sponsors:
   header: Sponsors
