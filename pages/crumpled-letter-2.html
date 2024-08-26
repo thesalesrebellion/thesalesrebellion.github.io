@@ -156,6 +156,22 @@ rebels:
     }
   }
 
+  @media (max-width: 768px) {
+    .rebels {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      .col {
+        width: 80%;
+      }
+
+      .card {
+        flex: 0 0 auto;
+      }
+    }
+  }
+
   @media (min-width: 992px) {
     .checkmark {
       columns: 2;
@@ -197,9 +213,9 @@ rebels:
       <h2 class="hero__heading text-center" style="font-size:60px;margin-bottom:40px">What other rebels are saying</h2>
     </div>
   </div>
-  <div class="row">
+  <div class="row rebels">
     {% for rebel in page.rebels %}
-    <div class="col-12 col-md-4" style="margin-bottom: 25px">
+    <div class="col-10 col-md-4" style="margin-bottom: 25px">
       <div class="card" style="background: linear-gradient(#000 60%, #EB38CF);border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <img src="{{ rebel.image }}" alt="{{ rebel.name }}'s Testimonial" style="margin: 16px 0 0 16px;width: 100px">
         <div class="card-body">
