@@ -100,7 +100,6 @@ speakers:
         name: Christina Brady
         path: /images/speakers/christina-brady.webp
         alt_text: Christina Brady
-  more: And more to be announced!
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
