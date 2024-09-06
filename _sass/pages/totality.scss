@@ -446,16 +446,17 @@
     }
 
     &--secondary {
-      color: $black;
-      background-color: $light_green;
+      color: #666;
+      background-color: #ddd;
+      pointer-events: none;
 
       &:hover {
-        box-shadow: 0 0 10px $light_green, 0 0 20px $light_green;
+        box-shadow: 0 0 10px $light_green, 0 0 20px #ddd;
       }
 
       &:active {
         transform: scale(0.95);
-        box-shadow: 0 0 5px $light_green, 0 0 10px $light_green;
+        box-shadow: 0 0 5px $light_green, 0 0 10px #ddd;
       }
     }
 

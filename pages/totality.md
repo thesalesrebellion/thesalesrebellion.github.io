@@ -32,7 +32,7 @@ meetup:
     - feature: Engage with like-minded people
 cta:
   text: Get your Totality pass here
-  text_vip: Get your VIP Totality pass here
+  text_vip: VIP Totality pass SOLD OUT
   copy_text: |
     This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
     * Arrival on Thursday the 26th: 5:00pm EST
@@ -48,7 +48,6 @@ cta:
     * Last event ends at 6pm
     * Departure on Saturday night at 8pm or later (or departure Sunday morning)
   url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
-  url_vip: https://buy.stripe.com/6oE5kF2rU5r8ag8bIY
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"
   hotel: "🔥🤯 Reminder: <span style='color:#ff3adf'>Your hotel is on us!</span> 🤯🔥"
   link_text: Learn More
