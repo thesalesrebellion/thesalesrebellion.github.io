@@ -481,6 +481,29 @@
       }
     }
 
+    &--container-meetup {
+      flex-wrap: nowrap;
+
+      .landing-page__cta--wrapper-secondary {
+        @media (max-width: 1136px) {
+          flex: auto;
+        }
+      }
+
+      .landing-page__cta {
+        @media (max-width: 1400px) {
+          font-size: 1.5vw;
+        }
+        @media (max-width: 1136px) {
+          font-size: 28px;
+        }
+      }
+
+      @media (max-width: 1136px) {
+        flex-wrap: wrap;
+      }
+    }
+
     &--wrapper {
       display: flex;
       flex-direction: column;

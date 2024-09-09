@@ -150,6 +150,7 @@
     
     document.addEventListener('DOMContentLoaded', () => {
         handleModal('learnMoreModal', '.learnMoreLink');
+        handleModal('learnMoreNohotelModal', '.learnMoreNohotelModal');
         handleModal('learnMoreVipModal', '.learnMoreLinkVip');
         const totalityModal = document.getElementById('learnMoreTotality');
 
