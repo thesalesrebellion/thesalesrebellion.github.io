@@ -107,6 +107,18 @@ speakers:
         name: Christina Brady
         path: /images/speakers/christina-brady.webp
         alt_text: Christina Brady
+    - img:
+        name: Krysten Conner
+        path: /images/speakers/krysten-conner.webp
+        alt_text: Krysten Conner
+    - img:
+        name: Ronnell Richards
+        path: /images/speakers/ronnell-richards.webp
+        alt_text: Ronnell Richards
+    - img:
+        name: Aaron Price
+        path: /images/speakers/aaron-price.webp
+        alt_text: Aaron Price
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
