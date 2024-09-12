@@ -138,6 +138,9 @@ sponsors:
     - img:
         path: /images/sponsors/scribeless.webp
         alt_text: Scribeless
+    - img:
+        path: /images/sponsors/grove-cookie-co.webp
+        alt_text: Grove Cookie Company
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
