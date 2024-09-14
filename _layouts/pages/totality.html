@@ -200,11 +200,13 @@ layout: page
         <div class="landing-page__speakers--image-wrapper">
             {%- for item in page.sponsors.details -%}
             <div class="landing-page__speakers--image-container">
-                <img
-                    src="{{- item.img.path | relative_url -}}"
-                    alt="{{- item.img.alt_text -}}"
-                    class="landing-page__team-img"
-                />
+                <a target="_blank" href="{{ item.img.url }}">
+                    <img
+                        src="{{- item.img.path | relative_url -}}"
+                        alt="{{- item.img.alt_text -}}"
+                        class="landing-page__team-img"
+                    />
+                </a>
             </div>
             {%- endfor -%}
         </div>

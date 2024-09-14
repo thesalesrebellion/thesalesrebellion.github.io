@@ -126,21 +126,27 @@ sponsors:
     - img:
         path: /images/sponsors/salesreach.webp
         alt_text: SalesReach.io
+        url: https://www.salesreach.io/
     - img:
         path: /images/sponsors/pitchfire.webp
         alt_text: Pitchfire
+        url: https://www.pitchfire.com/
     - img:
         path: /images/sponsors/luster.webp
         alt_text: Luster
+        url: https://www.luster.ai/
     - img:
         path: /images/sponsors/copyai.webp
         alt_text: Copy.ai
+        url: https://www.copy.ai/
     - img:
         path: /images/sponsors/scribeless.webp
         alt_text: Scribeless
+        url: https://www.scribeless.co/
     - img:
         path: /images/sponsors/grove-cookie-co.webp
         alt_text: Grove Cookie Company
+        url: https://www.grovecookiecompany.com/
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
