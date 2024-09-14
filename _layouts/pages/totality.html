@@ -174,14 +174,14 @@ layout: page
         </h2>
 
         <div class="landing-page__speakers--image-wrapper">
-            {%- for item in page.speakers.members -%}
+            {%- for speaker in page.speakers.members -%}
             <div class="landing-page__speakers--image-container">
                 <img
-                    src="{{- item.img.path | relative_url -}}"
-                    alt="{{- item.img.alt_text -}}"
+                    src="{{- speaker.image | relative_url -}}"
+                    alt="{{- speaker.alt_text -}}"
                     class="landing-page__team-img"
                 />
-                <p class="landing-page__speakers--name">{{ item.img.name }}</p>
+                <p class="landing-page__speakers--name">{{ speaker.name }}</p>
             </div>            
             {%- endfor -%}
         </div>
@@ -198,12 +198,12 @@ layout: page
         </h2>
 
         <div class="landing-page__speakers--image-wrapper">
-            {%- for item in page.sponsors.details -%}
+            {%- for sponsor in page.sponsors.details -%}
             <div class="landing-page__speakers--image-container">
-                <a target="_blank" href="{{ item.img.url }}">
+                <a target="_blank" href="{{ sponsor.url }}">
                     <img
-                        src="{{- item.img.path | relative_url -}}"
-                        alt="{{- item.img.alt_text -}}"
+                        src="{{- sponsor.image | relative_url -}}"
+                        alt="{{- sponsor.alt_text -}}"
                         class="landing-page__team-img"
                     />
                 </a>

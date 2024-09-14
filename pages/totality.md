@@ -63,90 +63,90 @@ speakers:
   header: Guest Speakers
   title: Meet <span>our</span> team
   members:
-    - img:
-        name: Dale<br>Dupree
-        path: /images/speakers/dale-hs-triangle.webp
-        alt_text: Dale Dupree
-    - img:
-        name: Enrika Greathouse
-        path: /images/speakers/enrika-hs-triangle.webp
-        alt_text: Enrika Greathouse
-    - img:
-        name: Stu Heinecke
-        path: /images/speakers/stu-hs-triangle.webp
-        alt_text: Stu Heinecke
-    - img:
-        name: Kevin “KD” Dorsey
-        path: /images/speakers/kd-hs-triangle.webp
-        alt_text: Kevin “KD” Dorsey
-    - img:
-        name: DeJuan Brown
-        path: /images/speakers/dejuan-hs-triangle.webp
-        alt_text: DeJuan Brown
-    - img:
-        name: Leslie Venetz
-        path: /images/speakers/leslie-hs-triangle.webp
-        alt_text: Leslie Venetz
-    - img:
-        name: Stephen Courson
-        path: /images/speakers/stephen-courson.webp
-        alt_text: Stephen Courson
-    - img:
-        name: James Buckley
-        path: /images/speakers/james-buckley.webp
-        alt_text: James Buckley
-    - img:
-        name: Christine White
-        path: /images/speakers/christine-white.webp
-        alt_text: Christine White
-    - img:
-        name: Mike Simmons
-        path: /images/speakers/mike-simmons.webp
-        alt_text: Mike Simmons
-    - img:
-        name: Christina Brady
-        path: /images/speakers/christina-brady.webp
-        alt_text: Christina Brady
-    - img:
-        name: Krysten Conner
-        path: /images/speakers/krysten-conner.webp
-        alt_text: Krysten Conner
-    - img:
-        name: Ronnell Richards
-        path: /images/speakers/ronnell-richards.webp
-        alt_text: Ronnell Richards
-    - img:
-        name: Aaron Price
-        path: /images/speakers/aaron-price.webp
-        alt_text: Aaron Price
+    -
+      name: Dale<br>Dupree
+      image: /images/speakers/dale-hs-triangle.webp
+      alt_text: Dale Dupree
+    -
+      name: Enrika Greathouse
+      image: /images/speakers/enrika-hs-triangle.webp
+      alt_text: Enrika Greathouse
+    -
+      name: Stu Heinecke
+      image: /images/speakers/stu-hs-triangle.webp
+      alt_text: Stu Heinecke
+    -
+      name: Kevin “KD” Dorsey
+      image: /images/speakers/kd-hs-triangle.webp
+      alt_text: Kevin “KD” Dorsey
+    -
+      name: DeJuan Brown
+      image: /images/speakers/dejuan-hs-triangle.webp
+      alt_text: DeJuan Brown
+    -
+      name: Leslie Venetz
+      image: /images/speakers/leslie-hs-triangle.webp
+      alt_text: Leslie Venetz
+    -
+      name: Stephen Courson
+      image: /images/speakers/stephen-courson.webp
+      alt_text: Stephen Courson
+    -
+      name: James Buckley
+      image: /images/speakers/james-buckley.webp
+      alt_text: James Buckley
+    -
+      name: Christine White
+      image: /images/speakers/christine-white.webp
+      alt_text: Christine White
+    -
+      name: Mike Simmons
+      image: /images/speakers/mike-simmons.webp
+      alt_text: Mike Simmons
+    -
+      name: Christina Brady
+      image: /images/speakers/christina-brady.webp
+      alt_text: Christina Brady
+    -
+      name: Krysten Conner
+      image: /images/speakers/krysten-conner.webp
+      alt_text: Krysten Conner
+    -
+      name: Ronnell Richards
+      image: /images/speakers/ronnell-richards.webp
+      alt_text: Ronnell Richards
+    -
+      name: Aaron Price
+      image: /images/speakers/aaron-price.webp
+      alt_text: Aaron Price
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
   details:
-    - img:
-        path: /images/sponsors/salesreach.webp
-        alt_text: SalesReach.io
-        url: https://www.salesreach.io/
-    - img:
-        path: /images/sponsors/pitchfire.webp
-        alt_text: Pitchfire
-        url: https://www.pitchfire.com/
-    - img:
-        path: /images/sponsors/luster.webp
-        alt_text: Luster
-        url: https://www.luster.ai/
-    - img:
-        path: /images/sponsors/copyai.webp
-        alt_text: Copy.ai
-        url: https://www.copy.ai/
-    - img:
-        path: /images/sponsors/scribeless.webp
-        alt_text: Scribeless
-        url: https://www.scribeless.co/
-    - img:
-        path: /images/sponsors/grove-cookie-co.webp
-        alt_text: Grove Cookie Company
-        url: https://www.grovecookiecompany.com/
+    -
+      image: /images/sponsors/salesreach.webp
+      alt_text: SalesReach.io
+      url: https://www.salesreach.io/
+    -
+      image: /images/sponsors/pitchfire.webp
+      alt_text: Pitchfire
+      url: https://www.pitchfire.com/
+    -
+      image: /images/sponsors/luster.webp
+      alt_text: Luster
+      url: https://www.luster.ai/
+    -
+      image: /images/sponsors/copyai.webp
+      alt_text: Copy.ai
+      url: https://www.copy.ai/
+    -
+      image: /images/sponsors/scribeless.webp
+      alt_text: Scribeless
+      url: https://www.scribeless.co/
+    -
+      image: /images/sponsors/grove-cookie-co.webp
+      alt_text: Grove Cookie Company
+      url: https://www.grovecookiecompany.com/
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
