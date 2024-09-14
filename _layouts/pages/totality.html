@@ -176,12 +176,14 @@ layout: page
         <div class="landing-page__speakers--image-wrapper">
             {%- for speaker in page.speakers.members -%}
             <div class="landing-page__speakers--image-container">
-                <img
-                    src="{{- speaker.image | relative_url -}}"
-                    alt="{{- speaker.alt_text -}}"
-                    class="landing-page__team-img"
-                />
-                <p class="landing-page__speakers--name">{{ speaker.name }}</p>
+                <a target="_blank" href="{{ speaker.url }}">
+                    <img
+                        src="{{- speaker.image | relative_url -}}"
+                        alt="{{- speaker.alt_text -}}"
+                        class="landing-page__team-img"
+                    />
+                    <p class="landing-page__speakers--name">{{ speaker.name }}</p>
+                </a>
             </div>            
             {%- endfor -%}
         </div>

@@ -67,58 +67,72 @@ speakers:
       name: Dale<br>Dupree
       image: /images/speakers/dale-hs-triangle.webp
       alt_text: Dale Dupree
+      url: https://www.linkedin.com/in/copierwarrior/
     -
       name: Enrika Greathouse
       image: /images/speakers/enrika-hs-triangle.webp
       alt_text: Enrika Greathouse
+      url: https://www.linkedin.com/in/enrikacreates/
     -
       name: Stu Heinecke
       image: /images/speakers/stu-hs-triangle.webp
       alt_text: Stu Heinecke
+      url: https://www.linkedin.com/in/stuheinecke/
     -
       name: Kevin “KD” Dorsey
       image: /images/speakers/kd-hs-triangle.webp
       alt_text: Kevin “KD” Dorsey
+      url: https://www.linkedin.com/in/kddorsey3/
     -
       name: DeJuan Brown
       image: /images/speakers/dejuan-hs-triangle.webp
       alt_text: DeJuan Brown
+      url: https://www.linkedin.com/in/dejuanbrown/
     -
       name: Leslie Venetz
       image: /images/speakers/leslie-hs-triangle.webp
       alt_text: Leslie Venetz
+      url: https://www.linkedin.com/in/leslievenetz/
     -
       name: Stephen Courson
       image: /images/speakers/stephen-courson.webp
       alt_text: Stephen Courson
+      url: https://www.linkedin.com/in/stephencourson/
     -
       name: James Buckley
       image: /images/speakers/james-buckley.webp
       alt_text: James Buckley
+      url: https://www.linkedin.com/in/jamessaywhatsalesbuckley/
     -
       name: Christine White
       image: /images/speakers/christine-white.webp
       alt_text: Christine White
+      url: https://www.linkedin.com/in/christinewhite06/
     -
       name: Mike Simmons
       image: /images/speakers/mike-simmons.webp
       alt_text: Mike Simmons
+      url: https://www.linkedin.com/in/mikesimmons/
     -
       name: Christina Brady
       image: /images/speakers/christina-brady.webp
       alt_text: Christina Brady
+      url: https://www.linkedin.com/in/christinapbrady/
     -
       name: Krysten Conner
       image: /images/speakers/krysten-conner.webp
       alt_text: Krysten Conner
+      url: https://www.linkedin.com/in/krystenconner/
     -
       name: Ronnell Richards
       image: /images/speakers/ronnell-richards.webp
       alt_text: Ronnell Richards
+      url: https://www.linkedin.com/in/ronnellrichards/
     -
       name: Aaron Price
       image: /images/speakers/aaron-price.webp
       alt_text: Aaron Price
+      url: https://www.linkedin.com/in/aaron-price-6b644b9b/
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
