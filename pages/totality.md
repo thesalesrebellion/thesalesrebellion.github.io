@@ -133,6 +133,11 @@ speakers:
       image: /images/speakers/aaron-price.webp
       alt_text: Aaron Price
       url: https://www.linkedin.com/in/aaron-price-6b644b9b/
+    -
+      name: Austin Yardley
+      image: /images/speakers/austin-yardley.webp
+      alt_text: Austin Yardley
+      url: https://www.linkedin.com/in/austinkyardley/
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
