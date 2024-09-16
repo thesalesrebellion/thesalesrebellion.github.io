@@ -1,6 +1,12 @@
 .landing-page {
   padding: 0 171px;
 
+  .sold-out {
+    color: #666;
+    background-color: #ddd;
+    pointer-events: none !important;
+  }
+
   @include breakpoint(medium) {
     padding: 0 20px;
   }
