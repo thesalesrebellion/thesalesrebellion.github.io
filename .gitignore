@@ -3,5 +3,5 @@
 .jekyll-metadata
 _site
 assets/css/styles.css
-assets/js
+assets/js/scripts*
 node_modules
