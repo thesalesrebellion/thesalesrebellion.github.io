@@ -2,6 +2,6 @@
 .jekyll-cache
 .jekyll-metadata
 _site
-assets/css
+assets/css/styles.css
 assets/js
 node_modules
