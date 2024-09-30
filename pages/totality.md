@@ -6,10 +6,10 @@ landing_page: true
 location: Knoxville, TN
 dates:
   date_range: '26 - 28' 
-  month_year: 'September 2024'
+  month_year: 'August 2025'
 hero:
-  eyebrow: "Yo, this is not your momma's sales conference"
-  heading: "Get ready for &nbsp;the first ever experience of its &nbsp;kind!"
+  eyebrow: "Totality is here to stay, our mama said so…"
+  heading: "A &nbsp;new hope &nbsp;is &nbsp;coming &nbsp;to Totality… &nbsp;stay &nbsp;tuned and get your &nbsp;tickets &nbsp;soon!"
   image: 
     path: "/assets/images/hero_sunset_city_bg.webp"
     mobile_path: "/assets/images/hero_sunset_city_bg_mobile.webp"
