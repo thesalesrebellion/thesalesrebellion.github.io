@@ -29,9 +29,6 @@ team:
   title: Meet <span>our</span> team
   members:
     - img:
-        path: /images/team/m1.png
-        alt_text: Team member
-    - img:
         path: /images/team/m2.png
         alt_text: Team member
     - img:
