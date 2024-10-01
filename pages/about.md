@@ -29,57 +29,42 @@ team:
   title: Meet <span>our</span> team
   members:
     - img:
-        path: /images/team/m2.png
-        alt_text: Team member
+        path: /images/team/beth-pagano.webp
+        alt_text: Beth Pagano
     - img:
-        path: /images/team/m3.png
-        alt_text: Team member
+        path: /images/team/rafe-barretto.webp
+        alt_text: Rafe Barretto
     - img:
-        path: /images/team/m4.png
-        alt_text: Team member
+        path: /images/team/jeremiah-griffin.webp
+        alt_text: Jeremiah Griffin
     - img:
-        path: /images/team/m5.png
-        alt_text: Team member
+        path: /images/team/dale-dupree.webp
+        alt_text: Dale Dupree
     - img:
-        path: /images/team/m6.png
-        alt_text: Team member
+        path: /images/team/joy-carvajal.webp
+        alt_text: Joy Carvajal
     - img:
-        path: /images/team/m7.png
-        alt_text: Team member
-    - img:
-        path: /images/team/m8.png
-        alt_text: Team member
-    - img:
-        path: /images/team/m9.png
-        alt_text: Team member
+        path: /images/team/adam-snider.webp
+        alt_text: Adam Snider
   members_mobile:
     - img:
-        path: /images/team/m5.png
-        alt_text: Team member
+        path: /images/team/beth-pagano.webp
+        alt_text: Beth Pagano
     - img:
-        path: /images/team/m1.png
-        alt_text: Team member
+        path: /images/team/rafe-barretto.webp
+        alt_text: Rafe Barretto
     - img:
-        path: /images/team/m2.png
-        alt_text: Team member
+        path: /images/team/jeremiah-griffin.webp
+        alt_text: Jeremiah Griffin
     - img:
-        path: /images/team/m3.png
-        alt_text: Team member
+        path: /images/team/dale-dupree.webp
+        alt_text: Dale Dupree
     - img:
-        path: /images/team/m4.png
-        alt_text: Team member
+        path: /images/team/joy-carvajal.webp
+        alt_text: Joy Carvajal
     - img:
-        path: /images/team/m6.png
-        alt_text: Team member
-    - img:
-        path: /images/team/m7.png
-        alt_text: Team member
-    - img:
-        path: /images/team/m8.png
-        alt_text: Team member
-    - img:
-        path: /images/team/m9.png
-        alt_text: Team member
+        path: /images/team/adam-snider.webp
+        alt_text: Adam Snider
 faq:
   heading: Things we get asked
   items:
