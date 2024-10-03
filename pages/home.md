@@ -55,7 +55,7 @@ community:
       alt_text: 'Slack logo'
     button:
       text: Join Us
-      url: https://join.slack.com/t/salesrebels/shared_invite/zt-h56s3k7l-GxCbQb9~Z9hvqhz8PAcqxg
+      url: https://thesalesrebellion.typeform.com/to/frAJUfW6
       new_tab: true
       glow_in: blue
   - title: Podcast

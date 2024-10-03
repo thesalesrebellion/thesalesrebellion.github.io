@@ -33,7 +33,7 @@ slack:
   text: The Sales Rebel Slack Workspace is a place for Rebels to come and explore. Learn new sales approaches, develop scripts and outreach campaigns, or just network with other like-minded Sales Rebels… It’s all waiting within... Find your tribe...
   cta:
     text: Join Us
-    url: https://join.slack.com/t/salesrebels/shared_invite/zt-h56s3k7l-GxCbQb9~Z9hvqhz8PAcqxg
+    url: https://thesalesrebellion.typeform.com/to/frAJUfW6
     new_tab: true
 podcast:
   img:
