@@ -51,7 +51,7 @@ community:
  items:
   - title: Community
     image:
-      path: '/assets/images/slack.png'
+      path: '/assets/images/rebel-refuge.webp'
       alt_text: 'Slack logo'
     button:
       text: Join Us

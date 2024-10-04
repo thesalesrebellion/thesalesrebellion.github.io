@@ -14,7 +14,7 @@ hero:
       - path: /assets/images/tile-podcast.png
         alt_text: Selling Local Podcast
         target: podcast
-      - path: /assets/images/tile-slack.png
+      - path: /assets/images/rebel-refuge.webp
         alt_text: Sales Rebels Slack
         target: slack
       - path: /assets/images/tile-blog.png
