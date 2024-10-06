@@ -41,7 +41,7 @@ podcast:
     alt_text: Selling Local Podcast
   cta:
     text: Listen Now
-    url: ""
+    url: "https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E?si=oxvbB8VNTbO98ZIsPW7tkw"
 blog:
   img:
     path: /assets/images/resources-blog-bg.png
