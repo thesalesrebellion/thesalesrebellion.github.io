@@ -82,7 +82,7 @@ market_tools:
       video_id: I630izFLbgc
       cta:
         text: Choose Legendary
-        url:  https://join.thesalesrebellion.com/lettercampaign/
+        url: /letter-campaign/
         new_tab: true
 learn:
   heading: <span>Sales</span> Rebel Academy - Learn like a Rebel
