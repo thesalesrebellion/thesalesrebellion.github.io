@@ -23,6 +23,276 @@ layout: page
         <header class="landing-page__hero">
             <p class="landing-page__hero--eyebrow">{{ page.hero.eyebrow }}</p>
             <h1 class="landing-page__hero--header">{{ page.hero.heading }}</h1>
+
+            <div class="landing-page__hero--icon bounce">
+                {%- include svg/chevron-group.svg -%}
+            </div>
         </header>
+    </div>
+
+    {%- comment -%} --- FEATURES --- {%- endcomment -%}
+    <section class="landing-page__features">
+        <div class="old-tv">
+          <iframe src="https://www.youtube-nocookie.com/embed/mDEVVkD4-hU?si=Jm7WkdmiiDJueFgS&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2 class="landing-page__features--header">
+            {%- include svg/totality-logo.svg -%}
+        </h2>
+        <h3 class="landing-page__features--subheader">
+            {{ page.features.subheader }}
+        </h3>
+        <p class="landing-page__features--description">
+            {{ page.features.description }}
+        </p>
+        <p class="landing-page__cta--description">
+            {{ page.cta.description }}
+        </p>
+        <p class="landing-page__cta--description" style="font-size: 50px">
+            {{ page.cta.hotel }}
+        </p>
+
+        <div class="landing-page__cta--container">
+            <div class="landing-page__cta--wrapper">
+                <a
+                    class="landing-page__cta landing-page__cta--mobile-full sold-out"
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link">{{ page.cta.link_text }}</a>
+            </div>
+
+            <div class="landing-page__cta--wrapper">
+                <a
+                    href="{{ page.cta.nohotel_url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full"
+                    >{{ page.cta.nohotel_text }}</a
+                >
+                <a class="learnMoreNohotelModal landing-page__cta--link">{{ page.cta.link_text }}</a>
+            </div>
+
+            <div class="landing-page__cta--wrapper">
+                <a
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
+                    href=""
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link">{{ page.cta.link_text }}</a>
+            </div>
+        </div>
+    </section>
+
+    {%- comment -%} --- MEETUP --- {%- endcomment -%}
+    <section class="landing-page__meetup">
+        <div class="landing-page__meetup--container">
+            <header class="landing-page__meetup--header">
+                <p class="landing-page__meetup--eyebrow">
+                    {{ page.meetup.eyebrow }}
+                </p>
+                <h2 class="landing-page__meetup--title">
+                    {{ page.meetup.header }}
+                </h2>
+                <p class="landing-page__meetup--description">
+                    {{ page.meetup.description }}
+                </p>
+            </header>
+
+            <ul class="landing-page__meetup--features">
+                {%- for item in page.meetup.items -%}
+                <div class="landing-page__meetup--feature-container">
+                    <div class="landing-page__meetup--icon">
+                        {%- include svg/pixelarticons_check.svg -%}
+                    </div>
+                    <li class="landing-page__meetup--feature">
+                        {{ item.feature }}
+                    </li>
+                </div>
+                {%- endfor -%}
+            </ul>
+
+            <div class="landing-page__cta--container landing-page__cta--container-meetup">
+                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                    <a
+                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block sold-out"
+                        >{{ page.cta.text }}</a
+                    >
+                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>                
+                </div>
+                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                    <a
+                        href="{{ page.cta.nohotel_url }}"
+                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
+                        >{{ page.cta.nohotel_text }}</a
+                    >
+                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+                </div>
+                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                    <a
+                        class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
+                        >{{ page.cta.text_vip }}</a
+                    >
+                    <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="landing-page__cta--container">
+        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+            <a
+                href="{{ page.cta.nohotel_url }}"
+                class="landing-page__cta landing-page__cta--mobile-full mobile-only"
+                >{{ page.cta.nohotel_text }}</a
+            >
+            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+        </div>
+        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+            <a
+                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block sold-out"
+                >{{ page.cta.text }}</a
+            >
+            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>    
+        </div>
+        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+            <a
+                class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
+                >{{ page.cta.text_vip }}</a
+            >
+            <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+        </div>
+    </div>
+
+    {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
+    <section class="landing-page__speakers">
+        <div class="landing-page__speakers--icon">
+            {%- include svg/chevron-group.svg -%}
+        </div>
+
+        <h2 class="landing-page__speakers--header">
+            <span>{%- include svg/totality-logo.svg -%}</span>{{ page.speakers.header }}
+        </h2>
+
+        <div class="landing-page__speakers--image-wrapper">
+            {%- for speaker in page.speakers.members -%}
+            <div class="landing-page__speakers--image-container">
+                <a target="_blank" href="{{ speaker.url }}">
+                    <img
+                        src="{{- speaker.image | relative_url -}}"
+                        alt="{{- speaker.alt_text -}}"
+                        class="landing-page__team-img"
+                    />
+                    <p class="landing-page__speakers--name">{{ speaker.name }}</p>
+                </a>
+            </div>            
+            {%- endfor -%}
+        </div>
+    </section>
+
+    {%- comment -%} --- SPONSORS --- {%- endcomment -%}
+    <section class="landing-page__speakers">
+        <div class="landing-page__speakers--icon">
+            {%- include svg/chevron-group.svg -%}
+        </div>
+
+        <h2 class="landing-page__speakers--header">
+            <span>{%- include svg/totality-logo.svg -%}</span>{{ page.sponsors.header }}
+        </h2>
+
+        <div class="landing-page__speakers--image-wrapper">
+            {%- for sponsor in page.sponsors.details -%}
+            <div class="landing-page__speakers--image-container">
+                <a target="_blank" href="{{ sponsor.url }}">
+                    <img
+                        src="{{- sponsor.image | relative_url -}}"
+                        alt="{{- sponsor.alt_text -}}"
+                        class="landing-page__team-img"
+                    />
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+    </section>
+
+    {%- comment -%} --- FOOTER --- {%- endcomment -%}
+    <section class="landing-page__footer">
+        <h2 class="landing-page__footer--header">
+            {{ page.footer.header }}
+        </h2>
+        <p class="landing-page__footer--description">
+            {{ page.footer.description }}
+        </p>
+
+        <div class="landing-page__cta--container landing-page__cta--container-meetup">
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    class="landing-page__cta landing-page__cta--desktop-full desktop-only sold-out"
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.nohotel_url }}"
+                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
+                    >{{ page.cta.nohotel_text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="landing-page__footer--cta-container">
+        <div class="landing-page__cta--container">
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.nohotel_url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
+                    >{{ page.cta.nohotel_text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full mobile-only sold-out"
+                    >{{ page.cta.text }}</a
+                >
+                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+            </div>
+            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
+                <a
+                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
+                    >{{ page.cta.text_vip }}</a
+                >
+                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
+            </div>
+        </div>
+    </div>
+
+    {%- comment -%} --- MODAL --- {%- endcomment -%}
+    <div id="learnMoreModal" class="landing-page__modal">
+        <div class="landing-page__modal--content">
+            <span class="landing-page__modal--close">&times;</span>
+            {{ page.cta.copy_text | markdownify}}
+        </div>
+    </div>
+
+    <div id="learnMoreNohotelModal" class="landing-page__modal">
+        <div class="landing-page__modal--content landing-page__modal--content-secondary">
+            <span class="landing-page__modal--close">&times;</span>
+            {{ page.cta.copy_text_nohotel | markdownify }}
+        </div>
+    </div>
+
+    <div id="learnMoreVipModal" class="landing-page__modal">
+        <div class="landing-page__modal--content landing-page__modal--content-secondary">
+            <span class="landing-page__modal--close">&times;</span>
+            {{ page.cta.copy_text_vip | markdownify }}
+        </div>
     </div>
 </div>

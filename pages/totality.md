@@ -5,11 +5,10 @@ page_id: landing-page
 landing_page: true
 location: Knoxville, TN
 dates:
-  date_range: '26 - 28' 
   month_year: 'August 2025'
 hero:
   eyebrow: "Totality is here to stay, our mama said so…"
-  heading: "A &nbsp;new hope &nbsp;is &nbsp;coming &nbsp;to Totality… &nbsp;stay &nbsp;tuned and get your &nbsp;tickets &nbsp;soon!"
+  heading: "A &nbsp;new hope &nbsp;is &nbsp;coming &nbsp;to&nbsp;&nbsp;Totality…"
   image: 
     path: "/assets/images/hero_sunset_city_bg.webp"
     mobile_path: "/assets/images/hero_sunset_city_bg_mobile.webp"
