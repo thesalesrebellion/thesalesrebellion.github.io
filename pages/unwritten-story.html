@@ -1,0 +1,198 @@
+---
+title: The Unwritten Story
+layout: default
+permalink: /unwritten-story/
+buy:
+  unwritten_story: "https://buy.stripe.com/7sI00l3vY9Hoag86oZ"
+---
+
+<style>
+  * {
+    font-family: 'Big Noodle Titling';
+    font-size: 24px;
+  }
+
+  h1.hero__heading {
+    font-size: 60px;
+    margin-top: 55%;
+  }
+
+  h2.with-image {
+    font-size: 60px;
+    margin-top: 55%;
+  }
+
+  .button {
+    border: 2px solid #ff3adf;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .pink {
+    background-color: #ff3adf;
+    border-color: #ff3adf;
+    color: #fff;
+  }
+
+  .green{
+    background-color: #66ffc8;
+    border-color: #66ffc8;
+    color: #000;
+  }
+
+  .ghost {
+    background-color: transparent;
+    border-color: #ff3adf;
+    color: #66ffc8;
+  }
+
+  .delta-image {
+    float: right;
+    margin-top:40px;
+    width: 60%;
+  }
+
+  .font-green {
+    color:#66ffc8
+  }
+
+  .checkmark {
+    list-style-position: inside;
+    list-style-type: none;
+
+    li {
+      background-image: url('/assets/images/check.webp');
+      background-repeat: no-repeat;
+      height: 60px;
+      margin-bottom: 20px;
+      padding-left: 80px;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .icons {
+    list-style-position: inside;
+    list-style-type: none;
+
+    li {
+      background-position: center left;
+      background-repeat: no-repeat;
+      margin-bottom: 5px;
+      padding: 10px 0 10px 80px;
+
+      &:nth-child(1) {
+        background-image: url('/assets/images/li-mail.webp');
+      }
+
+      &:nth-child(2) {
+        background-image: url('/assets/images/li-checklist.webp');
+      }
+
+      &:nth-child(3) {
+        background-image: url('/assets/images/li-psychology.webp');
+      }
+
+      &:nth-child(4) {
+        background-image: url('/assets/images/li-money.webp');
+      }
+    }
+
+    h3 {
+      color: #ff3adf;
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .hero__heading {
+    color: #fff;
+    font-size: 36px;
+  }
+
+  @media (min-width: 768px) {
+    .button {
+      width: auto;
+    }
+
+    .hero__heading {
+      font-size: 60px;
+    }
+
+    .checkmark li {
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      margin-bottom: -100px;
+    }
+
+    .rebels {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+
+      .col {
+        width: 80%;
+      }
+
+      .card {
+        flex: 0 0 auto;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .checkmark {
+      columns: 2;
+    }
+
+    h1.hero__heading {
+      font-size: 80px;
+      margin-top: 100px;
+    }
+
+    h2.with-image {
+      margin-top: auto;
+    }
+
+    .delta-image {
+      width: 40%;
+    }
+  }
+</style>
+<div class="container-fluid" style="background: url('/assets/images/bg-crumpled-letter-header.webp');background-size: cover;">
+  <div class="container-md pt-5">
+    <div class="row header">
+      <div class="col-3">
+        <img src="/assets/images/logo.png" style="width:100px">
+      </div>
+      <div class="col-9 d-none d-sm-block">
+        <p class="text-end">Introducing The Sales Rebellion’s</p>
+      </div>
+    </div>
+  </div>
+  <div class="container-md">
+    <div class="row">
+      <div class="col">
+        <img class="delta-image" src="/assets/images/unwritten-story.webp">
+        <h1 class="hero__heading">The Unwritten Story</h1>
+        <p class="font-green">A Rebellutionary Way To Cut Through The Noise And Book More Meetings. The Unwritten Story is designed for sales people looking for outreach that doesn’t suck and actually works.</p>
+        <a class="pink button" href="{{ page.buy.unwritten_story }}">Get The Unwritten Story for $299</a>
+      </div>
+    </div>
+  </div>
+</div>
