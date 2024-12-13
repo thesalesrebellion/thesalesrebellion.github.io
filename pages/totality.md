@@ -5,6 +5,7 @@ page_id: landing-page
 landing_page: true
 location: Knoxville, TN
 dates:
+  date_range: '26 - 28'
   month_year: 'August 2025'
 hero:
   eyebrow: "Totality is here to stay, our mama said so…"
@@ -14,25 +15,25 @@ hero:
     mobile_path: "/assets/images/hero_sunset_city_bg_mobile.webp"
     alt: "Sunset city background image"
 features:
-  subheader: The final curtain for the status quo
-  description: A 3-day immersive event into the next generation of what selling is and will become.
+  subheader: A New Hope for Sales
+  description: A 3-day immersive event aimed at bringing Hope back to our great profession &mdash; designed for those willing to take action and create the change that's needed to earn more from their career and life.
 meetup:
   eyebrow: Come fellowship with other Rebels
-  header: A &nbsp;first of its &nbsp;kind meet-up
+  header: Experience a &nbsp;Sales Conference Unlike any Other
   description: This meet-up will be unlike anything you have ever experienced... Escape from the boring and monotonous conference of the past and lean into the future of learning, enlightening and life changing experiences for people of all walks of life.
   items:
     - feature: Live Roleplaying
     - feature: Hands-on Workshops
     - feature: Stories & Fellowship
     - feature: Real-time Learning & Development
-    - feature: The First Ever “Sales Boss Battle”
+    - feature: The Second Annual Totality "Boss Battle"
     - feature: Fully Immersive & Interactive Event
     - feature: 'Get points, level up, become the #1 Rebel'
     - feature: Engage with like-minded people
 cta:
-  text: Totality Pass (w/ Hotel) SOLD OUT
-  nohotel_text: Totality Pass (No Hotel)
-  text_vip: VIP Totality pass SOLD OUT
+  text: Totality Pass (w/ Hotel)
+  nohotel_text: Totality Pass (Local)
+  text_vip: VIP Totality pass
   copy_text: |
     This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
     * Arrival on Thursday the 26th: 5:00pm EST
@@ -53,89 +54,41 @@ cta:
     * Other cool stuff we will surprise you with!
     * Last event ends at 6pm
     * Departure on Saturday night at 8pm or later (or departure Sunday morning)
-  nohotel_url: https://buy.stripe.com/00g00l0jM06O880bJ4
-  description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on September 26, 27, and 28th!"
-  hotel: "🔥🤯 Reminder: <span style='color:#ff3adf'>Your hotel is on us!</span> 🤯🔥"
+  url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
+  nohotel_url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
+  vip_url: https://buy.stripe.com/3csfZj7Me2eW2NGaFg
+  description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
+  hotel:
   link_text: Learn More
 speakers:
   header: Guest Speakers
   title: Meet <span>our</span> team
   members:
     -
-      name: Dale<br>Dupree
-      image: /images/speakers/dale-hs-triangle.webp
-      alt_text: Dale Dupree
-      url: https://www.linkedin.com/in/copierwarrior/
-    -
-      name: Enrika Greathouse
-      image: /images/speakers/enrika-hs-triangle.webp
-      alt_text: Enrika Greathouse
-      url: https://www.linkedin.com/in/enrikacreates/
+      name: Donald Kelly
+      image: /images/speakers/donald-kelly.webp
+      alt_text: Donald Kelly
+      url: https://www.linkedin.com/in/donaldckelly/
     -
       name: Stu Heinecke
       image: /images/speakers/stu-hs-triangle.webp
       alt_text: Stu Heinecke
       url: https://www.linkedin.com/in/stuheinecke/
     -
-      name: Kevin “KD” Dorsey
-      image: /images/speakers/kd-hs-triangle.webp
-      alt_text: Kevin “KD” Dorsey
-      url: https://www.linkedin.com/in/kddorsey3/
-    -
-      name: DeJuan Brown
-      image: /images/speakers/dejuan-hs-triangle.webp
-      alt_text: DeJuan Brown
-      url: https://www.linkedin.com/in/dejuanbrown/
-    -
-      name: Leslie Venetz
-      image: /images/speakers/leslie-hs-triangle.webp
-      alt_text: Leslie Venetz
-      url: https://www.linkedin.com/in/leslievenetz/
-    -
-      name: Stephen Courson
-      image: /images/speakers/stephen-courson.webp
-      alt_text: Stephen Courson
-      url: https://www.linkedin.com/in/stephencourson/
-    -
-      name: James Buckley
-      image: /images/speakers/james-buckley.webp
-      alt_text: James Buckley
-      url: https://www.linkedin.com/in/jamessaywhatsalesbuckley/
-    -
-      name: Christine White
-      image: /images/speakers/christine-white.webp
-      alt_text: Christine White
-      url: https://www.linkedin.com/in/christinewhite06/
-    -
-      name: Mike Simmons
-      image: /images/speakers/mike-simmons.webp
-      alt_text: Mike Simmons
-      url: https://www.linkedin.com/in/mikesimmons/
-    -
       name: Christina Brady
       image: /images/speakers/christina-brady.webp
       alt_text: Christina Brady
       url: https://www.linkedin.com/in/christinapbrady/
     -
-      name: Krysten Conner
-      image: /images/speakers/krysten-conner.webp
-      alt_text: Krysten Conner
-      url: https://www.linkedin.com/in/krystenconner/
+      name: David Brier
+      image: /images/speakers/david-brier.webp
+      alt_text: David Brier
+      url: https://www.linkedin.com/in/copierwarrior/
     -
-      name: Ronnell Richards
-      image: /images/speakers/ronnell-richards.webp
-      alt_text: Ronnell Richards
-      url: https://www.linkedin.com/in/ronnellrichards/
-    -
-      name: Aaron Price
-      image: /images/speakers/aaron-price.webp
-      alt_text: Aaron Price
-      url: https://www.linkedin.com/in/aaron-price-6b644b9b/
-    -
-      name: Austin Yardley
-      image: /images/speakers/austin-yardley.webp
-      alt_text: Austin Yardley
-      url: https://www.linkedin.com/in/austinkyardley/
+      name: Dale<br>Dupree
+      image: /images/speakers/dale-hs-triangle.webp
+      alt_text: Dale Dupree
+      url: https://www.linkedin.com/in/copierwarrior/
 sponsors:
   header: Sponsors
   title: Meet <span>our</span> team
@@ -144,26 +97,6 @@ sponsors:
       image: /images/sponsors/salesreach.webp
       alt_text: SalesReach.io
       url: https://www.salesreach.io/
-    -
-      image: /images/sponsors/pitchfire.webp
-      alt_text: Pitchfire
-      url: https://www.pitchfire.com/
-    -
-      image: /images/sponsors/luster.webp
-      alt_text: Luster
-      url: https://www.luster.ai/
-    -
-      image: /images/sponsors/copyai.webp
-      alt_text: Copy.ai
-      url: https://www.copy.ai/
-    -
-      image: /images/sponsors/scribeless.webp
-      alt_text: Scribeless
-      url: https://www.scribeless.co/
-    -
-      image: /images/sponsors/grove-cookie-co.webp
-      alt_text: Grove Cookie Company
-      url: https://www.grovecookiecompany.com/
 footer:
   header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
   description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.

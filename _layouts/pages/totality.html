@@ -47,14 +47,12 @@ layout: page
         <p class="landing-page__cta--description">
             {{ page.cta.description }}
         </p>
-        <p class="landing-page__cta--description" style="font-size: 50px">
-            {{ page.cta.hotel }}
-        </p>
 
         <div class="landing-page__cta--container">
             <div class="landing-page__cta--wrapper">
                 <a
-                    class="landing-page__cta landing-page__cta--mobile-full sold-out"
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full"
                     >{{ page.cta.text }}</a
                 >
                 <a class="learnMoreLink landing-page__cta--link">{{ page.cta.link_text }}</a>
@@ -71,8 +69,8 @@ layout: page
 
             <div class="landing-page__cta--wrapper">
                 <a
-                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full"
-                    href=""
+                    href="{{ page.cta.vip_url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full"
                     >{{ page.cta.text_vip }}</a
                 >
                 <a class="learnMoreLinkVip landing-page__cta--link">{{ page.cta.link_text }}</a>
@@ -111,7 +109,8 @@ layout: page
             <div class="landing-page__cta--container landing-page__cta--container-meetup">
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block sold-out"
+                        href="{{ page.cta.url }}"
+                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                         >{{ page.cta.text }}</a
                     >
                     <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>                
@@ -126,7 +125,8 @@ layout: page
                 </div>
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
+                        href="{{ page.cta.vip_url }}"
+                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
                         >{{ page.cta.text_vip }}</a
                     >
                     <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
@@ -138,7 +138,7 @@ layout: page
     <div class="landing-page__cta--container">
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                href="{{ page.cta.nohotel_url }}"
+                href="{{ page.cta.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only"
                 >{{ page.cta.nohotel_text }}</a
             >
@@ -146,14 +146,16 @@ layout: page
         </div>
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block sold-out"
+                href="{{ page.cta.nohotel_url }}"
+                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
                 >{{ page.cta.text }}</a
             >
             <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>    
         </div>
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
+                href="{{ page.cta.vip_url }}"
+                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
                 >{{ page.cta.text_vip }}</a
             >
             <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
@@ -223,7 +225,8 @@ layout: page
         <div class="landing-page__cta--container landing-page__cta--container-meetup">
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    class="landing-page__cta landing-page__cta--desktop-full desktop-only sold-out"
+                    href="{{ page.cta.url }}"
+                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
                     >{{ page.cta.text }}</a
                 >
                 <a class="learnMoreLink landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
@@ -238,7 +241,8 @@ layout: page
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--desktop-full desktop-only"
+                    href="{{ page.cta.vip_url }}"
+                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
                     >{{ page.cta.text_vip }}</a
                 >
                 <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ page.cta.link_text }}</a>
@@ -259,14 +263,15 @@ layout: page
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
                     href="{{ page.cta.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full mobile-only sold-out"
+                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
                     >{{ page.cta.text }}</a
                 >
                 <a class="learnMoreLink landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    class="landing-page__cta landing-page__cta--secondary landing-page__cta--mobile-full mobile-only"
+                    href="{{ page.cta.vip_url }}"
+                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
                     >{{ page.cta.text_vip }}</a
                 >
                 <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ page.cta.link_text }}</a>
