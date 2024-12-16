@@ -59,7 +59,7 @@ cta:
   nohotel_url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
   vip_url: https://buy.stripe.com/3csfZj7Me2eW2NGaFg
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
-  hotel:
+  notice: Early bird pricing is LIVE NOW
   link_text: Learn More
 speakers:
   header: Guest Speakers
