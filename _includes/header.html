@@ -14,6 +14,12 @@
             the 'site.data.dates' in the data files with the appropriate date range.
         {%- endcomment -%}
 
+        {% if page.layout == 'pages/totality' %}
+        <div class="site-header__totality">
+          {%- include svg/totality-logo.svg -%}
+        </div>
+        {% endif %}
+
         {%- if page.landing_page -%}
             <div class="site-header__dates">
                 <div class="site-header__dates--date-range">{{- page.dates.date_range -}}</div>
