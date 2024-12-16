@@ -1,4 +1,5 @@
 ---
+title: Totality 2025
 layout: pages/totality
 permalink: /totality/
 page_id: landing-page
