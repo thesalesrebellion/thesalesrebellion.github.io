@@ -1,7 +1,9 @@
 ---
-title: Group
+title: Squadron
 layout: page
-permalink: /group/
+permalink: /squadron/
+redirect_from:
+  - /group/
 page_id: group
 has_video: true
 landing_page: false
