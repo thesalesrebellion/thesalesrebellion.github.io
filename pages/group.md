@@ -1,6 +1,6 @@
 ---
 title: Group
-layout: pages/group
+layout: page
 permalink: /group/
 page_id: group
 has_video: true
@@ -69,3 +69,81 @@ footer:
   message: ""
   note: ""
 ---
+
+{%- comment -%} --- FEATURES --- {%- endcomment -%}
+{%- unless page.features.show == false -%}
+    <section class="section group__features">
+
+        <div class="container">
+
+            <h2 class="group__features-heading">
+                {%- for line in page.features.heading_lines -%}
+                    <div class="group__features-heading-line{% if forloop.last %} group__features-heading-line--last{% endif %}">
+                        {{- line -}}
+                    </div>
+                {%- endfor -%}
+            </h2>
+
+            <div class="group__features-items">
+                {%- for item in page.features.items -%}
+                    {%- capture the_cycle -%}{%- cycle 'odd', 'even' -%}{%- endcapture -%}
+
+                    <div class="group__features-item group__features-item--{{ the_cycle }}">
+                        <div class="group__features-item-content">
+                            <h3 class="group__features-item-title">
+                                {{- item.title -}}
+                            </h3>
+                            <div class="group__features-item-text">
+                                {{ item.text | markdownify }}
+                            </div>
+                        </div>
+                    </div>
+                {%- endfor -%}
+            </div>
+
+            <div class="group__features-cta">
+                <a href="{{- page.features.cta.url -}}" class="group__features-btn btn"{% if page.features.cta.new_tab == true %} target="_blank"{% endif %}>
+                    {{- page.features.cta.text -}}
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+{%- endunless -%}
+
+{%- comment -%} --- VIDEO --- {%- endcomment -%}
+<section class="section group-testimonials">
+
+    <div class="container">
+
+        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
+            <h2 class="group-testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- endif -%}
+
+        <div class="group-testimonials__content">
+
+            <div class="group-testimonials__video-wrapper video-wrapper">
+                {%- include video.html video_id=page.testimonials.video_id -%}
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section group__faq">
+
+    <div class="container">
+
+        <h2 class="faq__heading group__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+</section>
