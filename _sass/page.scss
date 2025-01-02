@@ -32,3 +32,40 @@
     }
 
 }
+
+.new-font {
+  * {
+    font-family: 'Kufam';
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .hero__heading {
+    font-family: 'Lazer84';
+  }
+
+  a.button,
+  li,
+  p {
+    font-size: 16px;
+  }
+
+  .card-body {
+    .title {
+      color: #66ffc8;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      color: #eb38cf;
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
