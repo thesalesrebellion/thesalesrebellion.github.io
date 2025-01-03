@@ -38,6 +38,11 @@
     font-family: 'Kufam';
   }
 
+  #menu a {
+    font-family: "Lazer84";
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 28px;
   }
@@ -66,6 +71,89 @@
 
     p {
       font-size: 14px;
+    }
+  }
+}
+
+.quote {
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+
+  h3 {
+    color: #66ffc8;
+    font-size: 36px;
+  }
+
+  .about {
+    color: #eb38cf;
+    font-size: 14px;
+  }
+}
+
+.pill {
+  background: #444;
+  border-radius: 50px;
+  color: #7affdc;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+.card-title {
+  color: #66ffc8;
+  font-size: 24px;
+}
+
+.sessions {
+  .number {
+    color: #fff;
+    font-family: 'Lazer84';
+    font-size: 60px;
+  }
+}
+
+.testimonial-video {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  iframe {
+    border: 1px solid #eb38cf;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.scroll-desktop {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  .row {
+    flex: 0 0 auto;
+  }
+
+  .card {
+    flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    .col {
+      width: 80%;
+    }
+
+    .card {
+      flex: 0 0 auto;
     }
   }
 }
