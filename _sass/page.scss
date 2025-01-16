@@ -51,7 +51,7 @@
     font-family: 'Lazer84';
   }
 
-  a.button,
+  .button,
   li,
   p {
     font-size: 16px;
@@ -140,6 +140,15 @@
   .card {
     flex: 0 0 auto;
   }
+}
+
+.modal-title {
+  color: #000;
+  font-family: "Lazer84";
+}
+
+.modal-body p {
+  color: #000;
 }
 
 @media (max-width: 768px) {

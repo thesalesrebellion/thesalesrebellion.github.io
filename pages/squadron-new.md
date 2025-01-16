@@ -325,7 +325,7 @@ bonuses:
       <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
         <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join&nbsp; the Rebel&nbsp; Squadron</h2>
         <p class="text-center">It's a 6-month ride to craft a career-shaking pipeline, master game-changing emotional intelligence, and transform your whole outlook on life.</p>
-        <a class="green button" href="{{ page.buy.url }}" style="width:100%">Join a Squadron now</a>
+        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
     </div>
   </div>
@@ -414,7 +414,7 @@ bonuses:
       <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
         <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join the Rebel Squadron</h2>
         <p class="text-center">It's a 6-month ride to craft a career-shaking pipeline, master game-changing emotional intelligence, and transform your whole outlook on life.</p>
-        <a class="green button" href="{{ page.buy.url }}" style="width:100%">Join a Squadron now</a>
+        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
     </div>
   </div>
@@ -454,7 +454,7 @@ bonuses:
   <div class="row">
     <div class="col-12">
       <div class="ms-lg-5 me-lg-5 mb-5">
-        <a class="green button" href="{{ page.buy.url }}" style="width:100%">Join a Squadron now</a>
+        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
     </div>
   </div>
@@ -496,7 +496,28 @@ bonuses:
         <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join the Rebel Squadron</h2>
         <p class="text-center" style="color:#eb38cf;font-size:28px">It's a 6-month ride to craft a career-shaking pipeline, master game-changing emotional intelligence, and transform your whole outlook on life.</p>
         <p class="text-center">The Rebel Squadron isn’t for everyone—and that’s how we like it. If you’re looking for quick-fix tricks or sleazy shortcuts to catch prospects in a weak moment, this is not your crew. If you’re not ready to put others’ needs above your own or you think sales is just a numbers game, you’re in the wrong place. But if you want to play the long game, trust in your coaches who’ve been where you are, and are ready to commit to 6 months of all-out Rebellion, then strap in—because the Squadron is where legends are made!</p>
-        <a class="green button" href="{{ page.buy.url }}" style="width:100%">Join a Squadron now</a>
+        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="squadronModal" tabindex="-1" aria-labelledby="squadronModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="squadronModalLabel">Hey, read this!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>A few things for you to review before you whip out that card.</p>
+        <input class="form-check-input" type="checkbox" value="" id="squadronTC" onchange="document.getElementById('purchaseSquadron').disabled = !this.checked;">
+        <label class="form-check-label" for="squadronTC">
+          <a href="/assets/pdf/squadron-terms-and-conditions.pdf" target="_blank">Squadron Purchase Terms & Conditions</a>
+        </label>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nah</button>
+        <button id="purchaseSquadron" type="button" class="btn btn-primary" onclick="location.href='{{ page.buy.url }}'" disabled>Let's go!</button>
       </div>
     </div>
   </div>
