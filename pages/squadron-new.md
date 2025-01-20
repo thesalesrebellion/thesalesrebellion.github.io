@@ -100,6 +100,18 @@ sessions:
     details: Learn your Rebel Roots and get started on the foundations of your prospecting Rebellion to earn more business.
   - name: Choosing Legendary, Taking Risks and Building a Legacy
     details: Learn to Radically Educate your prospect through curiosity, interrupt marketing and emotional context in your outreach methods.
+  - name: Communicating Better, Activating the Brain and Providing an Experience
+    details: Learn the Rebellions Story methodology, master tonality, delivery, listening and sharpen your communication skills.
+  - name: Sharing the Narrative, Becoming a Legend and Putting in the Work
+    details: Become a Rebel Master in this live roleplaying session with your Rebel coach and fellow Squad-mates!
+  - name: The Mutual Grounds that Sales Meets On, a Beautiful Place to Visit
+    details: Earn how to craft better communication to achieve next steps, avoid let-down and gain trust with those you seek to serve.
+  - name: Building a Talk Track that Speaks to the Human You Seek to Serve
+    details: Live cold calling day with your Rebel coach and Squad-mates! You will get live coaching on the calls who pick-up, work through leaving voicemails and other actions that can be taken during every call.
+  - name: Alive, Awake, Rebelling… The rules of Pleasant Persistence
+    details: Continued methodology for your prospecting efforts for those who don't pick up, email back or respond in general to your initial outreach.
+  - name: A Rebel’s Heart, Sunset and Legends…
+    details: Graduation, fellowship and one more get-together before you move forward in your sales walk with your Squadron.
 bonuses:
   - about: "How to Start a Sales Rebellion: The Copier Warrior’s Guide to Sales and Life (hardback copy)"
     image: /assets/images/x.jpg
