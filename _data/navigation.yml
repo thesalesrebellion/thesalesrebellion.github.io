@@ -14,3 +14,6 @@ items:
  - name: 'Resources'
    url: '/resources/'
    glow_in: 'yellow'
+ - name: 'Totality'
+   url: '/totality/'
+   glow_in: 'green'
