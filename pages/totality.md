@@ -66,6 +66,11 @@ speakers:
   title: Meet <span>our</span> team
   members:
     -
+      name: Lauren Goodell
+      image: /images/speakers/lauren-goodell.webp
+      alt_text: Lauren Goodell
+      url: https://www.linkedin.com/in/lauren-goodell/
+    -
       name: Donald Kelly
       image: /images/speakers/donald-kelly.webp
       alt_text: Donald Kelly
