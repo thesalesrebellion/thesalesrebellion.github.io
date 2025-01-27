@@ -117,7 +117,7 @@ bonuses:
     image: /assets/images/x.jpg
     details: "This book walks you through the rebellious approach that connects with prospects. On top of that, there’s a life altering truth that resides deep within these pages and is sure to reshape the way you see your life and career. At the highest level, this book deconstructs and redefines the core fundamentals that are required for sales success. It acknowledges the changing nature of the marketplace and equips sales reps and sales leaders with the ability to connect, create, and communicate in the ways that B2 B buyer’s desires."
   - about: "The ‘Unwritten Story’ Campaign Guide"
-    image: /assets/images/x.jpg
+    image: "/images/squadron/unwritten-story.webp"
     details: "The Unwritten Story Campaign Guide has been responsible for generating business with some of the most recognizable names in the world, including McDonalds, Dardens Restaurants, Marriott International, Shaw Flooring, and Lenovo to name a few. This is the ultimate ‘feel-good’ touch for a prospect and brings a WOW factor that’s stronger than almost any other campaign you could use when reaching out to executives at large companies."
   - about: "The ‘Rebel Resume’ Campaign Guide"
     image: /assets/images/x.jpg
@@ -126,10 +126,10 @@ bonuses:
     image: /assets/images/x.jpg
     details: "Especially great if you sell a physical product, but adaptable to any product or service (this guide shows you how). The Repair Brick is a fun and memorable piece that is extremely cost-effective whether you have them made for you or DIY. And additional campaign items are inexpensive things you probably have lying around the house right now!"
   - about: "The Rebel Carving Board Campaign Guide"
-    image: /assets/images/x.jpg
+    image: "/images/squadron/carving-board.webp"
     details: "One Rebel uses this outbound exclusively! They rose to the #3 sales rep in the company (out of 75+ reps) after not having closed a single deal in his first 6 months."
   - about: "The Rebel’s Living Pipeline Postcard Campaign"
-    image: /assets/images/x.jpg
+    image: "/images/squadron/postcard-pack.webp"
     details: "Even when prospects love your approach, they won’t always be ready to engage immediate in a sales process. Rebels know that the first interaction is just the beginning of a relationship and that the unique experience we bring doesn’t stop at the first touch. Use these simple and hilarious postcards to stay top-of-mind with prospects and become the first and only choice for them when the timing aligns."
 ---
 <style>
