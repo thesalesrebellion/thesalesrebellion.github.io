@@ -120,10 +120,10 @@ bonuses:
     image: "/images/squadron/unwritten-story.webp"
     details: "The Unwritten Story Campaign Guide has been responsible for generating business with some of the most recognizable names in the world, including McDonalds, Dardens Restaurants, Marriott International, Shaw Flooring, and Lenovo to name a few. This is the ultimate ‘feel-good’ touch for a prospect and brings a WOW factor that’s stronger than almost any other campaign you could use when reaching out to executives at large companies."
   - about: "The ‘Rebel Resume’ Campaign Guide"
-    image: /assets/images/x.jpg
+    image: "/images/squadron/rebel-resume.webp"
     details: "A campaign that will get your prospects laughing and pondering how you might be able to help them. The Rebel Resume is another market tool to help you break through the noise of emails, calls, and social messages that your prospects receive on a daily basis. And this campaign isn’t just for prospecting at a current job. Many Rebels have used the campaign to successfully land a new gig!"
   - about: "The Rebel Repair Brick Campaign Guide"
-    image: /assets/images/x.jpg
+    image: "/images/squadron/repair-brick.webp"
     details: "Especially great if you sell a physical product, but adaptable to any product or service (this guide shows you how). The Repair Brick is a fun and memorable piece that is extremely cost-effective whether you have them made for you or DIY. And additional campaign items are inexpensive things you probably have lying around the house right now!"
   - about: "The Rebel Carving Board Campaign Guide"
     image: "/images/squadron/carving-board.webp"
