@@ -66,6 +66,11 @@ speakers:
   title: Meet <span>our</span> team
   members:
     -
+      name: Aleasha Bahr
+      image: /images/speakers/aleasha-bahr.webp
+      alt_text: Aleasha Bahr
+      url: https://www.linkedin.com/in/aleashabahr/
+    -
       name: Lauren Goodell
       image: /images/speakers/lauren-goodell.webp
       alt_text: Lauren Goodell
