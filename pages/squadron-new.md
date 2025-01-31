@@ -90,7 +90,7 @@ rebels:
   - image: "/assets/images/lisa-hardin.webp"
     name: Lisa Hardin
     position: Chemicals
-    testimonial: "Amazing how much condfidence I have now that I realize it’s all about showing I care about them. Can’t thank you guys enough for showing me the Rebel way is THE WAY!"
+    testimonial: "Amazing how much confidence I have now that I realize it’s all about showing I care about them. Can’t thank you guys enough for showing me the Rebel way is THE WAY!"
   - image: "/assets/images/kirk-robinson.webp"
     name: Kirk Robison
     position: Employee Rewards
