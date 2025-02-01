@@ -138,9 +138,10 @@ bonuses:
 
       Even when prospects love your approach, they won’t always be ready to engage immediately in a sales process. Rebels know that the first interaction is just the beginning of a relationship and that the unique experience we bring doesn’t stop at the first touch. Use these simple and hilarious postcards to stay top-of-mind with prospects and become the first and only choice for them when the timing aligns.
   - about: The Ghost Bundle
-    image: "/images/squadron/x.webp"
+    image: "/images/squadron/ghost-bundle.webp"
     details: Ever had a prospect go dark? You’re not alone! Even the strongest Rebels still get ghosted sometimes. Reviving ghosts is best done with audacity, and The Ghost Bundle gives you proven pieces that have plenty of it to help you even further on your way to becoming ‘un-ignorable’.
   - about: Mystery Bonus
+    image: "/images/squadron/mystery-bundle.webp"
     details: We couldn’t be fully rebellious if there weren’t a little intrigue… even though you don’t know what this bonus is, we guarantee you’re going to love it.
 ---
 <style>
