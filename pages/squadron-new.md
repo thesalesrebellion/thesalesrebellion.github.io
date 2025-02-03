@@ -125,6 +125,10 @@ sessions:
   - name: Graduation and What’s Next
     details: This final session will include a final live Q&A with your coach, a time of review and reflection, and a special guest speaker. There’s sure to be laughs, there might be some tears, and we’ll discuss how to not lose momentum as you leave the Squadron!
 bonuses:
+  - about: "How to Start a Sales Rebellion: The Copier Warrior’s Guide to Sales and Life (hardback copy)"
+    image: "/assets/images/start-rebellion-book.webp"
+    details: "This book walks you through the rebellious approach that connects with prospects. On top of that, there’s a life altering truth that resides deep within these pages and is sure to reshape the way you see your life and career. At the highest level, this book deconstructs and
+redefines the core fundamentals that are required for sales success. It acknowledges the changing nature of the marketplace and equips sales reps and sales leaders with the ability to connect, create, and communicate in the ways that B2 B buyer’s desires."
   - about: "The ‘Unwritten Story’ Campaign Guide"
     image: "/images/squadron/unwritten-story.webp"
     details: "In addition to The Rebel Letter Campaign, The Unwritten Story Campaign will be fulfilled for you by the Rebellion. This campaign has been responsible for generating business with some of the most recognizable names in the world, including McDonald’s, Dardens Restaurants, Marriott International, Shaw Flooring, and Lenovo to name a few. This is the ultimate ‘feel-good’ touch for a prospect and brings a WOW factor that’s stronger than almost any other campaign you could use when reaching out to executives at large companies. And while you’ll have your campaign fulfilled by the Rebellion, this comprehensive tutorial will equip you to do it yourself in the future, if you choose."
