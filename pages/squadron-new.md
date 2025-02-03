@@ -11,7 +11,7 @@ has_video: true
 landing_page: false
 buy:
   amount: $500
-  url: "https://buy.stripe.com/eVa3cxeaCbPw88028O"
+  url: "https://buy.stripe.com/8wM00l9UmaLs9c4cNu"
 companies:
   top:
     - name: Google
