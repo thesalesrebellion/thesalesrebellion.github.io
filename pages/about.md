@@ -1,7 +1,7 @@
 ---
 title: About
-layout: pages/about
 permalink: /about/
+layout: page
 page_id: about
 has_carousel: true
 landing_page: false
@@ -85,3 +85,74 @@ footer:
   message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
   note: "- Robert F. Kennedy"
 ---
+
+{%- comment -%} --- FEATURES --- {%- endcomment -%}
+<section class="section about__features">
+
+    <div class="container">
+
+        <div class="about__features-items">
+            {%- for item in page.features.items -%}
+
+                <div class="about__features-item">
+                    <h3 class="about__features-item-title">
+                        {{- item.title -}}
+                    </h3>
+                    <div class="about__features-item-text">
+                        {{ item.text }}
+                    </div>
+                </div>
+            {%- endfor -%}
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- TEAM --- {%- endcomment -%}
+<section class="section about__team">
+
+    <div class="container">
+
+        <h2 class="about__team-title">
+            {{- page.team.title -}}
+        </h2>
+
+        <div class="about__team-members about__team-members--desktop">
+            {%- for item in page.team.members -%}
+                <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
+                    <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+                </div>
+            {%- endfor -%}
+
+            <img src="{{- '/images/rebelBoy.png' | relative_url -}}" alt="" class="about__team-members-top-left-img">
+            <img src="{{- '/images/plastic-bag.png' | relative_url -}}" alt="" class="about__team-members-bottom-right-img">
+        </div>
+
+        <div class="about__team-members about__team-members--mobile slick-me">
+            {%- for item in page.team.members_mobile -%}
+                <img src="{{- item.img.path | relative_url -}}" alt="{{- item.img.alt_text -}}" class="about__team-img about__team-img--mobile">
+            {%- endfor -%}
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- FAQ --- {%- endcomment -%}
+<section class="section about__faq">
+
+    <div class="container">
+
+        <h2 class="faq__heading about__faq-heading">
+            {{- page.faq.heading -}}
+        </h2>
+
+        {%- include faq.html faq_items=page.faq.items -%}
+
+    </div>
+
+</section>
+
+{%- comment -%} --- CTA --- {%- endcomment -%}
+{%- include cta.html cta=page.cta type="page" -%}

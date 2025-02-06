@@ -1,7 +1,7 @@
 ---
 title: Resources
-layout: pages/resources
 permalink: /resources/
+layout: page
 page_id: resources
 has_video: false
 has_carousel: true
@@ -127,3 +127,208 @@ footer:
   message: "There is no scarcity of opportunity, only scarcity of imagination"
   note: "- Napoleon hill"
 ---
+
+{%- comment -%} --- SLACK --- {%- endcomment -%}
+<section id="slack" class="section resources__slack">
+
+    <div class="container">
+
+        <img src="{{ page.slack.img.path | relative_url }}" alt="{{- page.slack.img.alt_text -}}" class="resources__slack-img">
+
+        <p class="resources__slack-text">
+            {{ page.slack.text }}
+        </p>
+
+        <div class="resources__slack-cta">
+            <a href="{{- page.slack.cta.url -}}" class="resources__slack-btn btn"{% if page.slack.cta.new_tab == true %} target="_blank"{% endif %}>
+                {{- page.slack.cta.text -}}
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- PODCAST --- {%- endcomment -%}
+<section id="podcast" class="section resources__podcast">
+
+    <div class="container">
+
+        <img src="{{ page.podcast.img.path | relative_url }}" alt="{{- page.podcast.img.alt_text -}}" class="resources__podcast-img">
+
+        <div class="resources__podcast-cta">
+            <a href='https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E?si=oxvbB8VNTbO98ZIsPW7tkw' class="resources__podcast-btn btn"{% if page.podcast.cta.new_tab == true %} target="_blank"{% endif %}>
+                {{- page.podcast.cta.text -}}
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- BLOG --- {%- endcomment -%}
+<section class="section resources__blog">
+
+    <div id="blog">
+        <img src="{{ page.blog.img.path | relative_url }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
+
+        <a data-micromodal-trigger="blog-modal" href='javascript:void(0);' class="resources__blog-btn btn"{% if page.blog.cta.new_tab == true %} target="_blank"{% endif %}>
+            {{- page.blog.cta.text -}}
+        </a>
+    </div>
+</section>
+
+{%- comment -%} --- MARKET TOOLS --- {%- endcomment -%}
+<section id="market-tools" class="section resources__mt">
+
+    <div class="container">
+        <h2 class="resources__mt-heading">
+            {{- page.market_tools.heading -}}
+        </h2>
+    </div>
+
+    <div class="resources__mt-rows-wrapper">
+
+        <div class="resources__mt-rows resources__mt-rows--1">
+            <div class="container">
+                <div class="resources__mt-row resources__mt-row--1 resources__mt-row--1--left">
+                    <div class="video-wrapper resources__mt-video-wrapper">
+                        {%- include video.html video_id=page.market_tools.row1.left_col.video_id -%}
+                    </div>
+                </div>
+                <div class="resources__mt-row resources__mt-row--1 resources__mt-row--1--right">
+                    <h4 class="resources__mt-supertitle">
+                        {{- page.market_tools.row1.right_col.supertitle -}}
+                    </h4>
+                    <h3 class="resources__mt-title">
+                        <div class="resources__mt-title-row resources__mt-title-row--1">
+                            {{- page.market_tools.row1.right_col.title.first_row -}}
+                        </div>
+                        <br>
+                        <div class="resources__mt-title-row resources__mt-title-row--2">
+                            {{- page.market_tools.row1.right_col.title.second_row -}}
+                        </div>
+                    </h3>
+
+                    <a href="{{- page.market_tools.row1.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--1 resources__mt-cta--desktop btn"{% if  page.market_tools.row1.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                        {{- page.market_tools.row1.right_col.cta.text -}}
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="resources__mt-cta-mobile-wrapper container">
+            <a href="{{- page.market_tools.row1.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--1 resources__mt-cta--mobile btn"{% if  page.market_tools.row1.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                {{- page.market_tools.row1.right_col.cta.text -}}
+            </a>
+        </div>
+
+        <div class="resources__mt-rows resources__mt-rows--2">
+            <div class="container">
+                <div class="container container--inner">
+                    <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--left">
+                        <img src="{{- page.market_tools.row2.left_col.img.path | relative_url -}}" alt="{{- page.market_tools.row2.left_col.img.alt_text -}}" class="resources__mt-left-img">
+                    </div>
+                    <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--right">
+                        <div class="resources__mt-titles-wrapper">
+                            <div class="resources__mt-titles">
+                                <h3 class="resources__mt-title">
+                                    <div class="resources__mt-title-row resources__mt-title-row--1">
+                                        {{- page.market_tools.row2.right_col.title.first_row -}}
+                                    </div>
+                                    <br>
+                                    <div class="resources__mt-title-row resources__mt-title-row--2">
+                                        {{- page.market_tools.row2.right_col.title.second_row -}}
+                                    </div>
+                                </h3>
+                                <h4 class="resources__mt-subtitle">
+                                    {{- page.market_tools.row2.right_col.subtitle -}}
+                                </h4>
+                            </div>
+                        </div>
+
+                        <div class="video-wrapper resources__mt-video-wrapper">
+                            {%- include video.html video_id=page.market_tools.row2.right_col.video_id -%}
+                        </div>
+
+                        <div class="_center _mt50 _mt26--medium">
+                            <a href="{{- page.market_tools.row2.right_col.cta.url -}}" class="resources__mt-cta resources__mt-cta--2 btn"{% if  page.market_tools.row2.right_col.cta.new_tab == true %} target="_blank"{% endif %}>
+                                {{- page.market_tools.row2.right_col.cta.text -}}
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+    </div>
+
+</section>
+
+{%- comment -%} --- LEARN --- {%- endcomment -%}
+<section id="course-work" class="section resources__learn">
+    <div class="container">
+
+        <h2 class="resources__learn-heading">
+            {{- page.learn.heading -}}
+        </h2>
+
+        <div class="resources__learn-items resources__learn-items--desktop">
+            {%- for item in page.learn.images -%}
+                <div class="resources__learn-item">
+                    <a href="{{- item.url -}}" class="resources__learn-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="resources__learn-items resources__learn-items--mobile slick-me-center-50">
+            {%- for item in page.learn.images -%}
+                <div class="resources__learn-item">
+                    <a href="{{- item.url -}}" class="resources__learn-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+    </div>
+</section>
+
+{%- comment -%} --- MERCH --- {%- endcomment -%}
+<section class="section  resources__merch">
+    <div class="container">
+
+        <h2 class="resources__merch-heading">
+            {{- page.merch.heading -}}
+        </h2>
+
+        <div class="resources__merch-items resources__merch-items--desktop">
+            {%- for item in page.merch.images -%}
+                <div class="resources__merch-item">
+                    <a href="{{- item.url | relative_url -}}" class="resources__merch-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__merch-img">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+        <div class="resources__learn-items resources__learn-items--mobile slick-me-center">
+            {%- for item in page.merch.images -%}
+                <div class="resources__learn-item">
+                    <a href="{{- item.url -}}" class="resources__learn-link">
+                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                    </a>
+                </div>
+            {%- endfor -%}
+        </div>
+
+    </div>
+</section>
+
+{%- comment -%} --- MODALS --- {%- endcomment -%}
+{%- include modals/podcasts.html -%}
+{%- include modals/blog.html -%}
