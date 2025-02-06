@@ -97,7 +97,7 @@ footer:
 
         <div class="teams__quote-content">
             <div class="teams__quote-content-item teams__quote-image-wrapper">
-                <img src="{{- page.quote.image.path | relative_url -}}" alt="{{- page.quote.image.alt_text -}}" class="teams__quote-image">
+                <img src="{{ page.quote.image.path }}" alt="{{- page.quote.image.alt_text -}}" class="teams__quote-image">
             </div>
             <div class="teams__quote-content-item teams__quote-text">
                 <h3 class="teams__quote-name">
@@ -124,16 +124,16 @@ footer:
 
         <div class="teams__dl-items teams__dl-items--desktop">
             {%- for item in page.downloads.items -%}
-                <a href="{{- item.download_path | relative_url -}}" class="teams__dl-item">
-                    <img src="{{- item.image.path | relative_url -}}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
+                <a href="{{ item.download_path }}" class="teams__dl-item">
+                    <img src="{{ item.image.path }}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
                 </a>
             {%- endfor -%}
         </div>
 
         <div class="teams__dl-items teams__dl-items--mobile slick-me">
             {%- for item in page.downloads.items -%}
-                <a href="{{- item.download_path | relative_url -}}" class="teams__dl-item">
-                    <img src="{{- item.image.path | relative_url -}}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
+                <a href="{{ item.download_path }}" class="teams__dl-item">
+                    <img src="{{ item.image.path }}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
                 </a>
             {%- endfor -%}
         </div>

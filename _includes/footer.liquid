@@ -42,7 +42,7 @@
                 {%- endif -%}
             </div>
             <div class="site-footer__col site-footer__col--right">
-                <a href="{{- site.data.global.footer.cta.url | relative_url -}}" class="site-footer__cta btn btn--blue"{% if site.data.global.footer.cta.new_tab == true %} target="_blank"{% endif %}>
+                <a href="{{ site.data.global.footer.cta.url }}" class="site-footer__cta btn btn--blue"{% if site.data.global.footer.cta.new_tab == true %} target="_blank"{% endif %}>
                     {{ site.data.global.footer.cta.text }}
                 </a>
             </div>

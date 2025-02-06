@@ -20,7 +20,7 @@
                     <div class="hero__cta-section">
                         {%- for item in page.hero.cta -%}
                             <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
-                                <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
+                                <a href="{{ item.url }}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
                                     {{ item.text }}
                                 </a>
                             </div>
@@ -50,7 +50,7 @@
                   <div class="hero__cta-section hero__cta-section--mobile">
                        {%- for item in page.hero.cta -%}
                            <div class="hero__cta-item hero__cta-item--{{ item.glow_in }}">
-                               <a href="{{- item.url | relative_url -}}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
+                               <a href="{{ item.url }}" class="hero__cta-link hero__cta-link--{{ item.glow_in }}">
                                    {{ item.text }}
                                </a>
                            </div>

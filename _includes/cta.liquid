@@ -23,7 +23,7 @@
                 <div class="home-cta__col{% if cta_has_text == true %} home-cta__col--right{% endif %}">
 
                     {%- if include.cta.button.url and include.cta.button.url.size > 0 -%}
-                        <a class="home-cta__button btn" href="{{- include.cta.button.url | relative_url -}}"{% if include.cta.button.new_tab == true %} target="_blank"{% endif %}>
+                        <a class="home-cta__button btn" href="{{ include.cta.button.url }}"{% if include.cta.button.new_tab == true %} target="_blank"{% endif %}>
                             {{- include.cta.button.text -}}
                         </a>
                     {%- else -%}

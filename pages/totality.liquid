@@ -296,7 +296,7 @@ footer:
             <div class="landing-page__speakers--image-container">
                 <a target="_blank" href="{{ speaker.url }}">
                     <img
-                        src="{{- speaker.image | relative_url -}}"
+                        src="{{ speaker.image }}"
                         alt="{{- speaker.alt_text -}}"
                         class="landing-page__team-img"
                     />
@@ -322,7 +322,7 @@ footer:
             <div class="landing-page__speakers--image-container">
                 <a target="_blank" href="{{ sponsor.url }}">
                     <img
-                        src="{{- sponsor.image | relative_url -}}"
+                        src="{{ sponsor.image }}"
                         alt="{{- sponsor.alt_text -}}"
                         class="landing-page__team-img"
                     />

@@ -133,7 +133,7 @@ footer:
 
     <div class="container">
 
-        <img src="{{ page.slack.img.path | relative_url }}" alt="{{- page.slack.img.alt_text -}}" class="resources__slack-img">
+        <img src="{{ page.slack.img.path }}" alt="{{- page.slack.img.alt_text -}}" class="resources__slack-img">
 
         <p class="resources__slack-text">
             {{ page.slack.text }}
@@ -154,7 +154,7 @@ footer:
 
     <div class="container">
 
-        <img src="{{ page.podcast.img.path | relative_url }}" alt="{{- page.podcast.img.alt_text -}}" class="resources__podcast-img">
+        <img src="{{ page.podcast.img.path }}" alt="{{- page.podcast.img.alt_text -}}" class="resources__podcast-img">
 
         <div class="resources__podcast-cta">
             <a href='https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E?si=oxvbB8VNTbO98ZIsPW7tkw' class="resources__podcast-btn btn"{% if page.podcast.cta.new_tab == true %} target="_blank"{% endif %}>
@@ -170,7 +170,7 @@ footer:
 <section class="section resources__blog">
 
     <div id="blog">
-        <img src="{{ page.blog.img.path | relative_url }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
+        <img src="{{ page.blog.img.path }}" alt="{{- page.blog.img.alt_text -}}" class="resources__blog-img">
 
         <a data-micromodal-trigger="blog-modal" href='javascript:void(0);' class="resources__blog-btn btn"{% if page.blog.cta.new_tab == true %} target="_blank"{% endif %}>
             {{- page.blog.cta.text -}}
@@ -229,7 +229,7 @@ footer:
             <div class="container">
                 <div class="container container--inner">
                     <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--left">
-                        <img src="{{- page.market_tools.row2.left_col.img.path | relative_url -}}" alt="{{- page.market_tools.row2.left_col.img.alt_text -}}" class="resources__mt-left-img">
+                        <img src="{{ page.market_tools.row2.left_col.img.path }}" alt="{{- page.market_tools.row2.left_col.img.alt_text -}}" class="resources__mt-left-img">
                     </div>
                     <div class="resources__mt-row resources__mt-row--2 resources__mt-row--2--right">
                         <div class="resources__mt-titles-wrapper">
@@ -279,7 +279,7 @@ footer:
             {%- for item in page.learn.images -%}
                 <div class="resources__learn-item">
                     <a href="{{- item.url -}}" class="resources__learn-link">
-                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                        <img src="{{ item.path }}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
                     </a>
                 </div>
             {%- endfor -%}
@@ -289,7 +289,7 @@ footer:
             {%- for item in page.learn.images -%}
                 <div class="resources__learn-item">
                     <a href="{{- item.url -}}" class="resources__learn-link">
-                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                        <img src="{{ item.path }}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
                     </a>
                 </div>
             {%- endfor -%}
@@ -309,8 +309,8 @@ footer:
         <div class="resources__merch-items resources__merch-items--desktop">
             {%- for item in page.merch.images -%}
                 <div class="resources__merch-item">
-                    <a href="{{- item.url | relative_url -}}" class="resources__merch-link">
-                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__merch-img">
+                    <a href="{{ item.url }}" class="resources__merch-link">
+                        <img src="{{ item.path }}" alt="{{- item.alt_text -}}" class="resources__merch-img">
                     </a>
                 </div>
             {%- endfor -%}
@@ -320,7 +320,7 @@ footer:
             {%- for item in page.merch.images -%}
                 <div class="resources__learn-item">
                     <a href="{{- item.url -}}" class="resources__learn-link">
-                        <img src="{{- item.path | relative_url -}}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
+                        <img src="{{ item.path }}" alt="{{- item.alt_text -}}" class="resources__learn-img resources__learn-img--{{ item.shadow_color }}">
                     </a>
                 </div>
             {%- endfor -%}
