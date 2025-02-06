@@ -66,6 +66,11 @@ speakers:
   title: Meet <span>our</span> team
   members:
     -
+      name: Thomas Poston
+      image: /images/speakers/thomas-poston.webp
+      alt_text: Thomas Poston
+      url: https://www.linkedin.com/in/tposton84/
+    -
       name: Aleasha Bahr
       image: /images/speakers/aleasha-bahr.webp
       alt_text: Aleasha Bahr
