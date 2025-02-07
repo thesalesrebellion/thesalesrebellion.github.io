@@ -141,7 +141,7 @@ bonuses:
     image: "/images/squadron/ghost-bundle.webp"
     details: Ever had a prospect go dark? You’re not alone! Even the strongest Rebels still get ghosted sometimes. Reviving ghosts is best done with audacity, and The Ghost Bundle gives you proven pieces that have plenty of it to help you even further on your way to becoming ‘un-ignorable’.
   - about: "How to Start a Sales Rebellion: The Copier Warrior’s Guide to Sales and Life (hardback copy)"
-    image: "/assets/images/start-rebellion-book.webp"
+    image: "/images/squadron/copier-warrior.webp"
     details: "This book walks you through the rebellious approach that connects with prospects. On top of that, there’s a life altering truth that resides deep within these pages and is sure to reshape the way you see your life and career. At the highest level, this book deconstructs and
 redefines the core fundamentals that are required for sales success. It acknowledges the changing nature of the marketplace and equips sales reps and sales leaders with the ability to connect, create, and communicate in the ways that B2 B buyer’s desires."
   - about: Mystery Bonus
