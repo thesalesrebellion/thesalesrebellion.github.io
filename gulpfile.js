@@ -33,7 +33,7 @@ export const jsDev = () => gulp.src([
   .pipe(sourcemaps.init())
   .pipe(concat('scripts.js'))
   .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest('assets/js'));
+  .pipe(gulp.dest('js'));
 
 export const jsWatch = () => gulp.watch('./_js/**/*.js', jsDev);
 
@@ -86,7 +86,7 @@ export const jsProd = () => gulp.src([
         comments: false
       }
     }))
-    .pipe(gulp.dest('_site/assets/js'));
+    .pipe(gulp.dest('_site/js'));
 
 export const htmlBuild = (gulpCallback) => {
   const eleventy = spawn('npx', ['@11ty/eleventy']);

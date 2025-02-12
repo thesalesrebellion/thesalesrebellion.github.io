@@ -12,6 +12,7 @@ export default function (eleventyConfig) {
     'favicon': 'favicon',
     'fonts': 'fonts',
     'img': 'img',
+    'js': 'js',
   });
   eleventyConfig.addGlobalData('site_title', 'The Sales Rebellion');
   eleventyConfig.setIncludesDirectory('_includes');

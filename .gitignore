@@ -2,5 +2,5 @@
 .jekyll-cache
 .jekyll-metadata
 _site
-assets/js/scripts*
+js/scripts.js*
 node_modules
