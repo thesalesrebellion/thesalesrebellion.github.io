@@ -3,7 +3,7 @@
 	<div class="container">
 
 		{%- for feature in features -%}
-			{%- capture the_cycle -%}{%- cycle 'odd', 'even' -%}{%- endcapture -%}
+			{%- capture the_cycle -%}{%- cycle "odd", "even" -%}{%- endcapture -%}
 
 			{%- capture content_col -%}
 				<h2 class="features__heading">
@@ -27,14 +27,14 @@
 			{%- endcapture -%}
 
 			<div class="features__row features__row--{{ the_cycle }}">
-				{%- if the_cycle == 'odd' -%}
+				{%- if the_cycle == "odd" -%}
 					<div class="features__col features__col--left features__col--content">
 						{{ content_col }}
 					</div>
 					<div class="features__col features__col--right features__col--image">
 						{{ image_col }}
 					</div>
-				{%- elsif the_cycle == 'even' -%}
+				{%- elsif the_cycle == "even" -%}
 					<div class="features__col features__col--left features__col--image">
 						{{ image_col }}
 					</div>

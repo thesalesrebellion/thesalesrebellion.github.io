@@ -3,9 +3,9 @@
     {%- include "header.liquid" -%}
     
     {%- if landing_page == false -%}
-        {%- if page.url == '/teams/' -%}
+        {%- if page.url == "/teams/" -%}
             {%- include "pages/teams/hero-content.liquid" -%}
-        {%- elsif page.url == '/1x1/' -%}
+        {%- elsif page.url == "/1x1/" -%}
             {%- include "pages/one-x-one/hero-content.liquid" -%}
         {%- else -%}
             {%- include "pages/hero-content.liquid" -%}

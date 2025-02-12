@@ -2,7 +2,7 @@
 title: Home
 layout: default
 page_id: home
-permalink: '/'
+permalink: /
 has_video: true
 has_modal: true
 has_carousel: true
@@ -13,10 +13,10 @@ hero:
     Attract marketplace leaders with<br>sales approaches that #changethegame
   cta:
     - text: <span>For</span> <span>Teams</span>
-      url: '/teams/'
+      url: "/teams/"
       glow_in: green
     - text: Individuals
-      url: '1x1'
+      url: "1x1"
       glow_in: blue
   slides:
     - industry: Employee Recognition Platform
@@ -67,8 +67,8 @@ community:
  items:
   - title: Community
     image:
-      path: '/assets/images/rebel-refuge.webp'
-      alt_text: 'Slack logo'
+      path: "/assets/images/rebel-refuge.webp"
+      alt_text: "Slack logo"
     button:
       text: Join Us
       url: https://thesalesrebellion.typeform.com/to/frAJUfW6
@@ -76,36 +76,36 @@ community:
       glow_in: blue
   - title: Podcast
     image:
-      path: '/assets/images/podcast.png'
-      alt_text: 'The podcast cover'
+      path: "/assets/images/podcast.png"
+      alt_text: "The podcast cover"
     button:
       text: <span>Listen</span> Today
-      url: 'javascript:void(0);'
+      url: "javascript:void(0);"
       new_tab: false
       glow_in: purple
     modal_target: podcasts
   - title: Blog
     image:
-      path: '/assets/images/blog.webp'
-      alt_text: 'The Blog cover'
+      path: "/assets/images/blog.webp"
+      alt_text: "The Blog cover"
     button:
       text: Read now
-      url: 'javascript:void(0);'
+      url: "javascript:void(0);"
       new_tab: false
       glow_in: blue
     modal_target: blog
 testimonials:
   image:
     path: /images/home-testimonials.webp
-    alt_text: 'Testimonials from clients'
-  heading: ''
+    alt_text: "Testimonials from clients"
+  heading:
   video_id: te3pw5DBXi8
 cta:
   show: false
   text: Sign<span class="space"></span>up<span class="space"></span>for<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion’s<span class="space"></span>email<span class="space"></span>experience<span class="space"></span>extravaganza
   button:
     text: Coming<br>Soon
-    url: ''
+    url:
     new_tab: false
 footer:
   message: "To draw, you must close your eyes and sing."
@@ -122,7 +122,7 @@ footer:
 
     {%- include "home/community.liquid" -%}
 
-    {%- include "cta.liquid", cta: cta, type:'home' -%}
+    {%- include "cta.liquid", cta: cta, type:"home" -%}
 
 </div>
 
