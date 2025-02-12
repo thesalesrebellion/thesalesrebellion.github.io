@@ -1,27 +1,27 @@
 .hero {
 
-    background-image: url(/assets/images/hero_space_bg.webp);
+    background-image: url(/img/hero_space_bg.webp);
 
     // &--home {
-    //     background-image: url(/assets/images/hero_space_bg.webp);
+    //     background-image: url(/img/hero_space_bg.webp);
     // }
 
     // &--teams {
-    //     background-image: url(/assets/images/hero_space_bg.webp);
+    //     background-image: url(/img/hero_space_bg.webp);
     // }
 
     // &--1x1 {
-    //     background-image: url(/assets/images/hero_space_bg.webp);
+    //     background-image: url(/img/hero_space_bg.webp);
     // }
 
     // &--group,
     // &--about,
     // &--404 {
-    //     background-image: url(/assets/images/hero_space_bg.webp);
+    //     background-image: url(/img/hero_space_bg.webp);
     // }
 
     // &--resources {
-    //     background-image: url(/assets/images/resources-hero-bg.jpg);
+    //     background-image: url(/img/resources-hero-bg.jpg);
     // }
 
     &--landing-page {
@@ -129,7 +129,7 @@
         background-size: cover;
 
         &--home {
-            background-image: url(/assets/images/grid_and_sun.png);
+            background-image: url(/img/grid_and_sun.png);
             background-position-y: 100px;
             background-attachment: fixed;
             @include breakpoint(large) {
@@ -141,14 +141,14 @@
         }
 
         &--teams {
-            @include page_hero_grid_bg('/assets/images/grid-green-bg.png', '/assets/images/grid-green-bg-small.png');
+            @include page_hero_grid_bg('/img/grid-green-bg.png', '/img/grid-green-bg-small.png');
             background-attachment: fixed;
             background-position-y: 430px;
             padding-top: 60px;
         }
 
         &--1x1 {
-            @include page_hero_grid_bg('/assets/images/grid-blue-bg.png', '/assets/images/grid-blue-bg-small.png');
+            @include page_hero_grid_bg('/img/grid-blue-bg.png', '/img/grid-blue-bg-small.png');
             background-attachment: fixed;
             background-position-y: 500px;
         }
@@ -156,7 +156,7 @@
         &--group {
             @include breakpoint(medium) {
                 padding-bottom: 340px;
-                background-image: url(/assets/images/ringed-planet.png);
+                background-image: url(/images/ringed-planet.png);
                 background-size: 600px;
                 background-position: 150px 350px;
             }
@@ -175,7 +175,7 @@
 
         @include breakpoint(medium) {
             &--home {
-                background-image: url(/assets/images/grid_and_sun_small.png);
+                background-image: url(/img/grid_and_sun_small.png);
                 background-position: center 300px;
             }
         }
