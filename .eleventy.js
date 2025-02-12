@@ -13,6 +13,7 @@ export default function (eleventyConfig) {
     'fonts': 'fonts',
     'img': 'img',
     'js': 'js',
+    'site.webmanifest': 'site.webmanifest',
   });
   eleventyConfig.addGlobalData('site_title', 'The Sales Rebellion');
   eleventyConfig.setIncludesDirectory('_includes');
