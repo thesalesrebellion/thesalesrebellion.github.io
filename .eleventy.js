@@ -9,7 +9,7 @@ export default function (eleventyConfig) {
     'assets': 'assets',
     'downloads': 'downloads',
     'favicon': 'favicon',
-    'font': 'font',
+    'fonts': 'fonts',
     'img': 'img',
   });
   eleventyConfig.addGlobalData('site_title', 'The Sales Rebellion');
