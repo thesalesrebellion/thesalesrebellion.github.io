@@ -20,7 +20,7 @@ export const cssDev = () => gulp.src('./_sass/styles.scss')
       ],
     })
     .on('error', sass.logError))
-    .pipe(gulp.dest('./assets/css'));
+    .pipe(gulp.dest('./css'));
 
 export const cssWatch = () => gulp.watch('./_sass/**/*.scss', cssDev);
 
@@ -71,7 +71,7 @@ export const cssProd = () => gulp.src('./_sass/styles.scss')
       removeComments({ removeAll: true }),
       cssnano()
     ]))
-    .pipe(gulp.dest('./_site/assets/css'));
+    .pipe(gulp.dest('./_site/css'));
 
 export const jsProd = () => gulp.src([
       './node_modules/jquery/dist/jquery.js',

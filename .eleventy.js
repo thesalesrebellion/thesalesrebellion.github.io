@@ -7,6 +7,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({
     'assets': 'assets',
+    'css': 'css',
     'downloads': 'downloads',
     'favicon': 'favicon',
     'fonts': 'fonts',
