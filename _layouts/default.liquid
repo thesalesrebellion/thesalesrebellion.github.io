@@ -4,20 +4,20 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html -%}
-<body{% if page.class %} class="{{ page.class }}"{% endif %}>
+{% include "head.liquid" -%}
+<body{% if class %} class="{{ class }}"{% endif %}>
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5VKQJGV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     {{ content }}
 
-    {%- if page.landing_page == false -%}
-      {%- include footer.html %}
+    {%- if landing_page == false -%}
+      {%- include "footer.liquid" %}
     {%- endif -%}
     
     <script src="{{- '/assets/js/scripts.js' -}}"></script>
 
-    {%- if page.has_modal == true -%}
-      {%- include micromodal.html -%}
+    {%- if has_modal == true -%}
+      {%- include "micromodal.liquid" -%}
       <script>
         document.addEventListener("DOMContentLoaded", function() {
 
@@ -35,7 +35,7 @@ layout: compress
       </script>
     {%- endif -%}
 
-    {%- if page.has_carousel == true -%}
+    {%- if has_carousel == true -%}
 
       <script>
 
@@ -90,8 +90,8 @@ layout: compress
 
     <script>var continuallySettings = { appID: "g4xrgm22rn3z" };</script><script src="https://cdn-app.continual.ly/js/embed/continually-embed.latest.min.js"></script>
 
-    {%- if page.has_video == true -%}
-      {% include youtube_api.html %}
+    {%- if has_video == true -%}
+      {% include "youtube_api.liquid" %}
     {%- endif -%}
 </body>
 </html>

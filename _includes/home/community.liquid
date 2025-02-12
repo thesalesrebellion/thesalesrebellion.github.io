@@ -2,12 +2,12 @@
 
     <div class="container">
 
-        {%- if page.community.heading and page.community.heading.size > 0 -%}
-            <h2 class="comm__heading">{{- page.community.heading -}}</h2>
+        {%- if community.heading and community.heading.size > 0 -%}
+            <h2 class="comm__heading">{{- community.heading -}}</h2>
         {%- endif -%}
 
         <div class="comm__items">
-            {%- for item in page.community.items -%}
+            {%- for item in community.items -%}
                 {%- if item.title and item.title.size > 0 -%}
                     <div class="comm__item">
                         <h3 class="comm__item-title">

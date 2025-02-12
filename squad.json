@@ -1,4 +1,0 @@
----
-layout: blank
----
-{{ site.data.squad | jsonify }}

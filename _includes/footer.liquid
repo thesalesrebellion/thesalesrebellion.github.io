@@ -5,13 +5,13 @@
         <div class="site-footer__cols">
             <div class="site-footer__col site-footer__col--left">
                 <div class="site-footer__social">
-                    <a class="site-footer__social-link site-footer__social-link--fb" href="{{- site.data.global.social.facebook -}}" target="_blank">
-                        {%- include svg/facebook.svg -%}
+                    <a class="site-footer__social-link site-footer__social-link--fb" href="https://www.facebook.com/salesrebellion/" target="_blank">
+                        <img src="/img/svg/facebook.svg">
                     </a>
-                    <a class="site-footer__social-link site-footer__social-link--in" href="{{- site.data.global.social.linkedin -}}" target="_blank">
-                        {%- include svg/linkedin.svg -%}
+                    <a class="site-footer__social-link site-footer__social-link--in" href="https://www.linkedin.com/company/salesrebellion/" target="_blank">
+                      <img src="/img/svg/linkedin.svg">
                     </a>
-                    <a class="site-footer__social-link site-footer__social-link--rh" href="{{- site.data.global.social.rebel_refuge -}}">
+                    <a class="site-footer__social-link site-footer__social-link--rh" href="https://thesalesrebellion.typeform.com/to/JFkwGN7S">
                         <img src="/assets/images/rebel-refuge-small.webp">
                     </a>
                 </div>
@@ -20,30 +20,12 @@
                 </div>
             </div>
             <div class="site-footer__col site-footer__col--middle">
-                {%- if page.footer.message and page.footer.message.size > 0 -%}
-                    <p class="site-footer__message">
-                        {{ page.footer.message }}
-                    </p>
-
-                    {%- if page.footer.note and page.footer.note.size > 0 -%}
-                        <p class="site-footer__note">
-                            {{ page.footer.note }}
-                        </p>
-                    {%- endif -%}
-                {%- else -%}
-                    <p class="site-footer__message">
-                        {{ site.data.global.footer.message }}
-                    </p>
-                    {%- if site.data.global.footer.note and site.data.global.footer.note.size > 0 -%}
-                        <p class="site-footer__note">
-                            {{ site.data.global.footer.note }}
-                        </p>
-                    {%- endif -%}
-                {%- endif -%}
+                <p class="site-footer__message">To draw, you must close your eyes and sing.</p>
+                <p class="site-footer__note">- Pablo Picasso</p>
             </div>
             <div class="site-footer__col site-footer__col--right">
-                <a href="{{ site.data.global.footer.cta.url }}" class="site-footer__cta btn btn--blue"{% if site.data.global.footer.cta.new_tab == true %} target="_blank"{% endif %}>
-                    {{ site.data.global.footer.cta.text }}
+                <a href="https://thesalesrebellion.typeform.com/to/JFkwGN7S" class="site-footer__cta btn btn--blue">
+                    Submit a prayer request
                 </a>
             </div>
         </div>

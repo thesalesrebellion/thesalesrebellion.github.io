@@ -1,6 +1,6 @@
 ---
-layout: home
 title: Home
+layout: default
 page_id: home
 permalink: '/'
 has_video: true
@@ -18,6 +18,22 @@ hero:
     - text: Individuals
       url: '1x1'
       glow_in: blue
+  slides:
+    - industry: Employee Recognition Platform
+      image:
+        path: "/images/pink-triangle-enterprise-rep.webp"
+      testimonial: |-
+        "I’m well over the quota for the year already. I could potentially finish the year at 300% of quota… So, I feel like the numbers speak for themselves."
+    - industry: Business Technology
+      image:
+      path: "/images/pink-triangle-full-cycle-ae.png"
+      testimonial: |-
+        "I wasn’t finding any meaning in my job and that all changed when I started the Rebellion training… Prior to the Rebellion, I was going to quit. Now, the way I perceive my job is different and I enjoy my job every day…"
+    - industry: Cloud Services
+      image:
+        path: "/images/pink-triangle-mid-smb.webp"
+      testimonial: |-
+         "I was skeptical about some of these things we when began. But, the strategies I got from the Sales Rebellion definitely influenced my ability to win back opportunities that had gone dark because they changed the tone of the relationship.""
 features:
   - title: Team<br>training
     text: Drive buyer response like free Girl Scout cookies in a supermarket parking lot…
@@ -95,3 +111,21 @@ footer:
   message: "To draw, you must close your eyes and sing."
   note: "- Pablo Picasso"
 ---
+
+{%- include "home/hero.liquid" -%}
+
+{%- include "home/features.liquid" -%}
+
+<div class="page__content page__content--{{ page_id }}">
+
+    {%- include "home/testimonials.liquid" -%}
+
+    {%- include "home/community.liquid" -%}
+
+    {%- include "cta.liquid", cta: cta, type:'home' -%}
+
+</div>
+
+{%- comment -%} --- MODALS --- {%- endcomment -%}
+{%- include "modals/podcasts.liquid" -%}
+{%- include "modals/blog.liquid" -%}

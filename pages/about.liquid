@@ -1,6 +1,10 @@
 ---
 title: About
 permalink: /about/
+eleventyNavigation:
+  key: About
+  order: 4
+  glow_in: "red"
 layout: page
 page_id: about
 has_carousel: true
@@ -79,10 +83,10 @@ cta:
   text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
   button:
     text: Coming<br>Soon
-    url: ''
+    url:
     new_tab: false
 footer:
-  message: " Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
+  message: "Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
   note: "- Robert F. Kennedy"
 ---
 
@@ -92,7 +96,7 @@ footer:
     <div class="container">
 
         <div class="about__features-items">
-            {%- for item in page.features.items -%}
+            {%- for item in features.items -%}
 
                 <div class="about__features-item">
                     <h3 class="about__features-item-title">
@@ -115,11 +119,11 @@ footer:
     <div class="container">
 
         <h2 class="about__team-title">
-            {{- page.team.title -}}
+            {{- team.title -}}
         </h2>
 
         <div class="about__team-members about__team-members--desktop">
-            {%- for item in page.team.members -%}
+            {%- for item in team.members -%}
                 <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
                     <img src="{{ item.img.path }}" alt="{{- item.img.alt_text -}}" class="about__team-img">
                 </div>
@@ -130,7 +134,7 @@ footer:
         </div>
 
         <div class="about__team-members about__team-members--mobile slick-me">
-            {%- for item in page.team.members_mobile -%}
+            {%- for item in team.members_mobile -%}
                 <img src="{{ item.img.path }}" alt="{{- item.img.alt_text -}}" class="about__team-img about__team-img--mobile">
             {%- endfor -%}
         </div>
@@ -145,14 +149,14 @@ footer:
     <div class="container">
 
         <h2 class="faq__heading about__faq-heading">
-            {{- page.faq.heading -}}
+            {{- faq.heading -}}
         </h2>
 
-        {%- include faq.html faq_items=page.faq.items -%}
+        {%- include "faq.liquid", faq_items: faq.items -%}
 
     </div>
 
 </section>
 
 {%- comment -%} --- CTA --- {%- endcomment -%}
-{%- include cta.html cta=page.cta type="page" -%}
+{%- include "cta.liquid", cta: cta, type:"page" -%}

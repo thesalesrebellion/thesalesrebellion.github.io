@@ -1,6 +1,10 @@
 ---
 title: Teams
 permalink: /teams/
+eleventyNavigation:
+  key: Teams
+  order: 1
+  glow_in: "green"
 layout: page
 page_id: teams
 has_video: true
@@ -14,6 +18,22 @@ hero:
     text: Reach Out!
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
     new_tab: true
+  slides:
+    - industry: Business Technology
+      image:
+        path: '/images/green-triangle-coo.png'
+      testimonial: |-
+        "Do I measure the fact that we are up 280% since the beginning the Sales Rebellion’s program… Or do I measure the fact that I have the best team I’ve ever had…Yes, the ROI is there, but the true value is so much more than the money!"
+    - industry: Information Technology Services
+      image:
+        path: '/images/green-triangle-sales-director.png'
+      testimonial: |-
+        "Before the Rebellion we were running between 30k and 50k in monthly gross profit… We are now pushing over $200,000 in gross profit every single month. On top of that my team is closer in comradery and connection than they have ever been and it's all from the Rebellion."
+    - industry: Business Technology
+      image:
+        path: '/images/green-triangle-coo-2.png'
+      testimonial: |-
+        "The Sales Rebellion fits right in line with the way we want to run the company and the culture that we want to build here. That means it has helped me cultivate my sales teams with the safety to try new things and the accountability that comes along with servant leadership.""
 features:
   items:
     - title: Training and Coaching
@@ -70,7 +90,7 @@ footer:
 
     <div class="container">
 
-        {%- for item in page.features.items -%}
+        {%- for item in features.items -%}
             <div class="teams__feature">
                 <h2 class="teams__feature-title">
                     {{- item.title -}}
@@ -97,14 +117,14 @@ footer:
 
         <div class="teams__quote-content">
             <div class="teams__quote-content-item teams__quote-image-wrapper">
-                <img src="{{ page.quote.image.path }}" alt="{{- page.quote.image.alt_text -}}" class="teams__quote-image">
+                <img src="{{ quote.image.path }}" alt="{{- quote.image.alt_text -}}" class="teams__quote-image">
             </div>
             <div class="teams__quote-content-item teams__quote-text">
                 <h3 class="teams__quote-name">
-                    {{- page.quote.name -}}
+                    {{- quote.name -}}
                 </h3>
                 <p class="teams__quote-desc">
-                    {{ page.quote.text }}
+                    {{ quote.text }}
                 </p>
             </div>
         </div>
@@ -119,11 +139,11 @@ footer:
     <div class="container">
 
         <h2 class="teams__dl-heading">
-            {{ page.downloads.heading }}
+            {{ downloads.heading }}
         </h2>
 
         <div class="teams__dl-items teams__dl-items--desktop">
-            {%- for item in page.downloads.items -%}
+            {%- for item in downloads.items -%}
                 <a href="{{ item.download_path }}" class="teams__dl-item">
                     <img src="{{ item.image.path }}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
                 </a>
@@ -131,7 +151,7 @@ footer:
         </div>
 
         <div class="teams__dl-items teams__dl-items--mobile slick-me">
-            {%- for item in page.downloads.items -%}
+            {%- for item in downloads.items -%}
                 <a href="{{ item.download_path }}" class="teams__dl-item">
                     <img src="{{ item.image.path }}" alt="{{- item.image.alt_text -}}" class="teams__dl-img">
                 </a>
@@ -148,11 +168,11 @@ footer:
     <div class="container">
 
         <h2 class="teams__video-heading">
-            {{ page.video.heading }}
+            {{ video.heading }}
         </h2>
 
         <div class="teams__video-video_wrapper video-wrapper">
-            {%- include video.html video_id=page.video.video_id -%}
+            {%- include "video.liquid", video_id: video.video_id -%}
         </div>
 
     </div>

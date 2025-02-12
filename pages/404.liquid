@@ -1,3 +1,10 @@
+---
+title: Page not found
+layout: default
+page_id: 404
+permalink: 404.html
+---
+
 <section class="hero hero--{{ page_id }}">
 
     {%- include "header.liquid" -%}
@@ -8,7 +15,7 @@
 
             <div class="hero__content-wrapper hero__content-wrapper--{{ page_id }}">
 
-                <img src="{{- '/images/404.png' -}}" alt=" Error 404">
+                <img src="/images/404.png" alt=" Error 404">
 
                 <h1 class="hero__heading hero__heading--page hero__heading--{{ page_id }}">
                     <span>We</span> <span>can't</span> <span>find</span> <span>the</span> <span>page</span> <span>you're</span> <span>looking</span> for.
@@ -23,3 +30,10 @@
     <div class="hero__overlay"></div>
 
 </section>
+
+
+<div class="page__content page__content--{{ page_id }}">
+
+    {{ content }}
+
+</div>

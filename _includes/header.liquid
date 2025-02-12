@@ -1,3 +1,5 @@
+{% assign navPages = collections.all | eleventyNavigation %}
+
 <header class="site-header">
   <div class="container">
     <div class="site-header__logo">
@@ -10,40 +12,40 @@
     dates on a specific page, set 'landing_page: true' on the page's markdown file and update
     the 'site.data.dates' in the data files with the appropriate date range.
     {%- endcomment -%}
-    {% if page.layout == 'pages/totality' %}
+    {% if layout == 'pages/totality' %}
     <div class="site-header__totality">
-      {%- include svg/totality-logo.svg -%}
+      <img src="/img/svg/totality-logo.svg">
     </div>
     {% endif %}
-    {%- if page.landing_page -%}
+    {%- if landing_page -%}
     <div class="site-header__dates">
-      <div class="site-header__dates--date-range">{{- page.dates.date_range -}}</div>
-      <div class="site-header__dates--month-year">{{- page.dates.month_year | upcase -}}</div>
-      <div class="site-header__dates--location">{{- page.location | upcase -}}</div>
+      <div class="site-header__dates--date-range">{{- dates.date_range -}}</div>
+      <div class="site-header__dates--month-year">{{- dates.month_year | upcase -}}</div>
+      <div class="site-header__dates--location">{{- location | upcase -}}</div>
     </div>
     {%- else -%}
     <nav id="menu" class="menu">
       <ul class="menu__items">
         <li class="menu__item menu__item--mobile">
           <a href="/" class="menu__link">
-            <img src="/assets/images/logo.png'" alt="Sales Rebellion Home page">
+            <img src="/assets/images/logo.png" alt="Sales Rebellion Home page">
           </a>
         </li>
-        {%- for item in site.data.navigation.items -%}
+        {%- for item in navPages -%}
         <li class="menu__item">
           <a href="{{ item.url }}"
             class="menu__link menu__link--{{ item.glow_in }}{% if item.url == page.url %} menu__link--active{% endif %}">
-            {{ item.name | upcase }}
+            {{ item.title | upcase }}
           </a>
         </li>
         {%- endfor -%}
       </ul>
     </nav>
     <div id="menu__burger" class="menu__burger">
-      {%- include svg/burger.svg -%}
+      <img src="/img/svg/burger.svg">
     </div>
     <div id="menu__close" class="menu__close">
-      {%- include svg/close.svg -%}
+      <img src="/img/svg/close.svg">
     </div>
     {%- endif -%}
   </div>

@@ -2,6 +2,10 @@
 title: Squadron
 layout: default
 layout_engine: bootstrap
+eleventyNavigation:
+  key: Squadron
+  order: 3
+  glow_in: "purple"
 class: new-font
 permalink: /squadron/
 redirect_from:
@@ -305,8 +309,8 @@ redefines the core fundamentals that are required for sales success. It acknowle
     background-image: none;
   }
 </style>
-<section class="hero hero--{{ page.page_id }}">
-  {% include "header" %}
+<section class="hero hero--{{ page_id }}">
+  {% include "header.liquid" %}
 </section>
 <div class="container-fluid" style="background: url('/assets/images/bg-rebel-squadron.webp');background-repeat:no-repeat;background-position:center 250px;background-size: cover;">
   <div class="container-md">
@@ -365,7 +369,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
   </div>
   <div class="row" style="margin-bottom:20px">
-    {% for company in page.companies.top %}
+    {% for company in companies.top %}
     <div class="col-4 col-lg-2" style="display:flex;align-items:center;justify-content:center">
       <img src="{{ company.image }}" alt="{{ company.name }}">
     </div>
@@ -374,7 +378,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
 </div>
 <div class="container-fluid" style="margin-bottom:80px">
   <div id="companies" class="row scroll">
-    {% for company in page.companies.bottom %}
+    {% for company in companies.bottom %}
     <div class="col-5 col-md-2" style="display:flex;align-items:center;justify-content:center">
       <img src="{{ company.image }}" alt="{{ company.name }}">
     </div>
@@ -402,7 +406,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
   </div>
   <div class="row scroll">
-    {% for benefit in page.benefits %}
+    {% for benefit in benefits %}
     <div class="col-10 col-md-6" style="margin-bottom: 25px">
       <div class="card" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <div class="card-body">
@@ -421,7 +425,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
   </div>
   <div class="row sessions scroll">
-    {% for session in page.sessions %}
+    {% for session in sessions %}
     <div class="col-10 col-md-6" style="margin-bottom: 25px">
       <div class="card" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <div class="card-body">
@@ -461,7 +465,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
   </div>
   <div class="row rebels scroll">
-    {% for rebel in page.rebels %}
+    {% for rebel in rebels %}
     <div class="col-10 col-md-4" style="margin-bottom: 25px">
       <div class="card" style="background: linear-gradient(#000 60%, #EB38CF);border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <img src="{{ rebel.image }}" alt="{{ rebel.name }}'s Testimonial" style="margin: 16px 0 0 16px;width: 100px">
@@ -503,7 +507,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
           <div class="row scroll-desktop">
             <div style="background:#1c091d;border-radius:12px;width:100%;padding:20px;width:100%;">
               <div class="row scroll-desktop">
-                {% for bonus in page.bonuses %}
+                {% for bonus in bonuses %}
                 <div class="col-12 col-md-4">
                   <img src="{{ bonus.image }}">
                 </div>
@@ -547,7 +551,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Nah</button>
-        <button id="purchaseSquadron" type="button" class="btn btn-primary" onclick="location.href='{{ page.buy.url }}'" disabled>Let's go!</button>
+        <button id="purchaseSquadron" type="button" class="btn btn-primary" onclick="location.href='{{ buy.url }}'" disabled>Let's go!</button>
       </div>
     </div>
   </div>

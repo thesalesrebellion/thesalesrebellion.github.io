@@ -1,7 +1,7 @@
 <div class="faq">
 
     <ul class="faq__items">
-        {%- for item in include.faq_items -%}
+        {%- for item in faq_items -%}
             <li class="faq__item">
                 <div class="faq__q">
                     <span class="faq__icon">+</span>
@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="faq__a">
-                    {{ item.a | markdownify }}
+                  {{ item.a | markdownify }}
                 </div>
 
             </li>

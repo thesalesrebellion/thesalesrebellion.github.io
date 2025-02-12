@@ -2,18 +2,18 @@
 
     <div class="container">
 
-        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
-            <h2 class="testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- if testimonials.heading and testimonials.heading.size > 0 -%}
+            <h2 class="testimonials__heading">{{- testimonials.heading -}}</h2>
         {%- endif -%}
 
         <div class="testimonials__content">
 
             <div class="testimonials__image-wrapper">
-                <img class="testimonials__image" src="{{ page.testimonials.image.path }}" alt="{{- page.testimonials.image.alt_text -}}">
+                <img class="testimonials__image" src="{{ testimonials.image.path }}" alt="{{- testimonials.image.alt_text -}}">
             </div>
 
             <div class="testimonials__video-wrapper video-wrapper">
-                {%- include video.html video_id=page.testimonials.video_id -%}
+                {%- include "video.liquid", video_id: testimonials.video_id -%}
             </div>
 
         </div>

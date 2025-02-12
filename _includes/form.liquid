@@ -1,16 +1,16 @@
-<section class="section form form--{{ page.page_id }}">
+<section class="section form form--{{ page_id }}">
 
     <div class="container">
 
         <h2 class="form__heading">
-            {{ page.contact.heading }}
+            {{ contact.heading }}
         </h2>
 
         <div class="form__form_wrapper">
 
-        {%- if page.pipedrive_bot -%}
+        {%- if pipedrive_bot -%}
 
-            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ page.pipedrive_bot }}">
+            <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/{{ pipedrive_bot }}">
               <script src="https://webforms.pipedrive.com/f/loader"></script>
             </div>
 

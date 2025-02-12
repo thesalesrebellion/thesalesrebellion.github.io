@@ -1,14 +1,14 @@
-<section class="hero hero--{{ page.page_id }}">
+<section class="hero hero--{{ page_id }}">
     
-    {%- include header.html -%}
+    {%- include "header.liquid" -%}
     
-    {%- if page.landing_page == false -%}
+    {%- if landing_page == false -%}
         {%- if page.url == '/teams/' -%}
-            {%- include pages/teams/hero-content.html -%}
+            {%- include "pages/teams/hero-content.liquid" -%}
         {%- elsif page.url == '/1x1/' -%}
-            {%- include pages/one-x-one/hero-content.html -%}
+            {%- include "pages/one-x-one/hero-content.liquid" -%}
         {%- else -%}
-            {%- include pages/hero-content.html -%}
+            {%- include "pages/hero-content.liquid" -%}
         {%- endif -%}
         
         <div class="hero__overlay"></div>

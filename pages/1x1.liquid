@@ -1,6 +1,10 @@
 ---
 title: 1x1
 permalink: /1x1/
+eleventyNavigation:
+  key: 1x1
+  order: 2
+  glow_in: "blue"
 layout: page
 page_id: 1x1
 has_video: true
@@ -14,6 +18,21 @@ hero:
     text: '#ChooseLegendary'
     url: https://calendly.com/jeremiah-salesrebellion/30min-1
     new_tab: true
+  slides:
+    - industry: Copier Sales
+      image:
+        path: "/images/blue-triangle-full-cycle-ae.png"
+      testimonial: |-
+        "Take a leap of faith because this has changed my life. This could absolutely be life-changing if you are open to it and open to connecting with people in a wya that is much more meaningful than the way we’re usually taught."
+    - industry: Business Technology
+      image:
+        path: "/images/blue-triangle-sales-director.png"
+      testimonial: |-
+        "The game starts when you lose a deal and choose to build a relationship with them anyway… Relationships are everything and the Sales Rebellion has helped me to build more authentic relationships."
+    - industry: Business Technology
+      image: "/images/blue-triangle-ae.png"
+      testimonial: |-
+        "I set 14 net new meetings in one week which was a record in the company. It got the attention of my boss and totally changed they way I approach sales in general. And it all started with the Crumpled Letter.""
 features:
   heading_lines:
     - Become
@@ -75,7 +94,7 @@ footer:
     <div class="container">
 
         <h2 class="one-x-one__features-heading">
-            {%- for line in page.features.heading_lines -%}
+            {%- for line in features.heading_lines -%}
                 <div class="one-x-one__features-heading-line one-x-one__features-heading-line--{{ forloop.index }}">
                     {{- line -}}
                 </div>
@@ -83,7 +102,7 @@ footer:
         </h2>
 
         <ul class="one-x-one__features-text">
-            {%- for item in page.features.items -%}
+            {%- for item in features.items -%}
                 <li class="one-x-one__features-text-item">
                     - {{ item }}
                 </li>
@@ -91,7 +110,7 @@ footer:
         </ul>
 
         <p class="one-x-one__features-footer_text">
-            {{ page.features.footer_text }}
+            {{ features.footer_text }}
         </p>
 
     </div>
@@ -103,18 +122,18 @@ footer:
 
     <div class="container">
 
-        {%- if page.testimonials.heading and page.testimonials.heading.size > 0 -%}
-            <h2 class="one-x-one-testimonials__heading">{{- page.testimonials.heading -}}</h2>
+        {%- if testimonials.heading and testimonials.heading.size > 0 -%}
+            <h2 class="one-x-one-testimonials__heading">{{- testimonials.heading -}}</h2>
         {%- endif -%}
 
         <div class="one-x-one-testimonials__content">
 
             <div class="one-x-one-testimonials__image-wrapper">
-                <img class="one-x-one-testimonials__image" src="{{ page.testimonials.image.path }}" alt="{{- page.testimonials.image.alt_text -}}">
+                <img class="one-x-one-testimonials__image" src="{{ testimonials.image.path }}" alt="{{- testimonials.image.alt_text -}}">
             </div>
 
             <div class="one-x-one-testimonials__video-wrapper video-wrapper">
-                {%- include video.html video_id=page.testimonials.video_id -%}
+                {%- include "video.liquid", video_id: testimonials.video_id -%}
             </div>
 
         </div>
@@ -129,14 +148,14 @@ footer:
     <div class="container">
 
         <h2 class="faq__heading one-x-one__faq-heading">
-            {{- page.faq.heading -}}
+            {{- faq.heading -}}
         </h2>
 
-        {%- include faq.html faq_items=page.faq.items -%}
+        {%- include "faq.liquid", faq_items: faq.items -%}
 
     </div>
 
 </section>
 
 {%- comment -%} --- CTA --- {%- endcomment -%}
-{%- include cta.html cta=page.cta type="page" -%}
+{%- include "cta.liquid", cta: cta, type:"page" -%}
