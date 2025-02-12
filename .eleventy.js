@@ -6,7 +6,6 @@ export default function (eleventyConfig) {
   const md = new MarkDownIt({ html: true });
 
   eleventyConfig.addPassthroughCopy({
-    'assets': 'assets',
     'css': 'css',
     'downloads': 'downloads',
     'favicon': 'favicon',
