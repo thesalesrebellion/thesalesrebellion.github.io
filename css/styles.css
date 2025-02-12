@@ -310,23 +310,23 @@ template {
 
 @font-face {
   font-family: "Lazer84";
-  src: url("../fonts/lazer84.woff") format("woff"), url("../fonts/Lazer84.ttf") format("truetype");
+  src: url("/fonts/lazer84.woff") format("woff"), url("/fonts/lazer84.ttf") format("truetype");
 }
 @font-face {
   font-family: "Big Noodle Titling";
-  src: url("../fonts/big_noodle_titling.ttf") format("truetype");
+  src: url("/fonts/big_noodle_titling.ttf") format("truetype");
 }
 @font-face {
   font-family: "Big Noodle Titling Oblique";
-  src: url("../fonts/big_noodle_titling_oblique.ttf") format("truetype");
+  src: url("/fonts/big_noodle_titling_oblique.ttf") format("truetype");
 }
 @font-face {
   font-family: "Franklin Gothic";
-  src: url("../fonts/Franklin-Gothic-Condensed.ttf") format("truetype"), url("../fonts/Franklin-Gothic-Condensed.otf") format("opentype");
+  src: url("/fonts/Franklin-Gothic-Condensed.ttf") format("truetype"), url("/fonts/Franklin-Gothic-Condensed.otf") format("opentype");
 }
 @font-face {
   font-family: "Kufam";
-  src: url("../fonts/Kufam-VariableFont_wght.ttf") format("truetype");
+  src: url("/fonts/Kufam-VariableFont_wght.ttf") format("truetype");
 }
 html,
 * {
@@ -1170,7 +1170,7 @@ iframe {
 }
 
 .hero {
-  background-image: url(/assets/images/hero_space_bg.webp);
+  background-image: url(/img/hero_space_bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1281,7 +1281,7 @@ iframe {
   background-size: cover;
 }
 .hero__content--home {
-  background-image: url(/assets/images/grid_and_sun.png);
+  background-image: url(/img/grid_and_sun.png);
   background-position-y: 100px;
   background-attachment: fixed;
 }
@@ -1296,7 +1296,7 @@ iframe {
   }
 }
 .hero__content--teams {
-  background-image: url("/assets/images/grid-green-bg.png");
+  background-image: url("/img/grid-green-bg.png");
   background-position-y: 320px;
   padding-bottom: 260px;
   background-attachment: fixed;
@@ -1305,7 +1305,7 @@ iframe {
 }
 @media (max-width: 768px) {
   .hero__content--teams {
-    background-image: url("/assets/images/grid-green-bg-small.png");
+    background-image: url("/img/grid-green-bg-small.png");
     background-position-y: 420px;
     padding-bottom: 360px;
     background-size: contain;
@@ -1317,7 +1317,7 @@ iframe {
   }
 }
 .hero__content--1x1 {
-  background-image: url("/assets/images/grid-blue-bg.png");
+  background-image: url("/img/grid-blue-bg.png");
   background-position-y: 320px;
   padding-bottom: 260px;
   background-attachment: fixed;
@@ -1325,7 +1325,7 @@ iframe {
 }
 @media (max-width: 768px) {
   .hero__content--1x1 {
-    background-image: url("/assets/images/grid-blue-bg-small.png");
+    background-image: url("/img/grid-blue-bg-small.png");
     background-position-y: 420px;
     padding-bottom: 360px;
     background-size: contain;
@@ -1339,7 +1339,7 @@ iframe {
 @media (max-width: 768px) {
   .hero__content--group {
     padding-bottom: 340px;
-    background-image: url(/assets/images/ringed-planet.png);
+    background-image: url(/images/ringed-planet.png);
     background-size: 600px;
     background-position: 150px 350px;
   }
@@ -1357,7 +1357,7 @@ iframe {
 }
 @media (max-width: 768px) {
   .hero__content--home {
-    background-image: url(/assets/images/grid_and_sun_small.png);
+    background-image: url(/img/grid_and_sun_small.png);
     background-position: center 300px;
   }
 }
@@ -2152,7 +2152,7 @@ iframe {
   font-family: "Lazer84";
   font-weight: 400;
   padding-top: 45px;
-  background-image: url(/assets/images/grid-2.png), url(/assets/images/space_bg_2.webp);
+  background-image: url(/img/grid-2.png), url(/img/space_bg_2.webp);
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
   background-position: bottom, center;
@@ -2496,7 +2496,7 @@ iframe {
 
 .page__content {
   position: relative;
-  background-image: url(/assets/images/group-content-bg.webp);
+  background-image: url(/img/group-content-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
