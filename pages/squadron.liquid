@@ -131,7 +131,7 @@ sessions:
 bonuses:
   - about: "The ‘Unwritten Story’ Campaign Guide"
     image: "/img/squadron/unwritten-story.webp"
-    details: "In addition to The Rebel Letter Campaign, The Unwritten Story Campaign will be fulfilled for you by the Rebellion. This campaign has been responsible for generating business with some of the most recognizable names in the world, including McDonald’s, Dardens Restaurants, Marriott International, Shaw Flooring, and Lenovo to name a few. This is the ultimate ‘feel-good’ touch for a prospect and brings a WOW factor that’s stronger than almost any other campaign you could use when reaching out to executives at large companies. And while you’ll have your campaign fulfilled by the Rebellion, this comprehensive tutorial will equip you to do it yourself in the future, if you choose."
+    details: "In addition to The Rebel Letter Campaign, The Unwritten Story Campaign will be fulfilled for you by the Rebellion. This campaign has been responsible for generating business with some of the most recognizable names in the world, including McDonald’s, Darden Restaurants, Marriott International, Shaw Flooring, and Lenovo to name a few. This is the ultimate ‘feel-good’ touch for a prospect and brings a WOW factor that’s stronger than almost any other campaign you could use when reaching out to executives at large companies. And while you’ll have your campaign fulfilled by the Rebellion, this comprehensive tutorial will equip you to do it yourself in the future, if you choose."
   - about: "The ‘Rebel Resume’ Campaign Guide"
     image: "/img/squadron/rebel-resume.webp"
     details: "This is the third and final Rebel campaign that we will build with you and fulfill FOR you. The Rebel Resume is another market tool to help you break through the noise of emails, calls, and social messages that your prospects receive on a daily basis. And this campaign isn’t just for prospecting at a current job. Many Rebels have used the campaign to successfully land a new gig!"
@@ -278,6 +278,10 @@ redefines the core fundamentals that are required for sales success. It acknowle
     gap: 32px;
   }
 
+  .bonus-product .about {
+    font-size: 18px;
+  }
+
   .bonus-product__container {
     padding: 20px;
     width: 95%;
@@ -289,6 +293,47 @@ redefines the core fundamentals that are required for sales success. It acknowle
 
   .bonus-product__image {
     min-width: 50px;
+  }
+
+  @media (min-width: 992px) {
+    .checkmark {
+      columns: 2;
+    }
+
+    h1.hero__heading {
+      font-size: 80px;
+      margin-top: 100px;
+    }
+
+    h2.with-image {
+      margin-top: auto;
+    }
+
+    .delta-image {
+      width: 40%;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .bonus-product {
+        gap: 20px;
+    }
+
+    .bonus-product__container {
+      width: 85%;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+
+    .bonus-product__container .quote {
+      width: 100%;
+    }
+
+    .bonus-product__image {
+      margin-bottom: 40px;
+      width: fit-content;
+    }
   }
 
   @media (min-width: 768px) {
@@ -320,37 +365,11 @@ redefines the core fundamentals that are required for sales success. It acknowle
     }
 
     .hero__heading--large {
-    font-size: 52px !important;
-  }
-  }
-
-  @media (min-width: 992px) {
-    .checkmark {
-      columns: 2;
+      font-size: 52px !important;
     }
 
-    h1.hero__heading {
-      font-size: 80px;
-      margin-top: 100px;
-    }
-
-    h2.with-image {
-      margin-top: auto;
-    }
-
-    .delta-image {
-      width: 40%;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .bonus-product__container {
-      flex-direction: column;
-      justify-content: start;
-    }
-
-    .bonus-product__image {
-      margin-bottom: 40px;
+    .bonus-product {
+        gap: 12px;
     }
   }
 </style>
@@ -453,7 +472,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
   <div class="row scroll">
     {% for benefit in benefits %}
     <div class="col-10 col-md-6" style="margin-bottom: 25px">
-      <div class="card" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
+      <div class="card h-100" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <div class="card-body">
           <h5 class="card-title">{{ benefit.name }}</h5>
           <p class="card-text" style="color:#fff">{{ benefit.description | newline_to_br }}</p>
@@ -472,13 +491,13 @@ redefines the core fundamentals that are required for sales success. It acknowle
   <div class="row sessions scroll">
     {% for session in sessions %}
     <div class="col-10 col-md-6" style="margin-bottom: 25px">
-      <div class="card" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
+      <div class="card h-100" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <div class="card-body">
-          <div class="row">
+          <div class="row justify-content-evenly justify-content-md-start">
             <div class="col-2" style="display: flex;align-items: flex-start;justify-content: center">
               <div class="number">{{ forloop.index }}</div>
             </div>
-            <div class="col-10">
+            <div class="col-9">
               <h5 class="card-title">{{ session.name }}</h5>
               <p class="card-text" style="color:#fff">{{ session.details }}</p>
             </div>
@@ -512,7 +531,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
   <div class="row rebels scroll">
     {% for rebel in rebels %}
     <div class="col-10 col-md-4" style="margin-bottom: 25px">
-      <div class="card" style="background: linear-gradient(#000 60%, #EB38CF);border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
+      <div class="card h-100" style="background: linear-gradient(#000 60%, #EB38CF);border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <img src="{{ rebel.image }}" alt="{{ rebel.name }}'s Testimonial" style="margin: 16px 0 0 16px;width: 100px">
         <div class="card-body">
           <h5 class="card-title" style="color: #66ffc8;font-size:32px">{{ rebel.name }}</h5>
