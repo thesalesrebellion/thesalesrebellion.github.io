@@ -8,22 +8,16 @@ permissions:
   id-token: write
 jobs:
   build:
-    name: Jekyll build
+    name: HTML build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true
-          cache-version: 0
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Install Node
         uses: actions/setup-node@v4
         with: 
-          node-version: 18
+          node-version: 20
           cache: 'npm'
       - name: Run gulp
         run: |
