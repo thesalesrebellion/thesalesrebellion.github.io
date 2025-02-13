@@ -145,7 +145,7 @@ bonuses:
     image: "/img/squadron/ghost-bundle.webp"
     details: Ever had a prospect go dark? You’re not alone! Even the strongest Rebels still get ghosted sometimes. Reviving ghosts is best done with audacity, and The Ghost Bundle gives you proven pieces that have plenty of it to help you even further on your way to becoming ‘un-ignorable’.
   - about: "How to Start a Sales Rebellion: The Copier Warrior’s Guide to Sales and Life (hardback copy)"
-    image: "/img/copier-warrior.webp"
+    image: "/img/squadron/copier-warrior.webp"
     details: "This book walks you through the rebellious approach that connects with prospects. On top of that, there’s a life altering truth that resides deep within these pages and is sure to reshape the way you see your life and career. At the highest level, this book deconstructs and
 redefines the core fundamentals that are required for sales success. It acknowledges the changing nature of the marketplace and equips sales reps and sales leaders with the ability to connect, create, and communicate in the ways that B2 B buyer’s desires."
   - about: Mystery Bonus
@@ -262,6 +262,35 @@ redefines the core fundamentals that are required for sales success. It acknowle
     font-size: 36px;
   }
 
+  .hero__heading--large {
+    font-size: 75px !important;
+  }
+
+  .metric {
+    font-size: 16px;
+  }
+
+  .hero {
+    background-image: none;
+  }
+
+  .bonus-product {
+    gap: 32px;
+  }
+
+  .bonus-product__container {
+    padding: 20px;
+    width: 95%;
+    background: #1C091D;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 14px;
+  }
+
+  .bonus-product__image {
+    min-width: 50px;
+  }
+
   @media (min-width: 768px) {
     .button {
       width: auto;
@@ -280,6 +309,19 @@ redefines the core fundamentals that are required for sales success. It acknowle
     .header {
       margin-bottom: -100px;
     }
+
+    .hero__heading--container {
+      width: 100%;
+    }
+
+    h1.hero__heading {
+      font-size: 54px;
+      text-align: center;
+    }
+
+    .hero__heading--large {
+    font-size: 52px !important;
+  }
   }
 
   @media (min-width: 992px) {
@@ -301,12 +343,15 @@ redefines the core fundamentals that are required for sales success. It acknowle
     }
   }
 
-  .metric {
-    font-size: 16px;
-  }
+  @media (max-width: 992px) {
+    .bonus-product__container {
+      flex-direction: column;
+      justify-content: start;
+    }
 
-  .hero {
-    background-image: none;
+    .bonus-product__image {
+      margin-bottom: 40px;
+    }
   }
 </style>
 <section class="hero hero--{{ page_id }}">
@@ -320,7 +365,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
       </div>
     </div>
     <div class="row">
-      <div class="col-8">
+      <div class="col-8 hero__heading--container">
         <h1 class="hero__heading" style="margin-top:0">The Rebel Squadron</h1>
       </div>
     </div>
@@ -355,7 +400,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
   <div class="row">
     <div class="col">
       <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join&nbsp; the Rebel&nbsp; Squadron</h2>
+        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join&nbsp; the Rebel&nbsp; Squadron</h2>
         <p class="text-center"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
         <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
@@ -400,7 +445,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
   </div>
   <div class="row">
     <div class="col">
-      <h2 class="hero__heading text-center" style="font-size:75px;margin-bottom:40px">Join the Rebel Squadron Ranks</h2>
+      <h2 class="hero__heading hero__heading--large text-center" style="margin-bottom:40px">Join the Rebel Squadron Ranks</h2>
       <h2 class="hero__heading text-center" style="color:#66ffc8;font-size:40px;font-weight:bold;font-family: 'Kufam';margin-bottom:10px">What You’ll Unlock as a Member of The Rebel Squadron</h2>
       <p class="text-center">Rebels are known for their creative methods and service to others - as a Squadron member, you will deploy exclusive tools that are proven to attract prospects, and get questioning and conversation follow-up strategies that lead to prospects beginning a buying process, or at the very least thanking you for your thoughtful outreach and asking you to stay in touch until the time is right. This makes it much easier to shrug off the grumps who still hang up on you. 😂</p>
     </div>
@@ -446,7 +491,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
   <div class="row">
     <div class="col">
       <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join the Rebel Squadron</h2>
+        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join the Rebel Squadron</h2>
         <p class="text-center"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
         <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
@@ -498,24 +543,26 @@ redefines the core fundamentals that are required for sales success. It acknowle
     <div class="row">
       <div class="col-12">
         <p class="text-center" style="color:#66ffc8;font-size:24px">You’ll also get $1,300 in FREE bonus products when you join</p>
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:75px;padding-bottom:50px">Bonus Products</h2>
+        <h2 class="hero__heading hero__heading--large text-center" style="color: #fff;padding-bottom:50px">Bonus Products</h2>
       </div>
     </div>
     <div class="row" style="margin-bottom: 80px">
       <div class="col-12">
         <div style="backdrop-filter: blur(17.5px);background: rgba(255, 255, 255, 0.10);border: 1px solid #eb38cf;padding:20px">
           <div class="row scroll-desktop">
-            <div style="background:#1c091d;border-radius:12px;width:100%;padding:20px;width:100%;">
-              <div class="row scroll-desktop">
+            <div style="border-radius:12px;width:100%;padding:20px;width:100%;">
+              <div class="row scroll-desktop bonus-product">
                 {% for bonus in bonuses %}
-                <div class="col-12 col-md-4">
-                  <img src="{{ bonus.image }}">
-                </div>
-                <div class="col-12 col-md-8 quote">
-                  <div>
-                    <h3>Bonus {{ forloop.index }}</h3>
-                    <p class="about">{{ bonus.about }}</p>
-                    <p>{{ bonus.details }}</p>
+                <div class="bonus-product__container">
+                  <div class="bonus-product__image">
+                    <img src="{{ bonus.image }}">
+                  </div>
+                  <div class="col-12 col-md-8 quote">
+                    <div>
+                      <h3>Bonus {{ forloop.index }}</h3>
+                      <p class="about">{{ bonus.about }}</p>
+                      <p>{{ bonus.details }}</p>
+                    </div>
                   </div>
                 </div>
                 {% endfor %}
@@ -527,7 +574,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
     <div class="row">
       <div class="col-12">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:56px">Join the Rebel Squadron</h2>
+        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join the Rebel Squadron</h2>
         <p class="text-center" style="color:#eb38cf;font-size:28px"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
         <p class="text-center">The Rebel Squadron isn’t for everyone—and that’s how we like it. If you’re looking for quick-fix tricks or sleazy shortcuts to catch prospects in a weak moment, this is not your crew. If you’re not ready to put others’ needs above your own or you think sales is just a numbers game, you’re in the wrong place. But if you want to play the long game, trust in your coaches who’ve been where you are, and are ready to commit to 6 months of all-out Rebellion, then strap in—because the Squadron is where legends are made!</p>
         <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
