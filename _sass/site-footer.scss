@@ -42,15 +42,24 @@
     }
 
     &__social {
+        margin: auto;
+        width: fit-content;
 
         &-link {
             display: inline-block;
-            margin-right: 16px;
 
-            svg {
-                fill: #fff;
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+
+            svg,
+            img {
                 width: 40px;
                 height: auto;
+            }
+            
+            svg {
+                fill: #fff;
             }
         }
 

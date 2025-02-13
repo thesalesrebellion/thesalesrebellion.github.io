@@ -4420,12 +4420,12 @@ iframe {
 }
 .site-footer__social-link {
   display: inline-block;
-  &:not(:last-child) {
-    margin-right: 16px;
-  }
 }
-.site-footer__social-link img,
-.site-footer__social-link svg {
+.site-footer__social-link:not(:last-child) {
+  margin-right: 16px;
+}
+.site-footer__social-link svg,
+.site-footer__social-link img {
   width: 40px;
   height: auto;
 }
