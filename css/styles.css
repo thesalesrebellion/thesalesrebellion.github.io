@@ -4414,23 +4414,14 @@ iframe {
     order: 2;
   }
 }
-.site-footer__social {
-  margin: auto;
-  width: fit-content;
-}
 .site-footer__social-link {
   display: inline-block;
-  &:not(:last-child) {
-    margin-right: 16px;
-  }
-}
-.site-footer__social-link img,
-.site-footer__social-link svg {
-  width: 40px;
-  height: auto;
+  margin-right: 16px;
 }
 .site-footer__social-link svg {
   fill: #fff;
+  width: 40px;
+  height: auto;
 }
 .site-footer__copyright {
   font-family: "Big Noodle Titling";
