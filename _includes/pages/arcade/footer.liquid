@@ -1,0 +1,168 @@
+<style>
+  footer {
+    padding: 80px 40px;
+  }
+
+  .footer-inner {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, #fff, #eb38cf) 1;
+    gap: 100px;
+    padding: 60px;
+    max-width: 1265px;
+  }
+
+  .footer-left {
+    flex-basis: 29%;
+  }
+
+  .footer-right {
+    flex-basis: 62%;
+  }
+
+  .footer-left p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.125rem;
+    text-wrap: pretty;
+  }
+
+  .footer-left img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .footer-right .footer-nav-column {
+    gap: 23px;
+  }
+
+  footer .nav-link {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+  }
+
+  footer .nav-link:hover {
+    text-shadow: 1px 0 0 #fff;
+  }
+
+  footer .contact {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+    gap: 23px;
+  }
+
+  @media (max-width: 1300px) {
+    footer nav {
+      gap: 40px;
+    }
+
+    .footer-left {
+      min-width: 230px;
+    }
+
+    .footer-right > nav > .d-flex {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    footer {
+      padding: 60px 16px;
+    }
+
+    .footer-inner {
+      padding: 20px;
+      gap: 40px;
+    }
+
+    .footer-right {
+      width: 100%;
+    }
+
+    .footer-right nav > .d-flex {
+      flex-basis: 33%;
+    }
+
+    .footer-right nav .contact {
+      width: 100%;
+    }
+
+    footer .nav-link {
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+    }
+
+    footer .nav-header {
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1.375rem;
+    }
+
+    .footer-right .footer-nav-column {
+      gap: 16px;
+    }
+
+    footer .contact {
+      font-size: 0.75rem;
+      font-weight: 600;
+      line-height: 1.25rem;
+      gap: 20px;
+    }
+  }
+</style>
+
+<footer class="bg-black text-white font-kufam">
+  <div class="footer-inner mx-auto d-flex align-items-center flex-column flex-lg-row">
+    <div class="footer-left">
+      <img src="/img/logo.png" alt="The Sales Rebellion">
+      <p class="mb-0">
+        The Sales Rebellion transforms outdated, transactional sales tactics into bold,
+        relationship-driven strategies. We empower sales professionals to stand out, build trust,
+        and win more business with creativity, confidence, and authenticity.
+      </p>
+    </div>
+    <div class="footer-right">
+      <nav class="d-flex justify-content-between flex-column flex-lg-row flex-wrap">
+        <div class="d-flex flex-row justify-content-between">
+          {% for footer_link in footer_links %}
+            <div class="footer-nav-column d-flex flex-column me-0 me-md-3 me-lg-5">
+              {% if footer_link.link_url != blank %}
+                <a href="{{ footer_link.link_url }}" class="nav-header text-green mb-0">
+                  {{ footer_link.header }}
+                </a>
+              {% else %}
+                <p class="nav-header text-green mb-0">
+                  {{ footer_link.header }}
+                </p>
+              {% endif %}
+              {% for link in footer_link.links %}
+                <a href="{{ link.link_url }}" class="nav-link">{{ link.link_text }}</a>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="contact d-flex flex-column">
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-map-pin.svg" alt="map pin icon">
+            <p class="mb-0 ps-3">
+              450 S Orange Fl 3,<br>
+              Orlando, FL 32801
+            </p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-envelope.svg" alt="mail icon">
+            <a href="mailto:info@thesalesrebellion.com" class="mb-0 ps-3 text-white"
+              >info@thesalesrebellion.com</a
+            >
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-phone.svg" alt="phone icon">
+            <a href="tel:6152199828" class="mb-0 ps-3 text-white">615.219.9828</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</footer>

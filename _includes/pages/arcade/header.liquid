@@ -1,0 +1,177 @@
+<style>
+  .nav-container {
+    max-width: 1598px;
+  }
+
+  .navbar {
+    background: #000;
+    color: #fff;
+    padding: 40px 20px;
+  }
+
+  .navbar .logo {
+    width: 127px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    gap: 28px;
+  }
+
+  .navbar .dropdown,
+  .navbar .nav-link {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.375rem;
+  }
+
+  .navbar .dropdown-toggle,
+  .navbar .nav-link {
+    color: #fff;
+  }
+
+  .navbar .nav-link:not(.dropdown-toggle) {
+    padding-top: 10px;
+  }
+
+  .navbar .dropdown-toggle.show img {
+    transform: rotate(180deg);
+  }
+
+  .navbar .dropdown-toggle img {
+    margin-left: 8px;
+  }
+
+  .navbar .dropdown-toggle::after {
+    display: none;
+  }
+
+  .navbar .dropdown-menu {
+    background: #000;
+    border-radius: 8px 20px 20px 20px;
+    color: #fff;
+    padding: 26px 24px;
+    top: calc(100% + 30px);
+  }
+
+  .navbar .dropdown-item {
+    font-size: 0.875rem;
+    font-weight: 400;
+    padding: 14px 16px;
+  }
+
+  .navbar .dropdown-item:hover {
+    background: #000;
+    font-weight: 700;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  @media (max-width: 991px) {
+    .navbar {
+      padding: 52px 18px 18px;
+    }
+
+    .navbar .logo {
+      width: 72px;
+    }
+
+    .navbar .navbar-nav {
+      gap: 46px;
+      padding: 40px 20px 20px;
+    }
+
+    .navbar .dropdown-toggle,
+    .navbar .nav-link {
+      color: #66ffc8;
+      line-height: 1.375rem;
+      padding: 0;
+    }
+
+    .navbar .dropdown-toggle img {
+      display: none;
+    }
+
+    .navbar .dropdown-menu {
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+      padding: 0;
+    }
+
+    .navbar .dropdown-item {
+      font-size: 1rem;
+      line-height: 1.25rem;
+      text-align: center;
+      padding: 0;
+    }
+
+    .navbar .dropdown-item:first-child {
+      margin-top: 28px;
+    }
+
+    .navbar .nav-item {
+      text-align: center;
+    }
+  }
+</style>
+
+<div class="nav-container mx-auto">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand d-block" href="/"
+      ><img class="logo" src="/img/logo.png" alt="Sales Rebellion Home page"
+    ></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <img src="/img/svg/hamburger-icon.svg" alt="">
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        {% for link in nav_links %}
+          {% if link.dropdown_links and link.dropdown_links.size > 0 %}
+            <li class="nav-item dropdown d-flex flex-column align-items-center">
+              <a
+                class="nav-link dropdown-toggle font-kufam"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                {{ link.header }}
+                <img src="/img/svg/chevron-down.svg" alt="">
+              </a>
+              <div
+                class="dropdown-menu border-green"
+                style="left: unset !important"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                {% for dropdown in link.dropdown_links %}
+                  <a class="dropdown-item text-white font-kufam" href="{{ dropdown.link_url }}">
+                    {{- dropdown.link_text -}}
+                  </a>
+                {% endfor %}
+              </div>
+            </li>
+          {% else %}
+            <li class="nav-item">
+              <a class="nav-link font-kufam" href="{{ link.link_url }}">{{ link.header }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div>
