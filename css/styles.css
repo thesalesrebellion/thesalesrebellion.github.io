@@ -1104,73 +1104,112 @@ iframe {
   }
 }
 .site-header {
-  padding-top: 36px;
+  max-width: 1598px;
 }
-@media (max-width: 768px) {
-  .site-header {
-    padding-top: 16px;
-  }
+.site-header .border-green {
+  border: 3px solid #66ffc8;
 }
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.site-header .font-kufam {
+  font-family: "Kufam", sans-serif;
 }
-@media (max-width: 768px) {
-  .site-header .container {
-    position: relative;
-  }
+.site-header .navbar {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
 }
-.site-header__dates {
-  text-align: end;
+.site-header .navbar .logo {
+  width: 127px;
+  height: auto;
 }
-.site-header__dates--date-range {
-  color: #66ffc8;
-  font-family: "Big Noodle Titling";
+.site-header .navbar .navbar-nav {
+  gap: 28px;
+}
+.site-header .navbar .dropdown,
+.site-header .navbar .nav-link {
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+.site-header .navbar .dropdown.dropdown-toggle,
+.site-header .navbar .nav-link.dropdown-toggle {
+  color: #fff;
+}
+.site-header .navbar .dropdown.dropdown-toggle img,
+.site-header .navbar .nav-link.dropdown-toggle img {
+  margin-left: 8px;
+}
+.site-header .navbar .dropdown.dropdown-toggle img.show,
+.site-header .navbar .nav-link.dropdown-toggle img.show {
+  transform: rotate(180deg);
+}
+.site-header .navbar .dropdown.dropdown-toggle::after,
+.site-header .navbar .nav-link.dropdown-toggle::after {
+  display: none;
+}
+.site-header .navbar .nav-link:not(.dropdown-toggle) {
+  padding-top: 10px;
+}
+.site-header .navbar .dropdown-menu {
+  background: #000;
+  border-radius: 8px 20px 20px 20px;
+  color: #fff;
+  padding: 26px 24px;
+  top: calc(100% + 30px);
+}
+.site-header .navbar .dropdown-menu .dropdown-item {
+  font-size: 0.875rem;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 130%;
+  padding: 14px 16px;
 }
-@media (max-width: 768px) {
-  .site-header__dates--date-range {
-    font-size: 26px;
+.site-header .navbar .dropdown-menu .dropdown-item:hover {
+  background: #000;
+  font-weight: 700;
+}
+.site-header .navbar .navbar-toggler {
+  border: none;
+}
+@media (max-width: 991px) {
+  .site-header .navbar {
+    padding: 52px 18px 18px;
   }
-}
-.site-header__dates--month-year {
-  color: #ff3adf;
-  font-family: "Big Noodle Titling";
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 130%;
-}
-@media (max-width: 768px) {
-  .site-header__dates--month-year {
-    font-size: 26px;
+  .site-header .navbar .logo {
+    width: 72px;
   }
-}
-.site-header__dates--location {
-  color: #66ffc8;
-  font-family: "Big Noodle Titling";
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 130%;
-}
-@media (max-width: 768px) {
-  .site-header__dates--location {
-    font-size: 26px;
+  .site-header .navbar .navbar-nav {
+    gap: 46px;
+    padding: 40px 20px 20px;
   }
-}
-.site-header__logo {
-  max-width: 100px;
-}
-@media (max-width: 576px) {
-  .site-header__logo {
-    max-width: 85px;
+  .site-header .navbar .dropdown .dropdown-toggle,
+  .site-header .navbar .nav-link {
+    color: #66ffc8;
+    line-height: 1.375rem;
+    padding: 0;
   }
-}
-.site-header__totality #Logo {
-  height: 11vw;
-  opacity: 0.5;
+  .site-header .navbar .dropdown .dropdown-toggle img,
+  .site-header .navbar .nav-link img {
+    display: none;
+  }
+  .site-header .navbar .dropdown-menu {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 0;
+  }
+  .site-header .navbar .dropdown-menu .dropdown-item {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding: 0;
+  }
+  .site-header .navbar .dropdown-menu .dropdown-item:first-child {
+    margin-top: 28px;
+  }
+  .site-header .navbar .nav-item {
+    text-align: center;
+  }
 }
 
 .hero {
@@ -4374,103 +4413,122 @@ iframe {
   }
 }
 
+.font-kufam {
+  font-family: "Kufam", sans-serif;
+}
+
 .site-footer {
-  padding: 50px 0;
-  position: relative;
+  padding: 80px 40px;
 }
-.site-footer__cols {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.site-footer .text-green {
+  color: #66ffc8;
 }
-@media (max-width: 768px) {
-  .site-footer__cols {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
+.site-footer .btn-footer {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  line-height: normal;
+  align-self: flex-start;
 }
-@media (max-width: 768px) {
-  .site-footer__col {
-    margin-bottom: 45px;
-  }
+.site-footer .btn-footer:hover {
+  background-color: #66ffc8;
+  border: 1px solid #66ffc8;
+  color: #000;
 }
-@media (max-width: 768px) {
-  .site-footer__col--left {
-    order: 3;
-  }
+.site-footer .footer-inner {
+  border: 2px solid;
+  border-image: linear-gradient(90deg, #fff, #eb38cf) 1;
+  gap: 100px;
+  padding: 60px;
+  max-width: 1265px;
 }
-.site-footer__col--middle {
-  flex-grow: 2;
-  max-width: 680px;
-  text-align: center;
-  padding: 0 20px;
-  align-self: center;
+.site-footer .footer-inner .footer-left {
+  flex-basis: 29%;
 }
-@media (max-width: 768px) {
-  .site-footer__col--middle {
-    padding: 0;
-    order: 1;
-  }
+.site-footer .footer-inner .footer-left p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.125rem;
+  text-wrap: pretty;
 }
-@media (max-width: 768px) {
-  .site-footer__col--right {
-    order: 2;
-  }
-}
-.site-footer__social {
-  margin: auto;
-  width: fit-content;
-}
-.site-footer__social-link {
-  display: inline-block;
-}
-.site-footer__social-link:not(:last-child) {
-  margin-right: 16px;
-}
-.site-footer__social-link svg,
-.site-footer__social-link img {
-  width: 40px;
+.site-footer .footer-inner .footer-left img {
+  width: 100px;
   height: auto;
+  margin-bottom: 40px;
 }
-.site-footer__social-link svg {
-  fill: #fff;
+.site-footer .footer-inner .footer-right {
+  flex-basis: 62%;
 }
-.site-footer__copyright {
-  font-family: "Big Noodle Titling";
+.site-footer .footer-inner .footer-right .footer-nav-column {
+  gap: 23px;
+}
+.site-footer .footer-inner .footer-right .footer-nav-column .nav-header {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+}
+.site-footer .footer-inner .footer-right .footer-nav-column .nav-header[href]:hover {
+  text-shadow: 1px 0 0 #66ffc8;
+}
+.site-footer .footer-inner .footer-right .footer-nav-column .nav-link {
+  font-size: 0.875rem;
   font-weight: 400;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-  margin-top: 8px;
+  line-height: 1.375rem;
 }
-@media (max-width: 768px) {
-  .site-footer__copyright {
-    margin-top: 3px;
+.site-footer .footer-inner .footer-right .footer-nav-column .nav-link:hover {
+  text-shadow: 1px 0 0 #fff;
+}
+.site-footer .footer-inner .footer-right .contact {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.375rem;
+  gap: 23px;
+}
+@media (max-width: 1300px) {
+  .site-footer nav {
+    gap: 40px;
+  }
+  .site-footer .footer-left {
+    min-width: 230px;
+  }
+  .site-footer .footer-right > nav > .d-flex {
+    width: 100%;
   }
 }
-.site-footer__message, .site-footer__note, .site-footer__cta {
-  font-family: "Big Noodle Titling";
-  font-weight: 400;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-}
-.site-footer__message, .site-footer__note {
-  font-size: 26px;
-  margin-top: 0;
-}
-.site-footer__message {
-  margin-bottom: 12px;
-}
-@media (max-width: 768px) {
-  .site-footer__message {
-    margin-bottom: 6px;
+@media (max-width: 991px) {
+  .site-footer {
+    padding: 60px 16px;
   }
-}
-.site-footer__note {
-  margin-bottom: 0;
-}
-.site-footer__cta {
-  display: inline-block;
+  .site-footer .footer-inner {
+    padding: 20px;
+    gap: 40px;
+  }
+  .site-footer .footer-inner .footer-right {
+    width: 100%;
+  }
+  .site-footer .footer-inner .footer-right nav > .d-flex {
+    flex-basis: 33%;
+  }
+  .site-footer .footer-inner .footer-right nav .footer-nav-column {
+    gap: 16px;
+  }
+  .site-footer .footer-inner .footer-right nav .footer-nav-column .nav-header {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  .site-footer .footer-inner .footer-right nav .footer-nav-column .nav-link {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+  .site-footer .footer-inner .footer-right nav .contact {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    gap: 20px;
+    width: 100%;
+  }
 }
 
 .hero__slider {

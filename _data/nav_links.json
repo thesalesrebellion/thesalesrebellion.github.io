@@ -1,0 +1,35 @@
+[
+  {
+    "header": "Learn",
+    "dropdown_links": [
+      {
+        "link_text": "Squadron",
+        "link_url": "/squadron/"
+      }
+    ]
+  },
+  {
+    "header": "About",
+    "link_url": "/about/",
+    "dropdown_links": []
+  },
+  {
+    "header": "Resources",
+    "dropdown_links": [
+      {
+        "link_text": "Free Sh*t",
+        "link_url": "/resources/"
+      },
+      {
+        "link_text": "Arcade",
+        "link_url": "/arcade/"
+      }
+    ]
+  },
+  {
+    "header": "Totality",
+    "link_url": "/totality/",
+    "dropdown_links": []
+  }
+]
+

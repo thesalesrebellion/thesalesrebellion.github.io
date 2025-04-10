@@ -4,38 +4,6 @@ layout: default
 layout_engine: bootstrap
 has_carousel: true
 permalink: /arcade/
-nav_links:
-  - header: Learn
-    dropdown_links:
-    - link_text: Squadron
-      link_url: "/squadron/"
-  - header: About
-    link_url: "/about/"
-    dropdown_links:
-  - header: Resources
-    dropdown_links:
-    - link_text: Free Sh*t
-      link_url: "/resources/"
-    - link_text: Arcade
-      link_url: "/arcade/"
-  - header: Totality
-    link_url: "/totality/"
-    dropdown_links:
-footer_links:
-  - header: Learn
-    links:
-    - link_text: Squadron
-      link_url: "/squadron/"
-  - header: About
-    link_url: "/about/"
-  - header: Resources
-    links:
-    - link_text: Free Sh*t
-      link_url: "/resources/"
-    - link_text: Arcade
-      link_url: "/arcade/"
-  - header: Totality
-    link_url: "/totality/"
 rebels:
   - image: "/img/derrick-nave.webp"
     name: Derrick Nave
@@ -87,11 +55,11 @@ quests:
           image-mobile: "/img/arcade/product-crumpled-letter-mobile.webp"
           link: "https://buy.stripe.com/9AQ28td6y2eW880cNq"
         - name: Rebellious Resume
-          price: 24.00
+          price: 24.99
           description: This concept is one of the Rebellion's favorite and used by Rebels everywhere. Imagine dropping off a very non-traditional resume in order to be considered as a vendor for the product or service you provide - instead of a lifeless brochure or boring white paper. It's different, it's fun and it works. Use on any contact at the org that you are trying to get in touch with. With this digital product you will receive design elements, Canva templates for easy access and editing, links with additional resources, video walkthroughs, mindset scripts, cadence instructions, follow-up outlines, email and talk track ideas, step-by-step use guide... Everything you need to make this outreach tool successful for yourself.
           image: "/img/arcade/product-rebel-resume.webp"
           image-mobile: "/img/arcade/product-rebel-resume-mobile.webp"
-          link: "https://buy.stripe.com/6oE14p7Me5r8ewoeVD"
+          link: "https://buy.stripe.com/28o00l1nQ1aScog5la"
     - name: Level Two Quests
       heading: New Challenges & More Gold
       description: You’ve leveled up, and now it’s time to take on a bigger challenge. Level 2 sales programs require more strategy and effort, but the rewards are well worth it. These tools and techniques go beyond quick wins, helping you build deeper relationships, refine your approach, and stand out in a crowded market. We highly recommend Level Two for any of your "harder to reach" prospects or anyone you have used Level One ideas on that never converted. With a little more time and commitment, you’ll start seeing results that truly move the needle. Ready to take your sales game to the next level? Let’s go!
@@ -592,9 +560,9 @@ quests:
   .treasure-and-toner a.btn {
     font-size: 1.125rem;
     font-weight: 700;
-    line-height: 1.125rem;
+    line-height: normal;
     margin-bottom: 64px;
-    padding: 22px 24px;
+    padding: 21px;
     letter-spacing: normal;
   }
 
@@ -1058,7 +1026,7 @@ quests:
   }
 </style>
 
-{% include 'pages/arcade/header.liquid' %}
+{% include '_includes/header.liquid' %}
 
 <section class="hero font-kufam text-center">
   <h1>Rebel Arcade</h1>
@@ -1277,7 +1245,7 @@ quests:
   </section>
 </div>
 
-{% include 'pages/arcade/footer.liquid' %}
+{% include '_includes/footer.liquid' %}
 
 <div class="modal fade" id="keyholeModal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 600px;">

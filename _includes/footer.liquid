@@ -1,35 +1,61 @@
-<footer class="site-footer">
 
-    <div class="container">
-
-        <div class="site-footer__cols">
-            <div class="site-footer__col site-footer__col--left">
-                <div class="site-footer__social">
-                    <a class="site-footer__social-link site-footer__social-link--fb" href="https://www.facebook.com/salesrebellion/" target="_blank">
-                        <img src="/img/svg/facebook.svg">
-                    </a>
-                    <a class="site-footer__social-link site-footer__social-link--in" href="https://www.linkedin.com/company/salesrebellion/" target="_blank">
-                      <img src="/img/svg/linkedin.svg">
-                    </a>
-                    <a class="site-footer__social-link site-footer__social-link--rh" href="https://thesalesrebellion.typeform.com/to/JFkwGN7S">
-                        <img src="/img/rebel-refuge-small.webp">
-                    </a>
-                </div>
-                <div class="site-footer__copyright">
-                    Copyright &copy; Sales Rebellion {{ "now" | date: "%Y" }}
-                </div>
-            </div>
-            <div class="site-footer__col site-footer__col--middle">
-                <p class="site-footer__message">To draw, you must close your eyes and sing.</p>
-                <p class="site-footer__note">- Pablo Picasso</p>
-            </div>
-            <div class="site-footer__col site-footer__col--right">
-                <a href="https://thesalesrebellion.typeform.com/to/JFkwGN7S" class="site-footer__cta btn btn--blue">
-                    Submit a prayer request
-                </a>
-            </div>
-        </div>
-
+<footer class="site-footer bg-black text-white font-kufam">
+  <div class="footer-inner mx-auto d-flex align-items-center flex-column flex-lg-row">
+    <div class="footer-left">
+      <a href="/"><img src="/img/logo.png" alt="The Sales Rebellion"></a>
+      <p class="mb-0">
+        The Sales Rebellion transforms outdated, transactional sales tactics into bold,
+        relationship-driven strategies. We empower sales professionals to stand out, build trust,
+        and win more business with creativity, confidence, and authenticity.
+      </p>
     </div>
-
+    <div class="footer-right">
+      <nav class="d-flex justify-content-between flex-column flex-lg-row flex-wrap">
+        <div class="d-flex flex-row justify-content-between">
+          {% for nav_link in nav_links %}
+            <div class="footer-nav-column d-flex flex-column me-0 me-md-3 me-lg-5">
+              {% if nav_link.link_url != blank %}
+                <a href="{{ footer_link.link_url }}" class="nav-header text-green mb-0">
+                  {{ nav_link.header }}
+                </a>
+              {% else %}
+                <p class="nav-header text-green mb-0">
+                  {{ nav_link.header }}
+                </p>
+              {% endif %}
+              {% for link in nav_link.dropdown_links %}
+                <a href="{{ link.link_url }}" class="nav-link">{{ link.link_text }}</a>
+              {% endfor %}
+            </div>
+          {% endfor %}
+        </div>
+        <div class="contact d-flex flex-column">
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-map-pin.svg" alt="map pin icon">
+            <p class="mb-0 ps-3">
+              450 S Orange Fl 3,<br>
+              Orlando, FL 32801
+            </p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-envelope.svg" alt="mail icon">
+            <a href="mailto:info@thesalesrebellion.com" class="mb-0 ps-3 text-white"
+              >info@thesalesrebellion.com</a
+            >
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="/img/svg/pixel-phone.svg" alt="phone icon">
+            <a href="tel:6152199828" class="mb-0 ps-3 text-white">615.219.9828</a>
+          </div>
+          <a
+            class="btn-footer"
+            href="https://thesalesrebellion.typeform.com/to/JFkwGN7S"
+            target="_blank"
+            class="mb-0 ps-3 text-white"
+            >Submit a Prayer Request</a
+          >
+        </div>
+      </nav>
+    </div>
+  </div>
 </footer>

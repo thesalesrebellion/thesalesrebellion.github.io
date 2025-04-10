@@ -1,107 +1,142 @@
+.font-kufam {
+  font-family: "Kufam", sans-serif;
+}
+
 .site-footer {
+  padding: 80px 40px;
 
-    padding: 50px 0;
-    position: relative;
+  .text-green {
+    color: $light_green;
+  }
 
-    &__cols {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        @include breakpoint(medium) {
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-        }
+  .btn-footer {
+    background: transparent;
+    border: 1px solid $white;
+    color: $white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    line-height: normal;
+    align-self: flex-start;
+  }
+
+  .btn-footer:hover {
+    background-color: $light_green;
+    border: 1px solid $light_green;
+    color: $black;
+  }
+
+  .footer-inner {
+    border: 2px solid;
+    border-image: linear-gradient(90deg, $white, $dark_purple) 1;
+    gap: 100px;
+    padding: 60px;
+    max-width: 1265px;
+
+    .footer-left {
+      flex-basis: 29%;
+
+      p {
+        font-size: 0.75rem;
+        font-weight: 500;
+        line-height: 1.125rem;
+        text-wrap: pretty;
+      }
+
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 40px;
+      }
     }
 
-    &__col {
-        @include breakpoint(medium) {
-            margin-bottom: 45px;
+    .footer-right {
+      flex-basis: 62%;
+
+      .footer-nav-column {
+        gap: 23px;
+
+      .nav-header {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.375rem;
+
+        &[href]:hover {
+          text-shadow: 1px 0 0 $light_green;
         }
-        &--left {
-            @include breakpoint(medium) {
-                order: 3;
+      }
+
+        .nav-link {
+          font-size: 0.875rem;
+          font-weight: 400;
+          line-height: 1.375rem;
+
+          &:hover {
+            text-shadow: 1px 0 0 $white;
+          }
+        }
+      }
+
+      .contact {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.375rem;
+        gap: 23px;
+      }
+    }
+  }
+
+  @media (max-width: 1300px) {
+    nav {
+      gap: 40px;
+    }
+
+    .footer-left {
+      min-width: 230px;
+    }
+
+    .footer-right > nav > .d-flex {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 60px 16px;
+
+    .footer-inner {
+      padding: 20px;
+      gap: 40px;
+
+      .footer-right {
+        width: 100%;
+
+        nav {
+          > .d-flex {
+            flex-basis: 33%;
+          }
+
+          .footer-nav-column {
+            gap: 16px;
+
+            .nav-header {
+              font-size: 0.75rem;
+              line-height: 1.25rem;
             }
-        }
-        &--middle {
-            flex-grow: 2;
-            max-width: 680px;
-            text-align: center;
-            padding: 0 20px;
-            align-self: center;
-            @include breakpoint(medium) {
-                padding: 0;
-                order: 1;
+
+            .nav-link {
+              font-size: 0.75rem;
+              line-height: 1.25rem;
             }
+          }
+
+          .contact {
+            font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            gap: 20px;
+            width: 100%;
+          }
         }
-        &--right {
-            @include breakpoint(medium) {
-                order: 2;
-            }
-        }
+      }
     }
-
-    &__social {
-        margin: auto;
-        width: fit-content;
-
-        &-link {
-            display: inline-block;
-
-            &:not(:last-child) {
-                margin-right: 16px;
-            }
-
-            svg,
-            img {
-                width: 40px;
-                height: auto;
-            }
-            
-            svg {
-                fill: #fff;
-            }
-        }
-
-    }
-
-    &__copyright {
-        @include noodle;
-        font-weight: 400;
-        letter-spacing: .6px;
-        margin-top: 8px;
-        @include breakpoint(medium) {
-            margin-top: 3px;
-        }
-    }
-
-    &__message,
-    &__note,
-    &__cta {
-        @include noodle;
-        font-weight: 400;
-        letter-spacing: .6px;
-    }
-
-    &__message,
-    &__note {
-        font-size: 26px;
-        margin-top: 0;
-    }
-
-    &__message {
-        margin-bottom: 12px;
-        @include breakpoint(medium) {
-            margin-bottom: 6px;
-        }
-    }
-
-    &__note {
-        margin-bottom: 0;
-    }
-
-    &__cta {
-        display: inline-block;
-    }
-
+  }
 }
