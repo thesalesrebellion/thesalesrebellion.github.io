@@ -1104,7 +1104,52 @@ iframe {
   }
 }
 .site-header {
-  background: #000;
+  background: transparent;
+}
+.site-header.landing .container {
+  padding: 20px;
+}
+.site-header.landing .container .navbar {
+  padding: 0;
+}
+.site-header__dates {
+  text-align: end;
+}
+.site-header__dates--date-range {
+  color: #66ffc8;
+  font-family: "Big Noodle Titling";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+}
+@media (max-width: 768px) {
+  .site-header__dates--date-range {
+    font-size: 26px;
+  }
+}
+.site-header__dates--month-year {
+  color: #ff3adf;
+  font-family: "Big Noodle Titling";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+}
+@media (max-width: 768px) {
+  .site-header__dates--month-year {
+    font-size: 26px;
+  }
+}
+.site-header__dates--location {
+  color: #66ffc8;
+  font-family: "Big Noodle Titling";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 130%;
+}
+@media (max-width: 768px) {
+  .site-header__dates--location {
+    font-size: 26px;
+  }
 }
 .site-header .border-green {
   border: 3px solid #66ffc8;
@@ -1171,7 +1216,7 @@ iframe {
 }
 @media (max-width: 991px) {
   .site-header .navbar {
-    padding: 52px 18px 18px;
+    padding: 18px;
   }
   .site-header .navbar .logo {
     width: 72px;
@@ -3674,7 +3719,6 @@ iframe {
 
 .landing-page {
   padding: 0 171px;
-  position: relative;
 }
 .landing-page .sold-out {
   color: #666;

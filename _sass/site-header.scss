@@ -1,5 +1,52 @@
 .site-header {
-	background: $black;
+	background: transparent;
+
+	&.landing {
+		.container {
+			padding: 20px;
+
+			.navbar {
+				padding: 0;
+			}
+		}
+	}
+
+	&__dates {
+		text-align: end;
+
+	&--date-range {
+		color: $light_green;
+		@include noodle;
+		font-size: 40px;
+		line-height: 130%;
+
+		@include breakpoint(medium) {
+			font-size: 26px;
+		}
+	}
+
+	&--month-year {
+		color: $neon_pink;
+		@include noodle;
+		font-size: 40px;
+		line-height: 130%;
+
+		@include breakpoint(medium) {
+			font-size: 26px;
+		}
+	}
+
+	&--location {
+		color: $light-green;
+		@include noodle;
+		font-size: 40px;
+		line-height: 130%;
+
+		@include breakpoint(medium) {
+			font-size: 26px;
+		}
+		}
+	}
 	
 	.border-green {
 		border: 3px solid $light_green;
@@ -77,7 +124,7 @@
 
   @media (max-width: 991px) {
     .navbar {
-      padding: 52px 18px 18px;
+      padding: 18px;
 
       .logo {
         width: 72px;
