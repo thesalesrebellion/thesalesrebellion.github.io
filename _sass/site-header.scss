@@ -1,21 +1,21 @@
 .site-header {
-  max-width: 1598px;
-
-  .border-green {
-    border: 3px solid $light_green;
-  }
-
-  .font-kufam {
-    font-family: 'Kufam', sans-serif;
-  }
-
-  .navbar {
-    background: $black;
-    color: $white;
-    padding: 40px 20px;
+	background: $black;
+	
+	.border-green {
+		border: 3px solid $light_green;
+	}
+	
+	.font-kufam {
+		font-family: 'Kufam', sans-serif;
+	}
+	
+	.navbar {
+		color: $white;
+		padding: 20px;
+		max-width: 1598px;
 
     .logo {
-      width: 127px;
+      width: 100px;
       height: auto;
     }
 

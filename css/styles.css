@@ -1104,7 +1104,7 @@ iframe {
   }
 }
 .site-header {
-  max-width: 1598px;
+  background: #000;
 }
 .site-header .border-green {
   border: 3px solid #66ffc8;
@@ -1113,12 +1113,12 @@ iframe {
   font-family: "Kufam", sans-serif;
 }
 .site-header .navbar {
-  background: #000;
   color: #fff;
-  padding: 40px 20px;
+  padding: 20px;
+  max-width: 1598px;
 }
 .site-header .navbar .logo {
-  width: 127px;
+  width: 100px;
   height: auto;
 }
 .site-header .navbar .navbar-nav {
@@ -3674,6 +3674,7 @@ iframe {
 
 .landing-page {
   padding: 0 171px;
+  position: relative;
 }
 .landing-page .sold-out {
   color: #666;
