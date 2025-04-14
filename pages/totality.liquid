@@ -35,33 +35,36 @@ meetup:
     - feature: Fully Immersive & Interactive Event
     - feature: "Get points, level up, become the #1 Rebel"
     - feature: Engage with like-minded people
-cta:
-  text: Totality Pass (w/ Hotel)
-  nohotel_text: Totality Pass (Local)
-  text_vip: VIP Totality pass
-  copy_text: |
-    This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
-    * Arrival on Tuesday the 26th: 5:00pm EST
-    * First event at 6:00pm EST
-    * Departure on Thursday the 28th: 4:00pm EST or later
-    * Final keynote ends at 2:00pm EST
-  copy_text_nohotel: |
-    This ticket includes; general admission to the event, access to all workshops, food and drink during event, hotel link to book your own room, swag, official Rebel status.
-    * Arrival on Tuesday the 26th: 5:00pm EST
-    * First event at 6:00pm EST
-    * Departure on Thursday the 28th: 4:00pm EST or later
-    * Final keynote ends at 2:00pm EST
-  copy_text_vip: |
-    Everything in General admission ➕
-    * VIP access to private sessions and encounters at Totality event
-    * Extra special swag
-    * Additional & exclusive hangout (Thursday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers
-    * Other cool stuff we will surprise you with!
-    * Last event ends at 6pm
-    * Departure on Thursday night at 8pm or later (or departure Friday morning)
-  url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
-  nohotel_url: https://buy.stripe.com/14kaEZ4A2cTAewobJz
-  vip_url: https://buy.stripe.com/3csfZj7Me2eW2NGaFg
+tickets:
+  standard:
+    text: Totality Pass (w/ Hotel)
+    url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
+    details: |
+      This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
+      * Arrival on Tuesday the 26th: 5:00pm EST
+      * First event at 6:00pm EST
+      * Departure on Thursday the 28th: 4:00pm EST or later
+      * Final keynote ends at 2:00pm EST
+  nohotel:
+    text: Totality Pass (Local)
+    url: https://buy.stripe.com/14kaEZ4A2cTAewobJz
+    details: |
+      This ticket includes; general admission to the event, access to all workshops, food and drink during event, hotel link to book your own room, swag, official Rebel status.
+      * Arrival on Tuesday the 26th: 5:00pm EST
+      * First event at 6:00pm EST
+      * Departure on Thursday the 28th: 4:00pm EST or later
+      * Final keynote ends at 2:00pm EST
+  vip:
+    text: VIP Totality pass
+    url: https://buy.stripe.com/3csfZj7Me2eW2NGaFg
+    details: |
+      Everything in General admission ➕
+      * VIP access to private sessions and encounters at Totality event
+      * Extra special swag
+      * Additional & exclusive hangout (Thursday the 28th - all day) with Dale Dupree + The Rebels + Event Speakers
+      * Other cool stuff we will surprise you with!
+      * Last event ends at 6pm
+      * Departure on Thursday night at 8pm or later (or departure Friday morning)
   description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
   notice: Early bird pricing is LIVE NOW
   link_text: Learn More
@@ -204,38 +207,38 @@ footer:
             {{ features.description }}
         </p>
         <p class="landing-page__cta--description">
-            {{ cta.description }}
+            {{ tickets.description }}
         </p>
         <p class="landing-page__cta--description" style="font-size: 50px">
-            {{ cta.notice }}
+            {{ tickets.notice }}
         </p>
 
         <div class="landing-page__cta--container">
             <div class="landing-page__cta--wrapper">
                 <a
-                    href="{{ cta.url }}"
+                    href="{{ tickets.standard.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ cta.text }}</a
+                    >{{ tickets.standard.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link">{{ cta.link_text }}</a>
+                <a class="learnMoreLink landing-page__cta--link">{{ tickets.link_text }}</a>
             </div>
 
             <div class="landing-page__cta--wrapper">
                 <a
-                    href="{{ cta.nohotel_url }}"
+                    href="{{ tickets.nohotel.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ cta.nohotel_text }}</a
+                    >{{ tickets.nohotel.text }}</a
                 >
-                <a class="learnMoreNohotelModal landing-page__cta--link">{{ cta.link_text }}</a>
+                <a class="learnMoreNohotelModal landing-page__cta--link">{{ tickets.link_text }}</a>
             </div>
 
             <div class="landing-page__cta--wrapper">
                 <a
-                    href="{{ cta.vip_url }}"
+                    href="{{ tickets.vip.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ cta.text_vip }}</a
+                    >{{ tickets.vip.text }}</a
                 >
-                <a class="learnMoreLinkVip landing-page__cta--link">{{ cta.link_text }}</a>
+                <a class="learnMoreLinkVip landing-page__cta--link">{{ tickets.link_text }}</a>
             </div>
         </div>
     </section>
@@ -271,27 +274,27 @@ footer:
             <div class="landing-page__cta--container landing-page__cta--container-meetup">
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        href="{{ cta.url }}"
+                        href="{{ tickets.standard.url }}"
                         class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ cta.text }}</a
+                        >{{ tickets.standard.text }}</a
                     >
-                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
                 </div>
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        href="{{ cta.nohotel_url }}"
+                        href="{{ tickets.nohotel.url }}"
                         class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ cta.nohotel_text }}</a
+                        >{{ tickets.nohotel.text }}</a
                     >
-                    <a class="learnMoreNohotelModal landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                    <a class="learnMoreNohotelModal landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
                 </div>
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        href="{{ cta.vip_url }}"
+                        href="{{ tickets.vip.url }}"
                         class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ cta.text_vip }}</a
+                        >{{ tickets.vip.text }}</a
                     >
-                    <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                    <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
                 </div>
             </div>
         </div>
@@ -300,27 +303,27 @@ footer:
     <div class="landing-page__cta--container">
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                href="{{ cta.url }}"
+                href="{{ tickets.standard.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                >{{ cta.nohotel_text }}</a
+                >{{ tickets.standard.text }}</a
             >
-            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
         </div>
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                href="{{ cta.nohotel_url }}"
+                href="{{ tickets.nohotel.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-                >{{ cta.text }}</a
+                >{{ tickets.nohotel.text }}</a
             >
-            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
         </div>
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                href="{{ cta.vip_url }}"
+                href="{{ tickets.vip.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-                >{{ cta.text_vip }}</a
+                >{{ tickets.vip.text }}</a
             >
-            <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+            <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
         </div>
     </div>
 
@@ -387,27 +390,27 @@ footer:
         <div class="landing-page__cta--container landing-page__cta--container-meetup">
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.url }}"
+                    href="{{ tickets.standard.url }}"
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ cta.text }}</a
+                    >{{ tickets.standard.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.nohotel_url }}"
+                    href="{{ tickets.nohotel.url }}"
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ cta.nohotel_text }}</a
+                    >{{ tickets.nohotel.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.vip_url }}"
+                    href="{{ tickets.vip.url }}"
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ cta.text_vip }}</a
+                    >{{ tickets.vip.text }}</a
                 >
-                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
             </div>
         </div>
     </section>
@@ -416,27 +419,27 @@ footer:
         <div class="landing-page__cta--container">
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.nohotel_url }}"
+                    href="{{ tickets.standard.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ cta.nohotel_text }}</a
+                    >{{ tickets.standard.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.url }}"
+                    href="{{ tickets.nohotel.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ cta.text }}</a
+                    >{{ tickets.nohotel.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
             </div>
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ cta.vip_url }}"
+                    href="{{ tickets.vip.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ cta.text_vip }}</a
+                    >{{ tickets.vip.text }}</a
                 >
-                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ cta.link_text }}</a>
+                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
             </div>
         </div>
     </div>
@@ -445,21 +448,21 @@ footer:
     <div id="learnMoreModal" class="landing-page__modal">
         <div class="landing-page__modal--content">
             <span class="landing-page__modal--close">&times;</span>
-            {{ cta.copy_text | markdownify }}
+            {{ tickets.standard.details | markdownify }}
         </div>
     </div>
 
     <div id="learnMoreNohotelModal" class="landing-page__modal">
         <div class="landing-page__modal--content landing-page__modal--content-secondary">
             <span class="landing-page__modal--close">&times;</span>
-            {{ cta.copy_text_nohotel | markdownify }}
+            {{ tickets.nohotel.details | markdownify }}
         </div>
     </div>
 
     <div id="learnMoreVipModal" class="landing-page__modal">
         <div class="landing-page__modal--content landing-page__modal--content-secondary">
             <span class="landing-page__modal--close">&times;</span>
-            {{ cta.copy_text_vip | markdownify }}
+            {{ tickets.vip.details | markdownify }}
         </div>
     </div>
 </div>
