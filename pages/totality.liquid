@@ -9,6 +9,8 @@ eleventyNavigation:
 page_id: landing-page
 landing_page: true
 location: Knoxville, TN
+description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
+notice: Early bird pricing is LIVE NOW
 dates:
   date_range: "26 - 28"
   month_year: "August 2025"
@@ -35,8 +37,9 @@ meetup:
     - feature: Fully Immersive & Interactive Event
     - feature: "Get points, level up, become the #1 Rebel"
     - feature: Engage with like-minded people
+ticket_link_text: Learn More
 tickets:
-  standard:
+  - type: standard
     text: Totality Pass (w/ Hotel)
     url: https://buy.stripe.com/dR63cxd6y8Dk73WaEY
     details: |
@@ -45,7 +48,8 @@ tickets:
       * First event at 6:00pm EST
       * Departure on Thursday the 28th: 4:00pm EST or later
       * Final keynote ends at 2:00pm EST
-  nohotel:
+    modal: learnMoreModal
+  - type: nohotel
     text: Totality Pass (Local)
     url: https://buy.stripe.com/14kaEZ4A2cTAewobJz
     details: |
@@ -54,7 +58,8 @@ tickets:
       * First event at 6:00pm EST
       * Departure on Thursday the 28th: 4:00pm EST or later
       * Final keynote ends at 2:00pm EST
-  vip:
+    modal: learnMoreNohotelModal
+  - type: vip
     text: VIP Totality pass
     url: https://buy.stripe.com/3csfZj7Me2eW2NGaFg
     details: |
@@ -65,9 +70,7 @@ tickets:
       * Other cool stuff we will surprise you with!
       * Last event ends at 6pm
       * Departure on Thursday night at 8pm or later (or departure Friday morning)
-  description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
-  notice: Early bird pricing is LIVE NOW
-  link_text: Learn More
+    modal: learnMoreVipModal
 speakers:
   header: Guest Speakers
   title: Meet <span>our</span> team
@@ -207,39 +210,23 @@ footer:
             {{ features.description }}
         </p>
         <p class="landing-page__cta--description">
-            {{ tickets.description }}
+            {{ description }}
         </p>
         <p class="landing-page__cta--description" style="font-size: 50px">
-            {{ tickets.notice }}
+            {{ notice }}
         </p>
 
         <div class="landing-page__cta--container">
+            {% for ticket in tickets %}
             <div class="landing-page__cta--wrapper">
                 <a
-                    href="{{ tickets.standard.url }}"
+                    href="{{ ticket.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ tickets.standard.text }}</a
+                    >{{ ticket.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link">{{ tickets.link_text }}</a>
+                <a class="{{ ticket.modal }} landing-page__cta--link">{{ ticket_link_text }}</a>
             </div>
-
-            <div class="landing-page__cta--wrapper">
-                <a
-                    href="{{ tickets.nohotel.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ tickets.nohotel.text }}</a
-                >
-                <a class="learnMoreNohotelModal landing-page__cta--link">{{ tickets.link_text }}</a>
-            </div>
-
-            <div class="landing-page__cta--wrapper">
-                <a
-                    href="{{ tickets.vip.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ tickets.vip.text }}</a
-                >
-                <a class="learnMoreLinkVip landing-page__cta--link">{{ tickets.link_text }}</a>
-            </div>
+            {% endfor %}
         </div>
     </section>
 
@@ -272,59 +259,31 @@ footer:
             </ul>
 
             <div class="landing-page__cta--container landing-page__cta--container-meetup">
+                {% for ticket in tickets %}
                 <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                     <a
-                        href="{{ tickets.standard.url }}"
+                        href="{{ ticket.url }}"
                         class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ tickets.standard.text }}</a
+                        >{{ ticket.text }}</a
                     >
-                    <a class="learnMoreLink landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
+                    <a class="{{ ticket.modal }} landing-page__cta--link desktop-only">{{ ticket_link_text }}</a>
                 </div>
-                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                    <a
-                        href="{{ tickets.nohotel.url }}"
-                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ tickets.nohotel.text }}</a
-                    >
-                    <a class="learnMoreNohotelModal landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
-                </div>
-                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                    <a
-                        href="{{ tickets.vip.url }}"
-                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ tickets.vip.text }}</a
-                    >
-                    <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>
 
     <div class="landing-page__cta--container">
+        {% for ticket in tickets %}
         <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
             <a
-                href="{{ tickets.standard.url }}"
+                href="{{ ticket.url }}"
                 class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                >{{ tickets.standard.text }}</a
+                >{{ tickets.text }}</a
             >
-            <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
+            <a class="{{ ticket.modal }} landing-page__cta--link mobile-only">{{ ticket_link_text }}</a>
         </div>
-        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-            <a
-                href="{{ tickets.nohotel.url }}"
-                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-                >{{ tickets.nohotel.text }}</a
-            >
-            <a class="learnMoreNohotelModal landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
-        </div>
-        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-            <a
-                href="{{ tickets.vip.url }}"
-                class="landing-page__cta landing-page__cta--mobile-full mobile-only mobile-only--inline-block"
-                >{{ tickets.vip.text }}</a
-            >
-            <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
-        </div>
+        {% endfor %}
     </div>
 
     {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
@@ -388,81 +347,41 @@ footer:
         </p>
 
         <div class="landing-page__cta--container landing-page__cta--container-meetup">
+            {% for ticket in tickets %}
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ tickets.standard.url }}"
+                    href="{{ ticket.url }}"
                     class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ tickets.standard.text }}</a
+                    >{{ ticket.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
+                <a class="{{ ticket.modal }} landing-page__cta--link desktop-only">{{ ticket_link_text }}</a>
             </div>
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ tickets.nohotel.url }}"
-                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ tickets.nohotel.text }}</a
-                >
-                <a class="learnMoreNohotelModal landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
-            </div>
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ tickets.vip.url }}"
-                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ tickets.vip.text }}</a
-                >
-                <a class="learnMoreLinkVip landing-page__cta--link desktop-only">{{ tickets.link_text }}</a>
-            </div>
+            {% endfor %}
         </div>
     </section>
 
     <div class="landing-page__footer--cta-container">
         <div class="landing-page__cta--container">
+            {% for ticket in tickets %}
             <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
                 <a
-                    href="{{ tickets.standard.url }}"
+                    href="{{ ticket.url }}"
                     class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ tickets.standard.text }}</a
+                    >{{ ticket.text }}</a
                 >
-                <a class="learnMoreLink landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
+                <a class="{{ ticket.modal }} landing-page__cta--link mobile-only">{{ ticket_link_text }}</a>
             </div>
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ tickets.nohotel.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ tickets.nohotel.text }}</a
-                >
-                <a class="learnMoreNohotelModal landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
-            </div>
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ tickets.vip.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ tickets.vip.text }}</a
-                >
-                <a class="learnMoreLinkVip landing-page__cta--link mobile-only">{{ tickets.link_text }}</a>
-            </div>
+            {% endfor %}
         </div>
     </div>
 
     {%- comment -%} --- MODAL --- {%- endcomment -%}
-    <div id="learnMoreModal" class="landing-page__modal">
+    {% for ticket in tickets %}
+    <div id="{{ ticket.modal }}" class="landing-page__modal">
         <div class="landing-page__modal--content">
             <span class="landing-page__modal--close">&times;</span>
-            {{ tickets.standard.details | markdownify }}
+            {{ ticket.details | markdownify }}
         </div>
     </div>
-
-    <div id="learnMoreNohotelModal" class="landing-page__modal">
-        <div class="landing-page__modal--content landing-page__modal--content-secondary">
-            <span class="landing-page__modal--close">&times;</span>
-            {{ tickets.nohotel.details | markdownify }}
-        </div>
-    </div>
-
-    <div id="learnMoreVipModal" class="landing-page__modal">
-        <div class="landing-page__modal--content landing-page__modal--content-secondary">
-            <span class="landing-page__modal--close">&times;</span>
-            {{ tickets.vip.details | markdownify }}
-        </div>
-    </div>
+    {% endfor %}
 </div>

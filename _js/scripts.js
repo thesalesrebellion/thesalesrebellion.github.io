@@ -149,9 +149,9 @@
     }
     
     document.addEventListener('DOMContentLoaded', () => {
-        handleModal('learnMoreModal', '.learnMoreLink');
+        handleModal('learnMoreModal', '.learnMoreModal');
         handleModal('learnMoreNohotelModal', '.learnMoreNohotelModal');
-        handleModal('learnMoreVipModal', '.learnMoreLinkVip');
+        handleModal('learnMoreVipModal', '.learnMoreVipModal');
     });    
 
 })();
