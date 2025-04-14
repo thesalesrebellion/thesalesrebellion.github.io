@@ -1105,9 +1105,11 @@ iframe {
 }
 .site-header {
   background: #000;
+  box-shadow: 0px 20px 20px 0px rgb(0, 0, 0);
 }
 .site-header.landing {
   background: transparent;
+  box-shadow: none;
 }
 .site-header.landing .container {
   padding: 20px;
@@ -1162,7 +1164,7 @@ iframe {
 }
 .site-header .navbar {
   color: #fff;
-  padding: 20px;
+  padding: 20px 20px 0;
   max-width: 1598px;
 }
 .site-header .navbar .logo {
