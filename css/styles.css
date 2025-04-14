@@ -1104,6 +1104,9 @@ iframe {
   }
 }
 .site-header {
+  background: #000;
+}
+.site-header.landing {
   background: transparent;
 }
 .site-header.landing .container {
