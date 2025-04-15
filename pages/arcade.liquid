@@ -5,42 +5,42 @@ layout_engine: bootstrap
 has_carousel: true
 permalink: /arcade/
 rebels:
-  - image: "/img/derrick-nave.webp"
-    name: Derrick Nave
-    position: Packaging
-    testimonial: "March closed out my best month ever with over $100k in gross profit and also my best quarter ever with over $250k in gross profit!"
-  - image: "/img/corey-fowler.webp"
-    name: Corey Fowler
-    position: Technical Recruiting Specialist
-    testimonial: "I set 14 appointments for Net New Business with just 30 letters dropped over the course of a week. It definitely works. Be MEMORABLE!"
-  - image: "/img/anitza-martins.webp"
-    name: Anitza Martins
-    position: Technology Consulting
-    testimonial: "Coming into the program I was having a really difficult time. I’m graduating from the Squadron having gained a ton of confidence."
-  - image: "/img/jarreau-gilbert.webp"
-    name: Jarreau Gilbert
-    position: Enterprise Sales Account Manager
-    testimonial: "I hit over 220% of my annual quota even with ‘old-school’ managers holding me back for half of the year... I believe I could’ve hit over 400% or even 500%."
-  - image: "/img/rachel-boersma.webp"
-    name: Rachel Boersma
-    position: Cybersecurity
-    testimonial: "This is HANDS DOWN in my 25 years of sales the BEST thing I’ve ever done for myself! Thank you all for being so amazing!"
+  - image: "/img/jordan-mcginnis.webp"
+    name: Jordan McGinnis
+    position: Enterprise Software Sales
+    testimonial: "I landed a meeting with a multi-million dollar account, would be the largest account in company history if we win. And the only reason we are in the sale is, and I quote: 'because of the crumpled letter.'"
+  - image: "/img/caleb-mccabe.webp"
+    name: Caleb McCabe
+    position: IT Services
+    testimonial: "I used to say 'can I have 27 seconds' and now I say 'did you get my crumpled letter?' and BOOM! 10+ min conversation spilling all the beans and getting a sales process started."
+  - image: "/img/shannan-crabtree.webp"
+    name: Shannan Crabtree
+    position: Office Equipment Sales
+    testimonial: "I sent out 20 repair bricks and got 12 meetings from it that turned into 4 closed sales in less than 30 days!"
+  - image: "/img/gina-diaz.webp"
+    name: Gina Diaz
+    position: Technology Sales
+    testimonial: "I used the empty-box idea to get a meeting with a competitor's account that is worth $2.5m in revenue that I have not been able to set a meeting with prior, regardless of all the effort I put in!"
+  - image: "/img/zac-zaricor.webp"
+    name: Zac Zaricor
+    position: Payment Processing Systems
+    testimonial: "I had a prospect tell me that they 'framed and laminated' the letter I sent with the Repair Brick. They said, “very clever, I have never seen anything like it!"
+  - image: "/img/reuben-goldbaum.webp"
+    name: Reuben Goldbaum
+    position: Cargo Carrier Equipment Sales
+    testimonial: "Booked a meeting with a $2m sale. He had my garbage can and unwritten story on his shelf and told me they were the only reason I got the meeting!"
+  - image: "/img/brad-norwood.webp"
+    name: Brad Norwood
+    position: Incentive Travel
+    testimonial: "The old crumpled letter has secured me around $200k in personal income!"
+  - image: "/img/jen-jones.webp"
+    name: Jen Jones
+    position: Construction Sales
+    testimonial: "Dropped off a trash can with a large HVAC company and my contact emailed me saying… “I don’t have time for people who might waste mine… And this is BRILLIANT!"
   - image: "/img/karan-bhullar.webp"
     name: Karan Bhullar
-    position: Business Consulting
-    testimonial: "The first mindset shift I’ve ever really had. I got away from the transactional thinking and have had so much fun and success delighting my prospects."
-  - image: "/img/lisa-hardin.webp"
-    name: Lisa Hardin
-    position: Chemicals
-    testimonial: "Amazing how much confidence I have now that I realize it’s all about showing I care about them. Can’t thank you guys enough for showing me the Rebel way is THE WAY!"
-  - image: "/img/kirk-robinson.webp"
-    name: Kirk Robison
-    position: Employee Rewards
-    testimonial: "The Rebellion has changed the trajectory of my life. What has transpired over the time since I joined is literally hundreds of thousands of dollars in commissions."
-  - image: "/img/isadora-botello.webp"
-    name: Isadora Botello
-    position: HVAC
-    testimonial: "Thank you to the whole team for all the support and Rebel teachings. I'm grateful to be a Rebel Alumni and excited to continue the things that you have taught me."
+    position: Luxury Consulting Firm
+    testimonial: "I used these Rebellious tools to book a meeting with the CMO-EMEA of Marriott and it blew my mind how easy it was to get their attention with these concepts!"
 quests:
     - name: Level One Quests
       heading: Quick Wins & Easy Gold
@@ -351,6 +351,7 @@ quests:
   .tor-slider-item-inner img {
     width: 100px;
     height: auto;
+    border-radius: 50%;
   }
 
   .tor-slider-item-inner .name {
@@ -1133,7 +1134,7 @@ quests:
             <div>
               <p class="name font-kufam text-green">{{ rebel.name }}</p>
               <p class="title font-kufam text-pink">{{ rebel.position }}</p>
-              <p class="testimonial font-kufam text-white">"{{ rebel.testimonial }}""</p>
+              <p class="testimonial font-kufam text-white">"{{ rebel.testimonial }}"</p>
             </div>
           </div>
         </div>
@@ -1146,7 +1147,7 @@ quests:
           <div>
             <p class="name font-kufam text-green">{{ rebel.name }}</p>
             <p class="title font-kufam text-pink">{{ rebel.position }}</p>
-            <p class="testimonial font-kufam text-white">"{{ rebel.testimonial }}""</p>
+            <p class="testimonial font-kufam text-white">"{{ rebel.testimonial }}"</p>
           </div>
         </div>
       {% endfor %}
