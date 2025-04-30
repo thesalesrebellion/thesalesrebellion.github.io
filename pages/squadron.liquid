@@ -6,7 +6,8 @@ eleventyNavigation:
   key: Squadron
   order: 3
   glow_in: "purple"
-class: new-font
+<!-- class: new-font -->
+has_carousel: true
 permalink: /squadron/
 redirect_from:
   - /group/
@@ -31,6 +32,8 @@ companies:
     - name: Salesforce
       image: /img/companies/salesforce.webp
   bottom:
+    - name: Xerox
+      image: /img/companies/xerox.webp
     - name: Oracle
       image: /img/companies/oracle.webp
     - name: S&P Global
@@ -155,6 +158,8 @@ redefines the core fundamentals that are required for sales success. It acknowle
 <style>
   h1.hero__heading {
     font-size: 60px;
+    line-height: 2.25;
+    letter-spacing: 5px;
     margin-top: 55%;
   }
 
@@ -168,6 +173,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     border-radius: 5px;
     display: inline-block;
     font-size: 20px;
+    font-weight: 700;
     margin-bottom: 20px;
     margin-right: 20px;
     padding: 15px;
@@ -181,7 +187,7 @@ redefines the core fundamentals that are required for sales success. It acknowle
     color: #fff;
   }
 
-  .green{
+  .green {
     background-color: #66ffc8;
     border-color: #66ffc8;
     color: #000;
@@ -193,6 +199,20 @@ redefines the core fundamentals that are required for sales success. It acknowle
     color: #66ffc8;
   }
 
+  .pill {
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(17.5px);
+    border-radius: 20px;
+    color: #66FFC8;
+    font-size: 24px;
+    line-height: normal;
+    font-style: italic;
+    font-weight: 600;
+    padding: 6px 20px 7px;
+    text-align: center;
+    width: fit-content;
+  }
+
   .delta-image {
     float: right;
     margin-top:40px;
@@ -201,6 +221,14 @@ redefines the core fundamentals that are required for sales success. It acknowle
 
   .font-green {
     color:#66ffc8
+  }
+
+  .font-horsemen {
+    font-family: 'Horsemen', sans-serif;
+  }
+
+  .font-kufam {
+    font-family: 'Kufam', sans-serif;
   }
 
   .checkmark {
@@ -266,12 +294,236 @@ redefines the core fundamentals that are required for sales success. It acknowle
     font-size: 75px !important;
   }
 
+  .hero {
+    .pill {
+      margin-top: 103px;
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 150%;
+      margin-bottom: 0;
+    }
+  }
+
   .metric {
     font-size: 16px;
   }
 
   .hero {
     background-image: none;
+  }
+
+  .box-dark {
+    background: #1C091D;
+    padding: 40px 20px;
+  }
+
+  .box-dark p {
+    font-size: 1.5rem;
+    line-height: 125%;
+    font-weight: 500;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .scroll {
+    width: 120%;
+    overflow: hidden;
+  }
+
+  .scroll-inner {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    animation: scroll 1000s linear infinite;
+    width: max-content;
+    padding-inline: 0 !important;
+  }
+
+  .scroll img {
+    height: 28px;
+    min-height: 28px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  @keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 30px));
+  }
+}
+
+.squadron-sessions-slider {
+  .slide-outer {
+    padding: 0 12px;
+
+    &.slick-current {
+      .card {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 33%, rgba(235, 56, 207, 0.52) 100%);
+      }
+    }
+
+    .session-label {
+text-transform: uppercase;
+color: #66FFC8;
+font-size: 1rem;
+line-height: 150%;
+letter-spacing: 1.6px;
+margin-bottom: 20px;
+}
+
+    .card {
+      padding: 32px;
+      .card-body {
+        gap: 32px;
+
+        .number-container {
+          flex: 0 0 50px;
+          padding-top: 20px;
+
+          .number {
+            color: #fff;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 2.25;
+            letter-spacing: 14px;
+            text-shadow: 0px 4px 20px rgba(235, 56, 207, 0.50);
+          }
+        }
+
+        .card-title {
+          font-size: 1.5rem;
+          font-weight: 700;
+          margin-bottom: 24px;
+        }
+
+        .card-text {
+          font-size: 1.125rem;
+          font-weight: 500;
+          line-height: 144%;
+        }
+      }
+    }
+  }
+}
+
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    /* top: calc(100% + 37px); */
+    top: calc(100% + 10px);
+    z-index: 1;
+    height: 40px;
+    width: 40px;
+  }
+
+  .slick-prev:hover path,
+  .slick-next:hover path {
+    fill: #eb38cf;
+  }
+
+  .slick-prev:hover rect,
+  .slick-next:hover rect {
+    stroke: #eb38cf;
+  }
+
+  .slick-prev {
+    right: 82px;
+    left: unset;
+    transform: translateX(-52px);
+  }
+
+  .slick-next {
+    right: 82px;
+    transform: none;
+  }
+
+  .join-box {
+    padding: 66px;
+    margin-top: 112px;
+    border: 3px solid;
+    border-image: linear-gradient(0deg, #66ffc8, #eb38cf) 1;
+
+    h3 {
+      text-shadow: 0px 4px 20px rgba(235, 56, 207, 0.50);
+      line-height: 2.25;
+      font-size: 36px;
+      letter-spacing: 5px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 125%;
+      margin-bottom: 60px;
+    }
+
+    .subheading {
+      color: #EB38CF;
+text-align: center;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 133%;
+margin-bottom: 24px;
+    }
+
+    .button {
+      font-weight: 700;
+    }
+  }
+
+  .rebels-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin: 88px 0;
+
+    .card {
+      padding: 24px;
+
+      img {
+        width: 100px;
+        height: auto;
+        margin-bottom: 24px;
+      }
+
+      .card-title.name {
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 125%;
+        color: #66FFC8;
+      }
+
+      .card-title.position {
+        font-size: 14px;
+        line-height: 128%;
+        color: #eb38cf;
+        margin-bottom: 24px;
+      }
+
+      .card-text {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .bonus-section {
+    p.pre-heading {
+      color:#66ffc8;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    h2 {
+      line-height: 2.25;
+      font-size: 60px;
+      text-shadow: 0px 4px 20px rgba(235, 56, 207, 0.50);
+    }
   }
 
   .bonus-product {
@@ -301,8 +553,10 @@ redefines the core fundamentals that are required for sales success. It acknowle
     }
 
     h1.hero__heading {
-      font-size: 80px;
+      font-size: 60px;
+      line-height: 2.25;
       margin-top: 100px;
+      margin-bottom: 50px;
     }
 
     h2.with-image {
@@ -368,44 +622,62 @@ redefines the core fundamentals that are required for sales success. It acknowle
       font-size: 52px !important;
     }
 
+    .hero {
+      .pill {
+        margin-top: 56px;
+        padding: 12px 14px;
+        font-size: 14px;
+      }
+
+      h1.hero__heading {
+        font-size: 30px;
+        margin: 10px 0 20px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+    }
+
     .bonus-product {
         gap: 12px;
     }
   }
 </style>
 {% include "header.liquid" %}
-<section class="hero hero--{{ page_id }}">
-</section>
-<div class="container-fluid" style="background: url('/img/bg-rebel-squadron.webp');background-repeat:no-repeat;background-position:center 250px;background-size: cover;">
+<!-- <section class="hero hero--{{ page_id }}">
+</section> -->
+<div class="squadron container-fluid hero" style="background: url('/img/bg-rebel-squadron-extended.webp');background-repeat:no-repeat;background-position:center bottom;background-size: cover; min-height: 1100px;">
   <div class="container-md">
     <div class="row">
-      <div class="col-12 text-center text-md-start">
-        <p class="pill" style="margin-top:60px">Become the Salesperson They Can’t Ignore</p>
+      <div class="col-12 text-center text-md-start px-0">
+        <p class="pill font-kufam">Become the Salesperson They Can’t Ignore</p>
       </div>
     </div>
     <div class="row">
       <div class="col-8 hero__heading--container">
-        <h1 class="hero__heading" style="margin-top:0">The Rebel Squadron</h1>
+        <h1 class="hero__heading font-horsemen">The Rebel Squadron</h1>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-md-6">
-        <p>Stop using boring old-school tactics that are easy to ignore. Start arresting attention, opening opportunities, and renewing hope and excitement in your sales career.</p>
+      <div class="col-12 col-md-6 px-0">
+        <p class="font-kufam pe-md-5">Stop using boring old-school tactics that are easy to ignore. Start arresting attention, opening opportunities, and renewing hope and excitement in your sales career.</p>
       </div>
-      <div class="col-12 col-md-4 offset-md-2">
+      <div class="col-12 col-md-4 offset-md-2 font-kufam">
         <div class="row">
           <div class="col-6">
-            <div class="number" style="color:#66ffc8;font-size: 52px;font-weight:600;line-height:50px">122+</div>
+            <div class="number" style="color:#66ffc8;font-size: 52px;font-weight:700;line-height:50px">122+</div>
             <div class="metric">Successful Industries</div>
           </div>
           <div class="col-6">
-            <div class="number" style="color:#66ffc8;font-size: 52px;font-weight:600;line-height:50px">$11B+</div>
+            <div class="number" style="color:#66ffc8;font-size: 52px;font-weight:700;line-height:50px">$11B+</div>
             <div class="metric">Pipeline Generated</div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <p style="border-bottom: 2px solid #eb38cf">&nbsp;</p>
+            <div style="border-bottom: 2px solid #eb38cf; margin: 16px 0;"></div>
           </div>
         </div>
         <div class="row">
@@ -416,23 +688,25 @@ redefines the core fundamentals that are required for sales success. It acknowle
   </div>
 </div>
 <div class="container-md">
-  <div class="row">
+        <div class="row" style="margin-top: -221px; margin-bottom: 132px;">
     <div class="col">
-      <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join&nbsp; the Rebel&nbsp; Squadron</h2>
-        <p class="text-center"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
-        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
+      <div style="border: 3px solid; border-image: linear-gradient(0deg, #66ffc8, #eb38cf) 1;;padding: 72px 66px;background: rgba(0, 0, 0, 0.50); backdrop-filter: blur(17.5px);">
+        <h2 class="hero__heading text-center font-horsemen" style="color: #fff;font-size:36px;line-height: 2.25; text-shadow: 0px 4px 20px rgba(235, 56, 207, 0.50);margin-bottom: 24px;">Join&nbsp; the Rebel&nbsp; Squadron</h2>
+        <p class="text-center font-kufam" style="font-size: 24px; font-weight: 500; line-height: 30px; margin-bottom: 60px;"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
+        <button class="green button mb-0 font-kufam" style="width:100%;font-weight: 700;padding: 20px;" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col">
-      <h2 class="hero__heading text-center" style="color:#66ffc8;font-size:40px;font-weight:bold;font-family: 'Kufam';margin-bottom:10px">Over &nbsp;$11 Billion in &nbsp;Pipeline Generated</h2>
-      <p class="text-center">Reps and teams from the big-brand logos below have committed to the Rebel Way and flourished, but our most successful Rebels sell for companies you’ve probably never heard of before - with many small business owners and solopreneurs among Rebel alumni.</p>
-      <p class="text-center">You don’t have to be a veteran or a household name. Rookies and seasoned reps can build trust and credibility without the aid of experience or company notoriety.</p>
+      <h2 class="hero__heading text-center" style="color:#66ffc8;font-size:40px;font-weight:bold;font-family: 'Kufam';margin-bottom:20px">Over &nbsp;$11 Billion in &nbsp;Pipeline Generated</h2>
+      <div class="w-75 mx-auto font-kufam" style="font-size: 18px; line-height: 26px;">
+        <p class="text-center">Reps and teams from the big-brand logos below have committed to the Rebel Way and flourished, but our most successful Rebels sell for companies you’ve probably never heard of before - with many small business owners and solopreneurs among Rebel alumni.</p>
+        <p class="text-center">You don’t have to be a veteran or a household name. Rookies and seasoned reps can build trust and credibility without the aid of experience or company notoriety.</p>
+      </div>
     </div>
   </div>
-  <div class="row" style="margin-bottom:20px">
+  <div class="row" style="margin-top: 43px;margin-bottom:20px">
     {% for company in companies.top %}
     <div class="col-4 col-lg-2" style="display:flex;align-items:center;justify-content:center">
       <img src="{{ company.image }}" alt="{{ company.name }}">
@@ -440,38 +714,42 @@ redefines the core fundamentals that are required for sales success. It acknowle
     {% endfor %}
   </div>
 </div>
-<div class="container-fluid" style="margin-bottom:80px">
-  <div id="companies" class="row scroll">
-    {% for company in companies.bottom %}
-    <div class="col-5 col-md-2" style="display:flex;align-items:center;justify-content:center">
-      <img src="{{ company.image }}" alt="{{ company.name }}">
+<div class="container-fluid scroller-container" style="margin-bottom:130px">
+  <div id="companies" class="scroll">
+    <div class="scroll-inner px-0">
+        <img src="/img/squadron/logos-scroller.webp" alt="Company logos">
+        <img src="/img/squadron/logos-scroller.webp" alt="Company logos">
+        <img src="/img/squadron/logos-scroller.webp" alt="Company logos">
     </div>
-    {% endfor %}
   </div>
 </div>
-<div class="container-md">
-  <div class="row quote">
-    <div class="col-12 col-md-4">
-      <img src="/img/quote-stu.webp" class="pb-3 img-fluid w-100">
+<div class="container-fluid mx-auto d-flex" style="max-width: 1192px; margin-bottom: 137px;">
+  <div class="row quote d-flex" style="gap: 40px;">
+    <div class="px-0" style="flex-basis: 345px;">
+      <img src="/img/quote-stu.webp" class="img-fluid w-100">
     </div>
-    <div class="col-12 col-md-8 quote">
-      <div>
+    <div class="" style="flex-basis: 807px;">
+      <div class="font-kufam" style="padding: 40px; background: #1C091D;">
         <h3>Stu Heinecke</h3>
-        <p class="about">Wall Street Editorial Cartoonist and Author of Drawing Attention, How to Get a Meeting with Anyone, and How to Grow Your Business Like a Weed.</p>
-        <p>“The Sales Rebellion has the most creative ways to break through to important people, causing people to stop in their tracks and say ‘wait... what!?’... You will be inspired and gain a belief that you can reach anyone and that you BELONG in contact with anyone you want to reach.”</p>
+        <p class="about" style="margin-bottom: 44px;">Wall Street Editorial Cartoonist and Author of Drawing Attention, How to Get a Meeting with Anyone, and How to Grow Your Business Like a Weed.</p>
+        <p style="font-size: 20px; line-height: 150%; font-weight: 400;">“The Sales Rebellion has the most creative ways to break through to important people, causing people to stop in their tracks and say ‘wait... what!?’... You will be inspired and gain a belief that you can reach anyone and that you BELONG in contact with anyone you want to reach.”</p>
       </div>
     </div>
   </div>
+</div>
+<div class="container-fluid mx-auto font-kufam" style="max-width: 1224px;">
   <div class="row">
     <div class="col">
-      <h2 class="hero__heading hero__heading--large text-center" style="margin-bottom:40px">Join the Rebel Squadron Ranks</h2>
-      <h2 class="hero__heading text-center" style="color:#66ffc8;font-size:40px;font-weight:bold;font-family: 'Kufam';margin-bottom:10px">What You’ll Unlock as a Member of The Rebel Squadron</h2>
-      <p class="text-center">Rebels are known for their creative methods and service to others - as a Squadron member, you will deploy exclusive tools that are proven to attract prospects, and get questioning and conversation follow-up strategies that lead to prospects beginning a buying process, or at the very least thanking you for your thoughtful outreach and asking you to stay in touch until the time is right. This makes it much easier to shrug off the grumps who still hang up on you. 😂</p>
+      <h2 class="hero__heading hero__heading--large text-center font-horsemen" style="margin-bottom:96px; font-size: 60px !important;line-height: 2.25;text-wrap: balance;text-shadow: 0px 4px 20px rgba(235, 56, 207, 0.50);">Join the Rebel Squadron Ranks</h2>
+      <div class="box-dark">
+        <h2 class="hero__heading text-center font-kufam" style="color:#66ffc8;font-size:40px;font-weight:bold;margin-bottom:20px; letter-spacing: normal;">What You’ll Unlock as a Member of The Rebel Squadron</h2>
+        <p class="text-center font-kufam" style="font-size: 24px; line-height: 125%;">Rebels are known for their creative methods and service to others - as a Squadron member, you will deploy exclusive tools that are proven to attract prospects, and get questioning and conversation follow-up strategies that lead to prospects beginning a buying process, or at the very least thanking you for your thoughtful outreach and asking you to stay in touch until the time is right. This makes it much easier to shrug off the grumps who still hang up on you. 😂</p>
+      </div>
     </div>
   </div>
-  <div class="row scroll">
+  <div class="row scroll" style="margin-top: 52px;">
     {% for benefit in benefits %}
-    <div class="col-10 col-md-6" style="margin-bottom: 25px">
+    <div class="col-10 col-md-6">
       <div class="card h-100" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
         <div class="card-body">
           <h5 class="card-title">{{ benefit.name }}</h5>
@@ -481,88 +759,87 @@ redefines the core fundamentals that are required for sales success. It acknowle
     </div>
     {% endfor %}
   </div>
-  <div class="row">
+  <div class="row" style="margin-top: 88px;">
     <div class="col">
-      <h2 class="hero__heading text-center" style="color:#66ffc8;font-size:40px;font-weight:bold;font-family: 'Kufam';margin-bottom:10px">Rebel Squadron Sessions</h2>
-      <p class="text-center">Coaching sessions are NOT whiteboard-learning, classroom style. They involve discussion, feedback, humor, thought-provoking questions, and growth through times of struggling through as you become more like the person you want to be.</p>
-      <p class="text-center">Here’s a brief look at some of the things you’ll be focusing on in the Squadron: </p>
-    </div>
-  </div>
-  <div class="row sessions scroll">
-    {% for session in sessions %}
-    <div class="col-10 col-md-6" style="margin-bottom: 25px">
-      <div class="card h-100" style="background-color:transparent;border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
-        <div class="card-body">
-          <div class="row justify-content-evenly justify-content-md-start">
-            <div class="col-2" style="display: flex;align-items: flex-start;justify-content: center">
-              <div class="number">{{ forloop.index }}</div>
-            </div>
-            <div class="col-9">
-              <h5 class="card-title">{{ session.name }}</h5>
-              <p class="card-text" style="color:#fff">{{ session.details }}</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="row">
-    <div class="col">
-      <div style="border: 2px solid #eb38cf;margin: 40px 0;padding: 40px">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join the Rebel Squadron</h2>
-        <p class="text-center"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
-        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
-      </div>
-    </div>
-  </div>
-  <div class="row quote">
-    <div class="col-12 col-md-4 order-md-2">
-      <img src="/img/quote-kevin.webp" class="pb-3 img-fluid w-100">
-    </div>
-    <div class="col-12 col-md-8 order-md-1 quote">
-      <div>
-        <h3>Kevin "KD" Dorsey</h3>
-        <p class="about">CRO at Finally and Founder of the Sales Leadership Accelerator</p>
-        <p>“The Sales Rebellion understands that the current rules of sales need to be broke. They will help you build an amazing sales career and build a life that you crave to be a part of.”</p>
-      </div>
-    </div>
-  </div>
-  <div class="row rebels scroll">
-    {% for rebel in rebels %}
-    <div class="col-10 col-md-4" style="margin-bottom: 25px">
-      <div class="card h-100" style="background: linear-gradient(#000 60%, #EB38CF);border: 2px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
-        <img src="{{ rebel.image }}" alt="{{ rebel.name }}'s Testimonial" style="margin: 16px 0 0 16px;width: 100px">
-        <div class="card-body">
-          <h5 class="card-title" style="color: #66ffc8;font-size:32px">{{ rebel.name }}</h5>
-          <h5 class="card-title" style="color: #eb38cf;font-size:18px">{{ rebel.position }}</h5>
-          <p class="card-text" style="color:#fff">{{ rebel.testimonial }}</p>
-        </div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-  <div class="row mb-2">
-    <div class="col-12">
-      <div class="ms-lg-5 me-lg-5 mb-2 testimonial-video">
-        <iframe src="https://www.youtube.com/embed/Efg5SP3k0Aw"></iframe>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <div class="ms-lg-5 me-lg-5 mb-5">
-        <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
+      <div class="box-dark" style="margin-bottom: 80px;">
+        <h2 class="hero__heading text-center font-kufam" style="color:#66ffc8;font-size:40px;font-weight:bold;margin-bottom:20px">Rebel Squadron Sessions</h2>
+        <p class="text-center">Coaching sessions are NOT whiteboard-learning, classroom style. They involve discussion, feedback, humor, thought-provoking questions, and growth through times of struggling through as you become more like the person you want to be.</p>
+        <p class="text-center">Here’s a brief look at some of the things you’ll be focusing on in the Squadron: </p>
       </div>
     </div>
   </div>
 </div>
-<div class="container-fluid" style="background-image: linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url('/img/bg-squadron-footer.webp');background-repeat:no-repeat;background-size: cover;padding-top:90px">
+<div class="container-fluid" style="padding-inline: 40px;">
+  <div class="squadron-sessions-slider">
+    {% for session in sessions %}
+    <div class="slide-outer">
+      <div class="session-label font-kufam">
+        Session {{ forloop.index }}
+      </div>
+      <div class="card h-100 font-kufam" style="background-color:transparent;border: 3px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 2">
+        <div class="card-body d-flex p-0">
+            <div class="number-container">
+              <div class="number font-horsemen">{{ forloop.index }}</div>
+            </div>
+            <div class="">
+              <h5 class="card-title">{{ session.name }}</h5>
+              <p class="card-text" style="color:#fff">{{ session.details }}</p>
+            </div>
+      </div>
+    </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="container-fluid mx-auto font-kufam" style="max-width: 1224px; margin-bottom: 137px;">
+  <div class="row">
+    <div class="col">
+      <div class="join-box">
+        <h3 class="hero__heading text-center font-horsemen mb-4">Join the Rebel Squadron</h3>
+        <p class="text-center font-kufam"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
+        <button class="green button mb-0 w-100" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
+      </div>
+    </div>
+  </div>
+  <div class="row quote d-flex" style="gap: 40px; margin-top: 88px;">
+    <div class="" style="flex-basis: 807px;">
+      <div class="font-kufam" style="padding: 40px; background: #1C091D;">
+        <h3>Kevin "KD" Dorsey</h3>
+        <p class="about" style="margin-bottom: 44px;">CRO at Finally and Founder of the Sales Leadership Accelerator</p>
+        <p style="font-size: 20px; line-height: 150%; font-weight: 400;">“The Sales Rebellion understands that the current rules of sales need to be broke. They will help you build an amazing sales career and build a life that you crave to be a part of.”</p>
+      </div>
+    </div>
+    <div class="px-0" style="flex-basis: 345px;">
+      <img src="/img/quote-kevin.webp" class="img-fluid w-100">
+    </div>
+  </div>
+  <div class="row rebels rebels-grid">
+    {% for rebel in rebels %}
+      <div class="card h-100" style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 33%, rgba(235, 56, 207, 0.52) 100%);border: 3px solid;border-image: linear-gradient(#eb38cf, #66ffc8) 1;">
+        <img src="{{ rebel.image }}" alt="{{ rebel.name }}'s Testimonial">
+        <div class="card-body p-0 font-kufam">
+          <h5 class="card-title name">{{ rebel.name }}</h5>
+          <h5 class="card-title position">{{ rebel.position }}</h5>
+          <p class="card-text" style="color:#fff">"{{ rebel.testimonial }}"</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="row mb-2">
+    <div class="col-12">
+      <div class="mb-2 testimonial-video">
+        <iframe src="https://www.youtube.com/embed/Efg5SP3k0Aw"></iframe>
+      </div>
+      <button class="green button mt-4 w-100" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
+    </div>
+  </div>
+</div>
+<div class="container-fluid bonus-section" style="background-image: linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), url('/img/bg-squadron-footer.webp');background-repeat:no-repeat;background-size: cover;padding-top:90px">
   <div class="container-md">
     <div class="row">
       <div class="col-12">
-        <p class="text-center" style="color:#66ffc8;font-size:24px">You’ll also get $1,300 in FREE bonus products when you join</p>
-        <h2 class="hero__heading hero__heading--large text-center" style="color: #fff;padding-bottom:50px">Bonus Products</h2>
+        <p class="text-center font-kufam pre-heading">You’ll also get $1,300 in FREE bonus products when you join</p>
+        <h2 class="hero__heading text-center font-horsemen" style="color: #fff;padding-bottom:50px">Bonus Products</h2>
       </div>
     </div>
     <div class="row" style="margin-bottom: 80px">
@@ -592,9 +869,9 @@ redefines the core fundamentals that are required for sales success. It acknowle
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <h2 class="hero__heading text-center" style="color: #fff;font-size:48px">Join the Rebel Squadron</h2>
-        <p class="text-center" style="color:#eb38cf;font-size:28px"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
+      <div class="col-12 join-box">
+        <h3 class="text-center font-horsemen mb-4">Join the Rebel Squadron</h3>
+        <p class="text-center subheading"> A fun and challenging 6-month mission with 6 other Rebels to execute pipeline-bursting campaigns and get really good at the art of conversational sales.</p>
         <p class="text-center">The Rebel Squadron isn’t for everyone—and that’s how we like it. If you’re looking for quick-fix tricks or sleazy shortcuts to catch prospects in a weak moment, this is not your crew. If you’re not ready to put others’ needs above your own or you think sales is just a numbers game, you’re in the wrong place. But if you want to play the long game, trust in your coaches who’ve been where you are, and are ready to commit to 6 months of all-out Rebellion, then strap in—because the Squadron is where legends are made!</p>
         <button class="green button" style="width:100%" data-bs-toggle="modal" data-bs-target="#squadronModal">Join a Squadron now</button>
       </div>
