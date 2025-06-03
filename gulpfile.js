@@ -6,7 +6,7 @@ import gulpSass from 'gulp-sass';
 const sass = gulpSass(dartSass);
 import terser from 'gulp-terser';
 import postcss from 'gulp-postcss';
-import purgecss from '@fullhuman/postcss-purgecss';
+import { purgeCSSPlugin } from '@fullhuman/postcss-purgecss';
 import cssnano from 'cssnano';
 import removeComments from 'postcss-discard-comments';
 import sourcemaps from 'gulp-sourcemaps';
@@ -15,7 +15,7 @@ import { default as log } from 'fancy-log';
 // Dev
 export const cssDev = () => gulp.src('./_sass/styles.scss')
     .pipe(sass({
-      includePaths: [
+      loadPaths: [
         './_sass',
       ],
     })
@@ -55,12 +55,12 @@ export const htmlServe = () => {
 // Prod
 export const cssProd = () => gulp.src('./_sass/styles.scss')
     .pipe(sass({
-      includePaths: [
+      loadPaths: [
         './_sass',
       ],
     })
     .on('error', sass.logError))
-    .pipe(postcss([purgecss({
+    .pipe(postcss([purgeCSSPlugin({
         content: [
           '_site/**/*.html'
         ],
