@@ -320,6 +320,78 @@
                 },
             ]
         });
+
+        $('.speakers-slider').slick({
+            infinite: false,
+            slidesToShow: 4.6,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: true,
+            prevArrow: '<svg class="slick-prev" alt="Previous" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="37" width="36" height="38" rx="18" transform="rotate(-90 1 37)" stroke="#66FFC8" stroke-width="2"/><path d="M28 20L28 18L16 18L16 16L14 16L14 18L12 18L12 20L14 20L14 22L16 22L16 20L28 20ZM18 24L16 24L16 22L18 22L18 24ZM18 24L20 24L20 26L18 26L18 24ZM18 14L16 14L16 16L18 16L18 14ZM18 14L20 14L20 12L18 12L18 14Z" fill="#66FFC8"/></svg>',
+            nextArrow: '<svg class="slick-next" alt="Next" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="39" y="1" width="36" height="38" rx="18" transform="rotate(90 39 1)" stroke="#66FFC8" stroke-width="2"/><path d="M12 18L12 20L24 20L24 22L26 22L26 20L28 20L28 18L26 18L26 16L24 16L24 18L12 18ZM22 14L24 14L24 16L22 16L22 14ZM22 14L20 14L20 12L22 12L22 14ZM22 24L24 24L24 22L22 22L22 24ZM22 24L20 24L20 26L22 26L22 24Z" fill="#66FFC8"/></svg>',
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 3.2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2.1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1.1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+
+        $('.event-pass-slider').slick({
+            infinite: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: true,
+            mobileFirst: true,
+            prevArrow: '<svg class="slick-prev" alt="Previous" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="37" width="36" height="38" rx="18" transform="rotate(-90 1 37)" stroke="#66FFC8" stroke-width="2"/><path d="M28 20L28 18L16 18L16 16L14 16L14 18L12 18L12 20L14 20L14 22L16 22L16 20L28 20ZM18 24L16 24L16 22L18 22L18 24ZM18 24L20 24L20 26L18 26L18 24ZM18 14L16 14L16 16L18 16L18 14ZM18 14L20 14L20 12L18 12L18 14Z" fill="#66FFC8"/></svg>',
+            nextArrow: '<svg class="slick-next" alt="Next" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="39" y="1" width="36" height="38" rx="18" transform="rotate(90 39 1)" stroke="#66FFC8" stroke-width="2"/><path d="M12 18L12 20L24 20L24 22L26 22L26 20L28 20L28 18L26 18L26 16L24 16L24 18L12 18ZM22 14L24 14L24 16L22 16L22 14ZM22 14L20 14L20 12L22 12L22 14ZM22 24L24 24L24 22L22 22L22 24ZM22 24L20 24L20 26L22 26L22 24Z" fill="#66FFC8"/></svg>',
+            responsive: [
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1400,
+                    settings: "unslick"
+                }
+            ]
+        });
+
+        $('.tiles-slider').slick({
+            infinite: false,
+            slidesToShow: 1.25,
+            slidesToScroll: 1,
+            autoplay: false,
+            arrows: false,
+            mobileFirst: true,
+            prevArrow: '<svg class="slick-prev" alt="Previous" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="37" width="36" height="38" rx="18" transform="rotate(-90 1 37)" stroke="#66FFC8" stroke-width="2"/><path d="M28 20L28 18L16 18L16 16L14 16L14 18L12 18L12 20L14 20L14 22L16 22L16 20L28 20ZM18 24L16 24L16 22L18 22L18 24ZM18 24L20 24L20 26L18 26L18 24ZM18 14L16 14L16 16L18 16L18 14ZM18 14L20 14L20 12L18 12L18 14Z" fill="#66FFC8"/></svg>',
+            nextArrow: '<svg class="slick-next" alt="Next" width="40" height="38" viewBox="0 0 40 38" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="39" y="1" width="36" height="38" rx="18" transform="rotate(90 39 1)" stroke="#66FFC8" stroke-width="2"/><path d="M12 18L12 20L24 20L24 22L26 22L26 20L28 20L28 18L26 18L26 16L24 16L24 18L12 18ZM22 14L24 14L24 16L22 16L22 14ZM22 14L20 14L20 12L22 12L22 14ZM22 24L24 24L24 22L22 22L22 24ZM22 24L20 24L20 26L22 26L22 24Z" fill="#66FFC8"/></svg>',
+            responsive: [{
+                    breakpoint: 768,
+                    settings: "unslick"
+                }
+            ]
+        });
     });
 
 })();

@@ -1,47 +1,50 @@
 ---
 title: Totality 2025
-layout: page
+layout: default
+layout_engine: bootstrap
 permalink: /totality/
 eleventyNavigation:
-  key: Totality
-  order: 6
-  glow_in: "green"
-page_id: landing-page
-landing_page: true
+key: Totality
+order: 6
+glow_in: "green"
+landing_page: false
 location: Knoxville, TN
-description: "Join us in <span style='color:#ff3adf'>Knoxville, TN</span> on August 26, 27, and 28th!"
-notice:
 dates:
   date_range: "26 - 28"
+  month: "August"
+  year: "2025"
   month_year: "August 2025"
-hero:
-  eyebrow: "Totality is here to stay, your mama said so…"
-  heading: "A &nbsp;new hope &nbsp;is &nbsp;coming &nbsp;to&nbsp;&nbsp;Totality…"
-  image: 
-    path: "/img/hero_sunset_city_bg.webp"
-    mobile_path: "/img/hero_sunset_city_bg_mobile.webp"
-    alt: "Sunset city background image"
-features:
-  subheader: A New Hope for Sales
-  description: A 3-day immersive event aimed at bringing Hope back to our great profession &mdash; designed for those willing to take action and create the change that's needed to earn more from their career and life.
-meetup:
-  eyebrow: Come fellowship with other Rebels
-  header: Experience a &nbsp;Sales Conference Unlike any Other
-  description: This meet-up will be unlike anything you have ever experienced... Escape from the boring and monotonous conference of the past and lean into the future of learning, enlightening and life changing experiences for people of all walks of life.
-  items:
-    - feature: Live Roleplaying
-    - feature: Hands-on Workshops
-    - feature: Stories & Fellowship
-    - feature: Real-time Learning & Development
-    - feature: The Second Annual Totality "Boss Battle"
-    - feature: Fully Immersive & Interactive Event
-    - feature: "Get points, level up, become the #1 Rebel"
-    - feature: Engage with like-minded people
-ticket_link_text: Learn More
+conference_agenda:
+  - Live Roleplaying
+  - Hands-on Workshops
+  - Real-time Learning & Development
+  - Stories & Fellowship
+  - Annual Totality Boss Battle
+  - Fully Immersive & Interactive Event
+  - Level up to become the #1 Rebel
+  - Engage with like-minded people
 tickets:
   - type: standard
-    text: Totality Pass (w/ Hotel)
     url: https://buy.stripe.com/cN28wRfeGf1I73WfZT
+    hero_button_text: Totality Pass w/ Hotel
+    card_title: Event Pass with Hotel
+    card_text: "Unlock the full Totality experience with our level one pass. Your all-access ticket to three days of transformative workshops, community, and inspiration in Knoxville, TN."
+    card_button_text: Buy Your Totality Pass
+    features:
+      - text: Full 3-day event access
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Includes 2-night hotel stay
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Event transportation
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Food & drink
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Access to all workshops
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Totality swag
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Travel & flight expenses not included
+        icon: /img/svg/pixelarticons_close-box.svg
     details: |
       This ticket includes; general admission to the event, access to all workshops, hotel stay (2) nights, food and drink during event, swag, official Rebel status.
       * Arrival on Tuesday the 26th: 5:00pm EST
@@ -50,8 +53,26 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreModal
   - type: nohotel
-    text: Totality Pass (Local)
     url: https://buy.stripe.com/9AQ9AV2rU4n45ZSeVM
+    hero_button_text: Totality Pass for Locals
+    card_title: Event Pass for Locals
+    card_text: "Live nearby? Our Event Pass for locals includes the full Totality experience, but without the 2-night hotel stay. It’s everything you need, right in your own backyard."
+    card_button_text: Buy Your Totality Pass
+    features:
+    - text: Full 3-day event access
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Event transportation
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Food & drink
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Access to all workshops
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Totality swag
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Hotel accommodations not included
+      icon: /img/svg/pixelarticons_close-box.svg
+    - text: Travel & flight expenses not included
+      icon: /img/svg/pixelarticons_close-box.svg
     details: |
       This ticket includes; general admission to the event, access to all workshops, food and drink during event, hotel link to book your own room, swag, official Rebel status.
       * Arrival on Tuesday the 26th: 5:00pm EST
@@ -60,8 +81,24 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreNohotelModal
   - type: vip
-    text: VIP Totality pass
     url: https://buy.stripe.com/cN2cN72rUbPwewoaFy
+    hero_button_text: Totality VIP Pass
+    card_title: VIP Pass
+    card_text: "The VIP Pass includes your full event access, but with exclusive rewards. This is your all-access, behind-the-scenes pass to deeper connections, powerful insights, and unforgettable moments."
+    card_button_text: Buy Your Totality VIP Pass
+    features:
+    - text: All prior tier rewards
+      icon: /img/svg/pixel-check-pink.svg
+    - text: VIP rooms
+      icon: /img/svg/pixel-check-pink.svg
+    - text: 1:1s with Rebels & guest speakers
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Private event excursion on Monday, August 25th w/Dale Dupree
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Exclusive swag
+      icon: /img/svg/pixel-check-pink.svg
+    - text: Travel & flight expenses not included
+      icon: /img/svg/pixelarticons_close-box.svg
     details: |
       Everything in General admission ➕
       * VIP access to private sessions and encounters at Totality event
@@ -72,343 +109,249 @@ tickets:
       * Departure on Thursday night at 8pm or later (or departure Friday morning)
     modal: learnMoreVipModal
 speakers:
-  header: Guest Speakers
-  title: Meet <span>our</span> team
-  members:
-    -
-      name: Kristal Cook
-      image: /img/speakers/kristal-cook.webp
-      alt_text: Kristal Cook
-      url: https://www.linkedin.com/in/kristallcook/
-    -
-      name: Dejuan Brown
-      image: /img/speakers/dejuan-brown.webp
-      alt_text: Dejuan Brown
-      url: https://www.linkedin.com/in/dejuanbrown/
-    -
-      name: Shawn Sandy
-      image: /img/speakers/shawn-sandy.webp
-      alt_text: Shawn Sandy
-      url: https://www.linkedin.com/in/shawnsandy/
-    -
-      name: Stan Miller
-      image: /img/speakers/stan-miller.webp
-      alt_text: Stan Miller
-      url: https://www.linkedin.com/in/stanmiller/
-    -
-      name: Leslie Venetz
-      image: /img/speakers/leslie-venetz.webp
-      alt_text: Leslie Venetz
-      url: https://www.linkedin.com/in/leslievenetz/
-    -
-      name: James Buckley
-      image: /img/speakers/james-buckley.webp
-      alt_text: James Buckley
-      url: https://www.linkedin.com/in/jamessaywhatsalesbuckley/
-    -
-      name: Marcus Chan
-      image: /img/speakers/marcus-chan.webp
-      alt_text: Marcus Chan
-      url: https://www.linkedin.com/in/marcuschanmba/
-    -
-      name: Thomas Poston
-      image: /img/speakers/thomas-poston.webp
-      alt_text: Thomas Poston
-      url: https://www.linkedin.com/in/tposton84/
-    -
-      name: Aleasha Bahr
-      image: /img/speakers/aleasha-bahr.webp
-      alt_text: Aleasha Bahr
-      url: https://www.linkedin.com/in/aleashabahr/
-    -
-      name: Lauren Goodell
-      image: /img/speakers/lauren-goodell.webp
-      alt_text: Lauren Goodell
-      url: https://www.linkedin.com/in/lauren-goodell/
-    -
-      name: Donald Kelly
-      image: /img/speakers/donald-kelly.webp
-      alt_text: Donald Kelly
-      url: https://www.linkedin.com/in/donaldckelly/
-    -
-      name: Stu Heinecke
-      image: /img/speakers/stu-heinecke.webp
-      alt_text: Stu Heinecke
-      url: https://www.linkedin.com/in/stuheinecke/
-    -
-      name: Christina Brady
-      image: /img/speakers/christina-brady.webp
-      alt_text: Christina Brady
-      url: https://www.linkedin.com/in/christinapbrady/
-    -
-      name: David Brier
-      image: /img/speakers/david-brier.webp
-      alt_text: David Brier
-      url: https://www.linkedin.com/in/davidbrier/
-    -
-      name: Scott Leese
-      image: /img/speakers/scott-leese.webp
-      alt_text: Scott Leese
-      url: https://www.linkedin.com/in/scottleese/
-    -
-      name: Mike Simmons
-      image: /img/speakers/mike-simmons.webp
-      alt_text: Mike Simmons
-      url: https://www.linkedin.com/in/mikesimmons/
-    -
-      name: John Duvoisin
-      image: /img/speakers/john-duvoisin.webp
-      alt_text: John Duvoisin
-      url: https://www.linkedin.com/in/john-duvoisin-45933b185/
-    -
-      name: Dale<br>Dupree
-      image: /img/speakers/dale-dupree.webp
-      alt_text: Dale Dupree
-      url: https://www.linkedin.com/in/copierwarrior/
+  -
+    name: Kristal Cook
+    image: /img/speakers/kristal-cook.webp
+    alt_text: Kristal Cook
+    url: https://www.linkedin.com/in/kristallcook/
+  -
+    name: Dejuan Brown
+    image: /img/speakers/dejuan-brown.webp
+    alt_text: Dejuan Brown
+    url: https://www.linkedin.com/in/dejuanbrown/
+  -
+    name: Shawn Sandy
+    image: /img/speakers/shawn-sandy.webp
+    alt_text: Shawn Sandy
+    url: https://www.linkedin.com/in/shawnsandy/
+  -
+    name: Stan Miller
+    image: /img/speakers/stan-miller.webp
+    alt_text: Stan Miller
+    url: https://www.linkedin.com/in/stanmiller/
+  -
+    name: Leslie Venetz
+    image: /img/speakers/leslie-venetz.webp
+    alt_text: Leslie Venetz
+    url: https://www.linkedin.com/in/leslievenetz/
+  -
+    name: James Buckley
+    image: /img/speakers/james-buckley.webp
+    alt_text: James Buckley
+    url: https://www.linkedin.com/in/jamessaywhatsalesbuckley/
+  -
+    name: Marcus Chan
+    image: /img/speakers/marcus-chan.webp
+    alt_text: Marcus Chan
+    url: https://www.linkedin.com/in/marcuschanmba/
+  -
+    name: Thomas Poston
+    image: /img/speakers/thomas-poston.webp
+    alt_text: Thomas Poston
+    url: https://www.linkedin.com/in/tposton84/
+  -
+    name: Aleasha Bahr
+    image: /img/speakers/aleasha-bahr.webp
+    alt_text: Aleasha Bahr
+    url: https://www.linkedin.com/in/aleashabahr/
+  -
+    name: Lauren Goodell
+    image: /img/speakers/lauren-goodell.webp
+    alt_text: Lauren Goodell
+    url: https://www.linkedin.com/in/lauren-goodell/
+  -
+    name: Donald Kelly
+    image: /img/speakers/donald-kelly.webp
+    alt_text: Donald Kelly
+    url: https://www.linkedin.com/in/donaldckelly/
+  -
+    name: Stu Heinecke
+    image: /img/speakers/stu-heinecke.webp
+    alt_text: Stu Heinecke
+    url: https://www.linkedin.com/in/stuheinecke/
+  -
+    name: Christina Brady
+    image: /img/speakers/christina-brady.webp
+    alt_text: Christina Brady
+    url: https://www.linkedin.com/in/christinapbrady/
+  -
+    name: David Brier
+    image: /img/speakers/david-brier.webp
+    alt_text: David Brier
+    url: https://www.linkedin.com/in/davidbrier/
+  -
+    name: Scott Leese
+    image: /img/speakers/scott-leese.webp
+    alt_text: Scott Leese
+    url: https://www.linkedin.com/in/scottleese/
+  -
+    name: Mike Simmons
+    image: /img/speakers/mike-simmons.webp
+    alt_text: Mike Simmons
+    url: https://www.linkedin.com/in/mikesimmons/
+  -
+    name: John Duvoisin
+    image: /img/speakers/john-duvoisin.webp
+    alt_text: John Duvoisin
+    url: https://www.linkedin.com/in/john-duvoisin-45933b185/
+  -
+    name: Dale Dupree
+    image: /img/speakers/dale-dupree.webp
+    alt_text: Dale Dupree
+    url: https://www.linkedin.com/in/copierwarrior/
 sponsors:
-  header: Sponsors
-  title: Meet <span>our</span> team
-  details:
-    -
-      image: /img/sponsors/salesreach.webp
-      alt_text: SalesReach.io
-      url: https://www.salesreach.io/
-    -
-      image: /img/sponsors/tcg.webp
-      alt_text: Tillirson Consulting Group
-      url: https://www.tillirsonconsulting.com/
-    -
-      image: /img/sponsors/kixie.webp
-      alt_text: Kixie
-      url: https://www.kixie.com/
-    -
-      image: /img/sponsors/20twenty.webp
-      alt_text: 20Twenty Design
-      url: https://20twentydesign.com/
-    -
-      image: /img/sponsors/luster.webp
-      alt_text: Luster
-      url: https://www.luster.ai/
-footer:
-  header: The &nbsp;Sales &nbsp;Rebellion &nbsp;Way
-  description: Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales conference experience, win prizes, build community and level up your sales game beyond recognition.
+  -
+    image: /img/sponsors/salesreach.webp
+    alt_text: SalesReach.io
+    url: https://www.salesreach.io/
+  -
+    image: /img/sponsors/tcg.webp
+    alt_text: Tillirson Consulting Group
+    url: https://www.tillirsonconsulting.com/
+  -
+    image: /img/sponsors/kixie.webp
+    alt_text: Kixie
+    url: https://www.kixie.com/
+  -
+    image: /img/sponsors/20twenty.webp
+    alt_text: 20Twenty Design
+    url: https://20twentydesign.com/
+  -
+    image: /img/sponsors/luster.webp
+    alt_text: Luster
+    url: https://www.luster.ai/
+
 ---
-
+{% include 'header.liquid' %}
 <div class="landing-page">
-    {%- comment -%} --- HERO BACKGROUND --- {%- endcomment -%}
-    <div class="landing-page__background">
-        <picture>
-            <source
-                media="(max-width: 768px)"
-                srcset="{{ hero.image.mobile_path }}"
-            />
-            <img
-                class="landing-page__background--image"
-                src="{{ hero.image.path }}"
-                alt="{{ hero.image.alt }}"
-            />
-        </picture>
-
-        <div class="landing-page__background--overlay"></div>
-
-        {%- comment -%} --- PROMO HEADER --- {%- endcomment -%}
-        <header class="landing-page__hero">
-            <p class="landing-page__hero--eyebrow">{{ hero.eyebrow }}</p>
-            <h1 class="landing-page__hero--header">{{ hero.heading }}</h1>
-
-            <div class="landing-page__hero--icon bounce">
-                <img src="/img/svg/chevron-group.svg">
-            </div>
-        </header>
-    </div>
-
-    {%- comment -%} --- FEATURES --- {%- endcomment -%}
-    <section class="landing-page__features">
-        <div class="old-tv">
-          <iframe src="https://www.youtube-nocookie.com/embed/n_kD2ViJlVg?si=Jm7WkdmiiDJueFgS&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <h2 class="landing-page__features--header">
-            <img src="/img/svg/totality-logo.svg">
-        </h2>
-        <h3 class="landing-page__features--subheader">
-            {{ features.subheader }}
-        </h3>
-        <p class="landing-page__features--description">
-            {{ features.description }}
-        </p>
-        <p class="landing-page__cta--description">
-            {{ description }}
-        </p>
-        <p class="landing-page__cta--description" style="font-size: 50px">
-            {{ notice }}
-        </p>
-
-        <div class="landing-page__cta--container">
-            {% for ticket in tickets %}
-            <div class="landing-page__cta--wrapper">
-                <a
-                    href="{{ ticket.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full"
-                    >{{ ticket.text }}</a
-                >
-                <a class="{{ ticket.modal }} landing-page__cta--link">{{ ticket_link_text }}</a>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-
-    {%- comment -%} --- MEETUP --- {%- endcomment -%}
-    <section class="landing-page__meetup">
-        <div class="landing-page__meetup--container">
-            <header class="landing-page__meetup--header">
-                <p class="landing-page__meetup--eyebrow">
-                    {{ meetup.eyebrow }}
-                </p>
-                <h2 class="landing-page__meetup--title">
-                    {{ meetup.header }}
-                </h2>
-                <p class="landing-page__meetup--description">
-                    {{ meetup.description }}
-                </p>
-            </header>
-
-            <ul class="landing-page__meetup--features">
-                {%- for item in meetup.items -%}
-                <div class="landing-page__meetup--feature-container">
-                    <div class="landing-page__meetup--icon">
-                        <img src="/img/svg/pixelarticons_check.svg">
-                    </div>
-                    <li class="landing-page__meetup--feature">
-                        {{ item.feature }}
-                    </li>
-                </div>
-                {%- endfor -%}
-            </ul>
-
-            <div class="landing-page__cta--container landing-page__cta--container-meetup">
-                {% for ticket in tickets %}
-                <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                    <a
-                        href="{{ ticket.url }}"
-                        class="landing-page__cta landing-page__cta--desktop-full desktop-only desktop-only--inline-block"
-                        >{{ ticket.text }}</a
-                    >
-                    <a class="{{ ticket.modal }} landing-page__cta--link desktop-only">{{ ticket_link_text }}</a>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-
-    <div class="landing-page__cta--container">
+  <div class="totality container-fluid hero text-center font-kufam">
+    <p class="pre-heading">
+      {{ dates.month }}
+      {{ dates.date_range }} | {{ location }}
+    </p>
+    <img class="logo img-fluid" src="/img/totality/logo.webp" alt="Totality {{dates.year}}">
+    <div class="buttons-container mx-auto">
+      <div class="buttons-row d-flex flex-column flex-md-row">
         {% for ticket in tickets %}
-        <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-            <a
-                href="{{ ticket.url }}"
-                class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                >{{ tickets.text }}</a
-            >
-            <a class="{{ ticket.modal }} landing-page__cta--link mobile-only">{{ ticket_link_text }}</a>
-        </div>
+          <a href="{{ ticket.url }}" class="button">{{ ticket.hero_button_text }}</a>
         {% endfor %}
+      </div>
+      <p>
+        A 3-day sales conference designed to reignite hope in the sales profession. This immersive
+        experience is built for salespeople ready to take bold action and create meaningful change
+        to earn more from their career and life.
+      </p>
     </div>
-
-    {%- comment -%} --- SPEAKERS --- {%- endcomment -%}
-    <section class="landing-page__speakers">
-        <div class="landing-page__speakers--icon">
-            <img src="/img/svg/chevron-group.svg">
-        </div>
-
-        <h2 class="landing-page__speakers--header">
-            <span><img src="/img/svg/totality-logo.svg"></span>{{ speakers.header }}
-        </h2>
-
-        <div class="landing-page__speakers--image-wrapper">
-            {%- for speaker in speakers.members -%}
-            <div class="landing-page__speakers--image-container">
-                <a target="_blank" href="{{ speaker.url }}">
-                    <img
-                        src="{{ speaker.image }}"
-                        alt="{{- speaker.alt_text -}}"
-                        class="landing-page__team-img"
-                    />
-                    <p class="landing-page__speakers--name">{{ speaker.name }}</p>
-                </a>
-            </div>
-            {%- endfor -%}
-        </div>
-    </section>
-
-    {%- comment -%} --- SPONSORS --- {%- endcomment -%}
-    <section class="landing-page__speakers">
-        <div class="landing-page__speakers--icon">
-            <img src="/img/svg/chevron-group.svg">
-        </div>
-
-        <h2 class="landing-page__speakers--header">
-            <span><img src="/img/svg/totality-logo.svg"></span>{{ sponsors.header }}
-        </h2>
-
-        <div class="landing-page__speakers--image-wrapper">
-            {%- for sponsor in sponsors.details -%}
-            <div class="landing-page__speakers--image-container">
-                <a target="_blank" href="{{ sponsor.url }}">
-                    <img
-                        src="{{ sponsor.image }}"
-                        alt="{{- sponsor.alt_text -}}"
-                        class="landing-page__team-img"
-                    />
-                </a>
-            </div>
-            {%- endfor -%}
-        </div>
-    </section>
-
-    {%- comment -%} --- FOOTER --- {%- endcomment -%}
-    <section class="landing-page__footer">
-        <h2 class="landing-page__footer--header">
-            {{ footer.header }}
-        </h2>
-        <p class="landing-page__footer--description">
-            {{ footer.description }}
-        </p>
-
-        <div class="landing-page__cta--container landing-page__cta--container-meetup">
-            {% for ticket in tickets %}
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ ticket.url }}"
-                    class="landing-page__cta landing-page__cta--desktop-full desktop-only"
-                    >{{ ticket.text }}</a
-                >
-                <a class="{{ ticket.modal }} landing-page__cta--link desktop-only">{{ ticket_link_text }}</a>
-            </div>
+  </div>
+  <div class="new-hope container-md text-center">
+    <h2 class="font-horsemen">A New Hope Is Coming</h2>
+    <p class="text-green font-kufam px-md-3">
+      Join us for a 3-day immersive experience designed to reignite your passion, fuel your
+      potential, and reshape your future. This isn’t just another conference, it’s a bold,
+      transformative event for those ready to take action, break free from the ordinary, and create
+      lasting change in their careers and lives.
+    </p>
+    <div class="event-pass-slider d-lg-flex align-items-stretch">
+      {% for ticket in tickets %}
+        <div class="event-card text-green font-kufam h-auto">
+          <h3 class="font-horsemen text-pink">Totality Pass #{{ forloop.index }}</h3>
+          <h4>{{ ticket.card_title }}</h4>
+          <p class="card-text">
+            {{ ticket.card_text }}
+          </p>
+          <ul>
+            {% for feature in ticket.features %}
+              <li style="background: url('{{feature.icon}}') no-repeat left center;">
+                {{ feature.text }}
+              </li>
             {% endfor %}
+          </ul>
+          <a class="button mt-auto" href="{{ticket.url}}">{{ ticket.card_button_text }}</a>
+          <a class="{{ ticket.modal }}">Learn more</a>
         </div>
-    </section>
-
-    <div class="landing-page__footer--cta-container">
-        <div class="landing-page__cta--container">
-            {% for ticket in tickets %}
-            <div class="landing-page__cta--wrapper landing-page__cta--wrapper-secondary">
-                <a
-                    href="{{ ticket.url }}"
-                    class="landing-page__cta landing-page__cta--mobile-full mobile-only"
-                    >{{ ticket.text }}</a
-                >
-                <a class="{{ ticket.modal }} landing-page__cta--link mobile-only">{{ ticket_link_text }}</a>
-            </div>
-            {% endfor %}
-        </div>
+      {% endfor %}
     </div>
-
-    {%- comment -%} --- MODAL --- {%- endcomment -%}
-    {% for ticket in tickets %}
+  </div>
+  <div class="sales-rebellion-way container-md d-flex">
+    <div class="text-container font-kufam">
+      <h2 class="font-horsemen">The Sales Rebellion Way</h2>
+      <p>
+        Learn the ways of the Sales Rebellion, be a part of the first ever interactive sales
+        conference experience, win prizes, build community and level up your sales game beyond
+        recognition.
+      </p>
+      <a href="{{ tickets[2].url }}" class="button pink">{{ tickets[2].hero_button_text }}</a>
+    </div>
+    <div class="video-container">
+      <div class="old-tv">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/n_kD2ViJlVg?si=Jm7WkdmiiDJueFgS&amp;controls=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="sales-conference container-md text-center font-kufam">
+    <h2 class="font-horsemen">A Sales Conference Unlike Any Other</h2>
+    <p>
+      This isn’t your typical conference... it’s a bold departure from the ordinary. Step into the
+      future of learning with energizing, eye-opening experiences designed to inspire and transform
+      people from all walks of life. Come to connect, grow, and fellowship with a powerful community
+      of fellow Rebels.
+    </p>
+    <div class="tiles-section">
+      <h3 class="text-pink">Conference Agenda</h3>
+      <div class="d-md-flex flex-md-column tiles-slider">
+        {% for item in conference_agenda %}
+          <div class="item">
+            <p class="number d-none d-md-block">{{ forloop.index | prepend: '0' }}</p>
+            <h4>{{ item }}</h4>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="guest-speakers container-fluid text-center">
+    <h2 class="font-horsemen px-5">Guest Speakers</h2>
+    <div class="speakers-slider">
+      {% for speaker in speakers %}
+        <div class="speaker">
+          <a href="{{ speaker.url }}" target="_blank">
+            <img src="{{ speaker.image }}" alt="{{ speaker.alt_text }}">
+            <p class="font-kufam">{{ speaker.name }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="totality-sponsors container-md text-center">
+    <h2 class="font-horsemen">Totality {{ dates.year }} Sponsors</h2>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      {% for sponsor in sponsors %}
+        <div>
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img
+              class="img-fluid"
+              src="{{ sponsor.image }}"
+              alt="{{ sponsor.alt_text }}"
+              class="img-fluid"
+            >
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  {%- comment -%} --- MODAL --- {%- endcomment -%}
+  {% for ticket in tickets %}
     <div id="{{ ticket.modal }}" class="landing-page__modal">
-        <div class="landing-page__modal--content">
-            <span class="landing-page__modal--close">&times;</span>
-            {{ ticket.details | markdownify }}
-        </div>
+      <div class="landing-page__modal--content">
+        <span class="landing-page__modal--close">&times;</span>
+        {{ ticket.details | markdownify }}
+      </div>
     </div>
-    {% endfor %}
+  {% endfor %}
 </div>
