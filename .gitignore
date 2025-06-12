@@ -1,6 +1,8 @@
-.sass-cache
+.env
 .jekyll-cache
 .jekyll-metadata
+.netlify
+.sass-cache
 _site
 js/scripts.js*
 node_modules
