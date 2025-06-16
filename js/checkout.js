@@ -1,8 +1,23 @@
 const stripe = Stripe("pk_test_hOI2vzQX7QTuREiUkLmwqI1c00Rzh33WFH");
 const elements = stripe.elements();
 
-let checkout;
-initialize();
+document.querySelectorAll('button[data-type="purchase"]').forEach(i => i.addEventListener('click', async e => {
+  const price = e.target.getAttribute('data-product-price');
+  const checkout = await createCheckoutSession(price);
+
+  // Set product name.
+  document.querySelector('.item-title').innerHTML = checkout.session().lineItems[0].name;
+
+  // Handle submit.
+  document.querySelector('#payment-form')
+    .addEventListener('submit', handleSubmit);
+
+  // Validate input.
+  validateInput();
+
+  // Create payment element.
+  createPaymentElement(checkout);
+}));
 
 const validateEmail = async (email) => {
   const updateResult = await checkout.updateEmail(email);
@@ -17,39 +32,30 @@ const formatter = new Intl.NumberFormat('en-US', {
   trailingZeroDisplay: 'stripIfInteger' 
 });
 
-document
-  .querySelector("#payment-form")
-  .addEventListener("submit", handleSubmit);
-
 // Fetches a Checkout Session and captures the client secret
-async function initialize() {
-  const price = 'price_1RZF6EIa1dfERqdGEP4ZN9xz';
-  const promise = fetch('/api/stripe', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ price }),
-  })
+const createCheckoutSession = async (price) => {
+  const clientSecret = fetch('/api/stripe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ price }),
+    })
     .then(r => r.json())
     .then(r => r.clientSecret);
 
-  const appearance = {
-    theme: 'stripe',
-  };
-  checkout = await stripe.initCheckout({
-    fetchClientSecret: () => promise,
-    elementsOptions: { appearance },
+  return stripe.initCheckout({
+    fetchClientSecret: () => clientSecret,
+    elementsOptions: { appearance: { theme: 'stripe' }},
   });
+};
 
-  // Set product name.
-  document.querySelector('.item-title').innerHTML = checkout.session().lineItems[0].name;
+const validateInput = () => {
+  const emailInput = document.getElementById('email');
+  const emailErrors = document.getElementById('email-errors');
 
-  const emailInput = document.getElementById("email");
-  const emailErrors = document.getElementById("email-errors");
+  // Clear any validation errors.
+  emailInput.addEventListener('input', () => emailErrors.textContent = '');
 
-  // Clear any validation errors
-  emailInput.addEventListener("input", () => emailErrors.textContent = '');
-
-  emailInput.addEventListener("blur", async () => {
+  emailInput.addEventListener('blur', async () => {
     const newEmail = emailInput.value;
     if (!newEmail) {
       return;
@@ -60,11 +66,13 @@ async function initialize() {
       emailErrors.textContent = message;
     }
   });
+};
 
+const createPaymentElement = (checkout) => {
   // Get values and create payment element.
   const full = formatter.format(checkout.session().total.total.minorUnitsAmount / 100);
   const split = formatter.format(checkout.session().total.total.minorUnitsAmount / 4 / 100);
-  const buttonText = document.querySelector("#submit");
+  const buttonText = document.querySelector('#submit');
   const buttonTextAmounts = {
     card: `Pay ${full} now`,
     klarna: `Set up 4 payments of ${split} now`,
@@ -75,15 +83,15 @@ async function initialize() {
     layout: 'tabs',
   });
   paymentElement.update({ defaultValues: { paymentMethod: 'klarna' } });
-  paymentElement.mount("#payment-element");
+  paymentElement.mount('#payment-element');
   paymentElement.on('change', e => buttonText.textContent = buttonTextAmounts[e.value.type]);
-}
+};
 
-async function handleSubmit(e) {
+const handleSubmit = async (e) => {
   e.preventDefault();
   setLoading(true);
 
-  const email = document.getElementById("email").value;
+  const email = document.getElementById('email').value;
   const { isValid, message } = await validateEmail(email);
   if (!isValid) {
     showMessage(message);
@@ -101,32 +109,30 @@ async function handleSubmit(e) {
   showMessage(error.message);
 
   setLoading(false);
-}
+};
 
-// ------- UI helpers -------
+const showMessage = (messageText) => {
+  const messageContainer = document.querySelector('#payment-message');
 
-function showMessage(messageText) {
-  const messageContainer = document.querySelector("#payment-message");
-
-  messageContainer.classList.remove("hidden");
+  messageContainer.classList.remove('hidden');
   messageContainer.textContent = messageText;
 
   setTimeout(function () {
-    messageContainer.classList.add("hidden");
-    messageContainer.textContent = "";
+    messageContainer.classList.add('hidden');
+    messageContainer.textContent = '';
   }, 4000);
-}
+};
 
 // Show a spinner on payment submission
-function setLoading(isLoading) {
+const setLoading = (isLoading) => {
   if (isLoading) {
-    // Disable the button and show a spinner
-    document.querySelector("#submit").disabled = true;
-    document.querySelector("#spinner").classList.remove("hidden");
-    document.querySelector("#button-text").classList.add("hidden");
+    // Disable the button and show a spinner.
+    document.querySelector('#submit').disabled = true;
+    document.querySelector('#spinner').classList.remove('hidden');
+    document.querySelector('#button-text').classList.add('hidden');
   } else {
-    document.querySelector("#submit").disabled = false;
-    document.querySelector("#spinner").classList.add("hidden");
-    document.querySelector("#button-text").classList.remove("hidden");
+    document.querySelector('#submit').disabled = false;
+    document.querySelector('#spinner').classList.add('hidden');
+    document.querySelector('#button-text').classList.remove('hidden');
   }
-}
+};

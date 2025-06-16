@@ -1353,6 +1353,8 @@ redefines the core fundamentals that are required for sales success. It acknowle
         class="button pink"
         data-bs-toggle="modal"
         data-bs-target="#squadronModal"
+        data-type="purchase"
+        data-product-price="price_1RZF6EIa1dfERqdGEP4ZN9xz"
       >
         Join a Squadron Now
       </button>
@@ -1684,56 +1686,8 @@ redefines the core fundamentals that are required for sales success. It acknowle
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="squadronModal"
-  tabindex="-1"
-  aria-labelledby="squadronModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 item-title" id="squadronModalLabel">Hey, read this!</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="payment-form">
-          <label>
-            Email
-            <input type="text" id="email" placeholder="you@example.com"
-          /></label>
-          <div type="text" id="email-errors"></div>
-          <h4>Payment</h4>
-          <div id="payment-element">
-            <!--Stripe.js injects the Payment Element-->
-          </div>
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="squadronTC"
-            onchange="document.getElementById('submit').disabled = !this.checked;"
-          >
-          <label class="form-check-label" for="squadronTC">
-            <a href="/pdf/squadron-terms-and-conditions.pdf" target="_blank"
-              >Squadron Purchase Terms & Conditions</a
-            >
-          </label>
-          <button
-            id="submit"
-            type="submit"
-            class="btn btn-primary"
-            disabled
-          >
-            <div class="spinner hidden" id="spinner"></div>
-            Pay Now
-          </button>
-          <div id="payment-message" class="hidden"></div>
-        </form>
-      </div>
-    </div>
-  </div>
+<div class="modal fade" id="squadronModal" tabindex="-1" aria-hidden="true">
+{% include "modals/purchase.liquid" %}
 </div>
 
 <script>
