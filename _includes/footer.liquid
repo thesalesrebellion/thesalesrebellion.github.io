@@ -15,7 +15,7 @@
           {% for nav_link in nav_links %}
             <div class="footer-nav-column d-flex flex-column me-0 me-md-3 me-lg-5">
               {% if nav_link.link_url != blank %}
-                <a href="{{ footer_link.link_url }}" class="nav-header text-green mb-0">
+                <a href="{{ nav_link.link_url }}" class="nav-header text-green mb-0">
                   {{ nav_link.header }}
                 </a>
               {% else %}
