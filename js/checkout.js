@@ -1,4 +1,4 @@
-const stripe = Stripe("pk_test_hOI2vzQX7QTuREiUkLmwqI1c00Rzh33WFH");
+const stripe = Stripe("pk_live_76o7Q17lfv1eFl5I74ajlWi5003dMoTD0q");
 const elements = stripe.elements();
 
 document.querySelectorAll('button[data-type="purchase"]').forEach(i => i.addEventListener('click', async e => {
