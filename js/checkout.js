@@ -1,9 +1,10 @@
 const stripe = Stripe("pk_live_76o7Q17lfv1eFl5I74ajlWi5003dMoTD0q");
 const elements = stripe.elements();
+let checkout = '';
 
 document.querySelectorAll('button[data-type="purchase"]').forEach(i => i.addEventListener('click', async e => {
   const price = e.target.getAttribute('data-product-price');
-  const checkout = await createCheckoutSession(price);
+  checkout = await createCheckoutSession(price);
 
   // Set product name.
   document.querySelector('.item-title').innerHTML = checkout.session().lineItems[0].name;
@@ -72,7 +73,7 @@ const createPaymentElement = (checkout) => {
   // Get values and create payment element.
   const full = formatter.format(checkout.session().total.total.minorUnitsAmount / 100);
   const split = formatter.format(checkout.session().total.total.minorUnitsAmount / 4 / 100);
-  const buttonText = document.querySelector('#submit');
+  const buttonText = document.querySelector('#submit span');
   const buttonTextAmounts = {
     card: `Pay ${full} now`,
     klarna: `Set up 4 payments of ${split} now`,
