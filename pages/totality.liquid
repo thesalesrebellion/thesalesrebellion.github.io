@@ -82,7 +82,7 @@ tickets:
     modal: learnMoreNohotelModal
   - type: vip
     url: https://buy.stripe.com/cN2cN72rUbPwewoaFy
-    hero_button_text: Totality VIP Pass
+    hero_button_text: Totality VIP Pass - Two Tickets Left!
     card_title: VIP Pass
     card_text: "The VIP Pass includes your full event access, but with exclusive rewards. This is your all-access, behind-the-scenes pass to deeper connections, powerful insights, and unforgettable moments."
     card_button_text: Buy Your Totality VIP Pass
@@ -236,7 +236,7 @@ sponsors:
     </p>
     <img class="logo img-fluid" src="/img/totality/logo.webp" alt="Totality {{dates.year}}">
     <div class="buttons-container mx-auto">
-      <div class="buttons-row d-flex flex-column flex-md-row">
+      <div class="buttons-row d-flex flex-column flex-lg-row">
         {% for ticket in tickets %}
           <a href="{{ ticket.url }}" class="button">{{ ticket.hero_button_text }}</a>
         {% endfor %}
