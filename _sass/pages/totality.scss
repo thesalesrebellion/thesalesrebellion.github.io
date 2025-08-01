@@ -122,7 +122,7 @@
     }
 
     .buttons-container {
-      max-width: 757px;
+      max-width: 950px;
 
       .buttons-row {
         gap: 20px;
@@ -477,6 +477,16 @@
   }
 
   @media (max-width: 991px) {
+    .hero {
+      .buttons-container {
+        .buttons-row {
+          .button {
+            align-self: center;
+          }
+        }
+      }
+    }
+
     .new-hope {
       .event-pass-slider {
         .event-card {
@@ -563,12 +573,6 @@
       }
 
       .buttons-container {
-        .buttons-row {
-          .button {
-            align-self: center;
-          }
-        }
-
         p {
           color: #fff;
         }
