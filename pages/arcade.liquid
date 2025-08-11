@@ -48,6 +48,7 @@ quests:
       image-mobile: "/img/arcade/quest-level-one-mobile.webp"
       products: 
         - name: The Crumpled Letter
+          id: "crumpled-letter"
           price: 24.99
           description: "The Crumpled Letter is where it all begins, for every official Rebel. In this digital product you will receive an easy experiential outreach tool that will get you noticed and stand out. Here’s what you get:"
           features:
@@ -63,6 +64,7 @@ quests:
           image-mobile: "/img/arcade/product-crumpled-letter-mobile.webp"
           product: price_1QYD7DIa1dfERqdGaqgfPsIm
         - name: Rebellious Resume
+          id: "resume"
           price: 24.99
           description: "This concept is a Rebellion favorite, trusted and used by Rebels everywhere. This non-traditional resume will position you as the vendor they can count on to get the job done. Here’s what you get:"
           features:
@@ -84,6 +86,7 @@ quests:
       image-mobile: "/img/arcade/quest-level-two-mobile.webp"
       products: 
         - name: The Legendary Letter Set
+          id: "legendary-letter"
           price: 198.00
           description: You got the Crumpled Letter? Good. Now it's time to turn that first touch piece into a a sequence of letters that keeps your prospect on their feet, smiling and eventually taking a meeting with you.
           features:
@@ -99,6 +102,7 @@ quests:
           image-mobile: "/img/arcade/product-legendary-letter-mobile.webp"
           product: price_1QYDBDIa1dfERqdG21stWjHR
         - name: Rebel Repair Brick
+          id: "repair-brick"
           price: 198.00
           description: Imagine getting so frustrated with a product or service that you want to throw a brick at it. Could be a device, a process, hell... it could even be a person! This hilarious stress brick will start conversations.
           features:
@@ -114,6 +118,7 @@ quests:
           image-mobile: "/img/arcade/product-rebel-repair-brick-mobile.webp"
           product: price_1RBOGzIa1dfERqdGYPzFkdrE
         - name: Missing Persons
+          id: "missing-persons"
           price: 198.00
           description: How many times in your sales cycles have you been ghosted by your prospect or client? We made a poster that will make them laugh, potentially cry laugh, but will help you get attention.
           features:
@@ -141,6 +146,7 @@ quests:
       image-mobile: "/img/arcade/quest-level-three-mobile.webp"
       products: 
         - name: Lost Wallet
+          id: "lost-wallet"
           price: 298.00
           description: You can use this to prospect, you can use this to revive a ghost, you can use this to close a sale. The Lost Wallet is diverse, highly experiential and one of the single most Rebellious things you will ever send.
           features:
@@ -156,6 +162,7 @@ quests:
           image-mobile: "/img/arcade/product-lost-wallet-mobile.webp"
           product: price_1RBOR9Ia1dfERqdGtEvtlG2e
         - name: Unwritten Story
+          id: "unwritten-story"
           price: 298.00
           description: This tool can be used to prospect someone cold, follow-up after a great discovery meeting or even close a sales. The story yet to be written is a powerful experience that you'll give to those you seek to serve.
           features:
@@ -171,6 +178,7 @@ quests:
           image-mobile: "/img/arcade/product-unwritten-story-mobile.webp"
           product: price_1RBOS0Ia1dfERqdGz0x6LVKC
         - name: Carve Out Time
+          id: "carve-out-time"
           price: 298.00
           description: A cutting board with customized messaging that is This highly diverse and experiential outreach tool will most likely be used for YEARS to come - making you more than memorable than ever!
           features:
@@ -186,6 +194,7 @@ quests:
           image-mobile: "/img/arcade/product-carve-out-time.webp"
           product: price_1RBOTdIa1dfERqdG8gami3ay
         - name: Empty Handed
+          id: "empty-handed"
           price: 298.00
           description: You can use this to prospect, you can use this to get back in touch, you can use it to close a sale. The “Empty Handed” tutorial is cheeky, highly experiential and one of the single most Rebellious things your prospect will ever experience.
           features:
@@ -1310,7 +1319,7 @@ quests:
               <div class="product border-pink d-flex flex-column font-kufam">
                 <div class="product-heading w-100 d-flex justify-content-between align-items-start">
                   <div>
-                    <h5 class="name text-green">{{ product.name }}</h5>
+                    <h5 id="{{ product.id }}" class="name text-green">{{ product.name }}</h5>
                     {% if product.price %}<p class="price text-pink text-italic">${{ product.price }}</p>{% endif %}
                   </div>
                   <div class="hearts-container d-flex">
