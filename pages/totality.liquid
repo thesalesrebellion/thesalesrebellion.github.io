@@ -25,7 +25,7 @@ conference_agenda:
   - Engage with like-minded people
 tickets:
   - type: standard
-    url: https://buy.stripe.com/cN28wRfeGf1I73WfZT
+    product: price_1RGOTWIa1dfERqdGlBkTbbXL
     hero_button_text: Totality Pass w/ Hotel
     card_title: Event Pass with Hotel
     card_text: "Unlock the full Totality experience with our level one pass. Your all-access ticket to three days of transformative workshops, community, and inspiration in Knoxville, TN."
@@ -53,7 +53,7 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreModal
   - type: nohotel
-    url: https://buy.stripe.com/9AQ9AV2rU4n45ZSeVM
+    product: price_1RDp8bIa1dfERqdGv2QoFd1J
     hero_button_text: Totality Pass for Locals
     card_title: Event Pass for Locals
     card_text: "Live nearby? Our Event Pass for locals includes the full Totality experience, but without the 2-night hotel stay. It’s everything you need, right in your own backyard."
@@ -81,7 +81,7 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreNohotelModal
   - type: vip
-    url: https://buy.stripe.com/cN2cN72rUbPwewoaFy
+    product: price_1RGOQIIa1dfERqdGqxI9Wf8T
     hero_button_text: Totality VIP Pass - Only One Ticket Left!
     card_title: VIP Pass
     card_text: "The VIP Pass includes your full event access, but with exclusive rewards. This is your all-access, behind-the-scenes pass to deeper connections, powerful insights, and unforgettable moments."
@@ -242,7 +242,15 @@ sponsors:
     <div class="buttons-container mx-auto">
       <div class="buttons-row d-flex flex-column flex-lg-row">
         {% for ticket in tickets %}
-          <a href="{{ ticket.url }}" class="button">{{ ticket.hero_button_text }}</a>
+          <button
+            class="button"
+            data-bs-toggle="modal"
+            data-bs-target="#purchaseModal"
+            data-type="purchase"
+            data-product-price="{{ ticket.product }}"
+          >
+          {{ ticket.hero_button_text }}
+          </button>
         {% endfor %}
       </div>
       <p>
@@ -275,7 +283,15 @@ sponsors:
               </li>
             {% endfor %}
           </ul>
-          <a class="button mt-auto" href="{{ticket.url}}">{{ ticket.card_button_text }}</a>
+          <button
+            class="button mt-auto"
+            data-bs-toggle="modal"
+            data-bs-target="#purchaseModal"
+            data-type="purchase"
+            data-product-price="{{ ticket.product }}"
+          >
+          {{ ticket.card_button_text }}
+          </button>
           <a class="{{ ticket.modal }}">Learn more</a>
         </div>
       {% endfor %}
@@ -289,7 +305,15 @@ sponsors:
         conference experience, win prizes, build community and level up your sales game beyond
         recognition.
       </p>
-      <a href="{{ tickets[2].url }}" class="button pink">Totality VIP Pass</a>
+      <button
+        class="button pink"
+        data-bs-toggle="modal"
+        data-bs-target="#purchaseModal"
+        data-type="purchase"
+        data-product-price="{{ ticket2[2].product }}"
+      >
+      {{ tickets[2].hero_button_text }}
+      </button>
     </div>
     <div class="video-container">
       <div class="old-tv">
@@ -363,4 +387,8 @@ sponsors:
       </div>
     </div>
   {% endfor %}
+</div>
+
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-hidden="true">
+{% include "modals/purchase.liquid" %}
 </div>
