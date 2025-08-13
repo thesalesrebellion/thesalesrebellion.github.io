@@ -81,7 +81,6 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreNohotelModal
   - type: vip
-    product:
     hero_button_text: Totality VIP Pass - SOLD OUT!
     card_title: VIP Pass
     card_text: "The VIP Pass includes your full event access, but with exclusive rewards. This is your all-access, behind-the-scenes pass to deeper connections, powerful insights, and unforgettable moments."
@@ -252,9 +251,9 @@ sponsors:
             data-bs-target="#purchaseModal"
             data-type="purchase"
             data-product-price="{{ ticket.product }}"
-            {% if ticket.product == '' %}
+            {% unless ticket.product %}
             disabled
-            {% endif %}
+            {% endunless %}
           >
           {{ ticket.hero_button_text }}
           </button>
@@ -296,9 +295,9 @@ sponsors:
             data-bs-target="#purchaseModal"
             data-type="purchase"
             data-product-price="{{ ticket.product }}"
-            {% if ticket.product == '' %}
+            {% unless ticket.product %}
             disabled
-            {% endif %}
+            {% endunless %}
           >
           {{ ticket.card_button_text }}
           </button>
