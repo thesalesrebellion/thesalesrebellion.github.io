@@ -252,6 +252,9 @@ sponsors:
             data-bs-target="#purchaseModal"
             data-type="purchase"
             data-product-price="{{ ticket.product }}"
+            {% if ticket.product == '' %}
+            disabled
+            {% endif %}
           >
           {{ ticket.hero_button_text }}
           </button>
@@ -293,6 +296,9 @@ sponsors:
             data-bs-target="#purchaseModal"
             data-type="purchase"
             data-product-price="{{ ticket.product }}"
+            {% if ticket.product == '' %}
+            disabled
+            {% endif %}
           >
           {{ ticket.card_button_text }}
           </button>
@@ -315,6 +321,7 @@ sponsors:
         data-bs-target="#purchaseModal"
         data-type="purchase"
         data-product-price="{{ ticket2[2].product }}"
+        disabled
       >
       {{ tickets[2].hero_button_text }}
       </button>
