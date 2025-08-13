@@ -33,6 +33,7 @@ export async function handler(event, context) {
     ],
     mode: 'payment',
     return_url: `${url}/success`,
+    allow_promotion_codes: true,
   });
 
   return {
