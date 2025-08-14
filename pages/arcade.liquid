@@ -44,8 +44,8 @@ rebels:
     testimonial: "I used these Rebellious tools to book a meeting with the CMO-EMEA of Marriott and it blew my mind how easy it was to get their attention with these concepts!"
 quests:
     - name: Level One Tutorials
-      heading: Quick Wins & Easy Gold
-      description: Every great journey starts with a single step or in this case, Level One. These sales programs are designed to give you quick wins with minimal effort, helping you build momentum fast. Whether you're looking to break the ice with prospects, sharpen your outreach, or land your first big deal, these programs are your perfect starting point. Easy to implement yet packed with impact, they’ll have you seeing results before you know it. Don’t just dip your toes in, dive in and start conquering your outbound motion today!
+      heading: Quick Wins & Great Rewards
+      description: Every great journey starts with a single step or in this case, Level One. These sales programs are designed to give you quick wins with minimal effort, helping you build momentum fast. Whether you're looking to break the ice with prospects, sharpen your outreach, or land your first big deal, these programs are your perfect starting point. You’ll walk away with tangible, ready-to-use outreach pieces you can send, mail, or hand-deliver to even the hardest-to-reach prospects. Tools in hand, you’ll be turning cold leads into warm conversations in no time.
       image: "/img/arcade/quest-level-one.webp"
       image-mobile: "/img/arcade/quest-level-one-mobile.webp"
       products: 
@@ -82,8 +82,8 @@ quests:
           image-mobile: "/img/arcade/product-rebel-resume-mobile.webp"
           product: price_1RC1D0Ia1dfERqdGztofqtzD
     - name: Level Two Tutorials
-      heading: New Challenges & More Gold
-      description: You’ve leveled up, and now it’s time to take on a bigger challenge. Level 2 sales programs require more strategy and effort, but the rewards are well worth it. These tools and techniques go beyond quick wins, helping you build deeper relationships, refine your approach, and stand out in a crowded market. We highly recommend Level Two for any of your "harder to reach" prospects or anyone you have used Level One ideas on that never converted. With a little more time and commitment, you’ll start seeing results that truly move the needle. Ready to take your sales game to the next level? Let’s go!
+      heading: New Levels & Bigger Paydays
+      description: You’ve leveled up, and now it’s time to take on a bigger challenge. Level 2 sales programs require more strategy and effort, but the rewards are well worth it. These tools and techniques go beyond quick wins, helping you build deeper relationships, refine your approach, and stand out in a crowded market. We highly recommend Level Two for any of your "harder to reach" prospects or anyone you have used Level One ideas on that never converted. With a little more time and commitment building your physical outreach solutions, you’ll start seeing results that truly move the needle.
       image: "/img/arcade/quest-level-two.webp"
       image-mobile: "/img/arcade/quest-level-two-mobile.webp"
       products: 
@@ -143,7 +143,7 @@ quests:
           product:
     - name: Level Three Tutorials
       heading: The Final Boss & Epic Loot
-      description: You’ve mastered the fundamentals, conquered the mid-level challenges, and now it’s time for the real test. Level Three Rebel campaigns demand dedication, strategy, and a willingness to push past the limits of conventional selling. These advanced tools and tactics are designed for Rebels who want to dominate their market, build lasting influence, and create unstoppable momentum. It won’t be easy, but the biggest rewards never are. If you’re ready to go all in, claim your spot at the top, let’s make history Rebel.
+      description: You’ve mastered the fundamentals, conquered the mid-level challenges, and now it’s time for the real test. Level Three Rebel campaigns demand dedication, strategy, and a willingness to push past the limits of conventional selling. These advanced tools and tactics are designed for Rebels who want to dominate their market, build lasting influence, and create unstoppable momentum. These physical solutions are more challenging to make, but the biggest rewards take greater effort. If you’re ready to go all in, claim your spot at the top, let’s make history Rebel.
       image: "/img/arcade/quest-level-three.webp"
       image-mobile: "/img/arcade/quest-level-three-mobile.webp"
       products: 
@@ -313,7 +313,8 @@ quests:
   .container-wide {
     max-width: 1638px;
     margin: 0 auto;
-    padding: 100px 40px;
+    padding: 187px 40px 100px;
+    position: relative;
   }
 
   /* Hero Styles  */
@@ -326,7 +327,7 @@ quests:
     background-image: url('/img/arcade/hero-bg.webp');
     background-size: cover;
     background-attachment: scroll;
-    padding: 153px 0 74px;
+    padding: 153px 0 186px;
   }
 
   .hero-logo {
@@ -351,9 +352,18 @@ quests:
 
   /* Main Styles */
 
+  .squid {
+    position: absolute;
+    top: -41px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11.4%;
+    min-width: 100px;
+    height: auto;
+  }
+
   .welcome-row {
     margin-bottom: 38px;
-    gap: 60px;
   }
 
   .welcome-row .img-container {
@@ -792,16 +802,20 @@ quests:
   }
 
   @media (max-width: 1290px) {
-    .welcome-row {
-      gap: 40px;
-    }
-
     .main h2.welcome {
       word-spacing: 20px;
     }
   }
 
   @media (max-width: 1200px) {
+    .hero {
+      padding-bottom: 150px;
+    }
+    
+    .container-wide {
+      padding-top: 120px;
+    }
+
     .main h2.welcome {
       font-size: 2.5rem;
       word-spacing: 15px;
@@ -834,14 +848,8 @@ quests:
       height: unset;
     }
 
-    .level-quest > .d-flex > img.level-1 {
-      width: 160px;
-      height: auto;
-    }
-
-    .level-quest > .d-flex > img.level-2,
-    .level-quest > .d-flex > img.level-3 {
-      width: 120px;
+    .level-quest > .d-flex > img {
+      width: 100px;
       height: auto;
     }
   }
@@ -856,7 +864,6 @@ quests:
   @media (max-width: 991px) {
     .welcome-row {
       margin-bottom: 24px;
-      gap: 15px;
     }
 
     .main h2 {
@@ -941,7 +948,7 @@ quests:
     }
 
     .hero {
-      padding: 27px 0 24px;
+      padding: 80px 0;
     }
 
     .hero h2 {
@@ -957,14 +964,14 @@ quests:
       margin-bottom: 8px;
     }
 
-    .chevrons {
-      width: 16px;
-      height: auto;
-    }
-
     .container-wide {
       margin: 0 19px;
-      padding: 40px 0;
+      padding: 80px 0 40px;
+    }
+
+    .squid {
+      min-width: 80px;
+      top: -20px;
     }
 
     .main h2.welcome {
@@ -1038,13 +1045,7 @@ quests:
       min-width: 92%;
     }
 
-    .level-quest > .d-flex > img.level-1 {
-      width: 120px;
-      height: auto;
-    }
-
-    .level-quest > .d-flex > img.level-2,
-    .level-quest > .d-flex > img.level-3 {
+    .level-quest > .d-flex > img {
       width: 80px;
       height: auto;
     }
@@ -1176,29 +1177,16 @@ quests:
 <section class="hero font-kufam text-center">
   <h1>Rebel Arcade</h1>
   <img class="hero-logo" src="/img/arcade/rebel-arcade-logo.webp" alt="Rebel Arcade logo">
-  <h2 class="text-green font-bold mx-5">The Universe's Most Rebellious Sales Outreach Tutorials</h2>
+  <h2 class="text-green font-bold mx-5">Build the Tools to Get Your Busy Prospect's Attention</h2>
   <h3 class="text-white">Press Start, Sales Hero, to Level Up Your Game</h3>
-  <img class="chevrons" src="/img/svg/chevron-group.svg" alt="double chevron pointing down">
 </section>
 <div class="main bg-black">
   <div class="container-wide">
-    <div class="welcome-row d-flex justify-content-between align-items-end">
-      <div class="img-container d-none d-md-block">
-        <img
-          src="/img/arcade/wizard-cutout.webp"
-          alt="wizard"
-        >
-      </div>
+    <img class="squid" src="/img/arcade/rebel-squid.webp" alt="rebel squid">
+    <div class="welcome-row d-flex justify-content-center">
       <h2 class="welcome text-white text-uppercase text-center font-horsemen mx-auto">
         Welcome to Rebel Arcade
       </h2>
-      <div class="img-container d-none d-md-block">
-        <img
-          src="/img/arcade/wizard-cutout.webp"
-          class="img-reverse"
-          alt="wizard"
-        >
-      </div>
     </div>
     <p class="welcome-subheading text-pink font-kufam text-center">
       Where Sales Rebels Go to Purchase Next-Level Outreach Tutorials to Transform Their Sales Game
@@ -1296,8 +1284,8 @@ quests:
           {% for i in (1..parent_index) %}
             <img
               class="level-{{parent_index}}"
-              src="/img/arcade/treasure-chest.webp"
-              alt="treasure chest"
+              src="/img/arcade/arcade-coin.webp"
+              alt="arcade coin"
             >
           {% endfor %}
         </div>
