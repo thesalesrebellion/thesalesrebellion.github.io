@@ -25,7 +25,7 @@ conference_agenda:
   - Engage with like-minded people
 tickets:
   - type: standard
-    product: price_1RGOTWIa1dfERqdGlBkTbbXL
+    url: https://buy.stripe.com/cN28wRfeGf1I73WfZT
     hero_button_text: Totality Pass w/ Hotel
     card_title: Event Pass with Hotel
     card_text: "Unlock the full Totality experience with our level one pass. Your all-access ticket to three days of transformative workshops, community, and inspiration in Knoxville, TN."
@@ -53,7 +53,7 @@ tickets:
       * Final keynote ends at 2:00pm EST
     modal: learnMoreModal
   - type: nohotel
-    product: price_1RDp8bIa1dfERqdGv2QoFd1J
+    url: https://buy.stripe.com/9AQ9AV2rU4n45ZSeVM
     hero_button_text: Totality Pass for Locals
     card_title: Event Pass for Locals
     card_text: "Live nearby? Our Event Pass for locals includes the full Totality experience, but without the 2-night hotel stay. It’s everything you need, right in your own backyard."
@@ -245,18 +245,7 @@ sponsors:
     <div class="buttons-container mx-auto">
       <div class="buttons-row d-flex flex-column flex-lg-row">
         {% for ticket in tickets %}
-          <button
-            class="button"
-            data-bs-toggle="modal"
-            data-bs-target="#purchaseModal"
-            data-type="purchase"
-            data-product-price="{{ ticket.product }}"
-            {% unless ticket.product %}
-            disabled
-            {% endunless %}
-          >
-          {{ ticket.hero_button_text }}
-          </button>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button">{{ ticket.hero_button_text }}</a>
         {% endfor %}
       </div>
       <p>
@@ -289,18 +278,7 @@ sponsors:
               </li>
             {% endfor %}
           </ul>
-          <button
-            class="button mt-auto"
-            data-bs-toggle="modal"
-            data-bs-target="#purchaseModal"
-            data-type="purchase"
-            data-product-price="{{ ticket.product }}"
-            {% unless ticket.product %}
-            disabled
-            {% endunless %}
-          >
-          {{ ticket.card_button_text }}
-          </button>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button mt-auto">{{ ticket.card_button_text }}</a>
           <a class="{{ ticket.modal }}">Learn more</a>
         </div>
       {% endfor %}
@@ -314,16 +292,7 @@ sponsors:
         conference experience, win prizes, build community and level up your sales game beyond
         recognition.
       </p>
-      <button
-        class="button pink"
-        data-bs-toggle="modal"
-        data-bs-target="#purchaseModal"
-        data-type="purchase"
-        data-product-price="{{ ticket2[2].product }}"
-        disabled
-      >
-      {{ tickets[2].hero_button_text }}
-      </button>
+      <a href="{{ tickets[2].url }}" disabled class="button pink">{{ tickets[2].hero_button_text }}</a>
     </div>
     <div class="video-container">
       <div class="old-tv">
@@ -397,8 +366,4 @@ sponsors:
       </div>
     </div>
   {% endfor %}
-</div>
-
-<div class="modal fade" id="purchaseModal" tabindex="-1" aria-hidden="true">
-{% include "modals/purchase.liquid" %}
 </div>
