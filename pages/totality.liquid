@@ -351,7 +351,21 @@ sponsors:
   <div class="totality-sponsors container-md text-center">
     <h2 class="font-horsemen">Totality {{ dates.year }} Sponsors</h2>
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-      {% for sponsor in sponsors %}
+      {% for sponsor in sponsors limit:5 %}
+        <div>
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img
+              class="img-fluid"
+              src="{{ sponsor.image }}"
+              alt="{{ sponsor.alt_text }}"
+              class="img-fluid"
+            >
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      {% for sponsor in sponsors offset:5 %}
         <div>
           <a href="{{ sponsor.url }}" target="_blank">
             <img
