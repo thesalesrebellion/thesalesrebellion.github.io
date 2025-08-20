@@ -253,7 +253,7 @@ sponsors:
     <div class="buttons-container mx-auto">
       <div class="buttons-row d-flex flex-column flex-lg-row">
         {% for ticket in tickets %}
-          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button">{{ ticket.hero_button_text }}</a>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} onclick="return false;"{% endunless %} class="button">{{ ticket.hero_button_text }}</a>
         {% endfor %}
       </div>
       <p>
@@ -286,7 +286,7 @@ sponsors:
               </li>
             {% endfor %}
           </ul>
-          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button mt-auto">{{ ticket.card_button_text }}</a>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} onclick="return false;"{% endunless %} class="button mt-auto">{{ ticket.card_button_text }}</a>
           <a class="{{ ticket.modal }}">Learn more</a>
         </div>
       {% endfor %}
@@ -300,7 +300,7 @@ sponsors:
         conference experience, win prizes, build community and level up your sales game beyond
         recognition.
       </p>
-      <a href="{{ tickets[2].url }}" disabled class="button pink">{{ tickets[2].hero_button_text }}</a>
+      <a href="{{ tickets[2].url }}" onclick="return false;" class="button pink">{{ tickets[2].hero_button_text }}</a>
     </div>
     <div class="video-container">
       <div class="old-tv">
