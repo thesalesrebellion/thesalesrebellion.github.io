@@ -1,0 +1,30 @@
+<div class="loading-row d-flex justify-content-between align-items-center">
+    <div class="loading-bar-container">
+        <ul id="loading-bar" class="m-0 d-flex">
+        {% for i in (1..46) %}
+            <li>
+            <div id="layerFill{{ i }}" class="bar"></div>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+    <p class="loading-text text-uppercase m-0">Loading...</p>
+</div>
+
+<script>
+    function snapToMultiple(el, step = 12) {
+      const parent = el.parentElement;
+      const raw = parent.clientWidth;
+      const snapped = Math.floor(raw / step) * step;
+      el.style.width = snapped + "px";
+    }
+    
+    const el = document.querySelector("#loading-bar");
+    
+    // Run once at load
+    snapToMultiple(el);
+    
+    // Run on resize
+    window.addEventListener("resize", () => snapToMultiple(el));
+    
+</script>

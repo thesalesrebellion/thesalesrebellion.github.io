@@ -1,0 +1,15 @@
+---
+title: Advisory
+layout: default
+layout_engine: bootstrap
+permalink: /advisory/
+page_id: advisory
+landing_page: false
+coming_soon: true
+---
+    
+{% include 'header.liquid' %}
+
+{% if coming_soon %}
+    {% include 'coming-soon.liquid', bg:'/img/advisory/advisory-coming-soon-bg.webp', bg-mobile: '/img/advisory/advisory-coming-soon-bg-mobile.webp' %}
+{% endif %}
