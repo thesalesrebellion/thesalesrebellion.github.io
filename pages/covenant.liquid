@@ -1,0 +1,15 @@
+---
+title: Covenant
+layout: default
+layout_engine: bootstrap
+permalink: /covenant/
+page_id: covenant
+landing_page: false
+coming_soon: true
+---
+
+{% include 'header.liquid' %}
+
+{% if coming_soon %}
+    {% include 'coming-soon.liquid', bg:'/img/covenant/covenant-coming-soon-bg.webp', bg-mobile: '/img/covenant/covenant-coming-soon-bg-mobile.webp' %}
+{% endif %}

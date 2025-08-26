@@ -1,0 +1,85 @@
+<style>
+    .coming-soon {
+            padding: 330px 0 338px;
+            text-align: center;
+            background: url('{{ bg }}') no-repeat center center;
+            background-size: cover;
+            width: 100%;           
+            min-width: 0; 
+    
+            > * {
+                min-width: 0; 
+                max-width: 100%;     
+            }
+    
+            .container-wide {
+                width: 1286px;
+                max-width: 100%;
+                margin: 0 auto;
+                padding-inline: 40px;
+            }
+    
+            .pre-heading {
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 12px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                margin-bottom: 124px;
+            }
+    
+            h1 {
+                font-size: 60px;
+                margin-bottom: 44px;
+            }
+    
+            @media(max-width: 1346px) {
+                .container-wide {
+                    padding-inline: 40px;
+                }
+            }
+    
+            @media(max-width: 767px) {
+                background-image: none;
+                padding: 0;
+    
+                .container-wide {
+                    padding-inline: 20px;
+                }
+    
+                .page-inner {
+                    padding: 100px 0;
+                    aspect-ratio: 390 / 403;
+                    background-image: url('{{ bg-mobile }}');
+                    background-repeat: no-repeat;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 71px;
+                }
+    
+                .pre-heading {
+                    font-size: 1rem;
+                    letter-spacing: 8px;
+                    margin-bottom: 40px;
+                }
+    
+                h1 {
+                    font-size: 1.5rem;
+                    margin-bottom: 0;
+                }
+            }
+        }
+</style>
+
+<div class="coming-soon font-kufam d-flex flex-column align-items-center">
+    <div class="page-inner">
+        <div class="container-wide">
+            <p class="pre-heading">We're Launching Soon!</p>
+            <h1 class="font-horsemen">Loading Your Solutions</h1>
+        </div>
+    </div>
+    <div class="container-wide">
+        {% include 'loading-bar.liquid' %}
+    </div>
+</div>
