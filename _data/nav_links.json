@@ -13,7 +13,7 @@
       },
       {
         "link_text": "Individual Sellers",
-        "link_url": "/sales-teams/"
+        "link_url": "/individual-sellers/"
       },
       {
         "link_text": "Ultimate Rebellion",
@@ -45,12 +45,6 @@
       }
     ],
     "show_in_footer": true
-  },
-  {
-    "header": "Totality",
-    "link_url": "/totality/",
-    "dropdown_links": [],
-    "show_in_footer": false
   }
 ]
 
