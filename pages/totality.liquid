@@ -25,11 +25,10 @@ conference_agenda:
   - Engage with like-minded people
 tickets:
   - type: standard
-    url: https://buy.stripe.com/cN28wRfeGf1I73WfZT
-    hero_button_text: Totality Pass w/ Hotel
+    hero_button_text: Totality Pass w/ Hotel - SOLD OUT
     card_title: Event Pass with Hotel
     card_text: "Unlock the full Totality experience with our level one pass. Your all-access ticket to three days of transformative workshops, community, and inspiration in Knoxville, TN."
-    card_button_text: Buy Your Totality Pass
+    card_button_text: SOLD OUT
     features:
       - text: Full 3-day event access
         icon: /img/svg/pixel-check-pink.svg
@@ -54,7 +53,7 @@ tickets:
     modal: learnMoreModal
   - type: nohotel
     url: https://buy.stripe.com/9AQ9AV2rU4n45ZSeVM
-    hero_button_text: Totality Pass for Locals
+    hero_button_text: Totality Pass - No Hotel
     card_title: Event Pass for Locals
     card_text: "Live nearby? Our Event Pass for locals includes the full Totality experience, but without the 2-night hotel stay. It’s everything you need, right in your own backyard."
     card_button_text: Buy Your Totality Pass
@@ -232,8 +231,16 @@ sponsors:
     image: /img/sponsors/sci.webp
     alt_text: Security Cloud Innovations
     url: https://securecloudinnovations.net/
-
+  -
+    image: /img/sponsors/lifebuilder.webp
+    alt_text: Lifebuilder
+    url: https://www.lifebuilder.co/
+  -
+    image: /img/sponsors/stu-heinecke.webp
+    alt_text: Stu Heinecke
+    url: https://getameetingmastermind.com/
 ---
+
 {% include 'header.liquid' %}
 <div class="landing-page">
   <div class="totality container-fluid hero text-center font-kufam">
@@ -245,7 +252,7 @@ sponsors:
     <div class="buttons-container mx-auto">
       <div class="buttons-row d-flex flex-column flex-lg-row">
         {% for ticket in tickets %}
-          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button">{{ ticket.hero_button_text }}</a>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} onclick="return false;"{% endunless %} class="button">{{ ticket.hero_button_text }}</a>
         {% endfor %}
       </div>
       <p>
@@ -278,7 +285,7 @@ sponsors:
               </li>
             {% endfor %}
           </ul>
-          <a href="{{ ticket.url }}"{% unless ticket.url %} disabled{% endunless %} class="button mt-auto">{{ ticket.card_button_text }}</a>
+          <a href="{{ ticket.url }}"{% unless ticket.url %} onclick="return false;"{% endunless %} class="button mt-auto">{{ ticket.card_button_text }}</a>
           <a class="{{ ticket.modal }}">Learn more</a>
         </div>
       {% endfor %}
@@ -292,7 +299,7 @@ sponsors:
         conference experience, win prizes, build community and level up your sales game beyond
         recognition.
       </p>
-      <a href="{{ tickets[2].url }}" disabled class="button pink">{{ tickets[2].hero_button_text }}</a>
+      <a href="{{ tickets[2].url }}" onclick="return false;" class="button pink">{{ tickets[2].hero_button_text }}</a>
     </div>
     <div class="video-container">
       <div class="old-tv">
@@ -343,7 +350,21 @@ sponsors:
   <div class="totality-sponsors container-md text-center">
     <h2 class="font-horsemen">Totality {{ dates.year }} Sponsors</h2>
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
-      {% for sponsor in sponsors %}
+      {% for sponsor in sponsors limit:5 %}
+        <div>
+          <a href="{{ sponsor.url }}" target="_blank">
+            <img
+              class="img-fluid"
+              src="{{ sponsor.image }}"
+              alt="{{ sponsor.alt_text }}"
+              class="img-fluid"
+            >
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+      {% for sponsor in sponsors offset:5 %}
         <div>
           <a href="{{ sponsor.url }}" target="_blank">
             <img
