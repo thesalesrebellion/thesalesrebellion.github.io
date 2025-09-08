@@ -1,0 +1,119 @@
+.training {
+    background-color: #000;
+    background-image: url('/img/training/bg.webp');
+    background-position: top;
+    background-size: cover;
+    padding: 247px 0 34px;
+
+    .container-wide {
+        max-width: 1345px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    h1 {
+        font-size: 0;
+    }
+
+    .btn {
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        font-family: 'Kufam', sans-serif;
+        font-size: 1.125rem;
+
+        &:hover {
+            box-shadow: none;
+            text-shadow: none;
+        }
+        
+        &.btn-outline {
+            border: 3px solid #F0F;
+            color: #66FFC8;
+            background: transparent;
+
+            &:hover {
+                background: #66ffc8;
+                border: 3px solid #66ffc8;
+                color: #000;
+            }
+        }
+    }
+}
+
+.cards-container {
+    gap: 36px;
+
+    .card {
+        border: 2px solid #F0F;
+        padding: 24px 24px 40px;
+        border-radius: 0;
+        background: transparent;
+        flex: 0 0 calc((100% - 72px) / 3);
+
+        img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            color: #EB38CF;
+            font-size: 1.5rem;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #FFF;
+            font-size: 1.125em;
+            line-height: 26px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .training {
+        padding-top: 150px;
+
+        .container-wide {
+            padding: 0 16px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .training {
+        padding-top: 94px;
+
+        .cards-container {
+            gap: 20px;
+        }
+
+        .card {
+            padding: 24px 24px 20px;
+
+            img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 16px;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+                margin-bottom: 16px;
+                letter-spacing: -0.4px;
+                line-height: 24px;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 150%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

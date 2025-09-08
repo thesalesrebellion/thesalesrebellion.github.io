@@ -1,0 +1,15 @@
+---
+title: Rebel as a Service
+layout: default
+layout_engine: bootstrap
+permalink: /rebel-as-a-service/
+page_id: rebel-as-a-service
+landing_page: false
+coming_soon: true
+---
+
+{% include 'header.liquid' %}
+
+{% if coming_soon %}
+    {% include 'coming-soon.liquid', bg:'/img/covenant/covenant-coming-soon-bg.webp', bg-mobile: '/img/covenant/covenant-coming-soon-bg-mobile.webp' %}
+{% endif %}
