@@ -58,7 +58,12 @@
       top: calc(100% + 30px);
       width: 40px;
       height: 40px;
+
+      &.slick-disabled {
+        opacity: 0.3;
+        pointer-events: none;
       }
+    }
 
       .slick-prev {
         left: 50%;
@@ -936,15 +941,6 @@
     @media(max-width: 464px) {
         .hero {
             background-size: contain;
-        }
-    }
-
-    @media(min-width: 768px) {
-        .tool-cards {
-            .slick-prev,
-            .slick-next {
-                display: none !important;
-            }
         }
     }
 }
