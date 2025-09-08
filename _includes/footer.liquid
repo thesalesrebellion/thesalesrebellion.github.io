@@ -1,7 +1,7 @@
 
 <footer class="site-footer bg-black text-white font-kufam">
-  <div class="footer-inner mx-auto d-flex align-items-center flex-column flex-lg-row">
-    <div class="footer-left">
+  <div class="footer-inner mx-auto d-flex align-items-start flex-column flex-md-row">
+    <div class="footer-left d-flex flex-row flex-md-column">
       <a href="/"><img src="/img/logo.png" alt="The Sales Rebellion"></a>
       <p class="mb-0">
         The Sales Rebellion transforms outdated, transactional sales tactics into bold,
@@ -13,7 +13,10 @@
       <nav class="d-flex justify-content-between flex-column flex-lg-row flex-wrap">
         <div class="d-flex flex-row justify-content-between">
           {% for nav_link in nav_links %}
-            <div class="footer-nav-column d-flex flex-column me-0 me-md-3 me-lg-5">
+            {% if nav_link.show_in_footer != true %}
+              {% continue %}
+            {% endif %}
+            <div class="footer-nav-column d-flex flex-column">
               {% if nav_link.link_url != blank %}
                 <a href="{{ nav_link.link_url }}" class="nav-header text-green mb-0">
                   {{ nav_link.header }}

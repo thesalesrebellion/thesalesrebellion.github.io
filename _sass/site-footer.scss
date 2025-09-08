@@ -29,11 +29,13 @@
     border: 2px solid;
     border-image: linear-gradient(90deg, $white, $dark_purple) 1;
     gap: 100px;
-    padding: 60px;
+    padding: 40px;
     max-width: 1265px;
 
     .footer-left {
-      flex-basis: 29%;
+      flex: 0 0 29%;
+      max-width: 264px;
+      gap: 40px;
 
       p {
         font-size: 0.75rem;
@@ -45,12 +47,20 @@
       img {
         width: 100px;
         height: auto;
-        margin-bottom: 40px;
       }
     }
 
     .footer-right {
       flex-basis: 62%;
+      flex-grow: 1;
+
+      > .d-flex {
+        gap: 40px;
+      }
+
+      nav > .flex-row {
+        gap: 40px;
+      }
 
       .footer-nav-column {
         gap: 23px;
@@ -137,6 +147,25 @@
           }
         }
       }
+    }
+  }
+
+  @media(max-width: 767px) {
+      .footer-inner {
+        .footer-left {
+          max-width: unset;
+          gap: 40px;
+          flex-basis: unset;
+
+          > a {
+
+            img {
+              max-width: unset;
+              width: 100px;
+              height: auto;
+            }
+          }
+        }
     }
   }
 }

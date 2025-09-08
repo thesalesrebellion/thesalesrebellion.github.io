@@ -1,17 +1,36 @@
 [
   {
-    "header": "Learn",
-    "dropdown_links": [
-      {
-        "link_text": "Squadron",
-        "link_url": "/squadron/"
-      }
-    ]
+    "header": "RaaS",
+    "link_url": "/rebel-as-a-service/",
+    "show_in_footer": true
   },
   {
-    "header": "About",
-    "link_url": "/about/",
-    "dropdown_links": []
+    "header": "Training",
+    "dropdown_links": [
+      {
+        "link_text": "Sales Teams",
+        "link_url": "/sales-teams/"
+      },
+      {
+        "link_text": "Individual Sellers",
+        "link_url": "/individual-sellers/"
+      },
+      {
+        "link_text": "Ultimate Rebellion",
+        "link_url": "/covenant/"
+      }
+  ],
+  "show_in_footer": true
+},
+  {
+    "header": "Outreach Solutions",
+    "dropdown_links": [
+      {
+        "link_text": "Rebel Arcade",
+        "link_url": "/arcade/"
+      }
+    ],
+    "show_in_footer": true
   },
   {
     "header": "Resources",
@@ -21,15 +40,11 @@
         "link_url": "/resources/"
       },
       {
-        "link_text": "Arcade",
-        "link_url": "/arcade/"
+        "link_text": "About Us",
+        "link_url": "/about/"
       }
-    ]
-  },
-  {
-    "header": "Totality",
-    "link_url": "/totality/",
-    "dropdown_links": []
+    ],
+    "show_in_footer": true
   }
 ]
 
