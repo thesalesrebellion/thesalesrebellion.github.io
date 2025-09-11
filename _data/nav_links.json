@@ -45,6 +45,11 @@
       }
     ],
     "show_in_footer": true
+  },
+  {
+    "header": "Totality",
+    "link_url": "/totality/",
+    "show_in_footer": false
   }
 ]
 
