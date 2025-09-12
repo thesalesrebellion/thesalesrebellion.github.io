@@ -1,5 +1,5 @@
-const stripe = Stripe("pk_live_76o7Q17lfv1eFl5I74ajlWi5003dMoTD0q");
-// const stripe = Stripe("pk_test_hOI2vzQX7QTuREiUkLmwqI1c00Rzh33WFH");
+//const stripe = Stripe("pk_live_76o7Q17lfv1eFl5I74ajlWi5003dMoTD0q");
+ const stripe = Stripe("pk_test_hOI2vzQX7QTuREiUkLmwqI1c00Rzh33WFH");
 const elements = stripe.elements();
 let checkout = '';
 
