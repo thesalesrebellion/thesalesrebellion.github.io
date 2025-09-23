@@ -5,11 +5,146 @@ layout_engine: bootstrap
 permalink: /rebel-as-a-service/
 page_id: rebel-as-a-service
 landing_page: false
-coming_soon: true
+coming_soon: false
 ---
+
+<style>
+    .page-rebel-as-a-service {
+        padding-top: 20px;
+
+        .container-wide {
+            max-width: 1315px;
+            margin: 0 auto;
+            padding-inline: 20px;
+        }
+
+        .btn {
+            padding: 15px 21px 14px;
+            border: 0;
+            border-radius: 0;
+            font-family: Kufam, sans-serif;
+            font-size: 1.125rem;
+            line-height: 1;
+            letter-spacing: unset;
+
+            &:hover {
+                box-shadow: none;
+                text-shadow: none;
+            }
+            
+            &.btn-pink {
+                color: #fff;
+                background-color: #EB38CF;
+                border: 3px solid #EB38CF;
+                font-weight: 700;
+
+                &:hover {
+                    background-color: #ff59ff;
+                    border-color: #ff59ff;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 60px;
+
+            &.mountain {
+                margin-top: 80px;
+                margin-bottom: 0;
+
+                &.desktop {
+                    display: block;
+                }
+
+                &.mobile {
+                    display: none;
+                }
+            }
+        }
+
+        h1 {
+            font-size: 2.75rem;
+            letter-spacing: 4.4px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 40px;
+            max-width: 1112px;
+            margin-inline: auto;
+
+            &.sub-heading {
+                font-weight: 700;
+                color: #F0F;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media(max-width: 767px) {
+            .container-wide.desktop {
+                padding-inline: 0;
+            }
+
+            img {
+                margin-bottom: 20px;
+
+                &.mountain {
+                    margin-top: 40px;
+
+                    &.desktop {
+                        display: none;
+                    }
+
+                    &.mobile {
+                        display: block;
+                    }
+                }
+            }
+
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 19px;
+            }
+
+            p {
+                font-size: 1rem;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                &.sub-heading {
+                    font-size: 1.25rem;
+                    margin-bottom: 19px;
+                }
+            }
+        }
+    }
+</style>
 
 {% include 'header.liquid' %}
 
 {% if coming_soon %}
     {% include 'coming-soon.liquid', bg:'/img/covenant/covenant-coming-soon-bg.webp', bg-mobile: '/img/covenant/covenant-coming-soon-bg-mobile.webp' %}
+{% else %}
+    <div class="page-{{ page_id }} font-kufam">
+        <div class="container-wide desktop">
+            <img src="/img/rebel-as-a-service/hero.webp" class="img-fluid" alt="Rebel as a Service">
+        </div>
+        <div class="container-wide text-center">
+            <h1 class="font-horsemen">Rebel As A Service</h1>
+            <p class="sub-heading">
+                Why Hire AI When You Can Hire The Rebels to Reach Your Cold Prospects?
+            </p>
+            <p>
+                RaaS is a service performed by our own internal sales team, certified in Rebellion sales strategy. We use a direct mail strategy to send tangible-Rebel-experiences to your prospects in order to get their attention. Then, our team of certified sales pros will call, email and sequence more experiences through the mail in order to get in touch with your cold prospects and set appointments for you and your firm. Finally, you can have the masters of earning attention on your sales team.
+            </p>
+            <a href="https://calendly.com/jeremiah-salesrebellion/30min-1" class="btn btn-pink" target="_blank">Hire a Rebel</a>
+        </div>
+        <img src="/img/rebel-as-a-service/synthwave-mountain.webp" class="mountain desktop"alt="synthwave mountain graphic">
+        <img src="/img/rebel-as-a-service/synthwave-mountain-mobile.webp" class="mountain mobile"alt="synthwave mountain graphic">
+    </div>
 {% endif %}

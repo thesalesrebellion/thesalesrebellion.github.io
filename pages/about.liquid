@@ -5,157 +5,426 @@ eleventyNavigation:
   key: About
   order: 4
   glow_in: "red"
-layout: page
+layout: default
 page_id: about
 landing_page: false
-hero:
-  heading: <span>Culture</span> <span>Eats</span> <span>Strategy</span> <span>For</span> Breakfast…
-  text: |-
-    The time has come to **Choose Legendary**.
-
-    In these moments we are called to rise against the status quo and **Create Wonder**. We must heed the call to **Serve Others** and build communities. Arise from your slumber and claim the power provided to you through rebellion. Join us as we **Change The Game**.
-features:
-  items:
-    - title: Choose Legendary
-      text: The pursuit of excellence in all endeavors - Personal, Professional, and Private
-    - title: <span>Create</span> Wonder
-      text: Making the human experience the primary objective at every level
-    - title: Serve Others
-      text: Servant leadership for all people in all things
-    - title: <span>Change</span> <span>The</span> Game
-      text: To reject the status quo and relentlessly pursue creativity
-  cta:
-    text: Join<span class="space"></span>Squardrons
-    url: https://calendly.com/jeremiah-salesrebellion/rebelsquadron
-    new_tab: true
-team:
-  title: Meet <span>our</span> team
-  members:
-    - img:
-        path: /img/team/beth-pagano.webp
-        alt_text: Beth Pagano
-    - img:
-        path: /img/team/rafe-barretto.webp
-        alt_text: Rafe Barretto
-    - img:
-        path: /img/team/jeremiah-griffin.webp
-        alt_text: Jeremiah Griffin
-    - img:
-        path: /img/team/dale-dupree.webp
-        alt_text: Dale Dupree
-    - img:
-        path: /img/team/joy-carvajal.webp
-        alt_text: Joy Carvajal
-    - img:
-        path: /img/team/adam-snider.webp
-        alt_text: Adam Snider
-  members_mobile:
-    - img:
-        path: /img/team/beth-pagano.webp
-        alt_text: Beth Pagano
-    - img:
-        path: /img/team/rafe-barretto.webp
-        alt_text: Rafe Barretto
-    - img:
-        path: /img/team/jeremiah-griffin.webp
-        alt_text: Jeremiah Griffin
-    - img:
-        path: /img/team/dale-dupree.webp
-        alt_text: Dale Dupree
-    - img:
-        path: /img/team/joy-carvajal.webp
-        alt_text: Joy Carvajal
-    - img:
-        path: /img/team/adam-snider.webp
-        alt_text: Adam Snider
-faq:
-  heading: Things we get asked
-  items:
-  - q: What are you Rebelling against?
-    a: |-
-      We are rebelling against the status quo sales results and interactions. We believe the marketplace is yearning for creative, engaging, and authentic sales interactions. And we help businesses and individuals understand how to offer creative experiences this in the modern sales environment.
-  - q: How can I join what you all are doing?
-    a: |-
-      Being a Sales Rebel is simple… Just believe. Believe that human engagement is as valuable as net margin. Believe that creativity and fun are not only allowed in business but they are the missing links. Believe that others are out there fighting for the same as you…. That’s what makes you a Rebel. There are tons of resources and community members. Just get involved!
-cta:
-  show: false
-  text: Join<span class="space"></span>the<span class="space"></span>Sales<span class="space"></span>Rebellion's<span class="space"></span>email<span class="space"></span>extravaganza<span class="space"></span>experience
-  button:
-    text: Coming<br>Soon
-    url:
-    new_tab: false
-footer:
-  message: "Each time a man stands up for an ideal, or acts to improve a lot of others, or strikes out against injustice, he sends forth a tiny ripple of hope, and... those ripples build a current which can sweep down the mightiest walls of oppression."
-  note: "- Robert F. Kennedy"
 ---
 
-{%- comment -%} --- FEATURES --- {%- endcomment -%}
-<section class="section about__features">
+<style>
+    .page-about {
+        h2 {
+            font-size: 2.75rem;
+        }
 
-    <div class="container">
+        .container-wide {
+            max-width: 1314px;
+            margin: 0 auto;
+            padding-inline: 20px;
+        }
 
-        <div class="about__features-items">
-            {%- for item in features.items -%}
+        .hero {
+            padding: 331px 0 149px;
+            background-image: url('/img/about/hero-bg.webp');
+            background-attachment: scroll;
 
-                <div class="about__features-item">
-                    <h3 class="about__features-item-title">
-                        {{- item.title -}}
-                    </h3>
-                    <div class="about__features-item-text">
-                        {{ item.text }}
+            .about-text {
+                max-width: 622px;
+            }
+
+            h1 {
+                font-size: 3.75rem;
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: #66FFC8;
+                font-size: 1.5rem;
+                line-height: 125%;
+                font-weight: 600;
+                letter-spacing: -0.48px;
+            }
+        }
+
+        .join-the-movement {
+            padding: 80px 0 140px;
+
+            .pre-heading {
+                color: #EB38CF;
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 24px;
+                text-transform: uppercase;
+                margin-bottom: 29px;
+            }
+
+            h2 {
+                margin-bottom: 80px;
+            }
+
+            > .container-wide > img {
+                margin-bottom: 80px;
+            }
+
+            .rebel-call {
+                border: 3px solid #EB38CF;
+                padding: 40px;
+                margin-bottom: 80px;
+
+                img {
+                    width: 190px;
+                    margin-bottom: 40px;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                    color: #F0F;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 144%;
+
+                    &:last-child {
+                        color: #66FFC8;
+                        margin-top: 24px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .core-values {
+                text-align: left;
+
+                h3 {
+                    font-size: 1.25rem;
+                    color: #EB38CF;
+                    margin-bottom: 29px;
+                    font-weight: 700;
+                    letter-spacing: 20px;
+                    text-transform: uppercase;
+                }
+
+                .row-1, .row-2 {
+                    gap: 50px;
+
+                    .box {
+                        border: 3px solid #647488;
+                        flex: 1;
+                    }
+                }
+
+                .row-1 {
+                    margin-bottom: 50px;
+
+                    .box {
+                        padding: 20px;
+
+                        h4 {
+                            font-size: 1.25rem;
+                            box-shadow: none;
+                        }
+
+                        &:nth-child(odd) {
+                            h4 {
+                                color: #66FFC8;
+                            }
+                        }
+
+                        &:nth-child(even) {
+                            h4 {
+                                color: #F0F;
+                            }
+                        }
+
+                        p {
+                            font-size: 1.25rem;
+                            margin-bottom: 24px;
+                        }
+                    }
+
+                }
+                
+                .row-2 {
+                    .box {
+                        padding: 40px;
+                        text-align: center;
+
+                        h4 {
+                            font-size: 2rem;
+                            color: #F0F;
+                            margin-bottom: 20px;
+                        }
+
+                        p {
+                            font-size: 1.25rem;
+                            line-height: 150%;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .join-the-rebellion {
+            padding-bottom: 60px;
+
+            h2 {
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: #66FFC8;
+                font-size: 1.25rem;
+                font-weight: 500;
+                line-height: 150%;
+            }
+        }
+
+        @media(max-width: 1140px) {
+            .join-the-movement {
+                .core-values {
+                    .row-1 {
+                        flex-wrap: wrap;
+
+                        .box {
+                            flex-basis: calc(100% / 2 - 25px);
+
+                            &:nth-child(1), &:nth-child(4) {
+                                h4 {
+                                    color: #66FFC8;
+                                }
+                            }
+
+                            &:nth-child(2), &:nth-child(3) {
+                                h4 {
+                                    color: #F0F;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 767px) {
+            .join-the-movement {
+                                .core-values {
+                    text-align: center;
+
+                    h3 {
+                        font-size: 1rem;
+                        letter-spacing: 8px;
+                        margin-bottom: 20px;
+                    }
+
+                    .row-1, .row-2 {
+                        gap: 20px;
+                    }
+
+                    .row-1 {
+                        margin-bottom: 20px;
+                        overflow-x: scroll;
+                        margin-right: -20px;
+                        padding-right: 20px;
+                        flex-wrap: nowrap;
+
+                        .box {
+                            min-width: 257px;
+                            text-align: left;
+
+                            h4 {
+                                font-size: 1rem;
+                            }
+
+                            &:nth-child(odd) {
+                                h4 {
+                                    color: #66FFC8;
+                                }
+                            }
+
+                            &:nth-child(even) {
+                                h4 {
+                                    color: #F0F;
+                                }
+                            }
+                        }
+                    }
+
+                    .row-2 {
+                        flex-direction: column;
+
+                        .box {
+                            h4 {
+                                font-size: 1.5rem;
+                            }
+
+                            p {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media(max-width: 575px) {
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 80px 0;
+                background-image: url('/img/about/hero-bg-mobile.webp');
+
+                h1 {
+                    font-size: 1.25rem;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    line-height: normal;
+                    letter-spacing: normal;
+                }
+            }
+
+            .join-the-movement {
+                padding-top: 0;
+
+                .container-wide {
+                    &.desktop {
+                        padding-inline: 0;
+                    }
+                }
+
+                .pre-heading, h2 {
+                    display: none;
+                }
+
+                > img {
+                    margin-bottom: 50px;
+                    margin-inline: -20px;
+                }
+
+                .rebel-call {
+                    padding: 20px;
+                    margin-bottom: 60px;
+
+                    img {
+                        width: 124px;
+                        margin-bottom: 20px;
+                    }
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        line-height: 150%;
+                    }
+                }
+            }
+
+                .join-the-rebellion {
+                    padding-bottom: 4px;
+
+                    h2 {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+        }
+    }
+</style>
+
+{% include 'header.liquid' %}
+
+<div class="page-{{ page_id }} font-kufam">
+    <div class="hero">
+        <div class="container-wide">
+            <div class="about-text">
+                <h1 class="font-horsemen">About Us</h1>
+                <p>
+                    Turning sales into a human-centered craft, leaders and reps into legends, while building a Kingdom of creative sellers around the world.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="join-the-movement text-center">
+        <div class="container-wide desktop">
+            <div class="pre-heading">there’s a rebel in all of us</div>
+            <h2 class="font-horsemen">Join the Movement</h2>
+            <img src="/img/about/rebel-movement.webp" alt="">
+        </div>
+        <div class="container-wide">
+            <div class="rebel-call">
+                <img src="/img/home/dale-cartoon.webp" alt="Dale Dupree Cartoon">
+                <h3 class="font-horsemen">A Rebel Call</h3>
+                <p>There is a calling... Each of us has the choice to hear.</p>
+                <p>It will feel like a whisper. Drowned out by a symphony of pain, struggle and failure.</p>
+                <p>Some people will bow out. The pressure will be too much.</p>
+                <p>While the Rebels choose to run directly through the storm.</p>
+                <p>Rebels choose risk, discomfort, to be bold and walk without fear. Rebels choose hope and belief in something greater than themselves.</p>
+                <p>A true Rebellion burns the ships.</p>
+                <p>And a real Rebel dies to themself, so they may truly live. </p>
+                <p>This is the way.</p>
+            </div>
+        </div>
+        <div class="container-wide">
+            <div class="core-values">
+                <h3>Core Values</h3>
+                <div class="row-1 d-flex">
+                    <div class="box">
+                        <p>01</p>
+                        <h4 class="font-horsemen">Choose Legendary</h4>
+                    </div>
+                    <div class="box">
+                        <p>02</p>
+                        <h4 class="font-horsemen">Create Wonder</h4>
+                    </div>
+                    <div class="box">
+                        <p>03</p>
+                        <h4 class="font-horsemen">Serve Others</h4>
+                    </div>
+                    <div class="box">
+                        <p>04</p>
+                        <h4 class="font-horsemen">Change the Game</h4>
                     </div>
                 </div>
-            {%- endfor -%}
-        </div>
-
-    </div>
-
-</section>
-
-{%- comment -%} --- TEAM --- {%- endcomment -%}
-<section class="section about__team">
-
-    <div class="container">
-
-        <h2 class="about__team-title">
-            {{- team.title -}}
-        </h2>
-
-        <div class="about__team-members about__team-members--desktop">
-            {%- for item in team.members -%}
-                <div class="about__team-member{% if forloop.first %} about__team-member--first{% endif %}{% if forloop.last %} about__team-member--last{% endif %}">
-                    <img src="{{ item.img.path }}" alt="{{- item.img.alt_text -}}" class="about__team-img">
+                <div class="row-2 d-flex">
+                    <div class="box d-flex align-items-center">
+                        <div>
+                            <h4 class="font-horsemen">Mission</h4>
+                            <p>
+                                We exist to tear down the castles of the old guard, and build a Kingdom of Rebels.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box d-flex align-items-center">
+                        <div>
+                            <h4 class="font-horsemen">What We Believe</h4>
+                            <p>
+                                People over products, community over commission checks, experiences of performing a pitch and fellowship over negotiations.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            {%- endfor -%}
-
-            <img src="/img/rebelBoy.png" alt="" class="about__team-members-top-left-img">
-            <img src="/img/plastic-bag.png" alt="" class="about__team-members-bottom-right-img">
+            </div>
         </div>
-
-        <div class="about__team-members about__team-members--mobile slick-me">
-            {%- for item in team.members_mobile -%}
-                <img src="{{ item.img.path }}" alt="{{- item.img.alt_text -}}" class="about__team-img about__team-img--mobile">
-            {%- endfor -%}
+    </div>
+    <div class="container-wide">
+        <div class="join-the-rebellion text-center">
+            <h2 class="font-horsemen">Join the Rebellion</h2>
+            <p>
+                Will you join us? And will you write the next chapter of your sales legacy?
+            </p>
         </div>
-
     </div>
-
-</section>
-
-{%- comment -%} --- FAQ --- {%- endcomment -%}
-<section class="section about__faq">
-
-    <div class="container">
-
-        <h2 class="faq__heading about__faq-heading">
-            {{- faq.heading -}}
-        </h2>
-
-        {%- include "faq.liquid", faq_items: faq.items -%}
-
-    </div>
-
-</section>
-
-{%- comment -%} --- CTA --- {%- endcomment -%}
-{%- include "cta.liquid", cta: cta, type:"page" -%}
+</div>
