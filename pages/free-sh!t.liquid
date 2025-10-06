@@ -1,0 +1,680 @@
+---
+title: Free Sh*t
+permalink: /free-sh!t/
+layout: default
+page_id: free-shit
+landing_page: false
+blog_posts:
+  - image: "/img/free-sh!t/blog-1.webp"
+    image_mobile: "/img/free-sh!t/blog-1-mobile.webp"
+    tag: "Article tag"
+    title: "Coming Soon"
+    description: "Rebel wisdom on the way. New blog post launching very soon."
+    url: "#"
+    coming_soon: true
+  - image: "/img/free-sh!t/blog-1.webp"
+    image_mobile: "/img/free-sh!t/blog-1-mobile.webp"
+    tag: "Article tag"
+    title: "Coming Soon"
+    description: "Rebel wisdom on the way. New blog post launching very soon."
+    url: "#"
+    coming_soon: true
+  - image: "/img/free-sh!t/blog-1.webp"
+    image_mobile: "/img/free-sh!t/blog-1-mobile.webp"
+    tag: "Article tag"
+    title: "Coming Soon"
+    description: "Rebel wisdom on the way. New blog post launching very soon."
+    url: "#"
+    coming_soon: true
+
+---
+
+<style>
+.page-free-shit {
+    padding-top: 80px;
+
+    h2 {
+        text-wrap: pretty;
+    }
+
+    .container-wide {
+        max-width: 1315px;
+        margin: 0 auto;
+        padding-inline: 20px;
+    }
+
+    .btn {
+        padding: 15px 21px 14px;
+        border: 0;
+        border-radius: 0;
+        font-family: Kufam, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1;
+        letter-spacing: unset;
+
+        &:hover {
+            box-shadow: none;
+            text-shadow: none;
+        }
+        
+        &.btn-pink {
+            color: #fff;
+            background-color: #EB38CF;
+            border: 3px solid #EB38CF;
+            font-weight: 700;
+
+            &:hover {
+                background-color: #ff59ff;
+                border-color: #ff59ff;
+            }
+        }
+
+        &.btn-outline {
+            color: #66FFC8;
+            background-color: transparent;
+            border: 3px solid #EB38CF;
+            font-weight: 400;
+
+            &:hover {
+                background: #66ffc8;
+                border: 3px solid #66ffc8;
+                color: #000;
+            }
+        }
+
+        &.btn-arrow {
+            padding: 0;
+            gap: 8px;
+
+            &:hover {
+                svg {
+                    transform: translateX(10px);
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+
+    .hero {
+        background-image: url('/img/free-sh*t/synthwave-mountain.webp');
+        background-attachment: scroll;
+        background-position: center;
+        padding: 251px 0 149px;
+
+        h1 {
+            font-size: 3.75rem;
+            margin-bottom: 40px;
+            letter-spacing: 12px;
+        }
+
+        p {
+            &.sub-heading {
+                max-width: 551px;
+                font-size: 1.5rem;
+                font-weight: 600;
+                line-height: 125%;
+                letter-spacing: -0.48px;
+                color: #66FFC8;
+            }
+        }
+    }
+
+    .podcast {
+        padding: 136px 0 0;
+        gap: 102px;
+
+        .img-container {
+            flex-basis: 339px;
+            position: relative;
+            align-items: end;
+
+
+            img {
+                &.absolute {
+                    position: absolute;
+                    top: -23%;
+                    right: -70%;
+                    width: 100%;
+                }
+            }
+        }
+
+        .box {
+            margin-bottom: 58px;
+            border: 3px solid #647488;
+            padding: 40px;
+            flex-basis: 834px;
+
+            img {
+                width: 55px;
+                height: 50px;
+                margin-bottom: 24px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                line-height: 108%;
+                letter-spacing: 2.4px;
+                color: #EB38CF;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.125rem;
+                line-height: 144%;
+            }
+
+            .btn-outline {
+                padding-inline: 47px;
+            }
+        }
+    }
+
+    .slack {
+        margin: 140px 0;
+
+        .pre-heading {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 24px;
+            text-transform: uppercase;
+            color: #EB38CF;
+            margin-bottom: 29px;
+        }
+
+        h2 {
+            font-size: 2.75rem;
+            letter-spacing: 6.16px;
+            margin-bottom: 80px;
+        }
+
+        .box {
+            border: 3px solid #647488;
+            padding: 40px;
+            gap: 58px;
+
+            .img-container {
+                flex-basis: 258px;
+            }
+
+            .text-container {
+                flex-basis: 868px;
+                text-align: left;
+
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                    text-shadow: 0 4px 20px rgba(235, 56, 207, 0.50);
+                    margin-bottom: 19px;
+                }
+
+                p {
+                    font-size: 1.125rem;
+                    line-height: 144%;
+                    font-weight: 400;
+                    margin-bottom: 52px;
+                }
+            }
+        }
+    }
+
+    .rebel-blog {
+        padding: 100px 0 40px;
+        background-image: url('/img/free-sh!t/rebel-blog-bg.webp');
+        background-size: 59%;
+        background-position-x: 160px;
+        background-position-y: top;
+        background-repeat: no-repeat;
+
+        h2 {
+            font-size: 2.75rem;
+            letter-spacing: 6.16px;
+            color: #F0F;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 80px;
+        }
+
+        .free-shit-blog-slider {
+            margin-left: -10px;
+            margin-bottom: 110px;
+
+                .slick-track {
+                    display: flex;
+                    align-items: stretch;
+
+                    .slick-slide {
+                        height: auto;
+                    }
+                }
+
+                .slick-next,
+                .slick-prev {
+                    top: calc(100% + 30px);
+                    width: 40px;
+                    height: 40px;
+
+                    &.slick-disabled {
+                        opacity: 0.3;
+                        pointer-events: none;
+                    }
+                }
+
+                .slick-prev {
+                    left: 50%;
+                    transform: translateX(-52px);
+                }
+                
+                .slick-next {
+                    right: 50%;
+                    transform: translateX(52px);
+                }
+
+                .slick-prev:hover path,
+                .slick-next:hover path {
+                    fill: #EB38CF;
+                }
+                
+                .slick-prev:hover rect,
+                .slick-next:hover rect {
+                    stroke: #EB38CF;
+                }
+
+            .slide {
+                padding: 28px;
+                border: 1.5px solid #647488;
+                background: transparent;
+                gap: 24px;
+                text-align: left;
+                height: auto;
+                min-width: 465px;
+                margin-inline: 10px;
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    box-shadow: 0 6px 12px 0 rgba(235, 56, 207, 0.16);
+                }
+
+                .text-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+
+                    h3 {
+                        color: #66FFC8;
+                        font-size: 1.25rem;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        line-height: 150%;
+                        font-weight: 500;
+                        margin-bottom: 0;
+    
+                        &.tag {
+                            color: #FFA6FF;
+                            font-size: 0.875rem;
+                            font-weight: 600;
+                        }
+                    }
+    
+                    a {
+                        font-size: 1rem;
+                        color: #F0F;
+                    }
+                }
+
+            }
+        }
+    }
+
+    @media(max-width: 1285px) {
+        .container-wide {
+            padding-inline: 20px;
+        }
+    }
+
+    @media(max-width: 1200px) {
+        .podcast {
+            .box {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media(max-width: 1100px) {
+        .podcast {
+            .img-container {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    @media(max-width: 991px) {
+        .podcast {
+            .img-container {
+                margin-bottom: 0;
+                flex: 1;
+
+                img {
+                    &.absolute {
+                        top: -20%;
+                        right: -50%;
+                        width: 80%;
+                    }
+                }
+            }
+
+            .box {
+                flex: 1;
+            }
+        }
+    }
+
+    @media(max-width: 900px) {
+        .podcast {
+            .img-container {
+                margin-bottom: 40px;
+
+                img {
+                    &.absolute {
+                        top: -10%;
+                    }
+                }
+            }
+        }
+    }
+
+        @media(max-width: 767px) {
+        .hero {
+            padding: 100px 0 40px;
+            h1 {
+                font-size: 1.5rem;
+                letter-spacing: 8px;
+                margin-bottom: 24px;
+            }
+            
+            p {
+                &.sub-heading {
+                    font-size: 1.25rem;
+                    letter-spacing: normal;
+                }
+            }
+        }
+
+        .podcast {
+            flex-direction: column;
+            padding-top: 0;
+            gap: 20px;
+
+            .img-container {
+                flex-basis: unset;
+                padding-top: 185px;
+                padding-inline: 100px;
+
+                img {
+                    width: 70%;
+
+                    &.absolute {
+                        top: 26px;
+                        right: 10%;
+                        width: 40%;
+                    }
+                }
+            }
+
+            .box {
+                border-color: #EB38CF;
+                padding: 20px;
+                flex-basis: unset;
+
+                img {
+                    height: 24px;
+                    width: 24px;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-size: 1.25rem;
+                    line-height: 120%;
+                    letter-spacing: -0.4px;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    line-height: 150%;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+        .slack {
+            margin: 60px 0;
+
+            .pre-heading {
+                font-size: 1rem;
+                line-height: normal;
+                letter-spacing: 8px;
+                margin-bottom: 24px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 40px;
+            }
+
+            .box {
+                padding: 20px;
+                flex-direction: column;
+                gap: 40px;
+
+                .img-container {
+                    flex-basis: unset;
+                    width: 100%;
+
+                    img {
+                        width: 32%;
+                    }
+                }
+
+                .text-container {
+                    flex-basis: unset;
+                    text-align: center;
+
+                    h3 {
+                        font-size: 2rem;
+                        margin-bottom: 19px;
+                    }
+                }
+            }
+        }
+        
+        .rebel-blog {
+            padding: 60px 0 20px;
+            background-image: none;
+
+            h2 {
+                font-size: 1.5rem;
+                letter-spacing: 3.36px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 1rem;
+                margin-bottom: 52px;
+            }
+        }
+    }
+    @media(max-width: 575px) {
+        .hero {
+            background-image: url('/img/free-sh!t/synthwave-mountain-mobile.webp');
+        }
+
+        .podcast {
+            .img-container {
+                padding-top: 205px;
+                padding-inline: 0;
+
+                img {
+                    width: 55%;
+
+                    &.absolute {
+                        top: 26px;
+                        right: 0;
+                        width: 55%;
+                    }
+                }
+            }
+        }
+
+        .rebel-blog {
+                        .free-shit-blog-slider {
+                margin-bottom: 40px;
+                flex-direction: column;
+                gap: 20px;
+
+                .slide {
+                    padding: 12px;
+                    gap: 12px;
+                    flex-direction: row;
+                    margin-inline: 0;
+                    min-width: unset;
+
+                    .img-container {
+                        flex-basis: 40%;
+                    }
+
+                    .text-container {
+                        flex-basis: 60%;
+                        gap: 0;
+
+                        h3 {
+                            font-size: 1rem;
+                            margin-bottom: 12px;
+                            line-height: 150%;
+                        }
+    
+                        p {
+                            font-size: 0.875rem;
+                            font-weight: 400;
+                            line-height: 143%;
+                            margin-bottom: 16px;
+    
+                            &.tag {
+                                font-size: 0.75rem;
+                            }
+                        }
+    
+                        a {
+                            font-size: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 450px) {
+        .podcast {
+            .img-container {
+                padding-top: 160px;
+                img {
+                    &.absolute {
+                        width: 60%;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+</style>
+
+{% include 'header.liquid' %}
+
+<div class="page-{{ page_id }} font-kufam">
+    <div class="hero">
+        <div class="container-wide">
+            <h1 class="font-horsemen">{{ title }}</h1>
+            <p class="sub-heading">
+                Need help with your sales walk? Don't have budget for playbooks or training? Check out the resources below! 
+            </p>
+        </div>
+    </div>
+    <div class="container-wide">
+        <div class="podcast d-flex align-items-stretch">
+            <div class="img-container d-flex">
+                <img src="/img/free-sh!t/chat-bubble.webp" alt="" class="absolute">
+                <img src="/img/home/dale-cartoon.webp" alt="Dale cartoon">
+            </div>
+            <div class="box text-center">
+                <img src="/img/svg/pixel-volume-3.svg" alt="speaker icon">
+                <h2>Selling Local Podcast</h2>
+                <p>
+                    For every Rebel just getting started in sales, or just getting to know The Rebellion... We highly recommend our OG podcast - Selling Local. Start from the beginning (Episode 0) and take the journey with us!
+                </p>
+                <a class="btn btn-outline" href="https://open.spotify.com/show/6vggsDkQyAuOgsUciBNj9E?si=oxvbB8VNTbO98ZIsPW7tkw&nd=1&dlsi=eee1bc8a483f4b4c" target="_blank">Click Here to Listen</a>
+            </div>
+        </div>
+        <div class="slack text-center">
+            <p class="pre-heading">Rebel Slack Channel</p>
+            <h2 class="font-horsemen">Come Hang Out With Us</h2>
+            <div class="box d-flex align-items-center">
+                <div class="img-container">
+                    <img src="/img/free-sh*t/rebel-refuge-logo.webp" alt="Rebel Refuge logo">
+                </div>
+                <div class="text-container">
+                    <h3>Our Rebel Refuge</h3>
+                    <p>
+                        This is our FREE community option for anyone who wants to engage with the Rebel Family, get advice, ask questions, see content from the Rebel Leader and learn more about how to turn your life and sales into the most Rebellious thing on planet earth.
+                    </p>
+                    <a href="https://thesalesrebellion.typeform.com/to/frAJUfW6" target="_blank" class="btn btn-pink">Click Here to Join</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rebel-blog text-center">
+        <div class="container-wide">
+            <h2 class="font-horsemen">The Rebel Blog</h2>
+            <p>
+                Learn how to sell more and suck less with these tailored articles written for Rebels of all sizes that are looking to better understand how to change the game in their sales career. Read more on: how to prospect better, how to communicate better, how to differentiate yourself, how to break through the noise, how to close more sales and so much more!
+            </p>
+            <div class="free-shit-blog-slider d-flex align-items-stretch">
+                <!-- Temporary until blog launches -->
+                {% for blog in blog_posts %}
+                <div class="slide d-flex">
+                    <div class="img-container">
+                        <img class="d-none d-sm-block" src="{{ blog.image }}" alt="{{ blog.title }}">
+                        <img class="d-block d-sm-none" src="{{ blog.image_mobile }}" alt="{{ blog.title }}">
+                    </div>
+                    <div class="text-container">
+                        <!-- <p class="tag">{{ blog.tag}}</p> -->
+                        <h3>{{ blog.title }}</h3>
+                        <p>{{ blog.description }}</p>
+                        <a href="{{ blog.url }}" class="btn btn-arrow d-flex align-items-center {%if blog.coming_soon %} disabled {% endif %}">
+                            <span>Coming Soon</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M4 11V13H16V15H18V13H20V11H18V9H16V11H4ZM14 7H16V9H14V7ZM14 7H12V5H14V7ZM14 17H16V15H14V17ZM14 17H12V19H14V17Z" fill="#FF00FF"/>
+    </svg>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- Hidden until blog launches -->
+            <!-- <a href="/blog" class="btn btn-pink">Check Out The Rebel Blog</a> -->
+        </div>
+    </div>
+</div>
