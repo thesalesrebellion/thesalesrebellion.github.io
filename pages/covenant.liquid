@@ -5,11 +5,552 @@ layout_engine: bootstrap
 permalink: /covenant/
 page_id: covenant
 landing_page: false
-coming_soon: true
+coming_soon: false
+accordion_items:
+    - name: "A Mission with a Purpose"
+      details: "Join the Rebellion’s crusade to make better people, not just better salespeople."
+    - name: "Whole-Life Impact"
+      details: "This program challenges you in every aspect of your life. Including your sales skills, your marketing abilities, your leadership qualities, your role as a spouse/parent/friend and the legacy you are building."
+    - name: "Tangible Deliveries"
+      details: "Receive physical items in the mail, including exercises, secret messages, creative concepts, newsletters, handwritten notes, and more."
+    - name: "Fits Your Lifestyle"
+      details: "Designed to work alongside your daily/weekly schedule without requiring excessive hours."
+    - name: "Flexible Progress"
+      details: 'No need to “make time”, improve at sales and life at your own pace and during your normal "day-to-day".'
+    - name: "Exclusive Access"
+      details: "Choose the Legend program for access to in-person events like Totality and two other exclusive meet-ups. Or, stick with the virtual only option through the Warrior plan. You will see growth with either commitment."
+    - name: "Bold Commitment"
+      details: "If you’re ready for change, take the oath and join the Covenant."
+steps: 
+    - name: "Sign Up"
+      icon: "/img/svg/pixel-arrow-up.svg"
+      text: "Choose the subscription level that feels right. We will shoot you an invite to access the community digitally and you'll receive your first mailer in the mail shortly after! If you are signing up for a premium membership - you will be sent more details on upcoming in-person events as well!"
+    - name: "Get Started"
+      icon: "/img/svg/pixel-comment.svg"
+      text: "Once you receive your first mailer, you will begin your journey! From there, jump into the online community, share your experience, ask questions and tell the tales of your growth with others. The power of community is an unstoppable force!"
+    - name: "Make Your Covenant"
+      icon: "/img/svg/pixel-check-green.svg"
+      text: "Regardless of the commitment level you choose... We expect all members of the Covenant to stay focused on the mission. To interrupt their typical patterns, to take a more creative approach to life and sales, to change the game and build their legacy one day at a time. This commitment is for a minimum of one year, so get ready for a massive change in your existence!"
+options:
+  - name: Option One
+    url: https://covenant.thesalesrebellion.com/?utm_campaign=my_networks_reminder_billing&utm_medium=email&utm_source=transactional_emails
+    card_title: Rebel Warrior - $149/month
+    card_text: "This is our basic subscription program. You will get all the fixings without access to the annual in-person events."
+    card_button_text: Sign Up!
+    features:
+      - text: Weekly Exclusive Content (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Mailer with Activities, Challenges + Gamification 
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Online Community Access
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Virtual Learning - Led by Dale Dupree
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Networking Event (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Creative Selling Workshops (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: In-person Micro Event (March)
+        icon: /img/svg/pixelarticons_close-box.svg
+      - text: In-person Micro Event (June)
+        icon: /img/svg/pixelarticons_close-box.svg
+      - text: 60% discount on your Totality Ticket! (VIP or General Admission)
+        icon: /img/svg/pixelarticons_close-box.svg
+  - name: Option Two
+    url: https://covenant.thesalesrebellion.com/?utm_campaign=my_networks_reminder_billing&utm_medium=email&utm_source=transactional_emails
+    card_title: Rebel Legend - $549/month
+    card_text: "This subscription level will get you EVERYTHING from the Rebel Warrior subscription + access to in-person events and exclusive discounts! This option is designed to give you more access, more learning and more Rebellious experiences."
+    card_button_text: Sign Up!
+    features:
+      - text: Weekly Exclusive Content (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Mailer with Activities, Challenges + Gamification 
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Online Community Access
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Virtual Learning - Led by Dale Dupree
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Networking Event (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Monthly Creative Selling Workshops (virtual)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: In-person Micro Event (March)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: In-person Micro Event (June)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: 60% discount on your Totality Ticket! (VIP or General Admission)
+        icon: /img/svg/pixel-check-pink.svg
+      - text: Additional surprises... We can't tell you or it wouldn't be a surprise
+        icon: /img/svg/pixel-check-pink.svg
 ---
-
 {% include 'header.liquid' %}
 
 {% if coming_soon %}
-    {% include 'coming-soon.liquid', bg:'/img/covenant/covenant-coming-soon-bg.webp', bg-mobile: '/img/covenant/covenant-coming-soon-bg-mobile.webp' %}
+  {% include 'coming-soon.liquid',
+    bg: '/img/covenant/covenant-coming-soon-bg.webp',
+    bg-mobile: '/img/covenant/covenant-coming-soon-bg-mobile.webp'
+  %}
 {% endif %}
+
+<style>
+  .page-covenant {
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 150%;
+    }
+
+    .container-wide {
+      max-width: 1305px;
+      margin: 0 auto;
+      padding-inline: 20px;
+    }
+
+    .container-narrow {
+      max-width: 990px;
+      margin: 0 auto;
+      padding-inline: 20px;
+    }
+
+    .btn {
+      padding: 15px 48px 14px;
+      border: 0;
+      border-radius: 0;
+      font-family: Kufam, sans-serif;
+      font-size: 1rem;
+      line-height: 1;
+      letter-spacing: unset;
+
+      &:hover {
+        box-shadow: none;
+        text-shadow: none;
+      }
+
+      &.btn-outline {
+        color: #66ffc8;
+        background-color: transparent;
+        border: 3px solid #eb38cf;
+        font-weight: 700;
+
+        &:hover {
+          background: #66ffc8;
+          border: 3px solid #66ffc8;
+          color: #000;
+        }
+      }
+    }
+
+    .hero {
+      background-image: url('/img/covenant/hero-bg.webp');
+      background-attachment: scroll;
+      background-position: center;
+      background-size: cover;
+      padding: 184px 0 135px;
+
+      img {
+        max-width: 1154px;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 59px;
+        margin-inline: auto;
+      }
+
+      h1 {
+        font-size: 0;
+      }
+
+      h2 {
+        color: #66ffc8;
+        font-size: 40px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .how-it-works {
+      padding-top: 40px;
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 19px;
+      }
+
+      p {
+        &.pink {
+          color: #eb38cf;
+          font-size: 1.25rem;
+          font-weight: 700;
+          max-width: 948px;
+          margin-inline: auto;
+          margin-bottom: 60px;
+        }
+      }
+
+      .accordion-container {
+        padding: 40px;
+        border: 3px solid #647488;
+        gap: 20px;
+        margin-bottom: 32px;
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 500;
+          letter-spacing: 1.6px;
+          margin-bottom: 32px;
+          text-transform: uppercase;
+        }
+
+        .accordion-item {
+          background-color: transparent;
+          padding: 32px 0 16px;
+          border-bottom: 1.5px solid #647488;
+          outline: none;
+
+          &:first-child {
+            padding-top: 0;
+          }
+
+          .accordion-header {
+            .accordion-button {
+              background-color: transparent;
+              border: none;
+              color: #eb38cf;
+              font-size: 1.25rem;
+              font-weight: 600;
+              line-height: 150%;
+              padding-top: 0;
+              padding-right: 40px;
+              outline: none;
+              box-shadow: none;
+              position: relative;
+
+              &[aria-expanded='true'] {
+                &::before {
+                  transform: rotate(90deg) translateX(-50%) translateY(-5px);
+                }
+              }
+
+              &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 15px;
+                width: 32px;
+                height: 32px;
+                transform: translateY(-50%);
+                background: url('/img/svg/pixel-arrow-right.svg') no-repeat center center;
+                background-size: contain;
+                pointer-events: none;
+              }
+
+              &::after {
+                display: none;
+              }
+
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
+            }
+          }
+
+          .accordion-body {
+            font-size: 1rem;
+            color: #fff;
+            line-height: 150%;
+            padding-bottom: 16px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .img-container {
+      padding: 0 158px 117px 0;
+      position: relative;
+      margin-bottom: 80px;
+
+      img {
+        width: 100%;
+        height: auto;
+
+        &.absolute {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 38%;
+          box-shadow: 0 4px 20px 0 rgba(235, 56, 207, 0.5);
+        }
+      }
+    }
+
+    .steps-columns {
+      display: flex;
+      gap: 36px;
+      margin-bottom: 118px;
+
+      .step-column {
+        padding: 40px 24px;
+        flex: 1;
+
+        img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 32px;
+        }
+
+        h3 {
+          color: #eb38cf;
+          font-size: 1.5rem;
+          line-height: 108%;
+          letter-spacing: 2.4px;
+          margin-bottom: 24px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .options-row {
+      gap: 36px;
+      margin-bottom: 21px;
+
+      .box {
+        flex: 1;
+        border: 3px solid #647488;
+        padding: 28px;
+
+        h3 {
+          color: #f0f;
+          box-shadow: none;
+          font-size: 1.25rem;
+          letter-spacing: 2px;
+          margin-bottom: 20px;
+        }
+
+        h4 {
+          color: #66ffc8;
+          font-size: 1.25rem;
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+
+        ul {
+          margin-bottom: 28px;
+
+          li {
+            color: #66ffc8;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 125%;
+
+            &:not(:last-child) {
+              margin-bottom: 15px;
+            }
+
+            img {
+              margin-right: 12px;
+              width: 24px;
+              height: 24px;
+            }
+          }
+        }
+
+        a {
+          max-width: max-content;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      .container-wide {
+        padding-inline: 16px;
+      }
+
+      .hero {
+        background-image: url('/img/covenant/hero-bg-mobile.webp');
+        padding: 37px 0 38px;
+
+        img {
+          max-width: 65%;
+          margin-bottom: 17px;
+        }
+
+        h2 {
+          font-size: 1.125rem;
+          line-height: 133%;
+        }
+      }
+
+      .how-it-works {
+        padding-top: 60px;
+
+        h2 {
+          font-size: 1.5rem;
+          margin-bottom: 24px;
+        }
+
+        p {
+          &.pink {
+            font-size: 1rem;
+            line-height: 125%;
+            letter-spacing: -0.32px;
+          }
+        }
+
+        .accordion-container {
+          .accordion-item {
+            padding-top: 20px;
+            padding-bottom: 10px;
+
+            .accordion-header {
+              .accordion-button {
+                font-size: 1rem;
+                padding-bottom: 10px;
+
+                &::before {
+                  top: 12px;
+                }
+              }
+            }
+
+            .accordion-body {
+              padding-top: 10px;
+              padding-bottom: 10px;
+            }
+          }
+        }
+      }
+
+      .img-container {
+        padding: 0;
+        margin-bottom: 60px;
+
+        img {
+          &.absolute {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .steps-columns {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 80px;
+
+        .step-column {
+          padding: 20px;
+        }
+      }
+
+      .options-row {
+        flex-direction: column;
+      }
+    }
+  }
+</style>
+
+<div class="page-{{ page_id}} font-kufam">
+  <div class="hero">
+    <div class="container-wide text-center">
+      <h1>Covenant</h1>
+      <img src="/img/covenant/hero-logo.webp" alt="Covenant">
+      <h2 class="text-center">
+        Rebellion Master Class All Year Long...<br>
+        Virtual, In-Person and Mailed to Your Door.
+      </h2>
+      <p class="text-center">
+        The world's first self-guided sales subscription designed for everyone. It's learning, it's
+        community, it's an adventure all-in-one.
+      </p>
+    </div>
+  </div>
+  <div class="container-narrow">
+    <div class="how-it-works text-center">
+      <h2 class="font-horsemen">How It Works</h2>
+      <p class="pink">
+        This is a sales learning subscription that includes digital access to the Covenant
+        community, monthly mailers sent to your home/office and in-person event access. Covenant is
+        designed to fit into your existing schedule without demanding your time, it's about building
+        a lifestyle of Rebellion around your existing routines. Creating permanent change with
+        radical results.
+      </p>
+      <div class="box accordion-container">
+        <div class="accordion accordion-flush" id="accordion1">
+          {% for accordion_item in accordion_items %}
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="heading1-{{ forloop.index }}">
+                <button
+                  class="accordion-button ps-0{% unless forloop.first %} collapsed{% endunless %}"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse1-{{ forloop.index }}"
+                  aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                  aria-controls="collapse1-{{ forloop.index }}"
+                >
+                  {{ accordion_item.name }}
+                </button>
+              </h4>
+              <div
+                id="collapse1-{{ forloop.index }}"
+                class="accordion-collapse collapse{% if forloop.first %} show{% endif %}"
+                aria-labelledby="heading1-{{ forloop.index }}"
+                data-bs-parent="#accordion1"
+              >
+                <div class="accordion-body px-0">
+                  {{ accordion_item.details }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-wide">
+    <div class="img-container">
+      <img src="/img/covenant/how-it-works-1.webp" alt="">
+      <img class="absolute" src="/img/covenant/how-it-works-2.webp" alt="">
+    </div>
+    <div class="steps-columns">
+      {% for step in steps %}
+      <div class="step-column text-center">
+        <img src="{{ step.icon }}" alt="">
+        <h3>{{ step.name }}</h3>
+        <p>{{ step.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="options-row d-flex">
+      {% for option in options %}
+        <div class="box d-flex flex-column justify-content-between">
+          <div>
+            <h3 class="font-horsemen">{{ option.name }}</h3>
+            <h4>{{ option.card_title }}</h4>
+            <p>{{ option.card_text }}</p>
+            <ul>
+              {% for feature in option.features %}
+                <li class="d-flex align-items-center mb-2">
+                  <img src="{{ feature.icon }}" alt="">
+                  <span>{{ feature.text }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <a href="{{ option.url }}" class="btn btn-outline">{{ option.card_button_text }}</a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
