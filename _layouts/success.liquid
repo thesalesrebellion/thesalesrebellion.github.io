@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{%- include "header.liquid" -%}
+<div class="success-page">
+    <div class="hero text-center" style="background-image: url('{{ bg }}');">
+        <h1 class="font-horsemen">{{ heading }}</h1>
+        <p class="text-green font-kufam">
+            {{ message }}
+        </p>
+    </div>
+</div>
+
+{% include '_includes/footer.liquid' %}
