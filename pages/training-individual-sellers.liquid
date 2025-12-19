@@ -12,12 +12,6 @@ cards:
       btn_text: "Click Here to Learn More"
       new_tab: false
       icon: "/img/svg/pixel-user.svg"
-    - title: "Group<br/>Sales Training"
-      text: "Power up your sales game without crushing your budget all at once. We recommend the payment plan in this group option."
-      btn_link: "/squadron/"
-      btn_text: "Click Here to Learn More"
-      new_tab: false
-      icon: "/img/svg/pixel-users.svg"
     - title: "Private Sales Coaching"
       text: "Our private sales training is as effective as it is expensive. You may need to consider refinancing your mortgage to secure this service. Don’t worry, we’re mostly joking."
       btn_link: "/advisory/"
@@ -33,7 +27,7 @@ cards:
     <div class="container-wide">
         <div class="cards-container d-flex flex-column flex-lg-row align-items-stretch">
             {% for card in cards %}
-                <div class="card d-flex flex-column align-items-center font-kufam">
+                <div class="card-2 d-flex flex-column align-items-center font-kufam">
                     <img src="{{ card.icon }}" alt="{{ card.title }} Icon">
                     <h2 class="text-center">{{ card.title }}</h2>
                     <p class="text-center">{{ card.text }}</p>

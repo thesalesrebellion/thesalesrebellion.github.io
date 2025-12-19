@@ -44,7 +44,7 @@
 .cards-container {
     gap: 36px;
 
-    .card {
+    .card, .card-2 {
         border: 2px solid #F0F;
         padding: 24px 24px 40px;
         border-radius: 0;
@@ -72,6 +72,14 @@
             font-size: 1.125em;
             line-height: 26px;
         }
+    }
+
+    .card-2 {
+        border: 2px solid #F0F;
+        padding: 24px 24px 40px;
+        border-radius: 0;
+        background: transparent;
+        flex: 0 0 calc((100% - 72px) / 2);
     }
 }
 
