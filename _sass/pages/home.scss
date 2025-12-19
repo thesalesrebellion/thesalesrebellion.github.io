@@ -90,12 +90,8 @@
         background-image: url('/img/home/hero-bg.webp');
         background-attachment: scroll;
 
-        .hero-inner {
-            gap: 48px;
-        }
-
         .text-container {
-            flex-basis: 764px;
+            flex-basis: 815px;
         }
 
         .img-container {
@@ -106,9 +102,9 @@
             color: #66FFC8;
             text-shadow: 0 4px 20px rgba(235, 56, 207, 0.50);
             font-family: Horsemen, sans-serif;
-            font-size: 60px;
+            font-size: 37px;
             line-height: 2.25;
-            word-spacing: 40px;
+            word-spacing: 9px;
             margin-bottom: 40px;
             text-wrap: balance;
         }
