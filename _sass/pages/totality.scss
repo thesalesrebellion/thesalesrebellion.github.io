@@ -158,7 +158,8 @@
       border: 3px solid #647488;
       border-radius: 0;
       padding: 28px;
-      flex-basis: calc((100% - 80px) / 3);
+      flex: 1 1 0;
+      min-width: 0;
       text-align: left;
       display: flex;
       flex-direction: column;
@@ -429,7 +430,6 @@
         .event-card {
           margin-inline: 10px;
           height: auto;
-          flex-basis: unset;
         }
       }
     }
@@ -629,9 +629,11 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            max-width: 100%;
             margin-inline: 8px;
             height: auto;
             padding: 40px 20px;
+            text-align: center;
 
             h4 {
               margin-bottom: 0;
